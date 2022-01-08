@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   		http://www.springframework.org/schema/beans/spring-beans.xsd
+
+
+
+
+			http://www.springframework.org/schema/mvc 
+			http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+	<!-- Cấu hình interceptor -->
+<!--	<mvc:interceptors>-->
+
+<!--		&lt;!&ndash; <bean class="d17cqcp02.n17dccn155.interceptor.GlobalInterceptor" /> &ndash;&gt;-->
+
+<!--		&lt;!&ndash; Chỉ lọc các URL theo path &ndash;&gt;-->
+<!--		<mvc:interceptor>-->
+<!--			<mvc:mapping path="/account**" />-->
+<!--			<mvc:mapping path="/account/**" />-->
+<!--			<mvc:mapping path="/dashboard**" />-->
+<!--			<mvc:mapping path="/dashboard/**" />-->
+<!--			<mvc:mapping path="/apexchart/**" /> -->
+<!--			<mvc:exclude-mapping path="/account/signin**" />-->
+<!--			<mvc:exclude-mapping path="/account/reset**" />-->
+<!--			<mvc:exclude-mapping path="/account/signup**" />-->
+<!--			-->
+<!--			<bean class="d17cqcp02.n17dccn155.interceptor.LoginInterceptor" />-->
+<!--		</mvc:interceptor>-->
+<!--		<mvc:interceptor>-->
+<!--			<mvc:mapping path="/account/signin**" />-->
+<!--			<mvc:mapping path="/account/reset**" />-->
+<!--			<mvc:mapping path="/account/signup**" />-->
+<!--			<bean class="d17cqcp02.n17dccn155.interceptor.LogoutInterceptor" />-->
+<!--		</mvc:interceptor>-->
+<!--		<mvc:interceptor>-->
+<!--			<mvc:mapping path="/manager**" />-->
+<!--			<mvc:mapping path="/manager/**" />-->
+<!--			<mvc:exclude-mapping path="/manager/signin**" />-->
+<!--			<bean-->
+<!--				class="d17cqcp02.n17dccn155.interceptor.AdLoginInterceptor" />-->
+<!--		</mvc:interceptor>-->
+
+<!--	</mvc:interceptors>-->
+
+</beans>
