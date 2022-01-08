@@ -6,18 +6,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("/hello/")
-public class HelloWorldController {
-    @RequestMapping("my")
+@RequestMapping("/truyen/")
+public class TruyenController {
+
+    @RequestMapping("chap1")
     @ResponseBody
-    public String index()
-    {
-        return "My";
+    public String chap1(){
+
+        return "bạn đang đọc chap 1";
     }
-    @RequestMapping("bap")
+    @RequestMapping("chap2")
     @ResponseBody
-    public String index2()
-    {
-        return "Bap";
+    public String chap2(){
+
+        return "bạn đang đọc chap 2";
     }
 }
