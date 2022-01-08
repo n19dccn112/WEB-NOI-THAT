@@ -21,4 +21,5 @@ public class TruyenController {
 
         return "bạn đang đọc chap 2";
     }
+
 }
