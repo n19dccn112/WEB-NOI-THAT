@@ -12,7 +12,7 @@ public class HelloWorldController {
     @ResponseBody
     public String index()
     {
-        return "My";
+        return "My1";
     }
     @RequestMapping("bap")
     @ResponseBody
