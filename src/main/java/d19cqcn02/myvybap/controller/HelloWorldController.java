@@ -15,9 +15,9 @@ public class HelloWorldController {
         return "My1";
     }
     @RequestMapping("bap")
-    @ResponseBody
+    //@ResponseBody
     public String index2()
     {
-        return "Bap";
+        return "bap";
     }
 }
