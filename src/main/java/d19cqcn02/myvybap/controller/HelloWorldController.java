@@ -12,12 +12,12 @@ public class HelloWorldController {
     @ResponseBody
     public String index()
     {
-        return "My";
+        return "My1";
     }
     @RequestMapping("bap")
-    @ResponseBody
+    //@ResponseBody
     public String index2()
     {
-        return "Bap";
+        return "bap";
     }
 }
