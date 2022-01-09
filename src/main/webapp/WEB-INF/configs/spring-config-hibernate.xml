@@ -34,7 +34,7 @@
 			</props>
 		</property>
 		<property name="packagesToScan"
-			value="d17cqcp02.n17dccn155.models" />
+			value="d19cqcn02.myvybap.model" />
 	</bean>
 
 	<!-- Transaction Manager -->
