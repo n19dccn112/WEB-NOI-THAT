@@ -26,7 +26,7 @@
    	<!-- Cấu hình package chứa các d19cqcn02.myvybap.controller -->
 	
 	<mvc:annotation-driven />
-	<mvc:resources mapping="/**" location="classpath:assets/" />
+	<mvc:resources mapping="assets/**" location="classpath:assets/" />
 	
 	
 </beans>
