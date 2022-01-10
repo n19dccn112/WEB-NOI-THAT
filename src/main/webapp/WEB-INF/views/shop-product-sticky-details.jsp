@@ -329,11 +329,7 @@
 
         <!--=======  breadcrumb list  =======-->
 
-        <ul class="breadcrumb-list">
-          <li class="breadcrumb-list__item"><a href="index-2.html">HOME</a></li>
-          <li class="breadcrumb-list__item"><a href="shop-left-sidebar.html">SHOP</a></li>
-          <li class="breadcrumb-list__item breadcrumb-list__item--active">SHOP PRODUCT</li>
-        </ul>
+        <jsp:include page="include/menu3.jsp"></jsp:include>
 
         <!--=======  End of breadcrumb list  =======-->
 
