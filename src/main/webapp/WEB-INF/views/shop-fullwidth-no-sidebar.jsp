@@ -70,7 +70,7 @@
 
           <!--=======  header right icons  =======-->
 
-          <div class="header-right-icons d-flex justify-content-end align-items-center h-100">
+          <jsp:include page="include/header-right-icons.jsp"></jsp:include>
             <!--=======  single-icon  =======-->
 
             <div class="single-icon search">

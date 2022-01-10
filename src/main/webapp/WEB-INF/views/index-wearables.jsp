@@ -55,44 +55,7 @@
 
             <!--=======  header right icons  =======-->
 
-            <div class="header-right-icons vertical-dark-menu-bottom">
-
-                <!--=======  copyright text  =======-->
-
-                <p class="copyright-text">Copyright &copy; 2021</p>
-
-                <!--=======  End of copyright text  =======-->
-
-                <!--=======  single-icon  =======-->
-
-                <div class="single-icon search">
-                    <a href="javascript:void(0)" id="search-icon">
-                        <i class="ion-ios-search-strong"></i>
-                    </a>
-                </div>
-
-                <!--=======  End of single-icon  =======-->
-
-                <!--=======  single-icon  =======-->
-
-                <div class="single-icon wishlist">
-                    <a href="javascript:void(0)" id="offcanvas-wishlist-icon">
-                        <i class="ion-android-favorite-outline"></i>
-                        <span class="count">2</span>
-                    </a>
-                </div>
-
-                <!--=======  End of single-icon  =======-->
-                <!--=======  single-icon  =======-->
-
-                <div class="single-icon cart">
-                    <a href="javascript:void(0)" id="offcanvas-cart-icon">
-                        <i class="ion-ios-cart"></i>
-                        <span class="count">3</span>
-                    </a>
-                </div>
-                <!--=======  End of single-icon  =======-->
-            </div>
+            <jsp:include page="include/header-right-icons.jsp"></jsp:include>
             <!--=======  End of header right icons  =======-->
 
         </div>
