@@ -1955,42 +1955,7 @@
 =            footer top         =
 =============================================-->
 
-<div class="footer-top mb-50 mb-md-80 mb-sm-60">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <!--=======  footer top container  =======-->
-
-                <div class="footer-top-container">
-                    <!--=======  single footer top widget  =======-->
-
-                    <div class="footer-top-single-widget">
-                        <h4 class="footer-top-widget-title">FREE SHIPPING</h4>
-                        <div class="content">
-                            <p>On all orders over $75.00</p>
-                        </div>
-                    </div>
-                    <div class="footer-top-single-widget">
-                        <h4 class="footer-top-widget-title">FREE RETURNS</h4>
-                        <div class="content">
-                            <p>30 days money back guarantee</p>
-                        </div>
-                    </div>
-                    <div class="footer-top-single-widget">
-                        <h4 class="footer-top-widget-title">SECURE PAYMENT</h4>
-                        <div class="content">
-                            <img src="assets/images/icons/pay.png" class="img-fluid" alt="">
-                        </div>
-                    </div>
-
-                    <!--=======  End of single footer top widget  =======-->
-                </div>
-
-                <!--=======  End of footer top container  =======-->
-            </div>
-        </div>
-    </div>
-</div>
+    <jsp:include page="include/foot.jsp"></jsp:include>
 
 <!--=====  End of footer top  ======-->
 

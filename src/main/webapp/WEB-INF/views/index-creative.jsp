@@ -845,59 +845,7 @@
 =            footer area         =
 =============================================-->
 
-<div class="footer footer--four footer--four--creativehome pt-90 pb-100 no-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 footer-single-widget text-center">
-                <!--=======  footer navigation  =======-->
-
-                <div class="footer-nav-container footer-nav-container--horizontal mb-40">
-                    <nav>
-                        <ul>
-                            <li><a href="#">ABOUT US</a></li>
-                            <li><a href="#">STORE LOCATION</a></li>
-                            <li><a href="#">CONTACT</a></li>
-                            <li><a href="#">SUPPORT</a></li>
-                            <li><a href="#">POLICY</a></li>
-                            <li><a href="#">FAQS</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <!--=======  End of footer navigation  =======-->
-
-                <!--=======  social icons  =======-->
-
-                <div class="social-icons--footer mb-40">
-                    <ul>
-                        <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
-                                class="fa fa-twitter"></i></a></li>
-                        <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
-                                class="fa fa-facebook"></i></a></li>
-                        <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
-                                class="fa fa-instagram"></i></a></li>
-                        <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
-                                class="fa fa-youtube-play"></i></a></li>
-                    </ul>
-                </div>
-
-                <!--=======  End of social icons  =======-->
-
-                <!--=======  copyright text  =======-->
-
-                <div class="footer__copyright-text">
-                    <p>&copy; 2021 lezada. All Rights Reserved | <span>(+00) 123 567990</span> | contact@lezada.com</p>
-                </div>
-
-                <!--=======  End of copyright text  =======-->
-            </div>
-        </div>
-    </div>
-</div>
+    <jsp:include page="include/foot.jsp"></jsp:include>
 
 <!--=====  End of footer area  ======-->
 
