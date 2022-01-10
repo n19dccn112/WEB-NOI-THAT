@@ -1452,49 +1452,7 @@
 =            footer banner section area        =
 =============================================-->
 
-<div class="footer-banner-section-area mb-80 mb-sm-60">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 offset-lg-2">
-        <!--=======  ad section  =======-->
-
-        <div class="footer-banner-section footer-banner-section--special-home text-center">
-          <!--=======  ad section image  =======-->
-
-          <div class="footer-banner-section-image mb-35">
-            <img src="assets/images/banners/ads.jpg" class="img-fluid" alt="">
-          </div>
-
-          <!--=======  End of ad section image  =======-->
-
-          <!--=======  ad tags  =======-->
-
-          <div class="footer-banner-tags mb-35">
-            <ul>
-              <li><a href="#">#lookbook</a></li>
-              <li><a href="#">#bags</a></li>
-              <li><a href="#">#sale</a></li>
-            </ul>
-          </div>
-
-          <!--=======  End of ad tags  =======-->
-
-          <!--=======  footer-banner-content  =======-->
-
-          <div class="footer-banner-content">
-            <h2 class="mb-30">Up To 40% Off Final Sale Items. Caught in the moment!</h2>
-            <a href="shop-left-sidebar.html" class="lezada-button lezada-button--medium">shop now</a>
-          </div>
-
-          <!--=======  End of footer-banner-content  =======-->
-        </div>
-
-        <!--=======  End of ad section  =======-->
-
-      </div>
-    </div>
-  </div>
-</div>
+  <jsp:include page="include/foot.jsp"></jsp:include>
 
 <!--=====  End of footer banner section area ======-->
 
