@@ -1,1 +1,6 @@
 target
+.idea/encodings.xml
+.idea/azure/azureSettings.xml
+.idea/jarRepositories.xml
+.idea/jpa-buddy.xml
+.idea/runConfigurations.xml
