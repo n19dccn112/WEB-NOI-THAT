@@ -6,11 +6,39 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
 <head>
-    <title>Title</title>
-</head>
-<body>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lezada - Multipurpose eCommerce Bootstrap4 Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico">
 
-</body>
-</html>
+    <!-- CSS
+    ============================================ -->
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Ionicons CSS -->
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Themify CSS -->
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+
+    <!-- Plugins CSS -->
+    <link href="assets/css/plugins.css" rel="stylesheet">
+
+    <!-- Helper CSS -->
+    <link href="assets/css/helper.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+</head>
