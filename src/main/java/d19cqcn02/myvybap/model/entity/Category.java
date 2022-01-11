@@ -1,6 +1,5 @@
 package d19cqcn02.myvybap.model.entity;
 
-
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
