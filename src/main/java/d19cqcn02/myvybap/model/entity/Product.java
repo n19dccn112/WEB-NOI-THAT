@@ -1,13 +1,21 @@
 package d19cqcn02.myvybap.model.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.util.Date;
-
+//Lombok
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "products")
-public class Products {
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -32,8 +40,10 @@ public class Products {
     @DateTimeFormat(pattern = "dd-MM-yyyy hh:mm:ss")
     private Date productUpDate;
 
-    @Column(name = "category_id")
-    private Long productCategoryId;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(columnDefinition = "category_id")//Tên cột join trong db
+    private Category category;
 
     @Column(name = "remain")
     private Long productRemain;

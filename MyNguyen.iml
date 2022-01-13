@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/configs/spring-config-upload.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/configs/spring-config-gmail.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/configs/spring-config-i18n.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/configs/spring-config-mvc.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/configs/spring-config-hibernate.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/configs/spring-config-interceptor.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/configs/spring-config-resources.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webapp/WEB-INF/configs/spring-config-bean.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+</module>

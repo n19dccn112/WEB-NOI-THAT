@@ -4,7 +4,8 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "feature_detail")
-public class Feature_detail {
+public class FeatureDetail {
+
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "product_id")

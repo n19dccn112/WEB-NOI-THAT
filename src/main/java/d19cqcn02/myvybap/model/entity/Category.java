@@ -1,12 +1,19 @@
 package d19cqcn02.myvybap.model.entity;
 
 
-import org.springframework.format.annotation.DateTimeFormat;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.util.List;
 
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "categories")
 public class Category {
 
@@ -20,8 +27,6 @@ public class Category {
 
     private String description;
 
-//    @Temporal(TemporalType.TIMESTAMP)
-//    @DateTimeFormat(pattern = "dd-MM-yyyy hh:mm:ss")
-//    private Date updateDate;
-
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "category")//Tên thuộc tính join
+    private List<Product> products;
 }

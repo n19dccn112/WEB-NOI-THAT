@@ -1,17 +1,22 @@
 package d19cqcn02.myvybap.model.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "rates")
-public class Rates {
-
+public class Rate {
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
-    private Long rateUserId;
+    @Column(name = "id")
+    private Long rateId;
 
-    @Column(name = "product_id")
-    private Long rateProductId;
+
+    @OneToMany
+    private List<User> users;
+
+    @OneToMany
+    private List<Product> products;
 
     @Column(name = "comment")
     private String rateComment;
