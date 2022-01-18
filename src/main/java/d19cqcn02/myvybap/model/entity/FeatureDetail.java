@@ -19,20 +19,12 @@ public class FeatureDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Long FeatureDetailId;
+    private Long featureDetailId;
 
     @OneToMany
     private List<Product> products;
 
     @OneToMany
     private List<Feature> features;
-
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(columnDefinition = "product_id")
-    private Product product;
-
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(columnDefinition = "feature_id")
-    private Feature feature;
 
 }

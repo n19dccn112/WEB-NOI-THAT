@@ -33,9 +33,6 @@ public class Image {
     @Column(name = "width")
     private Long imageWidth;
 
-    @Column(name = "product_id")
-    private Long imageProductId;
-
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(columnDefinition = "product_id")
     private Product product;

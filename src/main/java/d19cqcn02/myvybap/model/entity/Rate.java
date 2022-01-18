@@ -32,11 +32,4 @@ public class Rate {
     @Column(name = "point")
     private Long ratePoint;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(columnDefinition = "product_id")
-    private Product product;
-
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(columnDefinition = "user_id")
-    private User user;
 }

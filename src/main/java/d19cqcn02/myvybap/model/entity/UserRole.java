@@ -22,12 +22,4 @@ public class UserRole {
     @Column(name = "role_id")
     private Long userRoleId;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(columnDefinition = "user_id")
-    private User user;
-
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(columnDefinition = "role_id")
-    private Role role;
-
 }

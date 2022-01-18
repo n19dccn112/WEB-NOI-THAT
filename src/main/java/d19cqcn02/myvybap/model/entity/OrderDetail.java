@@ -28,11 +28,4 @@ public class OrderDetail {
     @OneToMany
     private List<Order> orders;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(columnDefinition = "product_id")
-    private Product product;
-
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(columnDefinition = "order_id")
-    private Order order;
 }
