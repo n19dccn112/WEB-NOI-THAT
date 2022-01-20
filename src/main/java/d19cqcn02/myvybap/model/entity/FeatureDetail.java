@@ -21,10 +21,13 @@ public class FeatureDetail {
     @Column(name = "id")
     private Long featureDetailId;
 
-    @OneToMany
-    private List<Product> products;
 
-    @OneToMany
-    private List<Feature> features;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(columnDefinition = "products_id")
+    private Product products;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(columnDefinition = "features_id")
+    private Feature features;
 
 }

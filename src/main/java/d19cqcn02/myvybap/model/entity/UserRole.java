@@ -22,4 +22,7 @@ public class UserRole {
     @Column(name = "role_id")
     private Long userRoleId;
 
+    @OneToOne
+    private UserRole userRole;
+
 }

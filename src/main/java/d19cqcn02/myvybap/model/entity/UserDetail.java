@@ -28,8 +28,7 @@ public class UserDetail {
     @Column(name = "last_name")
     private String userdetailLastName;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(columnDefinition = "id")
+    @OneToOne
     private User user;
 
 }
