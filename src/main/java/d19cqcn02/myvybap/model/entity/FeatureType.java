@@ -1,8 +1,18 @@
 package d19cqcn02.myvybap.model.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "feature_type")
 public class FeatureType {
     @Id
@@ -15,5 +25,8 @@ public class FeatureType {
 
     @Column(name = "unit")
     private String featureTypeUnit;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "featureType")
+    private List<Feature> features;
 
 }

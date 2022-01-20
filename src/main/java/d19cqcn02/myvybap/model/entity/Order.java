@@ -1,11 +1,20 @@
 package d19cqcn02.myvybap.model.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "orders")
 public class Order {
     @Id
@@ -29,5 +38,12 @@ public class Order {
 
     @Column(name = "phone")
     private String orderPhone;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "order")
+    private List<OrderDetail> orderDetails;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(columnDefinition = "user_id")
+    private User user;
 
 }
