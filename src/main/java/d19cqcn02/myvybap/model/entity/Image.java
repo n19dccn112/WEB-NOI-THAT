@@ -1,9 +1,18 @@
 package d19cqcn02.myvybap.model.entity;
 
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.*;
 
 @Entity
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "image")
 public class Image {
 
@@ -24,7 +33,8 @@ public class Image {
     @Column(name = "width")
     private Long imageWidth;
 
-    @Column(name = "product_id")
-    private Long imageProductId;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(columnDefinition = "product_id")
+    private Product product;
 
 }

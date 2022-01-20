@@ -4,10 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.metamodel.binding.FetchProfile;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
+
 //Lombok
 @Entity
 @Getter
@@ -40,12 +43,22 @@ public class Product {
     @DateTimeFormat(pattern = "dd-MM-yyyy hh:mm:ss")
     private Date productUpDate;
 
+    @Column(name = "remain")
+    private Long productRemain;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(columnDefinition = "category_id")//Tên cột join trong db
     private Category category;
 
-    @Column(name = "remain")
-    private Long productRemain;
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "product")
+    private List <Image> images;
 
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "product")
+    private List<OrderDetail> orderDetails;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "product")
+    private List<FeatureDetail> featureDetails;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "product")
+    private List<Rate> rates;
 }
