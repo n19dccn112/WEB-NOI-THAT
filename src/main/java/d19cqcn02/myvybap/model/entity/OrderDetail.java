@@ -22,10 +22,10 @@ public class OrderDetail {
     @Column(name = "id")
     private Long orderDetailId;
 
-    @OneToMany
-    private List<Product> products;
+    @OneToOne
+    private Product products;
 
-    @OneToMany
-    private List<Order> orders;
+    @OneToOne
+    private Order orders;
 
 }

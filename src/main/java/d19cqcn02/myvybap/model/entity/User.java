@@ -35,8 +35,8 @@ public class User {
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
     private List<Order> orders;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
-    private List<UserDetail> userDetails;
+    @OneToOne
+    private UserDetail userDetails;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
     private List<UserRole> userRoles;

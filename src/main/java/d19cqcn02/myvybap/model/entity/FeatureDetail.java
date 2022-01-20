@@ -21,10 +21,12 @@ public class FeatureDetail {
     @Column(name = "id")
     private Long featureDetailId;
 
-    @OneToMany
-    private List<Product> products;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(columnDefinition = "product_id")//Tên cột join trong db
+    private Product products;
 
-    @OneToMany
-    private List<Feature> features;
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(columnDefinition = "feature_id")
+    private Feature features;
 
 }
