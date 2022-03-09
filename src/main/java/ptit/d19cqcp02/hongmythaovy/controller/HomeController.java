@@ -1,16 +1,29 @@
 package ptit.d19cqcp02.hongmythaovy.controller;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import ptit.d19cqcp02.hongmythaovy.model.entity.Category;
+import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
+import ptit.d19cqcp02.hongmythaovy.service.CategoryService;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 @Controller
 @RequestMapping("")
 public class HomeController {
-
-    @RequestMapping("")
-    public String index()
+    @Autowired
+    CategoryService categoryService;
+    @GetMapping("")
+    public String index(HttpServletRequest request, HttpServletResponse response, ModelMap model)
     {
+        List<Category> categories = categoryService.findAll();
+        request.setAttribute("cates",categories);
         return "index";
     }
 

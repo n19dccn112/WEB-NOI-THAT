@@ -5,7 +5,10 @@
   Time: 3:32 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=utf-8"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <html class="no-js" lang="zxx">
 
 
@@ -422,10 +425,11 @@
 
                 <div class="tab-product-navigation mb-50">
                     <div class="nav nav-tabs justify-content-center" id="nav-tab2" role="tablist">
+
                         <a class="nav-item nav-link active" id="product-tab-1" data-toggle="tab" href="#product-series-1"
-                           role="tab" aria-selected="true">New</a>
+                           role="tab" aria-selected="true">${cates[0].categoryName}</a>
                         <a class="nav-item nav-link" id="product-tab-2" data-toggle="tab" href="#product-series-2" role="tab"
-                           aria-selected="false">Popular</a>
+                           aria-selected="false">${cates[1].categoryName}</a>
                         <a class="nav-item nav-link" id="product-tab-3" data-toggle="tab" href="#product-series-3" role="tab"
                            aria-selected="false">Sale</a>
                     </div>
