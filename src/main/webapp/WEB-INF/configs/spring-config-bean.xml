@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<context:component-scan base-package="ptit.d19cqcp02.hongmythaovy.*"/>
+
+<!--	<bean name="typeLogin" class="d17cqcp02.n17dccn155.models.TypeLogin">-->
+<!--	<constructor-arg value="phone"></constructor-arg>-->
+<!--	</bean>-->
+<!--	<bean name="mailer" class="d17cqcp02.n17dccn155.services.MailService">-->
+<!--		<constructor-arg value="luviniavn@gmail.com"></constructor-arg>-->
+<!--	</bean>-->
+</beans>
