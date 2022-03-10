@@ -1,119 +1,121 @@
 package ptit.d19cqcp02.hongmythaovy.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("")
 public class ElementController {
-    @RequestMapping("element-bestselling-products")
+    @GetMapping("")
     public String elementBestsellingProducts()
     {
         return "element-bestselling-products";
     }
 
-    @RequestMapping("element-blog-posts")
+    @GetMapping("")
     public String elementBlogPosts()
     {
         return "element-blog-posts";
     }
 
-    @RequestMapping("element-button")
+    @GetMapping("")
     public String elementButton() { return "element-button"; }
 
-    @RequestMapping("element-countdown-timer")
+    @GetMapping("")
     public String elementCountdownTimer()
     {
         return "element-countdown-timer";
     }
 
-    @RequestMapping("element-faq")
+    @GetMapping("")
     public String elementFaq()
     {
         return "element-faq";
     }
 
-    @RequestMapping("element-featured-products")
+    @GetMapping("")
     public String elementFeaturedProducts()
     {
         return "element-featured-products";
     }
 
-    @RequestMapping("element-google-maps")
+    @GetMapping("")
     public String elementGoogleMaps()
     {
         return "element-google-maps";
     }
 
-    @RequestMapping("element-icon-box")
+    @GetMapping("")
     public String elementIconBox()
     {
         return "element-icon-box";
     }
 
-    @RequestMapping("element-instagram")
+    @GetMapping("")
     public String elementInstagram()
     {
         return "element-instagram";
     }
 
-    @RequestMapping("element-mailchimp-form")
+    @GetMapping("")
     public String elementMailchimpForm()
     {
         return "element-mailchimp-form";
     }
 
-    @RequestMapping("element-product-sliders")
+    @GetMapping("")
     public String elementProductSliders()
     {
         return "element-product-sliders";
     }
 
-    @RequestMapping("element-product-attributes")
+    @GetMapping("")
     public String elementProductAttributes()
     {
         return "element-product-attributes";
     }
 
-    @RequestMapping("element-product-categories")
+    @GetMapping("")
     public String elementProductCategories()
     {
         return "element-product-categories";
     }
 
-    @RequestMapping("element-product-tabs")
+    @GetMapping("")
     public String elementProductTabs()
     {
         return "element-product-tabs";
     }
 
-    @RequestMapping("element-product-widget")
+    @GetMapping("")
     public String elementProductWidget() { return "element-product-widget"; }
 
-    @RequestMapping("element-recent-products")
+    @GetMapping("")
     public String elementRecentProducts()
     {
         return "element-recent-products";
     }
 
-    @RequestMapping("element-sale-products")
+    @GetMapping("")
     public String elementSaleProducts()
     {
         return "element-sale-products";
     }
 
-    @RequestMapping("element-team-member")
+    @GetMapping("")
     public String elementTeamMember()
     {
         return "element-team-member";
     }
 
-    @RequestMapping("element-testimonials")
+    @GetMapping("")
     public String elementTestimonials()
     {
         return "element-testimonials";
     }
 
-    @RequestMapping("element-top-rated-products")
+    @GetMapping("")
     public String elementTopRatedProducts()
     {
         return "element-top-rated-products";

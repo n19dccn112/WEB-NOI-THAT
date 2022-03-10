@@ -27,78 +27,78 @@ public class HomeController {
         return "index";
     }
 
-    @RequestMapping("index-trending")
+    @GetMapping("")
     public String indexTrending() { return "index-trending"; }
 
-    @RequestMapping("index-collection")
+    @GetMapping("")
     public String indexCollection() {return "index-collection";}
 
-    @RequestMapping("index-special")
+    @GetMapping("")
     public String indexSpecial() {return "index-special";}
 
-    @RequestMapping("index-concept")
+    @GetMapping("")
     public String indexConcept() {return "index-concept";}
 
-    @RequestMapping("index-smart")
+    @GetMapping("")
     public String indexSmart() {return "index-smart";}
 
-    @RequestMapping("index-furniture")
+    @GetMapping("")
     public String indexFurniture() {return "index-furniture";}
 
-    @RequestMapping("index-essentials")
+    @GetMapping("")
     public String indexEssentials() {return "index-essentials";}
 
-    @RequestMapping ("index-lookbook")
+    @GetMapping("")
     public String indexLookbook() {return "index-lookbook";}
 
-    @RequestMapping("index-wearables")
+    @GetMapping("")
     public String indexWearanles() {return "index-wearables";}
 
-    @RequestMapping("index-accessories")
+    @GetMapping("")
     public String indexAccessories() {return "index-accessories";}
 
-    @RequestMapping("index-shoppable")
+    @GetMapping("")
     public String indexShoppable() {return "index-shoppable";}
 
-    @RequestMapping("index-fashion")
+    @GetMapping("")
     public String indexFashion() {return "index-fashion";}
 
-    @RequestMapping("index-perfumes")
+    @GetMapping("")
     public String indexPerfumes() {return "index-perfumes";}
 
-    @RequestMapping("index-cosmetics")
+    @GetMapping("")
     public String indexCosmetics() {return "index-cosmetics";}
 
-    @RequestMapping("index-decor")
+    @GetMapping("")
     public String indexDecor() {return "index-decor";}
 
-    @RequestMapping("index-creative")
+    @GetMapping("")
     public String indexCreative() {return "index-creative";}
 
-    @RequestMapping("index-2")
+    @GetMapping("")
     public String index2() {return "index-2";}
 
-    @RequestMapping("about-us")
+    @GetMapping("")
     public String aboutUs(){return "about-us";}
 
-    @RequestMapping("about-us-2")
+    @GetMapping("")
     public String aboutUs2(){return "about-us-2";}
 
-    @RequestMapping("contact-us")
+    @GetMapping("")
     public String contactUs(){return "contact-us";}
 
-    @RequestMapping("faq")
+    @GetMapping("")
     public String faq(){return "faq";}
 
-    @RequestMapping("coming-soon")
+    @GetMapping("")
     public String comingSoon(){return "coming-soon";}
 
-    @RequestMapping("404")
+    @GetMapping("")
     public String index404(){return "404";}
 
-    @RequestMapping("my-account")
+    @GetMapping("")
     public String myAccount(){return "my-account";}
 
-    @RequestMapping("compare")
+    @GetMapping("")
     public String compare(){return "compare";}
 }

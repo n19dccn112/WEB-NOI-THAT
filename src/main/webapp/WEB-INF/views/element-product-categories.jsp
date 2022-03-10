@@ -5,7 +5,10 @@
   Time: 4:34 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=utf-8"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 
 <html class="no-js" lang="zxx">
 
@@ -1341,10 +1344,4 @@
 <script src="assets/js/plugins.js"></script>
 
 <!-- Main JS -->
-<script src="assets/js/main.js"></script>
-
-</body>
-
-
-<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/element-product-categories.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:07:56 GMT -->
-</html>
+<script src="assets/js/main.js"></sc
