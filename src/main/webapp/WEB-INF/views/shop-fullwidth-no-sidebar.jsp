@@ -5,13 +5,18 @@
   Time: 4:29 CH
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
+<%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <html class="no-js" lang="zxx">
 
 
 <!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/shop-fullwidth-no-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:07:14 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<jsp:include page="include/head.jsp"></jsp:include>
+<jsp:include page="include/head.jsp"/>
 
 <body>
 
@@ -60,7 +65,7 @@
 
         <!--=======  header bottom navigation  =======-->
 
-        <jsp:include page="include/menu.jsp"></jsp:include>
+        <jsp:include page="include/menu.jsp"/>
 
         <!--=======  End of header bottom navigation  =======-->
 
@@ -70,7 +75,7 @@
 
           <!--=======  header right icons  =======-->
 
-          <jsp:include page="include/header-right-icons.jsp"></jsp:include>
+          <jsp:include page="include/header-right-icons.jsp"/>
             <!--=======  single-icon  =======-->
 
             <div class="single-icon search">
@@ -329,7 +334,7 @@
 
         <!--=======  breadcrumb list  =======-->
 
-        <jsp:include page="include/menu2.jsp"></jsp:include>
+        <jsp:include page="include/menu2.jsp"/>
 
         <!--=======  End of breadcrumb list  =======-->
 
@@ -2626,7 +2631,7 @@
 =            footer area         =
 =============================================-->
 
-  <jsp:include page="include/foot.jsp"></jsp:include>
+  <jsp:include page="include/foot.jsp"/>
 
 <!--=====  End of footer area  ======-->
 

@@ -5,7 +5,12 @@
   Time: 3:38 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
+<%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <div class="header-bottom-navigation">
     <div class="site-main-nav d-none d-lg-block">
         <nav class="site-nav center-menu">
@@ -15,27 +20,28 @@
                         <li><a href="javascript:void(0)" class="mega-column-title">Home Group</a>
                             <ul class="mega-sub-menu">
                                 <li><a href="index-trending">Trending</a><img src="assets/images/home-preview/01.jpg"
-                                                                                   class="img-fluid" alt=""></li>
+                                                                              class="img-fluid" alt=""></li>
                                 <li><a href="index-collection">My collection</a><img
                                         src="assets/images/home-preview/02.jpg" class="img-fluid" alt=""></li>
                                 <li><a href="index-special">Special</a><img src="assets/images/home-preview/03.jpg"
-                                                                                 class="img-fluid" alt=""></li>
+                                                                            class="img-fluid" alt=""></li>
                                 <li><a href="index-concept">concept</a><img src="assets/images/home-preview/04.jpg"
-                                                                                 class="img-fluid" alt=""></li>
+                                                                            class="img-fluid" alt=""></li>
                                 <li><a href="index-smart">smart design</a><img src="assets/images/home-preview/05.jpg"
-                                                                                    class="img-fluid" alt=""></li>
+                                                                               class="img-fluid" alt=""></li>
                             </ul>
                         </li>
                         <li><a href="javascript:void(0)" class="mega-column-title">Home Group</a>
                             <ul class="mega-sub-menu">
                                 <li><a href="index-furniture">Furniture </a><img src="assets/images/home-preview/06.jpg"
-                                                                                      class="img-fluid" alt=""></li>
-                                <li><a href="index-essentials">Essentials</a><img src="assets/images/home-preview/07.jpg"
-                                                                                       class="img-fluid" alt=""></li>
+                                                                                 class="img-fluid" alt=""></li>
+                                <li><a href="index-essentials">Essentials</a><img
+                                        src="assets/images/home-preview/07.jpg"
+                                        class="img-fluid" alt=""></li>
                                 <li><a href="index-lookbook">Lookbook</a><img src="assets/images/home-preview/08.jpg"
-                                                                                   class="img-fluid" alt=""></li>
+                                                                              class="img-fluid" alt=""></li>
                                 <li><a href="index-wearables">Wearables</a><img src="assets/images/home-preview/09.jpg"
-                                                                                     class="img-fluid" alt=""></li>
+                                                                                class="img-fluid" alt=""></li>
                                 <li><a href="index-accessories">Accessories</a><img
                                         src="assets/images/home-preview/10.jpg" class="img-fluid" alt=""></li>
                             </ul>
@@ -43,21 +49,21 @@
                         <li><a href="javascript:void(0)" class="mega-column-title">Home Group</a>
                             <ul class="mega-sub-menu">
                                 <li><a href="index-shoppable">Shoppable</a><img src="assets/images/home-preview/11.jpg"
-                                                                                     class="img-fluid" alt=""></li>
+                                                                                class="img-fluid" alt=""></li>
                                 <li><a href="index-fashion">Fashion</a><img src="assets/images/home-preview/13.jpg"
-                                                                                 class="img-fluid" alt=""></li>
+                                                                            class="img-fluid" alt=""></li>
                                 <li><a href="index-perfumes">Perfumes</a><img src="assets/images/home-preview/14.jpg"
-                                                                                   class="img-fluid" alt=""></li>
+                                                                              class="img-fluid" alt=""></li>
                                 <li><a href="index-cosmetics">Cosmetics</a><img src="assets/images/home-preview/15.jpg"
-                                                                                     class="img-fluid" alt=""></li>
+                                                                                class="img-fluid" alt=""></li>
                                 <li><a href="index-decor">Home Decor</a><img src="assets/images/home-preview/16.png"
-                                                                                  class="img-fluid" alt=""></li>
+                                                                             class="img-fluid" alt=""></li>
                             </ul>
                         </li>
                         <li><a href="javascript:void(0)" class="mega-column-title">Home Group</a>
                             <ul class="mega-sub-menu">
                                 <li><a href="index-creative">Creative</a><img src="assets/images/home-preview/17.png"
-                                                                                   class="img-fluid" alt=""></li>
+                                                                              class="img-fluid" alt=""></li>
                             </ul>
                         </li>
                         <li>
@@ -68,16 +74,21 @@
                     </ul>
                 </li>
                 <li class="menu-item-has-children"><a href="shop-left-sidebar">Shop</a>
+                    <c:set var="numberItem" value="${cates.size()/3}"/>
+
                     <ul class="sub-menu mega-menu mega-menu-column-4">
                         <li><a href="javascript:void(0)" class="mega-column-title">Shop Pages</a>
                             <ul class="mega-sub-menu">
-                                <li><a href="shop-no-sidebar">Shop No Sidebar</a></li>
-                                <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
-                                <li><a href="shop-right-sidebar">Shop Right Sidebar</a></li>
-                                <li><a href="shop-fullwidth-no-space">Shop Fullwidth No Space</a></li>
-                                <li><a href="shop-fullwidth-no-sidebar">Shop Fullwidth No Sidebar</a></li>
-                                <li><a href="shop-fullwidth-left-sidebar">Shop Fullwidth Left Sidebar</a></li>
-                                <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>
+                                <c:forEach items="${cates}" var="category" begin="0" end="${numberItem}">
+                                    <li><a href="shop-no-sidebar">${category.categoryName}</a></li>
+                                </c:forEach>
+
+                                <%--                                <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>--%>
+                                <%--                                <li><a href="shop-right-sidebar">Shop Right Sidebar</a></li>--%>
+                                <%--                                <li><a href="shop-fullwidth-no-space">Shop Fullwidth No Space</a></li>--%>
+                                <%--                                <li><a href="shop-fullwidth-no-sidebar">Shop Fullwidth No Sidebar</a></li>--%>
+                                <%--                                <li><a href="shop-fullwidth-left-sidebar">Shop Fullwidth Left Sidebar</a></li>--%>
+                                <%--                                <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>--%>
                             </ul>
                         </li>
                         <li><a href="javascript:void(0)" class="mega-column-title">Shop Pages</a>

@@ -11,7 +11,7 @@
 
 <!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/shop-no-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:07:14 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<jsp:include page="include/head.jsp"></jsp:include>
+<jsp:include page="include/head.jsp"/>
 
 <body>
 
@@ -60,7 +60,7 @@
 
                 <!--=======  header bottom navigation  =======-->
 
-                <jsp:include page="include/menu.jsp"></jsp:include>
+                <jsp:include page="include/menu.jsp"/>
 
                 <!--=======  End of header bottom navigation  =======-->
 
@@ -70,7 +70,7 @@
 
                     <!--=======  header right icons  =======-->
 
-                    <jsp:include page="include/header-right-icons.jsp"></jsp:include>
+                    <jsp:include page="include/header-right-icons.jsp"/>
                     <!--=======  End of header right icons  =======-->
 
                 </div>
@@ -291,7 +291,7 @@
 
                 <!--=======  breadcrumb list  =======-->
 
-                <jsp:include page="include/menu2.jsp"></jsp:include>
+                <jsp:include page="include/menu2.jsp"/>
 
                 <!--=======  End of breadcrumb list  =======-->
 
@@ -2588,7 +2588,7 @@
 =            footer area         =
 =============================================-->
 
-    <jsp:include page="include/foot.jsp"></jsp:include>
+    <jsp:include page="include/foot.jsp"/>
 
 <!--=====  End of footer area  ======-->
 

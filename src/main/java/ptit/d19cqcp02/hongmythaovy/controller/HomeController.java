@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Category;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
 import ptit.d19cqcp02.hongmythaovy.service.CategoryService;
+import ptit.d19cqcp02.hongmythaovy.service.ProductService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -19,11 +20,16 @@ import java.util.List;
 public class HomeController {
     @Autowired
     CategoryService categoryService;
+
+    @Autowired
+    ProductService productService;
     @GetMapping("")
     public String index(HttpServletRequest request, HttpServletResponse response, ModelMap model)
     {
         List<Category> categories = categoryService.findAll();
+        List<Product> products = productService.findAll();
         request.setAttribute("cates",categories);
+        request.setAttribute("products",products);
         return "index";
     }
 
