@@ -30,6 +30,7 @@ public class HomeController {
         List<Product> products = productService.findAll();
         request.setAttribute("cates",categories);
         request.setAttribute("products",products);
+        model.addAttribute("product_order",products.get(0));
         return "index";
     }
 

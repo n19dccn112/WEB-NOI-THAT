@@ -24,7 +24,11 @@ public class ProductService {
 
     }
 
-    public Product findById(Long productId) {return productRepository.findById(productId).get();}
+    public Product findById(Long productId) {
+        Product product = productRepository.findById(productId).get();
+        product.setImages(imageRepository.findAllByProductProductId(product.getProductId()));
+        return product;
+    }
 
     public void save(Product entity) {productRepository.save(entity);}
 

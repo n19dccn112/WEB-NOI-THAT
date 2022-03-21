@@ -79,17 +79,9 @@
                     <ul class="sub-menu mega-menu mega-menu-column-4">
                         <li><a href="javascript:void(0)" class="mega-column-title">Category</a>
                             <ul class="mega-sub-menu">
-
                                 <c:forEach items="${cates}" var="category" begin="0" end="${numberItem}">
                                     <li><a href="shop-no-sidebar">${category.categoryName}</a></li>
                                 </c:forEach>
-
-                                <%--                               <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>--%>
-                                <%--                                <li><a href="shop-right-sidebar">Shop Right Sidebar</a></li>--%>
-                                <%--                                <li><a href="shop-fullwidth-no-space">Shop Fullwidth No Space</a></li>--%>
-                                <%--                                <li><a href="shop-fullwidth-no-sidebar">Shop Fullwidth No Sidebar</a></li>--%>
-                                <%--                                <li><a href="shop-fullwidth-left-sidebar">Shop Fullwidth Left Sidebar</a></li>--%>
-                                <%--                                <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>--%>
                             </ul>
                         </li>
                         <li><a href="javascript:void(0)" class="mega-column-title">Category</a>
@@ -101,30 +93,15 @@
                                     <li><a href="shop-product-basic">${category.categoryName}</a></li>
 
                                 </c:forEach>
-                                <%--                                <li><a href="shop-product-basic">Basic </a></li>--%>
-                                <%--                                <li><a href="shop-product-fullwidth">Fullwidth</a></li>--%>
-                                <%--                                <li><a href="shop-product-sticky-details">Sticky details</a></li>--%>
-                                <%--                                <li><a href="shop-product-with-sidebar">With Sidebar</a></li>--%>
-                                <%--                                <li><a href="shop-product-extra-content">Extra Content</a></li>--%>
-                                <%--                                <li><a href="shop-product-variation-image">Variation Image</a></li>--%>
-                                <%--                                <li><a href="shop-product-bought-together">Bought Together</a></li>--%>
+
                             </ul>
                         </li>
                         <li><a href="javascript:void(0)" class="mega-column-title">Category</a>
                             <c:set var="numberItem" value="${cates.size()/3+6}"/>
                             <ul class="mega-sub-menu">
                                 <c:forEach items="${cates}" var="category" begin="6" end="${numberItem}">
-
                                     <li><a href="shop-product-with-background">${category.categoryName}</a></li>
-
                                 </c:forEach>
-                                <%--                                <li><a href="shop-product-with-background">Product with background</a></li>--%>
-                                <%--                                <li><a href="shop-cart">Shopping Cart</a></li>--%>
-                                <%--                                <li><a href="shop-checkout">Checkout</a></li>--%>
-                                <%--                                <li><a href="shop-order-tracking">Order Tracking</a></li>--%>
-                                <%--                                <li><a href="shop-wishlist">Wishlist</a></li>--%>
-                                <%--                                <li><a href="shop-customer-login">Customer Login</a></li>--%>
-                                <%--                                <li><a href="shop-by-brand">Shop by Brand</a></li>--%>
                             </ul>
                         </li>
                         <li>

@@ -456,7 +456,7 @@
                                     <!--=======  single product image  =======-->
 
                                     <div class="single-product__image">
-                                        <a class="image-wrap" href="shop-product-basic">
+                                        <a class="image-wrap" href="product/${products[0].productId}">
                                             <img src="${products[0].images[0].imageUrl}"
                                                  class="img-fluid" alt="">
                                             <img src="${products[0].images[1].imageUrl}"

@@ -352,7 +352,7 @@
                                     <!--=======  single image  =======-->
 
                                     <div class="single-image">
-                                        <img src="assets/images/shop-product/soccer-1.png" class="img-fluid" alt="">
+                                        <img src="${product.images[0].imageUrl}" class="img-fluid" alt=""  width="810px" height="1080px">
                                     </div>
 
                                     <!--=======  End of single image  =======-->
@@ -360,7 +360,7 @@
                                     <!--=======  single image  =======-->
 
                                     <div class="single-image">
-                                        <img src="assets/images/shop-product/soccer-2.png" class="img-fluid" alt="">
+                                        <img src="${product.images[1].imageUrl}" class="img-fluid" alt="" width="810px" height="1080px">
                                     </div>
 
                                     <!--=======  End of single image  =======-->
@@ -512,7 +512,7 @@
                                 <!--=======  shop product title  =======-->
 
                                 <div class="shop-product__title mb-15">
-                                    <h2>High waist trousers</h2>
+                                    <h2>${product.productName}</h2>
                                 </div>
 
                                 <!--=======  End of shop product title  =======-->
