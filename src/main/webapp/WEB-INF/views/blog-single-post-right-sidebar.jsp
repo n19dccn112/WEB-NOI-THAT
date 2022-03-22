@@ -5,9 +5,9 @@
   Time: 8:21 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=utf-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -16,7 +16,8 @@
 
 
 <!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/blog-single-post-right-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:08:34 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <jsp:include page="include/head.jsp"/>
 
 <body>
@@ -77,247 +78,247 @@
                     <!--=======  header right icons  =======-->
 
                     <jsp:include page="include/header-right-icons.jsp"/>
-                        <!--=======  single-icon  =======-->
+                    <!--=======  single-icon  =======-->
 
-                        <div class="single-icon search">
-                            <a href="javascript:void(0)" id="search-icon">
-                                <i class="ion-ios-search-strong"></i>
-                            </a>
-                        </div>
-
-                        <!--=======  End of single-icon  =======-->
-                        <!--=======  single-icon  =======-->
-
-                        <div class="single-icon user-login">
-                            <a href="shop-customer-login">
-                                <i class="ion-android-person"></i>
-                            </a>
-                        </div>
-
-                        <!--=======  End of single-icon  =======-->
-                        <!--=======  single-icon  =======-->
-
-                        <div class="single-icon wishlist">
-                            <a href="javascript:void(0)" id="offcanvas-wishlist-icon">
-                                <i class="ion-android-favorite-outline"></i>
-                                <span class="count">2</span>
-                            </a>
-                        </div>
-
-                        <!--=======  End of single-icon  =======-->
-                        <!--=======  single-icon  =======-->
-
-                        <div class="single-icon cart">
-                            <a href="javascript:void(0)" id="offcanvas-cart-icon">
-                                <i class="ion-ios-cart"></i>
-                                <span class="count">3</span>
-                            </a>
-                        </div>
-                        <!--=======  End of single-icon  =======-->
+                    <div class="single-icon search">
+                        <a href="javascript:void(0)" id="search-icon">
+                            <i class="ion-ios-search-strong"></i>
+                        </a>
                     </div>
-                    <!--=======  End of header right icons  =======-->
 
+                    <!--=======  End of single-icon  =======-->
+                    <!--=======  single-icon  =======-->
+
+                    <div class="single-icon user-login">
+                        <a href="shop-customer-login">
+                            <i class="ion-android-person"></i>
+                        </a>
+                    </div>
+
+                    <!--=======  End of single-icon  =======-->
+                    <!--=======  single-icon  =======-->
+
+                    <div class="single-icon wishlist">
+                        <a href="javascript:void(0)" id="offcanvas-wishlist-icon">
+                            <i class="ion-android-favorite-outline"></i>
+                            <span class="count">2</span>
+                        </a>
+                    </div>
+
+                    <!--=======  End of single-icon  =======-->
+                    <!--=======  single-icon  =======-->
+
+                    <div class="single-icon cart">
+                        <a href="javascript:void(0)" id="offcanvas-cart-icon">
+                            <i class="ion-ios-cart"></i>
+                            <span class="count">3</span>
+                        </a>
+                    </div>
+                    <!--=======  End of single-icon  =======-->
                 </div>
-
-                <!--=======  End of headeer right container  =======-->
-
+                <!--=======  End of header right icons  =======-->
 
             </div>
 
-            <!--=======  End of header bottom container  =======-->
-
-            <!-- Mobile Navigation Start Here -->
-
-            <div class="site-mobile-navigation d-block d-lg-none">
-                <div id="dl-menu" class="dl-menuwrapper site-mobile-nav">
-                    <!--Site Mobile Menu Toggle Start-->
-                    <button class="dl-trigger hamburger hamburger--spin">
-							<span class="hamburger-box">
-								<span class="hamburger-inner"></span>
-							</span>
-                    </button>
-                    <!--Site Mobile Menu Toggle End-->
-                    <ul class="dl-menu dl-menu-toggle">
-                        <li class=""><a href="#">Home</a>
-                            <ul class="dl-submenu">
-                                <li class=""> <a href="#">Home Group One</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="index-trending">Trending</a></li>
-                                        <li><a href="index-collection">My collection</a></li>
-                                        <li><a href="index-special">Special</a></li>
-                                        <li><a href="index-concept">concept</a></li>
-                                        <li><a href="index-smart">smart design</a></li>
-                                    </ul>
-                                </li>
-                                <li> <a href="#">Home Group Two</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="index-furniture">Furniture </a></li>
-                                        <li><a href="index-essentials">Essentials</a></li>
-                                        <li><a href="index-lookbook">Lookbook</a></li>
-                                        <li><a href="index-wearables">Wearables</a></li>
-                                        <li><a href="index-accessories">Accessories</a></li>
-                                    </ul>
-                                </li>
-                                <li> <a href="#">Home Group three</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="index-shoppable">Shoppable</a></li>
-
-                                        <li><a href="index-fashion">Fashion</a></li>
-                                        <li><a href="index-perfumes">Perfumes</a></li>
-                                        <li><a href="index-cosmetics">Cosmetics</a></li>
-                                    </ul>
-                                </li>
-                                <li> <a href="#">Home Group four</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="index-decor">Home Decor</a></li>
-                                        <li><a href="index-creative">Creative</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li><a href="#">Shop</a>
-                            <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop Pages</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="shop-no-sidebar">Shop No Sidebar</a></li>
-                                        <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
-                                        <li><a href="shop-right-sidebar">Shop Right Sidebar</a></li>
-                                        <li><a href="shop-fullwidth-no-space">Shop Fullwidth No Space</a></li>
-                                        <li><a href="shop-fullwidth-no-sidebar">Shop Fullwidth No Sidebar</a></li>
-                                        <li><a href="shop-fullwidth-left-sidebar">Shop Fullwidth Left Sidebar</a></li>
-                                        <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>
-                                    </ul>
-                                </li>
-                                <li class=""> <a href="#">Product Details Pages</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="shop-product-basic">Basic </a></li>
-                                        <li><a href="shop-product-fullwidth">Fullwidth</a></li>
-                                        <li><a href="shop-product-sticky-details">Sticky details</a></li>
-                                        <li><a href="shop-product-with-sidebar">With Sidebar</a></li>
-                                        <li><a href="shop-product-extra-content">Extra Content</a></li>
-                                        <li><a href="shop-product-variation-image">Variation Image</a></li>
-                                        <li><a href="shop-product-bought-together">Bought Together</a></li>
-
-
-                                    </ul>
-                                </li>
-                                <li class=""> <a href="#">Other Shop Pages</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="shop-product-with-background">Product with background</a></li>
-                                        <li><a href="shop-cart">Shopping Cart</a></li>
-                                        <li><a href="shop-checkout">Checkout</a></li>
-                                        <li><a href="shop-order-tracking">Order Tracking</a></li>
-                                        <li><a href="shop-wishlist">Wishlist</a></li>
-                                        <li><a href="shop-customer-login">Customer Login</a></li>
-                                        <li><a href="shop-by-brand">Shop by Brand</a></li>
-
-                                    </ul>
-                                </li>
-
-
-                            </ul>
-                        </li>
-                        <li><a href="#">Elements</a>
-                            <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop / Products</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="element-product-categories">Product Categories</a></li>
-                                        <li><a href="element-product-sliders">Product Sliders</a></li>
-                                        <li><a href="element-product-tabs">Product Tabs</a></li>
-                                        <li><a href="element-product-widget">Product Widget</a></li>
-                                        <li><a href="element-recent-products">Recent Products</a></li>
-                                    </ul>
-                                </li>
-                                <li class=""> <a href="#">Shop / Products</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="element-sale-products">Sale Products </a></li>
-                                        <li><a href="element-featured-products">Featured products</a></li>
-                                        <li><a href="element-top-rated-products">Top Rated products</a></li>
-                                        <li><a href="element-bestselling-products">Best Selling products</a></li>
-                                        <li><a href="element-product-attributes">Product Attributes</a></li>
-                                    </ul>
-                                </li>
-                                <li class=""> <a href="#">Theming</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="element-blog-posts">Blog Posts</a></li>
-                                        <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
-                                        <li><a href="element-icon-box">Icon Box</a></li>
-                                        <li><a href="element-team-member">Team Member</a></li>
-                                        <li><a href="element-instagram">Instagram</a></li>
-
-                                    </ul>
-                                </li>
-
-
-                            </ul>
-                        </li>
-                        <li><a href="#">Pages</a>
-                            <ul class="dl-submenu">
-                                <li><a href="about-us">About Us</a></li>
-                                <li><a href="about-us-2">About Us 2</a></li>
-                                <li><a href="contact-us">Contact Us</a></li>
-                                <li><a href="faq">F.A.Q</a></li>
-                                <li><a href="coming-soon">Coming Soon</a></li>
-                                <li><a href="404">404</a></li>
-                                <li><a href="my-account">My account</a></li>
-                                <li><a href="compare">Compare</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Blog</a>
-                            <ul class="dl-submenu">
-                                <li><a href="#">Standard Layout</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="blog-standard-right-sidebar">Right Sidebar</a></li>
-                                        <li><a href="blog-standard-left-sidebar">Left Sidebar</a></li>
-                                        <li><a href="blog-standard-full-width">Full Width</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Grid Layout</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="blog-grid-right-sidebar">Right Sidebar</a></li>
-                                        <li><a href="blog-grid-left-sidebar">Left Sidebar</a></li>
-                                        <li><a href="blog-grid-full-width">Full Width</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">List Layout</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="blog-list-right-sidebar">Right Sidebar</a></li>
-                                        <li><a href="blog-list-left-sidebar">Left Sidebar</a></li>
-                                        <li><a href="blog-list-full-width">Full Width</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Masonry Layout</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="blog-masonry-right-sidebar">Right Sidebar</a></li>
-                                        <li><a href="blog-masonry-left-sidebar">Left Sidebar</a></li>
-                                        <li><a href="blog-masonry-full-width">Full Width</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">1st Full Then Grid</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="blog-full-then-grid-right-sidebar">Right Sidebar</a></li>
-                                        <li><a href="blog-full-then-grid-left-sidebar">Left Sidebar</a></li>
-                                        <li><a href="blog-full-then-grid-full-width">Full Width</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Single Post Layout</a>
-                                    <ul class="dl-submenu">
-                                        <li><a href="blog-single-post-right-sidebar">Right Sidebar</a></li>
-                                        <li><a href="blog-single-post-left-sidebar">Left Sidebar</a></li>
-                                        <li><a href="blog-single-post-full-width">Full Width</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Mobile Navigation End Here -->
+            <!--=======  End of headeer right container  =======-->
 
 
         </div>
+
+        <!--=======  End of header bottom container  =======-->
+
+        <!-- Mobile Navigation Start Here -->
+
+        <div class="site-mobile-navigation d-block d-lg-none">
+            <div id="dl-menu" class="dl-menuwrapper site-mobile-nav">
+                <!--Site Mobile Menu Toggle Start-->
+                <button class="dl-trigger hamburger hamburger--spin">
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+                </button>
+                <!--Site Mobile Menu Toggle End-->
+                <ul class="dl-menu dl-menu-toggle">
+                    <li class=""><a href="#">Home</a>
+                        <ul class="dl-submenu">
+                            <li class=""><a href="#">Home Group One</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="index-trending">Trending</a></li>
+                                    <li><a href="index-collection">My collection</a></li>
+                                    <li><a href="index-special">Special</a></li>
+                                    <li><a href="index-concept">concept</a></li>
+                                    <li><a href="index-smart">smart design</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Home Group Two</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="index-furniture">Furniture </a></li>
+                                    <li><a href="index-essentials">Essentials</a></li>
+                                    <li><a href="index-lookbook">Lookbook</a></li>
+                                    <li><a href="index-wearables">Wearables</a></li>
+                                    <li><a href="index-accessories">Accessories</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Home Group three</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="index-shoppable">Shoppable</a></li>
+
+                                    <li><a href="index-fashion">Fashion</a></li>
+                                    <li><a href="index-perfumes">Perfumes</a></li>
+                                    <li><a href="index-cosmetics">Cosmetics</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Home Group four</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="index-decor">Home Decor</a></li>
+                                    <li><a href="index-creative">Creative</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Shop</a>
+                        <ul class="dl-submenu">
+                            <li class=""><a href="#">Shop Pages</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="shop-no-sidebar">Shop No Sidebar</a></li>
+                                    <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
+                                    <li><a href="shop-right-sidebar">Shop Right Sidebar</a></li>
+                                    <li><a href="shop-fullwidth-no-space">Shop Fullwidth No Space</a></li>
+                                    <li><a href="shop-fullwidth-no-sidebar">Shop Fullwidth No Sidebar</a></li>
+                                    <li><a href="shop-fullwidth-left-sidebar">Shop Fullwidth Left Sidebar</a></li>
+                                    <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="#">Product Details Pages</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="shop-product-basic">Basic </a></li>
+                                    <li><a href="shop-product-fullwidth">Fullwidth</a></li>
+                                    <li><a href="shop-product-sticky-details">Sticky details</a></li>
+                                    <li><a href="shop-product-with-sidebar">With Sidebar</a></li>
+                                    <li><a href="shop-product-extra-content">Extra Content</a></li>
+                                    <li><a href="shop-product-variation-image">Variation Image</a></li>
+                                    <li><a href="shop-product-bought-together">Bought Together</a></li>
+
+
+                                </ul>
+                            </li>
+                            <li class=""><a href="#">Other Shop Pages</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="shop-product-with-background">Product with background</a></li>
+                                    <li><a href="shop-cart">Shopping Cart</a></li>
+                                    <li><a href="shop-checkout">Checkout</a></li>
+                                    <li><a href="shop-order-tracking">Order Tracking</a></li>
+                                    <li><a href="shop-wishlist">Wishlist</a></li>
+                                    <li><a href="shop-customer-login">Customer Login</a></li>
+                                    <li><a href="shop-by-brand">Shop by Brand</a></li>
+
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Elements</a>
+                        <ul class="dl-submenu">
+                            <li class=""><a href="#">Shop / Products</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="element-product-categories">Product Categories</a></li>
+                                    <li><a href="element-product-sliders">Product Sliders</a></li>
+                                    <li><a href="element-product-tabs">Product Tabs</a></li>
+                                    <li><a href="element-product-widget">Product Widget</a></li>
+                                    <li><a href="element-recent-products">Recent Products</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="#">Shop / Products</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="element-sale-products">Sale Products </a></li>
+                                    <li><a href="element-featured-products">Featured products</a></li>
+                                    <li><a href="element-top-rated-products">Top Rated products</a></li>
+                                    <li><a href="element-bestselling-products">Best Selling products</a></li>
+                                    <li><a href="element-product-attributes">Product Attributes</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="#">Theming</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="element-blog-posts">Blog Posts</a></li>
+                                    <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
+                                    <li><a href="element-icon-box">Icon Box</a></li>
+                                    <li><a href="element-team-member">Team Member</a></li>
+                                    <li><a href="element-instagram">Instagram</a></li>
+
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Pages</a>
+                        <ul class="dl-submenu">
+                            <li><a href="about-us">About Us</a></li>
+                            <li><a href="about-us-2">About Us 2</a></li>
+                            <li><a href="contact-us">Contact Us</a></li>
+                            <li><a href="faq">F.A.Q</a></li>
+                            <li><a href="coming-soon">Coming Soon</a></li>
+                            <li><a href="404">404</a></li>
+                            <li><a href="my-account">My account</a></li>
+                            <li><a href="compare">Compare</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a>
+                        <ul class="dl-submenu">
+                            <li><a href="#">Standard Layout</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="blog-standard-right-sidebar">Right Sidebar</a></li>
+                                    <li><a href="blog-standard-left-sidebar">Left Sidebar</a></li>
+                                    <li><a href="blog-standard-full-width">Full Width</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Grid Layout</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="blog-grid-right-sidebar">Right Sidebar</a></li>
+                                    <li><a href="blog-grid-left-sidebar">Left Sidebar</a></li>
+                                    <li><a href="blog-grid-full-width">Full Width</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">List Layout</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="blog-list-right-sidebar">Right Sidebar</a></li>
+                                    <li><a href="blog-list-left-sidebar">Left Sidebar</a></li>
+                                    <li><a href="blog-list-full-width">Full Width</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Masonry Layout</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="blog-masonry-right-sidebar">Right Sidebar</a></li>
+                                    <li><a href="blog-masonry-left-sidebar">Left Sidebar</a></li>
+                                    <li><a href="blog-masonry-full-width">Full Width</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">1st Full Then Grid</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="blog-full-then-grid-right-sidebar">Right Sidebar</a></li>
+                                    <li><a href="blog-full-then-grid-left-sidebar">Left Sidebar</a></li>
+                                    <li><a href="blog-full-then-grid-full-width">Full Width</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Single Post Layout</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="blog-single-post-right-sidebar">Right Sidebar</a></li>
+                                    <li><a href="blog-single-post-left-sidebar">Left Sidebar</a></li>
+                                    <li><a href="blog-single-post-full-width">Full Width</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation End Here -->
+
+
+    </div>
     </div>
 
     <!--=======  End of header bottom  =======-->
@@ -405,7 +406,6 @@
                     </div>
 
                     <!--=======  End of single sidebar widget  =======-->
-
 
 
                     <!--=======  single sidebar widget  =======-->
@@ -523,7 +523,8 @@
                                     <a href="#">fashion</a>
                                 </div>
 
-                                <h2 class="post-title"><a href="blog-single-post-left-sidebar">Chic Fashion Phenomenon</a></h2>
+                                <h2 class="post-title"><a href="blog-single-post-left-sidebar">Chic Fashion
+                                    Phenomenon</a></h2>
 
                                 <!--=======  End of post category  =======-->
 
@@ -554,24 +555,36 @@
 
                                 <div class="single-blog-post-section">
                                     <h3 class="mb-30">Sequins</h3>
-                                    <p class="mb-30">To say sequins and sparkles will be a big deal next summer is an understatement. In
-                                        every fashion capital, glitter prevailed, starting with Tom Ford and Marc Jacobs right through to
-                                        Gucci (pictured here), Dior and Chanel. Style yours with a sweatshirt to give them daytime
+                                    <p class="mb-30">To say sequins and sparkles will be a big deal next summer is an
+                                        understatement. In
+                                        every fashion capital, glitter prevailed, starting with Tom Ford and Marc Jacobs
+                                        right through to
+                                        Gucci (pictured here), Dior and Chanel. Style yours with a sweatshirt to give
+                                        them daytime
                                         longevity.</p>
                                     <h3 class="mb-30">Pastels</h3>
-                                    <p class="mb-30">Whether lilac, pink, lemon or duck egg blue, expect to see an array of fashion’s
-                                        prettiest shades next season. But as Victoria Beckham (pictured) said “delicacy can be strong”;
-                                        saccharine these colours are not – consider tailoring in ice cream hues or wearing them in
+                                    <p class="mb-30">Whether lilac, pink, lemon or duck egg blue, expect to see an array
+                                        of fashion’s
+                                        prettiest shades next season. But as Victoria Beckham (pictured) said “delicacy
+                                        can be strong”;
+                                        saccharine these colours are not – consider tailoring in ice cream hues or
+                                        wearing them in
                                         unexpected ways like at Celine.</p>
                                     <h3 class="mb-30">Checks</h3>
-                                    <p class="mb-30">It looks as if heritage checks are going nowhere for the season ahead. Balenciaga’s
-                                        came via voluminous coats as seen here, while Victoria Beckham’s had a more traditional appeal.
-                                        Anyone looking for floaty feminine styles should turn to Sonia Rykiel where they were bright and
-                                        summer-ready. Burberry’s homage was perhaps the most overt – expect to see its check caps
+                                    <p class="mb-30">It looks as if heritage checks are going nowhere for the season
+                                        ahead. Balenciaga’s
+                                        came via voluminous coats as seen here, while Victoria Beckham’s had a more
+                                        traditional appeal.
+                                        Anyone looking for floaty feminine styles should turn to Sonia Rykiel where they
+                                        were bright and
+                                        summer-ready. Burberry’s homage was perhaps the most overt – expect to see its
+                                        check caps
                                         everywhere next season.</p>
                                     <h3 class="mb-30">Plastic</h3>
-                                    <p class="mb-30">Perfect for British summers, waterproof plastics were a predominant look for
-                                        spring/summer 2018. As seen at Chanel (pictured), Isabel, Marant, Burberry, Topshop, Calvin Klein
+                                    <p class="mb-30">Perfect for British summers, waterproof plastics were a predominant
+                                        look for
+                                        spring/summer 2018. As seen at Chanel (pictured), Isabel, Marant, Burberry,
+                                        Topshop, Calvin Klein
                                         and Fendi, plastic in varying shades will be everywhere in 12 months time.</p>
                                 </div>
 
@@ -634,7 +647,8 @@
                                 <!--=======  message  =======-->
 
                                 <p class="message">
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    mollit anim id
                                     est laboruLorem ipsum dolor sit amet datat non proident
                                 </p>
 
@@ -667,7 +681,8 @@
                                 <!--=======  message  =======-->
 
                                 <p class="message">
-                                    Thanks for always keeping your WordPress themes up to date. Your level of support and dedication is
+                                    Thanks for always keeping your WordPress themes up to date. Your level of support
+                                    and dedication is
                                     second to none.
                                 </p>
 
@@ -700,7 +715,8 @@
                                 <!--=======  message  =======-->
 
                                 <p class="message">
-                                    Thanks for always keeping your WordPress themes up to date. Your level of support and dedication is
+                                    Thanks for always keeping your WordPress themes up to date. Your level of support
+                                    and dedication is
                                     second to none.
                                 </p>
 
@@ -733,7 +749,8 @@
                                 <!--=======  message  =======-->
 
                                 <p class="message">
-                                    Thanks for always keeping your WordPress themes up to date. Your level of support and dedication is
+                                    Thanks for always keeping your WordPress themes up to date. Your level of support
+                                    and dedication is
                                     second to none.
                                 </p>
 
@@ -766,7 +783,8 @@
                                 <!--=======  message  =======-->
 
                                 <p class="message">
-                                    Thanks for always keeping your WordPress themes up to date. Your level of support and dedication is
+                                    Thanks for always keeping your WordPress themes up to date. Your level of support
+                                    and dedication is
                                     second to none.
                                 </p>
 
@@ -806,7 +824,8 @@
                                         <textarea cols="30" rows="10" placeholder="Message"></textarea>
                                     </div>
                                     <div class="col-lg-12 text-center">
-                                        <button type="submit" class="lezada-button lezada-button--medium">submit</button>
+                                        <button type="submit" class="lezada-button lezada-button--medium">submit
+                                        </button>
                                     </div>
                                 </div>
                             </form>
@@ -827,7 +846,7 @@
 =            footer area         =
 =============================================-->
 
-    <jsp:include page="include/foot.jsp"/>
+<jsp:include page="include/foot.jsp"/>
 
 <!--=====  End of footer area  ======-->
 
@@ -861,8 +880,10 @@
 
                 <div class="single-widget">
                     <h2 class="widget-title">About Us</h2>
-                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products over other
-                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion clothes.</p>
+                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
+                        over other
+                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion
+                        clothes.</p>
                 </div>
 
                 <!--=======  End of single widget  =======-->
@@ -889,7 +910,8 @@
                                data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
                                data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -938,7 +960,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -957,7 +980,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="main-price discounted">$300.00</span> <span class="discounted-price">$220.00</span></p>
+                            <p><span class="main-price discounted">$300.00</span> <span
+                                    class="discounted-price">$220.00</span></p>
 
                         </div>
                     </div>
@@ -976,7 +1000,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$100.00</span> <span class="discounted-price">$80.00</span></p>
+                            <p><span class="main-price discounted">$100.00</span> <span
+                                    class="discounted-price">$80.00</span></p>
 
                         </div>
                     </div>
@@ -995,7 +1020,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1014,7 +1040,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>

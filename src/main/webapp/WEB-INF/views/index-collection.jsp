@@ -5,9 +5,9 @@
   Time: 16:20
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=utf-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -16,7 +16,8 @@
 
 
 <!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/index-collection.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:04:41 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <jsp:include page="include/head.jsp"/>
 
 <body>
@@ -94,7 +95,7 @@
                     <ul class="dl-menu dl-menu-toggle">
                         <li class=""><a href="#">Home</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Home Group One</a>
+                                <li class=""><a href="#">Home Group One</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-trending">Trending</a></li>
                                         <li><a href="index-collection">My collection</a></li>
@@ -103,7 +104,7 @@
                                         <li><a href="index-smart">smart design</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group Two</a>
+                                <li><a href="#">Home Group Two</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-furniture">Furniture </a></li>
                                         <li><a href="index-essentials">Essentials</a></li>
@@ -112,7 +113,7 @@
                                         <li><a href="index-accessories">Accessories</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group three</a>
+                                <li><a href="#">Home Group three</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-shoppable">Shoppable</a></li>
 
@@ -121,7 +122,7 @@
                                         <li><a href="index-cosmetics">Cosmetics</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group four</a>
+                                <li><a href="#">Home Group four</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-decor">Home Decor</a></li>
                                         <li><a href="index-creative">Creative</a></li>
@@ -132,7 +133,7 @@
 
                         <li><a href="#">Shop</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop Pages</a>
+                                <li class=""><a href="#">Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-no-sidebar">Shop No Sidebar</a></li>
                                         <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
@@ -143,7 +144,7 @@
                                         <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Product Details Pages</a>
+                                <li class=""><a href="#">Product Details Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-basic">Basic </a></li>
                                         <li><a href="shop-product-fullwidth">Fullwidth</a></li>
@@ -156,7 +157,7 @@
 
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Other Shop Pages</a>
+                                <li class=""><a href="#">Other Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-with-background">Product with background</a></li>
                                         <li><a href="shop-cart">Shopping Cart</a></li>
@@ -174,7 +175,7 @@
                         </li>
                         <li><a href="#">Elements</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-product-categories">Product Categories</a></li>
                                         <li><a href="element-product-sliders">Product Sliders</a></li>
@@ -183,7 +184,7 @@
                                         <li><a href="element-recent-products">Recent Products</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-sale-products">Sale Products </a></li>
                                         <li><a href="element-featured-products">Featured products</a></li>
@@ -192,7 +193,7 @@
                                         <li><a href="element-product-attributes">Product Attributes</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Theming</a>
+                                <li class=""><a href="#">Theming</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-blog-posts">Blog Posts</a></li>
                                         <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
@@ -297,40 +298,48 @@
                     data-easeout="default,default,default,default,default,default,default"
                     data-masterspeed="300,default,default,default,default,default,default"
                     data-thumb="assets/images/revimages/collection/100x50_hp2-element-1.jpg" data-rotate="0,0,0,0,0,0,0"
-                    data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4=""
+                    data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
+                    data-param4=""
                     data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
                     data-description="">
                     <!-- MAIN IMAGE -->
                     <img src="assets/images/revimages/dummy.png" alt=""
-                         data-lazyload="assets/images/revimages/collection/hp2-element-1.jpg" data-bgposition="center center"
+                         data-lazyload="assets/images/revimages/collection/hp2-element-1.jpg"
+                         data-bgposition="center center"
                          data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100"
                          data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0"
                          data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
 
                     <!-- LAYER NR. 1 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-18-layer-13" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-18-layer-13"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1182','211','488','245']" data-y="['top','top','top','top']"
-                         data-voffset="['370','357','359','252']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-voffset="['370','357','359','252']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":330,"speed":1500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 5; white-space: nowrap; font-size: 16px; line-height: 36px; font-weight: 600; color: #ffffff; letter-spacing: 3px;font-family:Work Sans;">
-                        #ACCESSORIES </div>
+                        #ACCESSORIES
+                    </div>
 
                     <!-- LAYER NR. 2 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-18-layer-3" data-x="['left','center','center','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-18-layer-3"
+                         data-x="['left','center','center','left']"
                          data-hoffset="['1183','294','181','183']" data-y="['top','middle','middle','top']"
                          data-voffset="['438','96','3','321']" data-fontsize="['56','40','50','35']"
-                         data-lineheight="['72','60','60','50']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-lineheight="['72','60','60','50']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":930,"speed":2000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','center','center']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 6; white-space: nowrap; font-size: 56px; line-height: 72px; font-weight: 300; color: #ffffff; letter-spacing: 0px;font-family:Work Sans;">
                         Feeling relax day, <br>
-                        enjoy weekend! </div>
+                        enjoy weekend!
+                    </div>
 
                     <!-- LAYER NR. 3 -->
                     <div class="tp-caption Slider-button-alt-white rev-btn  tp-resizeme" id="slide-18-layer-20"
@@ -342,49 +351,58 @@
                          data-responsive_offset="on"
                          data-frames='[{"delay":1410,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:transparent;"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
-                         data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]"
+                         data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
+                         data-paddingleft="[35,35,35,35]"
                          style="z-index: 7; min-width: 154px; max-width: 154px; max-width: 45px; max-width: 45px; white-space: nowrap; letter-spacing: 1px;border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
                         <a class="revslider-button-white" href="shop-left-sidebar"> SHOP NOW</a>
                     </div>
 
                     <!-- LAYER NR. 4 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-18-layer-17" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-18-layer-17"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1600','-671','-509','-382']" data-y="['middle','middle','top','top']"
                          data-voffset="['380','280','784','367']" data-fontsize="['48','56','72','40']"
                          data-lineheight="['56','64','96','50']" data-fontweight="['400','300','700','700']"
-                         data-color="['rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']" data-type="text"
+                         data-color="['rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)','rgb(51,51,51)']"
+                         data-width="none"
+                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-type="text"
                          data-responsive_offset="on"
                          data-frames='[{"delay":1000,"speed":1940,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 8; white-space: nowrap; font-size: 48px; line-height: 56px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Work Sans;">
-                        1 </div>
+                        1
+                    </div>
 
                     <!-- LAYER NR. 5 -->
                     <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-18-layer-21"
                          data-x="['left','left','left','left']" data-hoffset="['1646','1646','1646','1646']"
                          data-y="['top','top','top','top']" data-voffset="['880','880','880','880']" data-width="80"
-                         data-height="2" data-whitespace="nowrap" data-visibility="['on','off','off','off']" data-type="shape"
+                         data-height="2" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-type="shape"
                          data-responsive_offset="on"
                          data-frames='[{"delay":790,"speed":1700,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                         style="z-index: 9;background-color:rgba(255,255,255,0.5);"> </div>
+                         style="z-index: 9;background-color:rgba(255,255,255,0.5);"></div>
 
                     <!-- LAYER NR. 6 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-18-layer-18" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-18-layer-18"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1750','-607','-327','-263']" data-y="['middle','middle','top','top']"
                          data-voffset="['380','283','795','370']" data-fontsize="['48','34','72','40']"
                          data-lineheight="['56','40','96','50']" data-fontweight="['400','300','700','700']"
                          data-color="['rgba(255,255,255,0.3)','rgb(204,204,204)','rgb(51,51,51)','rgb(51,51,51)']"
-                         data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-visibility="['on','off','off','off']"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":680,"speed":1940,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 10; white-space: nowrap; font-size: 48px; line-height: 56px; font-weight: 400; color: rgba(255,255,255,0.3); letter-spacing: 0px;font-family:Work Sans;">
-                        3 </div>
+                        3
+                    </div>
 
                     <!-- LAYER NR. 7 -->
                     <!-- <a class="tp-caption   tp-resizeme"
@@ -464,7 +482,8 @@
                     <!-- LAYER NR. 10 -->
                     <div class="tp-caption   tp-resizeme" id="slide-18-layer-29" data-x="['left','left','left','left']"
                          data-hoffset="['100','100','100','100']" data-y="['top','top','top','top']"
-                         data-voffset="['100','100','100','100']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-voffset="['100','100','100','100']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":0,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
@@ -475,45 +494,56 @@
                 <!-- SLIDE  -->
                 <li data-index="rs-19"
                     data-transition="parallaxtoright,parallaxtoleft,parallaxtotop,parallaxtobottom,parallaxhorizontal,parallaxvertical,curtain-1,curtain-2"
-                    data-slotamount="default,default,default,default,default,default,default,default" data-hideafterloop="0"
-                    data-hideslideonmobile="off" data-easein="default,default,default,default,default,default,default,default"
+                    data-slotamount="default,default,default,default,default,default,default,default"
+                    data-hideafterloop="0"
+                    data-hideslideonmobile="off"
+                    data-easein="default,default,default,default,default,default,default,default"
                     data-easeout="default,default,default,default,default,default,default,default"
                     data-masterspeed="470,default,default,default,default,default,default,default"
-                    data-thumb="assets/images/revimages/collection/100x50_hp2-element-2.jpg" data-rotate="0,0,0,0,0,0,0,0"
-                    data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4=""
+                    data-thumb="assets/images/revimages/collection/100x50_hp2-element-2.jpg"
+                    data-rotate="0,0,0,0,0,0,0,0"
+                    data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
+                    data-param4=""
                     data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
                     data-description="">
                     <!-- MAIN IMAGE -->
                     <img src="assets/images/revimages/dummy.png" alt=""
-                         data-lazyload="assets/images/revimages/collection/hp2-element-2.jpg" data-bgposition="center center"
+                         data-lazyload="assets/images/revimages/collection/hp2-element-2.jpg"
+                         data-bgposition="center center"
                          data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100"
                          data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0"
                          data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
 
                     <!-- LAYER NR. 11 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-19-layer-13" data-x="['left','center','center','center']"
+                    <div class="tp-caption   tp-resizeme" id="slide-19-layer-13"
+                         data-x="['left','center','center','center']"
                          data-hoffset="['1231','292','0','-6']" data-y="['top','top','top','top']"
-                         data-voffset="['341','255','394','241']" data-fontsize="['16','16','25','18']" data-width="none"
+                         data-voffset="['341','255','394','241']" data-fontsize="['16','16','25','18']"
+                         data-width="none"
                          data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":490,"speed":1500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 5; white-space: nowrap; font-size: 16px; line-height: 36px; font-weight: 600; color: #ffffff; letter-spacing: 3px;font-family:Work Sans;">
-                        FALL FASHION 20xx </div>
+                        FALL FASHION 20xx
+                    </div>
 
                     <!-- LAYER NR. 12 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-19-layer-3" data-x="['left','center','center','center']"
+                    <div class="tp-caption   tp-resizeme" id="slide-19-layer-3"
+                         data-x="['left','center','center','center']"
                          data-hoffset="['1230','288','0','0']" data-y="['top','middle','middle','middle']"
                          data-voffset="['427','0','79','0']" data-fontsize="['56','40','60','40']"
-                         data-lineheight="['72','60','80','60']" data-fontweight="['300','300','600','600']" data-width="none"
+                         data-lineheight="['72','60','80','60']" data-fontweight="['300','300','600','600']"
+                         data-width="none"
                          data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":900,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','center','center','center']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 6; white-space: nowrap; font-size: 56px; line-height: 72px; font-weight: 300; color: #ffffff; letter-spacing: 0px;font-family:Work Sans;">
                         Women collection <br>
-                        Made for her. </div>
+                        Made for her.
+                    </div>
 
                     <!-- LAYER NR. 13 -->
                     <div class="tp-caption Slider-button-alt-white rev-btn  tp-resizeme" id="slide-19-layer-20"
@@ -525,57 +555,69 @@
                          data-responsive_offset="on"
                          data-frames='[{"delay":1260,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:transparent;"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
-                         data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]"
+                         data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
+                         data-paddingleft="[35,35,35,35]"
                          style="z-index: 7; min-width: 154px; max-width: 154px; max-width: 45px; max-width: 45px; white-space: nowrap; letter-spacing: 1px;border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
                         <a class="revslider-button-white" href="shop-left-sidebar"> SHOP NOW</a>
                     </div>
 
                     <!-- LAYER NR. 14 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-19-layer-17" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-19-layer-17"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1600','-671','-509','-382']" data-y="['middle','middle','top','top']"
                          data-voffset="['380','280','784','367']" data-fontsize="['48','56','72','40']"
                          data-lineheight="['56','64','96','50']" data-fontweight="['400','300','700','700']"
-                         data-color="['rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']" data-type="text"
+                         data-color="['rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)','rgb(51,51,51)']"
+                         data-width="none"
+                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-type="text"
                          data-responsive_offset="on"
                          data-frames='[{"delay":950,"speed":1940,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 8; white-space: nowrap; font-size: 48px; line-height: 56px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Work Sans;">
-                        2 </div>
+                        2
+                    </div>
 
                     <!-- LAYER NR. 15 -->
                     <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-19-layer-21"
                          data-x="['left','left','left','left']" data-hoffset="['1651','1651','1651','1651']"
                          data-y="['top','top','top','top']" data-voffset="['880','880','880','830']" data-width="80"
-                         data-height="2" data-whitespace="nowrap" data-visibility="['on','off','off','off']" data-type="shape"
+                         data-height="2" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-type="shape"
                          data-responsive_offset="on"
                          data-frames='[{"delay":750,"speed":1700,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                         style="z-index: 9;background-color:rgba(255,255,255,0.5);"> </div>
+                         style="z-index: 9;background-color:rgba(255,255,255,0.5);"></div>
 
                     <!-- LAYER NR. 16 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-19-layer-18" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-19-layer-18"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1750','-607','-327','-263']" data-y="['middle','middle','top','top']"
                          data-voffset="['380','283','795','370']" data-fontsize="['48','34','72','40']"
                          data-lineheight="['56','40','96','50']" data-fontweight="['400','300','700','700']"
                          data-color="['rgba(255,255,255,0.3)','rgb(204,204,204)','rgb(51,51,51)','rgb(51,51,51)']"
-                         data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-visibility="['on','off','off','off']"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":600,"speed":1940,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 10; white-space: nowrap; font-size: 48px; line-height: 56px; font-weight: 400; color: rgba(255,255,255,0.3); letter-spacing: 0px;font-family:Work Sans;">
-                        3 </div>
+                        3
+                    </div>
 
                     <!-- LAYER NR. 17 -->
-                    <a class="tp-caption   tp-resizeme" href="https://htmldemo.hasthemes.com/shop-left-sidebar" target="_blank" id="slide-19-layer-25"
+                    <a class="tp-caption   tp-resizeme" href="https://htmldemo.hasthemes.com/shop-left-sidebar"
+                       target="_blank" id="slide-19-layer-25"
                        data-x="['left','center','center','left']" data-hoffset="['215','-328','-598','-393']"
                        data-y="['top','middle','middle','top']" data-voffset="['680','55','119','23']"
                        data-fontsize="['34','34','100','60']" data-lineheight="['72','72','100','90']"
-                       data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions='' data-responsive_offset="on"
+                       data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)']"
+                       data-width="none"
+                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions=''
+                       data-responsive_offset="on"
                        data-frames='[{"delay":980,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);br:0px 0px 0px 0px;"}]'
                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -583,12 +625,15 @@
                     </a>
 
                     <!-- LAYER NR. 18 -->
-                    <a class="tp-caption   tp-resizeme" href="https://htmldemo.hasthemes.com/shop-left-sidebar" target="_blank" id="slide-19-layer-26"
+                    <a class="tp-caption   tp-resizeme" href="https://htmldemo.hasthemes.com/shop-left-sidebar"
+                       target="_blank" id="slide-19-layer-26"
                        data-x="['left','center','center','left']" data-hoffset="['215','-354','-661','-292']"
                        data-y="['top','middle','middle','top']" data-voffset="['760','130','-27','251']"
                        data-fontsize="['34','34','100','60']" data-lineheight="['72','72','100','90']"
-                       data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions='' data-responsive_offset="on"
+                       data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)']"
+                       data-width="none"
+                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions=''
+                       data-responsive_offset="on"
                        data-frames='[{"delay":1440,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);br:0px 0px 0px 0px;"}]'
                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -596,12 +641,15 @@
                     </a>
 
                     <!-- LAYER NR. 19 -->
-                    <a class="tp-caption   tp-resizeme" href="https://htmldemo.hasthemes.com/shop-left-sidebar" target="_blank" id="slide-19-layer-27"
+                    <a class="tp-caption   tp-resizeme" href="https://htmldemo.hasthemes.com/shop-left-sidebar"
+                       target="_blank" id="slide-19-layer-27"
                        data-x="['left','center','center','left']" data-hoffset="['214','-353','-654','-390']"
                        data-y="['top','middle','middle','top']" data-voffset="['830','205','-174','495']"
                        data-fontsize="['34','34','100','60']" data-lineheight="['72','72','100','90']"
-                       data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions='' data-responsive_offset="on"
+                       data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)']"
+                       data-width="none"
+                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions=''
+                       data-responsive_offset="on"
                        data-frames='[{"delay":1770,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);br:0px 0px 0px 0px;"}]'
                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -609,41 +657,49 @@
                     </a>
                 </li>
                 <!-- SLIDE  -->
-                <li data-index="rs-20" data-transition="curtain-1,curtain-2,3dcurtain-horizontal,3dcurtain-vertical,cube"
+                <li data-index="rs-20"
+                    data-transition="curtain-1,curtain-2,3dcurtain-horizontal,3dcurtain-vertical,cube"
                     data-slotamount="default,default,default,default,default" data-hideafterloop="0"
                     data-hideslideonmobile="off" data-easein="default,default,default,default,default"
                     data-easeout="default,default,default,default,default"
                     data-masterspeed="350,default,default,default,default"
                     data-thumb="assets/images/revimages/collection/100x50_hp2-element-3.jpg" data-rotate="0,0,0,0,0"
-                    data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4=""
+                    data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
+                    data-param4=""
                     data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
                     data-description="">
                     <!-- MAIN IMAGE -->
                     <img src="assets/images/revimages/dummy.png" alt=""
-                         data-lazyload="assets/images/revimages/collection/hp2-element-3.jpg" data-bgposition="center center"
+                         data-lazyload="assets/images/revimages/collection/hp2-element-3.jpg"
+                         data-bgposition="center center"
                          data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100"
                          data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0" data-blurend="0"
                          data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
 
                     <!-- LAYER NR. 20 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-13" data-x="['left','center','center','center']"
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-13"
+                         data-x="['left','center','center','center']"
                          data-hoffset="['1250','284','-8','-2']" data-y="['top','top','top','top']"
                          data-voffset="['359','222','360','252']" data-fontsize="['16','16','25','16']"
-                         data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(0,0,0)','rgb(0,0,0)']" data-width="none"
+                         data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(0,0,0)','rgb(0,0,0)']"
+                         data-width="none"
                          data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":350,"speed":1500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 5; white-space: nowrap; font-size: 16px; line-height: 36px; font-weight: 600; color: #ffffff; letter-spacing: 3px;font-family:Work Sans;">
-                        GIFTS FOR MAN </div>
+                        GIFTS FOR MAN
+                    </div>
 
                     <!-- LAYER NR. 21 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-3" data-x="['left','center','center','center']"
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-3"
+                         data-x="['left','center','center','center']"
                          data-hoffset="['1250','291','12','0']" data-y="['top','middle','middle','middle']"
                          data-voffset="['443','-30','60','28']" data-fontsize="['56','50','60','50']"
                          data-lineheight="['72','72','80','70']" data-fontweight="['300','300','700','700']"
-                         data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(0,0,0)','rgb(0,0,0)']" data-width="none"
+                         data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(0,0,0)','rgb(0,0,0)']"
+                         data-width="none"
                          data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":680,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','center','center','center']" data-paddingtop="[0,0,0,0]"
@@ -651,7 +707,8 @@
                          style="z-index: 6; white-space: nowrap; font-size: 56px; line-height: 72px; font-weight: 300; color: #ffffff; letter-spacing: 0px;font-family:Work Sans;">
                         Feeling relax day, <br>
 
-                        enjoy weekend! </div>
+                        enjoy weekend!
+                    </div>
 
                     <!-- LAYER NR. 22 -->
                     <div class="tp-caption Slider-button-alt-white rev-btn  tp-resizeme" id="slide-20-layer-20"
@@ -663,57 +720,69 @@
                          data-responsive_offset="on"
                          data-frames='[{"delay":1050,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:transparent;"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
-                         data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]"
+                         data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
+                         data-paddingleft="[35,35,35,35]"
                          style="z-index: 7; min-width: 154px; max-width: 154px; max-width: 45px; max-width: 45px; white-space: nowrap; letter-spacing: 1px;border-color:rgb(255,255,255);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
                         <a class="revslider-button-white" href="shop-left-sidebar"> SHOP NOW</a>
                     </div>
 
                     <!-- LAYER NR. 23 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-17" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-17"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1600','-671','-509','-382']" data-y="['middle','middle','top','top']"
                          data-voffset="['380','280','784','367']" data-fontsize="['48','56','72','40']"
                          data-lineheight="['56','64','96','50']" data-fontweight="['400','300','700','700']"
-                         data-color="['rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']" data-type="text"
+                         data-color="['rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)','rgb(51,51,51)']"
+                         data-width="none"
+                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-type="text"
                          data-responsive_offset="on"
                          data-frames='[{"delay":920,"speed":1940,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 8; white-space: nowrap; font-size: 48px; line-height: 56px; font-weight: 400; color: #ffffff; letter-spacing: 0px;font-family:Work Sans;">
-                        3 </div>
+                        3
+                    </div>
 
                     <!-- LAYER NR. 24 -->
                     <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-20-layer-21"
                          data-x="['left','left','left','left']" data-hoffset="['1651','1651','1651','1651']"
                          data-y="['top','top','top','top']" data-voffset="['880','880','880','880']" data-width="80"
-                         data-height="2" data-whitespace="nowrap" data-visibility="['on','off','off','off']" data-type="shape"
+                         data-height="2" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-type="shape"
                          data-responsive_offset="on"
                          data-frames='[{"delay":800,"speed":1700,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                         style="z-index: 9;background-color:rgba(255,255,255,0.5);"> </div>
+                         style="z-index: 9;background-color:rgba(255,255,255,0.5);"></div>
 
                     <!-- LAYER NR. 25 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-18" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-20-layer-18"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1750','-607','-327','-263']" data-y="['middle','middle','top','top']"
                          data-voffset="['380','283','795','370']" data-fontsize="['48','34','72','40']"
                          data-lineheight="['56','40','96','50']" data-fontweight="['400','300','700','700']"
                          data-color="['rgba(255,255,255,0.3)','rgb(204,204,204)','rgb(51,51,51)','rgb(51,51,51)']"
-                         data-width="none" data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-visibility="['on','off','off','off']"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":700,"speed":1940,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 10; white-space: nowrap; font-size: 48px; line-height: 56px; font-weight: 400; color: rgba(255,255,255,0.3); letter-spacing: 0px;font-family:Work Sans;">
-                        3 </div>
+                        3
+                    </div>
 
                     <!-- LAYER NR. 26 -->
-                    <a class="tp-caption   tp-resizeme" href="https://htmldemo.hasthemes.com/shop-left-sidebar" target="_blank" id="slide-20-layer-25"
+                    <a class="tp-caption   tp-resizeme" href="https://htmldemo.hasthemes.com/shop-left-sidebar"
+                       target="_blank" id="slide-20-layer-25"
                        data-x="['left','center','center','left']" data-hoffset="['215','-326','-598','-393']"
                        data-y="['top','middle','middle','top']" data-voffset="['680','55','119','23']"
                        data-fontsize="['34','34','100','60']" data-lineheight="['72','72','100','90']"
-                       data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions='' data-responsive_offset="on"
+                       data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)']"
+                       data-width="none"
+                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions=''
+                       data-responsive_offset="on"
                        data-frames='[{"delay":1110,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);br:0px 0px 0px 0px;"}]'
                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -721,12 +790,15 @@
                     </a>
 
                     <!-- LAYER NR. 27 -->
-                    <a class="tp-caption   tp-resizeme" href="https://htmldemo.hasthemes.com/shop-left-sidebar" target="_blank" id="slide-20-layer-26"
+                    <a class="tp-caption   tp-resizeme" href="https://htmldemo.hasthemes.com/shop-left-sidebar"
+                       target="_blank" id="slide-20-layer-26"
                        data-x="['left','center','center','left']" data-hoffset="['215','-354','-661','-292']"
                        data-y="['top','middle','middle','top']" data-voffset="['760','130','-27','251']"
                        data-fontsize="['34','34','100','60']" data-lineheight="['72','72','100','90']"
-                       data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions='' data-responsive_offset="on"
+                       data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)']"
+                       data-width="none"
+                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions=''
+                       data-responsive_offset="on"
                        data-frames='[{"delay":1420,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);br:0px 0px 0px 0px;"}]'
                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -734,12 +806,15 @@
                     </a>
 
                     <!-- LAYER NR. 28 -->
-                    <a class="tp-caption   tp-resizeme" href="https://htmldemo.hasthemes.com/shop-left-sidebar" target="_blank" id="slide-20-layer-27"
+                    <a class="tp-caption   tp-resizeme" href="https://htmldemo.hasthemes.com/shop-left-sidebar"
+                       target="_blank" id="slide-20-layer-27"
                        data-x="['left','center','center','left']" data-hoffset="['214','-353','-654','-390']"
                        data-y="['top','middle','middle','top']" data-voffset="['829','205','-174','495']"
                        data-fontsize="['34','34','100','60']" data-lineheight="['72','72','100','90']"
-                       data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions='' data-responsive_offset="on"
+                       data-color="['rgb(255,255,255)','rgb(255,255,255)','rgb(51,51,51)','rgb(51,51,51)']"
+                       data-width="none"
+                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions=''
+                       data-responsive_offset="on"
                        data-frames='[{"delay":1770,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);br:0px 0px 0px 0px;"}]'
                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -1106,7 +1181,8 @@
 
                 <div class="blog-intro">
                     <h2>From our blog</h2>
-                    <p>Lorem ipsum dolor sit amet, consecte tur cing elit. Suspe ndisse suscipit sagittis leo sit met condim
+                    <p>Lorem ipsum dolor sit amet, consecte tur cing elit. Suspe ndisse suscipit sagittis leo sit met
+                        condim
                         entum.</p>
                     <a href="blog-standard-left-sidebar" class="lezada-button lezada-button--medium">view all</a>
                 </div>
@@ -1138,7 +1214,8 @@
 
                                 <div class="single-slider-post__image mb-30">
                                     <a href="blog-single-post-left-sidebar">
-                                        <img src="assets/images/blog/post-thumbnail-1-370x200.png" class="img-fluid" alt="">
+                                        <img src="assets/images/blog/post-thumbnail-1-370x200.png" class="img-fluid"
+                                             alt="">
                                     </a>
                                 </div>
 
@@ -1151,9 +1228,12 @@
                                         <i class="ion-android-calendar"></i>
                                         <a href="blog-standard-left-sidebar"> june 5, 2018</a>
                                     </div>
-                                    <h2 class="post-title"><a href="blog-single-post-left-sidebar">Chic Fashion Phenomenon</a></h2>
-                                    <p class="post-excerpt">Michele seemed to say, was the 21st-century Gucci girl, an eccentric,
-                                        fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to personify the idea of
+                                    <h2 class="post-title"><a href="blog-single-post-left-sidebar">Chic Fashion
+                                        Phenomenon</a></h2>
+                                    <p class="post-excerpt">Michele seemed to say, was the 21st-century Gucci girl, an
+                                        eccentric,
+                                        fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to
+                                        personify the idea of
                                         “ugly pretty.”</p>
                                     <a href="blog-single-post-left-sidebar" class="blog-readmore-btn">read more</a>
                                 </div>
@@ -1170,7 +1250,8 @@
 
                                 <div class="single-slider-post__image mb-30">
                                     <a href="blog-single-post-left-sidebar">
-                                        <img src="assets/images/blog/post-thumbnail-2-1-370x200.png" class="img-fluid" alt="">
+                                        <img src="assets/images/blog/post-thumbnail-2-1-370x200.png" class="img-fluid"
+                                             alt="">
                                     </a>
                                 </div>
 
@@ -1183,10 +1264,13 @@
                                         <i class="ion-android-calendar"></i>
                                         <a href="blog-standard-left-sidebar"> june 6, 2018</a>
                                     </div>
-                                    <h2 class="post-title"><a href="blog-single-post-left-sidebar">Shirt Color Picking Guide</a>
+                                    <h2 class="post-title"><a href="blog-single-post-left-sidebar">Shirt Color Picking
+                                        Guide</a>
                                     </h2>
-                                    <p class="post-excerpt">Michele seemed to say, was the 21st-century Gucci girl, an eccentric,
-                                        fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to personify the idea of
+                                    <p class="post-excerpt">Michele seemed to say, was the 21st-century Gucci girl, an
+                                        eccentric,
+                                        fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to
+                                        personify the idea of
                                         “ugly pretty.”</p>
                                     <a href="blog-single-post-left-sidebar" class="blog-readmore-btn">read more</a>
                                 </div>
@@ -1203,7 +1287,8 @@
 
                                 <div class="single-slider-post__image mb-30">
                                     <a href="blog-single-post-left-sidebar">
-                                        <img src="assets/images/blog/post-thumbnail-8-370x200.png" class="img-fluid" alt="">
+                                        <img src="assets/images/blog/post-thumbnail-8-370x200.png" class="img-fluid"
+                                             alt="">
                                     </a>
                                 </div>
 
@@ -1216,10 +1301,13 @@
                                         <i class="ion-android-calendar"></i>
                                         <a href="blog-standard-left-sidebar"> june 8, 2018</a>
                                     </div>
-                                    <h2 class="post-title"><a href="blog-single-post-left-sidebar">Perfect Perfume & Cologne</a>
+                                    <h2 class="post-title"><a href="blog-single-post-left-sidebar">Perfect Perfume &
+                                        Cologne</a>
                                     </h2>
-                                    <p class="post-excerpt">Michele seemed to say, was the 21st-century Gucci girl, an eccentric,
-                                        fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to personify the idea of
+                                    <p class="post-excerpt">Michele seemed to say, was the 21st-century Gucci girl, an
+                                        eccentric,
+                                        fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to
+                                        personify the idea of
                                         “ugly pretty.”</p>
                                     <a href="blog-single-post-left-sidebar" class="blog-readmore-btn">read more</a>
                                 </div>
@@ -1236,7 +1324,8 @@
 
                                 <div class="single-slider-post__image mb-30">
                                     <a href="blog-single-post-left-sidebar">
-                                        <img src="assets/images/blog/post-thumbnail-370x200.png" class="img-fluid" alt="">
+                                        <img src="assets/images/blog/post-thumbnail-370x200.png" class="img-fluid"
+                                             alt="">
                                     </a>
                                 </div>
 
@@ -1249,10 +1338,13 @@
                                         <i class="ion-android-calendar"></i>
                                         <a href="blog-standard-left-sidebar"> june 10, 2018</a>
                                     </div>
-                                    <h2 class="post-title"><a href="blog-single-post-left-sidebar">T-Shirts as Minimalist Style</a>
+                                    <h2 class="post-title"><a href="blog-single-post-left-sidebar">T-Shirts as
+                                        Minimalist Style</a>
                                     </h2>
-                                    <p class="post-excerpt">Michele seemed to say, was the 21st-century Gucci girl, an eccentric,
-                                        fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to personify the idea of
+                                    <p class="post-excerpt">Michele seemed to say, was the 21st-century Gucci girl, an
+                                        eccentric,
+                                        fresh-faced weirdo who wasn’t afraid to wear backless fur-lined loafers, to
+                                        personify the idea of
                                         “ugly pretty.”</p>
                                     <a href="blog-single-post-left-sidebar" class="blog-readmore-btn">read more</a>
                                 </div>
@@ -1277,7 +1369,7 @@
 =            footer area two        =
 =============================================-->
 
-    <jsp:include page="include/foot.jsp"/>
+<jsp:include page="include/foot.jsp"/>
 
 <!--=====  End of footer area two ======-->
 
@@ -1312,8 +1404,10 @@
 
                 <div class="single-widget">
                     <h2 class="widget-title">About Us</h2>
-                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products over other
-                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion clothes.</p>
+                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
+                        over other
+                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion
+                        clothes.</p>
                 </div>
 
                 <!--=======  End of single widget  =======-->
@@ -1330,16 +1424,20 @@
                 <div class="social-icons">
                     <ul>
                         <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-twitter"></i></a></li>
                         <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-facebook"></i></a></li>
                         <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-instagram"></i></a></li>
                         <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-youtube-play"></i></a></li>
                     </ul>
                 </div>
@@ -1389,7 +1487,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1408,7 +1507,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="main-price discounted">$300.00</span> <span class="discounted-price">$220.00</span></p>
+                            <p><span class="main-price discounted">$300.00</span> <span
+                                    class="discounted-price">$220.00</span></p>
 
                         </div>
                     </div>
@@ -1427,7 +1527,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$100.00</span> <span class="discounted-price">$80.00</span></p>
+                            <p><span class="main-price discounted">$100.00</span> <span
+                                    class="discounted-price">$80.00</span></p>
 
                         </div>
                     </div>
@@ -1446,7 +1547,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1465,7 +1567,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>

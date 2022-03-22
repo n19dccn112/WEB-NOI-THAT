@@ -5,9 +5,9 @@
   Time: 16:34
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=utf-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -16,7 +16,8 @@
 
 
 <!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/index-lookbook.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:05:45 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <jsp:include page="include/head.jsp"/>
 
 <body>
@@ -75,55 +76,72 @@
                                     <ul class="sub-menu mega-menu mega-menu-column-5">
                                         <li><a href="javascript:void(0)" class="mega-column-title">Home Group</a>
                                             <ul class="mega-sub-menu">
-                                                <li><a href="index-trending">Trending</a><img src="assets/images/home-preview/01.jpg"
-                                                                                                   class="img-fluid" alt=""></li>
+                                                <li><a href="index-trending">Trending</a><img
+                                                        src="assets/images/home-preview/01.jpg"
+                                                        class="img-fluid" alt=""></li>
                                                 <li><a href="index-collection">My collection</a><img
-                                                        src="assets/images/home-preview/02.jpg" class="img-fluid" alt=""></li>
-                                                <li><a href="index-special">Special</a><img src="assets/images/home-preview/03.jpg"
-                                                                                                 class="img-fluid" alt=""></li>
-                                                <li><a href="index-concept">concept</a><img src="assets/images/home-preview/04.jpg"
-                                                                                                 class="img-fluid" alt=""></li>
-                                                <li><a href="index-smart">smart design</a><img src="assets/images/home-preview/05.jpg"
-                                                                                                    class="img-fluid" alt=""></li>
+                                                        src="assets/images/home-preview/02.jpg" class="img-fluid"
+                                                        alt=""></li>
+                                                <li><a href="index-special">Special</a><img
+                                                        src="assets/images/home-preview/03.jpg"
+                                                        class="img-fluid" alt=""></li>
+                                                <li><a href="index-concept">concept</a><img
+                                                        src="assets/images/home-preview/04.jpg"
+                                                        class="img-fluid" alt=""></li>
+                                                <li><a href="index-smart">smart design</a><img
+                                                        src="assets/images/home-preview/05.jpg"
+                                                        class="img-fluid" alt=""></li>
                                             </ul>
                                         </li>
                                         <li><a href="javascript:void(0)" class="mega-column-title">Home Group</a>
                                             <ul class="mega-sub-menu">
-                                                <li><a href="index-furniture">Furniture </a><img src="assets/images/home-preview/06.jpg"
-                                                                                                      class="img-fluid" alt=""></li>
-                                                <li><a href="index-essentials">Essentials</a><img src="assets/images/home-preview/07.jpg"
-                                                                                                       class="img-fluid" alt=""></li>
-                                                <li><a href="index-lookbook">Lookbook</a><img src="assets/images/home-preview/08.jpg"
-                                                                                                   class="img-fluid" alt=""></li>
-                                                <li><a href="index-wearables">Wearables</a><img src="assets/images/home-preview/09.jpg"
-                                                                                                     class="img-fluid" alt=""></li>
+                                                <li><a href="index-furniture">Furniture </a><img
+                                                        src="assets/images/home-preview/06.jpg"
+                                                        class="img-fluid" alt=""></li>
+                                                <li><a href="index-essentials">Essentials</a><img
+                                                        src="assets/images/home-preview/07.jpg"
+                                                        class="img-fluid" alt=""></li>
+                                                <li><a href="index-lookbook">Lookbook</a><img
+                                                        src="assets/images/home-preview/08.jpg"
+                                                        class="img-fluid" alt=""></li>
+                                                <li><a href="index-wearables">Wearables</a><img
+                                                        src="assets/images/home-preview/09.jpg"
+                                                        class="img-fluid" alt=""></li>
                                                 <li><a href="index-accessories">Accessories</a><img
-                                                        src="assets/images/home-preview/10.jpg" class="img-fluid" alt=""></li>
+                                                        src="assets/images/home-preview/10.jpg" class="img-fluid"
+                                                        alt=""></li>
                                             </ul>
                                         </li>
                                         <li><a href="javascript:void(0)" class="mega-column-title">Home Group</a>
                                             <ul class="mega-sub-menu">
-                                                <li><a href="index-shoppable">Shoppable</a><img src="assets/images/home-preview/11.jpg"
-                                                                                                     class="img-fluid" alt=""></li>
-                                                <li><a href="index-fashion">Fashion</a><img src="assets/images/home-preview/13.jpg"
-                                                                                                 class="img-fluid" alt=""></li>
-                                                <li><a href="index-perfumes">Perfumes</a><img src="assets/images/home-preview/14.jpg"
-                                                                                                   class="img-fluid" alt=""></li>
-                                                <li><a href="index-cosmetics">Cosmetics</a><img src="assets/images/home-preview/15.jpg"
-                                                                                                     class="img-fluid" alt=""></li>
-                                                <li><a href="index-decor">Home Decor</a><img src="assets/images/home-preview/16.png"
-                                                                                                  class="img-fluid" alt=""></li>
+                                                <li><a href="index-shoppable">Shoppable</a><img
+                                                        src="assets/images/home-preview/11.jpg"
+                                                        class="img-fluid" alt=""></li>
+                                                <li><a href="index-fashion">Fashion</a><img
+                                                        src="assets/images/home-preview/13.jpg"
+                                                        class="img-fluid" alt=""></li>
+                                                <li><a href="index-perfumes">Perfumes</a><img
+                                                        src="assets/images/home-preview/14.jpg"
+                                                        class="img-fluid" alt=""></li>
+                                                <li><a href="index-cosmetics">Cosmetics</a><img
+                                                        src="assets/images/home-preview/15.jpg"
+                                                        class="img-fluid" alt=""></li>
+                                                <li><a href="index-decor">Home Decor</a><img
+                                                        src="assets/images/home-preview/16.png"
+                                                        class="img-fluid" alt=""></li>
                                             </ul>
                                         </li>
                                         <li><a href="javascript:void(0)" class="mega-column-title">Home Group</a>
                                             <ul class="mega-sub-menu">
-                                                <li><a href="index-creative">Creative</a><img src="assets/images/home-preview/17.png"
-                                                                                                   class="img-fluid" alt=""></li>
+                                                <li><a href="index-creative">Creative</a><img
+                                                        src="assets/images/home-preview/17.png"
+                                                        class="img-fluid" alt=""></li>
                                             </ul>
                                         </li>
                                         <li>
                                             <div class="menu-image">
-                                                <img src="assets/images/menu-image/menu-element.png" class="img-fluid" alt="">
+                                                <img src="assets/images/menu-image/menu-element.png" class="img-fluid"
+                                                     alt="">
                                             </div>
                                         </li>
                                     </ul>
@@ -136,9 +154,12 @@
                                                 <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
                                                 <li><a href="shop-right-sidebar">Shop Right Sidebar</a></li>
                                                 <li><a href="shop-fullwidth-no-space">Shop Fullwidth No Space</a></li>
-                                                <li><a href="shop-fullwidth-no-sidebar">Shop Fullwidth No Sidebar</a></li>
-                                                <li><a href="shop-fullwidth-left-sidebar">Shop Fullwidth Left Sidebar</a></li>
-                                                <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>
+                                                <li><a href="shop-fullwidth-no-sidebar">Shop Fullwidth No Sidebar</a>
+                                                </li>
+                                                <li><a href="shop-fullwidth-left-sidebar">Shop Fullwidth Left
+                                                    Sidebar</a></li>
+                                                <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right
+                                                    Sidebar</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="javascript:void(0)" class="mega-column-title">Shop Pages</a>
@@ -154,7 +175,8 @@
                                         </li>
                                         <li><a href="javascript:void(0)" class="mega-column-title">Shop Pages</a>
                                             <ul class="mega-sub-menu">
-                                                <li><a href="shop-product-with-background">Product with background</a></li>
+                                                <li><a href="shop-product-with-background">Product with background</a>
+                                                </li>
                                                 <li><a href="shop-cart">Shopping Cart</a></li>
                                                 <li><a href="shop-checkout">Checkout</a></li>
                                                 <li><a href="shop-order-tracking">Order Tracking</a></li>
@@ -165,7 +187,8 @@
                                         </li>
                                         <li>
                                             <div class="menu-image">
-                                                <img src="assets/images/menu-image/megamenu-shop.png" class="img-fluid" alt="">
+                                                <img src="assets/images/menu-image/megamenu-shop.png" class="img-fluid"
+                                                     alt="">
                                             </div>
                                         </li>
                                     </ul>
@@ -186,7 +209,8 @@
                                                 <li><a href="element-sale-products">Sale Products </a></li>
                                                 <li><a href="element-featured-products">Featured products</a></li>
                                                 <li><a href="element-top-rated-products">Top Rated products</a></li>
-                                                <li><a href="element-bestselling-products">Best Selling products</a></li>
+                                                <li><a href="element-bestselling-products">Best Selling products</a>
+                                                </li>
                                                 <li><a href="element-product-attributes">Product Attributes</a></li>
                                             </ul>
                                         </li>
@@ -210,7 +234,8 @@
                                         </li>
                                         <li>
                                             <div class="menu-image">
-                                                <img src="assets/images/menu-image/menu-element.png" class="img-fluid" alt="">
+                                                <img src="assets/images/menu-image/menu-element.png" class="img-fluid"
+                                                     alt="">
                                             </div>
                                         </li>
                                     </ul>
@@ -312,7 +337,7 @@
                     <ul class="dl-menu dl-menu-toggle">
                         <li class=""><a href="#">Home</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Home Group One</a>
+                                <li class=""><a href="#">Home Group One</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-trending">Trending</a></li>
                                         <li><a href="index-collection">My collection</a></li>
@@ -321,7 +346,7 @@
                                         <li><a href="index-smart">smart design</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group Two</a>
+                                <li><a href="#">Home Group Two</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-furniture">Furniture </a></li>
                                         <li><a href="index-essentials">Essentials</a></li>
@@ -330,7 +355,7 @@
                                         <li><a href="index-accessories">Accessories</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group three</a>
+                                <li><a href="#">Home Group three</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-shoppable">Shoppable</a></li>
 
@@ -339,7 +364,7 @@
                                         <li><a href="index-cosmetics">Cosmetics</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group four</a>
+                                <li><a href="#">Home Group four</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-decor">Home Decor</a></li>
                                         <li><a href="index-creative">Creative</a></li>
@@ -350,7 +375,7 @@
 
                         <li><a href="#">Shop</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop Pages</a>
+                                <li class=""><a href="#">Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-no-sidebar">Shop No Sidebar</a></li>
                                         <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
@@ -361,7 +386,7 @@
                                         <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Product Details Pages</a>
+                                <li class=""><a href="#">Product Details Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-basic">Basic </a></li>
                                         <li><a href="shop-product-fullwidth">Fullwidth</a></li>
@@ -374,7 +399,7 @@
 
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Other Shop Pages</a>
+                                <li class=""><a href="#">Other Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-with-background">Product with background</a></li>
                                         <li><a href="shop-cart">Shopping Cart</a></li>
@@ -392,7 +417,7 @@
                         </li>
                         <li><a href="#">Elements</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-product-categories">Product Categories</a></li>
                                         <li><a href="element-product-sliders">Product Sliders</a></li>
@@ -401,7 +426,7 @@
                                         <li><a href="element-recent-products">Recent Products</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-sale-products">Sale Products </a></li>
                                         <li><a href="element-featured-products">Featured products</a></li>
@@ -410,7 +435,7 @@
                                         <li><a href="element-product-attributes">Product Attributes</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Theming</a>
+                                <li class=""><a href="#">Theming</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-blog-posts">Blog Posts</a></li>
                                         <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
@@ -514,7 +539,8 @@
                         <div class="lookbook-content text-center">
                             <p class="tag">#NEW #COLLECTION #MEN</p>
                             <h2 class="lookbook-title">Spring Favorites</h2>
-                            <a href="shop-left-sidebar" class="lezada-button lezada-button--medium lookbook-btn">shop now</a>
+                            <a href="shop-left-sidebar" class="lezada-button lezada-button--medium lookbook-btn">shop
+                                now</a>
                         </div>
                     </div>
 
@@ -536,7 +562,8 @@
                         <div class="lookbook-content lookbook-content--dark text-center">
                             <p class="tag">#BEACHWEAR #SUMMER</p>
                             <h2 class="lookbook-title">Beachwear</h2>
-                            <a href="shop-left-sidebar" class="lezada-button lezada-button--medium lookbook-btn">shop now</a>
+                            <a href="shop-left-sidebar" class="lezada-button lezada-button--medium lookbook-btn">shop
+                                now</a>
                         </div>
                     </div>
 
@@ -559,7 +586,8 @@
                         <div class="lookbook-content text-center">
                             <p class="tag">#NEW #COLLECTION #WOMEN</p>
                             <h2 class="lookbook-title">Women's new arrivals</h2>
-                            <a href="shop-left-sidebar" class="lezada-button lezada-button--medium lookbook-btn">shop now</a>
+                            <a href="shop-left-sidebar" class="lezada-button lezada-button--medium lookbook-btn">shop
+                                now</a>
                         </div>
                     </div>
 
@@ -581,7 +609,8 @@
                         <div class="lookbook-content text-center">
                             <p class="tag">#ACCESSORIES</p>
                             <h2 class="lookbook-title">Find your style</h2>
-                            <a href="shop-left-sidebar" class="lezada-button lezada-button--medium lookbook-btn">shop now</a>
+                            <a href="shop-left-sidebar" class="lezada-button lezada-button--medium lookbook-btn">shop
+                                now</a>
                         </div>
                     </div>
 
@@ -600,7 +629,7 @@
 =            footer top         =
 =============================================-->
 
-    <jsp:include page="include/foot.jsp"/>
+<jsp:include page="include/foot.jsp"/>
 
 <!--=====  End of footer top  ======-->
 
@@ -780,7 +809,7 @@
                 </li>
                 <li class="has-children"><a href="#">Shop</a>
                     <ul class="sub-menu">
-                        <li class="has-children-submenu"> <a href="#">Shop Pages</a>
+                        <li class="has-children-submenu"><a href="#">Shop Pages</a>
                             <ul class="sub-menu">
                                 <li><a href="shop-no-sidebar">Shop No Sidebar</a></li>
                                 <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
@@ -791,7 +820,7 @@
                                 <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>
                             </ul>
                         </li>
-                        <li class="has-children-submenu"> <a href="#">Product Details Pages</a>
+                        <li class="has-children-submenu"><a href="#">Product Details Pages</a>
                             <ul class="sub-menu">
                                 <li><a href="shop-product-basic">Basic </a></li>
                                 <li><a href="shop-product-fullwidth">Fullwidth</a></li>
@@ -804,7 +833,7 @@
 
                             </ul>
                         </li>
-                        <li class="has-children-submenu"> <a href="#">Other Shop Pages</a>
+                        <li class="has-children-submenu"><a href="#">Other Shop Pages</a>
                             <ul class="sub-menu">
                                 <li><a href="shop-product-with-background">Product with background</a></li>
                                 <li><a href="shop-cart">Shopping Cart</a></li>
@@ -820,7 +849,7 @@
                 </li>
                 <li class="has-children"><a href="#">Elements</a>
                     <ul class="sub-menu">
-                        <li class="has-children-submenu"> <a href="#">Shop / Products</a>
+                        <li class="has-children-submenu"><a href="#">Shop / Products</a>
                             <ul class="sub-menu">
                                 <li><a href="element-product-categories">Product Categories</a></li>
                                 <li><a href="element-product-sliders">Product Sliders</a></li>
@@ -829,7 +858,7 @@
                                 <li><a href="element-recent-products">Recent Products</a></li>
                             </ul>
                         </li>
-                        <li class="has-children-submenu"> <a href="#">Shop / Products</a>
+                        <li class="has-children-submenu"><a href="#">Shop / Products</a>
                             <ul class="sub-menu">
                                 <li><a href="element-sale-products">Sale Products </a></li>
                                 <li><a href="element-featured-products">Featured products</a></li>
@@ -838,7 +867,7 @@
                                 <li><a href="element-product-attributes">Product Attributes</a></li>
                             </ul>
                         </li>
-                        <li class="has-children-submenu"> <a href="#">Theming</a>
+                        <li class="has-children-submenu"><a href="#">Theming</a>
                             <ul class="sub-menu">
                                 <li><a href="element-blog-posts">Blog Posts</a></li>
                                 <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
@@ -945,8 +974,10 @@
 
                 <div class="single-widget">
                     <h2 class="widget-title">About Us</h2>
-                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products over other
-                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion clothes.</p>
+                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
+                        over other
+                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion
+                        clothes.</p>
                 </div>
 
                 <!--=======  End of single widget  =======-->
@@ -963,16 +994,20 @@
                 <div class="social-icons">
                     <ul>
                         <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-twitter"></i></a></li>
                         <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-facebook"></i></a></li>
                         <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-instagram"></i></a></li>
                         <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-youtube-play"></i></a></li>
                     </ul>
                 </div>
@@ -1022,7 +1057,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1041,7 +1077,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="main-price discounted">$300.00</span> <span class="discounted-price">$220.00</span></p>
+                            <p><span class="main-price discounted">$300.00</span> <span
+                                    class="discounted-price">$220.00</span></p>
 
                         </div>
                     </div>
@@ -1060,7 +1097,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$100.00</span> <span class="discounted-price">$80.00</span></p>
+                            <p><span class="main-price discounted">$100.00</span> <span
+                                    class="discounted-price">$80.00</span></p>
 
                         </div>
                     </div>
@@ -1079,7 +1117,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1098,7 +1137,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>

@@ -5,9 +5,9 @@
   Time: 16:26
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=utf-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -16,7 +16,8 @@
 
 
 <!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/index-smart.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:05:13 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <jsp:include page="include/head.jsp"/>
 
 <body>
@@ -41,7 +42,6 @@
                 <!--=======  logo with off canvas  =======-->
 
                 <div class="logo-with-offcanvas d-flex">
-
 
 
                     <!--=======  logo   =======-->
@@ -95,7 +95,7 @@
                     <ul class="dl-menu dl-menu-toggle">
                         <li class=""><a href="#">Home</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Home Group One</a>
+                                <li class=""><a href="#">Home Group One</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-trending">Trending</a></li>
                                         <li><a href="index-collection">My collection</a></li>
@@ -104,7 +104,7 @@
                                         <li><a href="index-smart">smart design</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group Two</a>
+                                <li><a href="#">Home Group Two</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-furniture">Furniture </a></li>
                                         <li><a href="index-essentials">Essentials</a></li>
@@ -113,7 +113,7 @@
                                         <li><a href="index-accessories">Accessories</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group three</a>
+                                <li><a href="#">Home Group three</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-shoppable">Shoppable</a></li>
 
@@ -122,7 +122,7 @@
                                         <li><a href="index-cosmetics">Cosmetics</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group four</a>
+                                <li><a href="#">Home Group four</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-decor">Home Decor</a></li>
                                         <li><a href="index-creative">Creative</a></li>
@@ -133,7 +133,7 @@
 
                         <li><a href="#">Shop</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop Pages</a>
+                                <li class=""><a href="#">Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-no-sidebar">Shop No Sidebar</a></li>
                                         <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
@@ -144,7 +144,7 @@
                                         <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Product Details Pages</a>
+                                <li class=""><a href="#">Product Details Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-basic">Basic </a></li>
                                         <li><a href="shop-product-fullwidth">Fullwidth</a></li>
@@ -157,7 +157,7 @@
 
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Other Shop Pages</a>
+                                <li class=""><a href="#">Other Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-with-background">Product with background</a></li>
                                         <li><a href="shop-cart">Shopping Cart</a></li>
@@ -175,7 +175,7 @@
                         </li>
                         <li><a href="#">Elements</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-product-categories">Product Categories</a></li>
                                         <li><a href="element-product-sliders">Product Sliders</a></li>
@@ -184,7 +184,7 @@
                                         <li><a href="element-recent-products">Recent Products</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-sale-products">Sale Products </a></li>
                                         <li><a href="element-featured-products">Featured products</a></li>
@@ -193,7 +193,7 @@
                                         <li><a href="element-product-attributes">Product Attributes</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Theming</a>
+                                <li class=""><a href="#">Theming</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-blog-posts">Blog Posts</a></li>
                                         <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
@@ -298,12 +298,16 @@
                     data-hideslideonmobile="off" data-easein="default,default,default,default,default,default,default"
                     data-easeout="default,default,default,default,default,default,default"
                     data-masterspeed="default,default,default,default,default,default,default" data-thumb=""
-                    data-rotate="0,0,0,0,0,0,0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
-                    data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                    data-rotate="0,0,0,0,0,0,0" data-saveperformance="off" data-title="Slide" data-param1=""
+                    data-param2=""
+                    data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                    data-param9=""
                     data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/images/revimages/dummy.png" data-bgcolor='#dbe7ff' style='background:#dbe7ff' alt=""
-                         data-lazyload="assets/images/revimages/transparent.png" data-bgposition="center center" data-bgfit="cover"
+                    <img src="assets/images/revimages/dummy.png" data-bgcolor='#dbe7ff' style='background:#dbe7ff'
+                         alt=""
+                         data-lazyload="assets/images/revimages/transparent.png" data-bgposition="center center"
+                         data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
 
@@ -316,36 +320,45 @@
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 5;">
-                        <div class="rs-looped rs-slideloop" data-easing="" data-speed="2" data-xs="0" data-xe="0" data-ys="-10"
+                        <div class="rs-looped rs-slideloop" data-easing="" data-speed="2" data-xs="0" data-xe="0"
+                             data-ys="-10"
                              data-ye="10"><img src="assets/images/revimages/dummy.png" alt=""
-                                               data-ww="['1453px','1281px','1149px','933px']" data-hh="['727px','641px','575px','467px']"
-                                               data-lazyload="assets/images/revimages/smart/slider-homepage5-img1.png" data-no-retina> </div>
+                                               data-ww="['1453px','1281px','1149px','933px']"
+                                               data-hh="['727px','641px','575px','467px']"
+                                               data-lazyload="assets/images/revimages/smart/slider-homepage5-img1.png"
+                                               data-no-retina></div>
                     </div>
 
                     <!-- LAYER NR. 2 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-27-layer-13" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-27-layer-13"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1175','190','61','50']" data-y="['top','top','top','top']"
                          data-voffset="['288','237','108','88']" data-fontsize="['18','14','18','16']"
                          data-color="['rgb(51,51,51)','rgb(105,105,105)','rgb(105,105,105)','rgb(105,105,105)']"
-                         data-letterspacing="['','','0','0']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-letterspacing="['','','0','0']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 6; white-space: nowrap; font-size: 18px; line-height: 36px; font-weight: 400; color: #333333; font-family:Work Sans;">
-                        New collection A-W ss17 </div>
+                        New collection A-W ss17
+                    </div>
 
                     <!-- LAYER NR. 3 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-27-layer-3" data-x="['left','center','center','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-27-layer-3"
+                         data-x="['left','center','center','left']"
                          data-hoffset="['1171','288','-84','47']" data-y="['top','middle','middle','top']"
                          data-voffset="['338','0','-189','142']" data-fontsize="['100','80','100','70']"
-                         data-lineheight="['120','100','120','80']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-lineheight="['120','100','120','80']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":1260,"speed":2000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 7; white-space: nowrap; font-size: 100px; line-height: 120px; font-weight: 600; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                        Chair <br> collection </div>
+                        Chair <br> collection
+                    </div>
 
                     <!-- LAYER NR. 4 -->
                     <div class="tp-caption Slider-button-alt rev-btn  tp-resizeme" id="slide-27-layer-20"
@@ -356,48 +369,58 @@
                          data-whitespace="nowrap" data-type="button" data-actions='' data-responsive_offset="on"
                          data-frames='[{"delay":1610,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);bg:transparent;"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
-                         data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]"
+                         data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
+                         data-paddingleft="[35,35,35,35]"
                          style="z-index: 8; min-width: 154px; max-width: 154px; max-width: 45px; max-width: 45px; white-space: nowrap; letter-spacing: 1px;border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
                         <a class="revslider-button" href="shop-left-sidebar"> SHOP NOW</a>
                     </div>
 
                     <!-- LAYER NR. 5 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-27-layer-17" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-27-layer-17"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1600','-671','-509','-382']" data-y="['middle','middle','top','top']"
                          data-voffset="['330','280','784','367']" data-fontsize="['48','56','72','40']"
-                         data-lineheight="['56','64','96','50']" data-fontweight="['400','300','700','700']" data-width="none"
-                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']" data-type="text"
+                         data-lineheight="['56','64','96','50']" data-fontweight="['400','300','700','700']"
+                         data-width="none"
+                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-type="text"
                          data-responsive_offset="on"
                          data-frames='[{"delay":1160,"speed":1940,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 9; white-space: nowrap; font-size: 48px; line-height: 56px; font-weight: 400; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                        1 </div>
+                        1
+                    </div>
 
                     <!-- LAYER NR. 6 -->
                     <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-27-layer-21"
                          data-x="['left','left','left','left']" data-hoffset="['1646','1646','1646','1646']"
                          data-y="['top','top','top','top']" data-voffset="['760','760','760','760']" data-width="80"
-                         data-height="2" data-whitespace="nowrap" data-visibility="['on','off','off','off']" data-type="shape"
+                         data-height="2" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-type="shape"
                          data-responsive_offset="on"
                          data-frames='[{"delay":1000,"speed":1700,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                         style="z-index: 10;background-color:rgba(0,0,0,0.5);"> </div>
+                         style="z-index: 10;background-color:rgba(0,0,0,0.5);"></div>
 
                     <!-- LAYER NR. 7 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-27-layer-18" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-27-layer-18"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1750','-607','-327','-263']" data-y="['middle','middle','top','top']"
                          data-voffset="['330','283','795','370']" data-fontsize="['48','34','72','40']"
                          data-lineheight="['56','40','96','50']" data-fontweight="['400','300','700','700']"
-                         data-color="['rgba(51,51,51,0.3)','rgb(204,204,204)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']" data-type="text"
+                         data-color="['rgba(51,51,51,0.3)','rgb(204,204,204)','rgb(51,51,51)','rgb(51,51,51)']"
+                         data-width="none"
+                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-type="text"
                          data-responsive_offset="on"
                          data-frames='[{"delay":840,"speed":1940,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 11; white-space: nowrap; font-size: 48px; line-height: 56px; font-weight: 400; color: rgba(51,51,51,0.3); letter-spacing: 0px;font-family:Work Sans;">
-                        3 </div>
+                        3
+                    </div>
 
                     <!-- LAYER NR. 8 -->
                     <div class="tp-caption   tp-resizeme" id="slide-27-layer-22" data-x="['left','left','left','left']"
@@ -405,13 +428,15 @@
                          data-voffset="['228','210','104','207']" data-fontsize="['14','14','24','24']"
                          data-lineheight="['24','24','36','36']"
                          data-color="['rgb(51,51,51)','rgb(105,105,105)','rgb(105,105,105)','rgb(105,105,105)']"
-                         data-letterspacing="['1','','0','0']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-letterspacing="['1','','0','0']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;rZ:90;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 12; white-space: nowrap; font-size: 14px; line-height: 24px; font-weight: 400; color: #333333; letter-spacing: 1px;font-family:Work Sans;">
-                        ONLINE STORE </div>
+                        ONLINE STORE
+                    </div>
 
                     <!-- LAYER NR. 9 -->
                     <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-27-layer-24"
@@ -421,15 +446,17 @@
                          data-frames='[{"delay":980,"speed":1490,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                         style="z-index: 13;background-color:rgb(155,155,155);"> </div>
+                         style="z-index: 13;background-color:rgb(155,155,155);"></div>
 
                     <!-- LAYER NR. 10 -->
                     <a class="tp-caption   tp-resizeme" href="#" target="_self" id="slide-27-layer-25"
                        data-x="['left','left','center','left']" data-hoffset="['215','42','-598','-393']"
                        data-y="['top','middle','middle','top']" data-voffset="['486','56','119','23']"
                        data-fontsize="['34','34','100','60']" data-lineheight="['72','72','100','90']"
-                       data-color="['rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions='' data-responsive_offset="on"
+                       data-color="['rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)','rgb(51,51,51)']"
+                       data-width="none"
+                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions=''
+                       data-responsive_offset="on"
                        data-frames='[{"delay":1260,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);br:0px 0px 0px 0px;"}]'
                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -441,8 +468,10 @@
                        data-x="['left','center','center','left']" data-hoffset="['215','-435','-661','-292']"
                        data-y="['top','middle','middle','top']" data-voffset="['561','130','-27','251']"
                        data-fontsize="['34','34','100','60']" data-lineheight="['72','72','100','90']"
-                       data-color="['rgb(155,155,155)','rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions='' data-responsive_offset="on"
+                       data-color="['rgb(155,155,155)','rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)']"
+                       data-width="none"
+                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions=''
+                       data-responsive_offset="on"
                        data-frames='[{"delay":1720,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);br:0px 0px 0px 0px;"}]'
                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -454,8 +483,10 @@
                        data-x="['left','center','center','left']" data-hoffset="['215','-435','-654','-390']"
                        data-y="['top','middle','middle','top']" data-voffset="['637','205','-174','495']"
                        data-fontsize="['34','34','100','60']" data-lineheight="['72','72','100','90']"
-                       data-color="['rgb(155,155,155)','rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions='' data-responsive_offset="on"
+                       data-color="['rgb(155,155,155)','rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)']"
+                       data-width="none"
+                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions=''
+                       data-responsive_offset="on"
                        data-frames='[{"delay":2140,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);br:0px 0px 0px 0px;"}]'
                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -469,12 +500,16 @@
                     data-hideslideonmobile="off" data-easein="default,default,default,default,default,default,default"
                     data-easeout="default,default,default,default,default,default,default"
                     data-masterspeed="700,default,default,default,default,default,default" data-thumb=""
-                    data-rotate="0,0,0,0,0,0,0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
-                    data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                    data-rotate="0,0,0,0,0,0,0" data-saveperformance="off" data-title="Slide" data-param1=""
+                    data-param2=""
+                    data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                    data-param9=""
                     data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/images/revimages/dummy.png" data-bgcolor='#f5e8e5' style='background:#f5e8e5' alt=""
-                         data-lazyload="assets/images/revimages/transparent.png" data-bgposition="center center" data-bgfit="cover"
+                    <img src="assets/images/revimages/dummy.png" data-bgcolor='#f5e8e5' style='background:#f5e8e5'
+                         alt=""
+                         data-lazyload="assets/images/revimages/transparent.png" data-bgposition="center center"
+                         data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
 
@@ -487,36 +522,45 @@
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 5;">
-                        <div class="rs-looped rs-slideloop" data-easing="" data-speed="2" data-xs="0" data-xe="0" data-ys="-10"
+                        <div class="rs-looped rs-slideloop" data-easing="" data-speed="2" data-xs="0" data-xe="0"
+                             data-ys="-10"
                              data-ye="10"><img src="assets/images/revimages/dummy.png" alt=""
-                                               data-ww="['341auto','341auto','341auto','226px']" data-hh="['651px','651px','651px','432px']"
-                                               data-lazyload="assets/images/revimages/smart/image.png" data-no-retina> </div>
+                                               data-ww="['341auto','341auto','341auto','226px']"
+                                               data-hh="['651px','651px','651px','432px']"
+                                               data-lazyload="assets/images/revimages/smart/image.png" data-no-retina>
+                        </div>
                     </div>
 
                     <!-- LAYER NR. 14 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-28-layer-13" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-28-layer-13"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1171','142','67','48']" data-y="['top','top','top','top']"
                          data-voffset="['250','216','162','84']" data-fontsize="['18','14','18','16']"
                          data-color="['rgb(51,51,51)','rgb(105,105,105)','rgb(105,105,105)','rgb(105,105,105)']"
-                         data-letterspacing="['','','0','0']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-letterspacing="['','','0','0']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 6; white-space: nowrap; font-size: 18px; line-height: 36px; font-weight: 400; color: #333333; font-family:Work Sans;">
-                        New collection A-W ss17 </div>
+                        New collection A-W ss17
+                    </div>
 
                     <!-- LAYER NR. 15 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-28-layer-3" data-x="['left','center','center','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-28-layer-3"
+                         data-x="['left','center','center','left']"
                          data-hoffset="['1171','257','-125','49']" data-y="['middle','middle','middle','top']"
                          data-voffset="['0','-20','-180','125']" data-fontsize="['100','80','80','50']"
-                         data-lineheight="['120','90','90','60']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-lineheight="['120','90','90','60']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":1260,"speed":2000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 7; white-space: nowrap; font-size: 100px; line-height: 120px; font-weight: 600; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                        Innovative<br> design </div>
+                        Innovative<br> design
+                    </div>
 
                     <!-- LAYER NR. 16 -->
                     <div class="tp-caption Slider-button-alt rev-btn  tp-resizeme" id="slide-28-layer-20"
@@ -527,48 +571,58 @@
                          data-whitespace="nowrap" data-type="button" data-actions='' data-responsive_offset="on"
                          data-frames='[{"delay":1610,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);bg:transparent;"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
-                         data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]"
+                         data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
+                         data-paddingleft="[35,35,35,35]"
                          style="z-index: 8; min-width: 154px; max-width: 154px; max-width: 45px; max-width: 45px; white-space: nowrap; letter-spacing: 1px;border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
                         <a class="revslider-button" href="shop-left-sidebar"> SHOP NOW</a>
                     </div>
 
                     <!-- LAYER NR. 17 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-28-layer-17" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-28-layer-17"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1600','-671','-509','-382']" data-y="['middle','middle','top','top']"
                          data-voffset="['330','280','784','367']" data-fontsize="['48','56','72','40']"
-                         data-lineheight="['56','64','96','50']" data-fontweight="['400','300','700','700']" data-width="none"
-                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']" data-type="text"
+                         data-lineheight="['56','64','96','50']" data-fontweight="['400','300','700','700']"
+                         data-width="none"
+                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-type="text"
                          data-responsive_offset="on"
                          data-frames='[{"delay":1160,"speed":1940,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 9; white-space: nowrap; font-size: 48px; line-height: 56px; font-weight: 400; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                        2 </div>
+                        2
+                    </div>
 
                     <!-- LAYER NR. 18 -->
                     <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-28-layer-21"
                          data-x="['left','left','left','left']" data-hoffset="['1646','1646','1646','1646']"
                          data-y="['top','top','top','top']" data-voffset="['760','760','760','760']" data-width="80"
-                         data-height="2" data-whitespace="nowrap" data-visibility="['on','off','off','off']" data-type="shape"
+                         data-height="2" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-type="shape"
                          data-responsive_offset="on"
                          data-frames='[{"delay":1000,"speed":1700,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                         style="z-index: 10;background-color:rgba(0,0,0,0.5);"> </div>
+                         style="z-index: 10;background-color:rgba(0,0,0,0.5);"></div>
 
                     <!-- LAYER NR. 19 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-28-layer-18" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-28-layer-18"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1750','-607','-327','-263']" data-y="['middle','middle','top','top']"
                          data-voffset="['330','283','795','370']" data-fontsize="['48','34','72','40']"
                          data-lineheight="['56','40','96','50']" data-fontweight="['400','300','700','700']"
-                         data-color="['rgba(51,51,51,0.3)','rgb(204,204,204)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']" data-type="text"
+                         data-color="['rgba(51,51,51,0.3)','rgb(204,204,204)','rgb(51,51,51)','rgb(51,51,51)']"
+                         data-width="none"
+                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-type="text"
                          data-responsive_offset="on"
                          data-frames='[{"delay":840,"speed":1940,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 11; white-space: nowrap; font-size: 48px; line-height: 56px; font-weight: 400; color: rgba(51,51,51,0.3); letter-spacing: 0px;font-family:Work Sans;">
-                        3 </div>
+                        3
+                    </div>
 
                     <!-- LAYER NR. 20 -->
                     <div class="tp-caption   tp-resizeme" id="slide-28-layer-22" data-x="['left','left','left','left']"
@@ -576,13 +630,15 @@
                          data-voffset="['228','210','104','207']" data-fontsize="['14','14','24','24']"
                          data-lineheight="['24','24','36','36']"
                          data-color="['rgb(51,51,51)','rgb(105,105,105)','rgb(105,105,105)','rgb(105,105,105)']"
-                         data-letterspacing="['1','','0','0']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-letterspacing="['1','','0','0']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;rZ:90;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 12; white-space: nowrap; font-size: 14px; line-height: 24px; font-weight: 400; color: #333333; letter-spacing: 1px;font-family:Work Sans;">
-                        ONLINE STORE </div>
+                        ONLINE STORE
+                    </div>
 
                     <!-- LAYER NR. 21 -->
                     <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-28-layer-24"
@@ -592,15 +648,17 @@
                          data-frames='[{"delay":980,"speed":1490,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                         style="z-index: 13;background-color:rgb(155,155,155);"> </div>
+                         style="z-index: 13;background-color:rgb(155,155,155);"></div>
 
                     <!-- LAYER NR. 22 -->
                     <a class="tp-caption   tp-resizeme" href="#" target="_self" id="slide-28-layer-25"
                        data-x="['left','left','center','left']" data-hoffset="['215','42','-598','-393']"
                        data-y="['top','middle','middle','top']" data-voffset="['486','56','119','23']"
                        data-fontsize="['34','34','100','60']" data-lineheight="['72','72','100','90']"
-                       data-color="['rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions='' data-responsive_offset="on"
+                       data-color="['rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)','rgb(51,51,51)']"
+                       data-width="none"
+                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions=''
+                       data-responsive_offset="on"
                        data-frames='[{"delay":1260,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);br:0px 0px 0px 0px;"}]'
                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -612,8 +670,10 @@
                        data-x="['left','center','center','left']" data-hoffset="['215','-435','-661','-292']"
                        data-y="['top','middle','middle','top']" data-voffset="['561','130','-27','251']"
                        data-fontsize="['34','34','100','60']" data-lineheight="['72','72','100','90']"
-                       data-color="['rgb(155,155,155)','rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions='' data-responsive_offset="on"
+                       data-color="['rgb(155,155,155)','rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)']"
+                       data-width="none"
+                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions=''
+                       data-responsive_offset="on"
                        data-frames='[{"delay":1720,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);br:0px 0px 0px 0px;"}]'
                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -625,8 +685,10 @@
                        data-x="['left','center','center','left']" data-hoffset="['215','-435','-654','-390']"
                        data-y="['top','middle','middle','top']" data-voffset="['637','205','-174','495']"
                        data-fontsize="['34','34','100','60']" data-lineheight="['72','72','100','90']"
-                       data-color="['rgb(155,155,155)','rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions='' data-responsive_offset="on"
+                       data-color="['rgb(155,155,155)','rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)']"
+                       data-width="none"
+                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions=''
+                       data-responsive_offset="on"
                        data-frames='[{"delay":2140,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);br:0px 0px 0px 0px;"}]'
                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -639,13 +701,17 @@
                     data-slotamount="default,default,default,default,default,default" data-hideafterloop="0"
                     data-hideslideonmobile="off" data-easein="default,default,default,default,default,default"
                     data-easeout="default,default,default,default,default,default"
-                    data-masterspeed="700,default,default,default,default,default" data-thumb="" data-rotate="0,0,0,0,0,0"
-                    data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4=""
+                    data-masterspeed="700,default,default,default,default,default" data-thumb=""
+                    data-rotate="0,0,0,0,0,0"
+                    data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
+                    data-param4=""
                     data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
                     data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/images/revimages/dummy.png" data-bgcolor='#e1dcd5' style='background:#e1dcd5' alt=""
-                         data-lazyload="assets/images/revimages/transparent.png" data-bgposition="center center" data-bgfit="cover"
+                    <img src="assets/images/revimages/dummy.png" data-bgcolor='#e1dcd5' style='background:#e1dcd5'
+                         alt=""
+                         data-lazyload="assets/images/revimages/transparent.png" data-bgposition="center center"
+                         data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
 
@@ -658,36 +724,45 @@
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 5;">
-                        <div class="rs-looped rs-slideloop" data-easing="" data-speed="2" data-xs="0" data-xe="0" data-ys="-10"
+                        <div class="rs-looped rs-slideloop" data-easing="" data-speed="2" data-xs="0" data-xe="0"
+                             data-ys="-10"
                              data-ye="10"><img src="assets/images/revimages/dummy.png" alt=""
-                                               data-ww="['469auto','469auto','469auto','370px']" data-hh="['708px','708','708','558px']"
-                                               data-lazyload="assets/images/revimages/smart/slider-homepage5-img3.png" data-no-retina> </div>
+                                               data-ww="['469auto','469auto','469auto','370px']"
+                                               data-hh="['708px','708','708','558px']"
+                                               data-lazyload="assets/images/revimages/smart/slider-homepage5-img3.png"
+                                               data-no-retina></div>
                     </div>
 
                     <!-- LAYER NR. 26 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-29-layer-13" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-29-layer-13"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1171','142','67','48']" data-y="['top','top','top','top']"
                          data-voffset="['250','216','162','84']" data-fontsize="['18','14','18','16']"
                          data-color="['rgb(51,51,51)','rgb(105,105,105)','rgb(105,105,105)','rgb(105,105,105)']"
-                         data-letterspacing="['','','0','0']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-letterspacing="['','','0','0']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 6; white-space: nowrap; font-size: 18px; line-height: 36px; font-weight: 400; color: #333333; font-family:Work Sans;">
-                        New collection A-W ss17 </div>
+                        New collection A-W ss17
+                    </div>
 
                     <!-- LAYER NR. 27 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-29-layer-3" data-x="['left','center','center','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-29-layer-3"
+                         data-x="['left','center','center','left']"
                          data-hoffset="['1174','257','-125','49']" data-y="['middle','middle','middle','top']"
                          data-voffset="['1','-20','-180','125']" data-fontsize="['100','80','80','50']"
-                         data-lineheight="['120','90','90','60']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-lineheight="['120','90','90','60']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":1280,"speed":2000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 7; white-space: nowrap; font-size: 100px; line-height: 120px; font-weight: 600; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                        Innovative<br> design </div>
+                        Innovative<br> design
+                    </div>
 
                     <!-- LAYER NR. 28 -->
                     <div class="tp-caption Slider-button-alt rev-btn  tp-resizeme" id="slide-29-layer-20"
@@ -698,48 +773,58 @@
                          data-whitespace="nowrap" data-type="button" data-actions='' data-responsive_offset="on"
                          data-frames='[{"delay":1660,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);bg:transparent;"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
-                         data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]"
+                         data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
+                         data-paddingleft="[35,35,35,35]"
                          style="z-index: 8; min-width: 154px; max-width: 154px; max-width: 45px; max-width: 45px; white-space: nowrap; letter-spacing: 1px;border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
                         <a class="revslider-button" href="shop-left-sidebar"> SHOP NOW</a>
                     </div>
 
                     <!-- LAYER NR. 29 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-29-layer-17" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-29-layer-17"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1600','-671','-509','-382']" data-y="['middle','middle','top','top']"
                          data-voffset="['330','280','784','367']" data-fontsize="['48','56','72','40']"
-                         data-lineheight="['56','64','96','50']" data-fontweight="['400','300','700','700']" data-width="none"
-                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']" data-type="text"
+                         data-lineheight="['56','64','96','50']" data-fontweight="['400','300','700','700']"
+                         data-width="none"
+                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-type="text"
                          data-responsive_offset="on"
                          data-frames='[{"delay":1160,"speed":1940,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 9; white-space: nowrap; font-size: 48px; line-height: 56px; font-weight: 400; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                        3 </div>
+                        3
+                    </div>
 
                     <!-- LAYER NR. 30 -->
                     <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-29-layer-21"
                          data-x="['left','left','left','left']" data-hoffset="['1646','1646','1646','1646']"
                          data-y="['top','top','top','top']" data-voffset="['760','760','760','760']" data-width="80"
-                         data-height="2" data-whitespace="nowrap" data-visibility="['on','off','off','off']" data-type="shape"
+                         data-height="2" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-type="shape"
                          data-responsive_offset="on"
                          data-frames='[{"delay":1000,"speed":1700,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                         style="z-index: 10;background-color:rgba(0,0,0,0.5);"> </div>
+                         style="z-index: 10;background-color:rgba(0,0,0,0.5);"></div>
 
                     <!-- LAYER NR. 31 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-29-layer-18" data-x="['left','center','left','left']"
+                    <div class="tp-caption   tp-resizeme" id="slide-29-layer-18"
+                         data-x="['left','center','left','left']"
                          data-hoffset="['1750','-607','-327','-263']" data-y="['middle','middle','top','top']"
                          data-voffset="['330','283','795','370']" data-fontsize="['48','34','72','40']"
                          data-lineheight="['56','40','96','50']" data-fontweight="['400','300','700','700']"
-                         data-color="['rgba(51,51,51,0.3)','rgb(204,204,204)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']" data-type="text"
+                         data-color="['rgba(51,51,51,0.3)','rgb(204,204,204)','rgb(51,51,51)','rgb(51,51,51)']"
+                         data-width="none"
+                         data-height="none" data-whitespace="nowrap" data-visibility="['on','off','off','off']"
+                         data-type="text"
                          data-responsive_offset="on"
                          data-frames='[{"delay":840,"speed":1940,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 11; white-space: nowrap; font-size: 48px; line-height: 56px; font-weight: 400; color: rgba(51,51,51,0.3); letter-spacing: 0px;font-family:Work Sans;">
-                        3 </div>
+                        3
+                    </div>
 
                     <!-- LAYER NR. 32 -->
                     <div class="tp-caption   tp-resizeme" id="slide-29-layer-22" data-x="['left','left','left','left']"
@@ -747,13 +832,15 @@
                          data-voffset="['228','210','104','207']" data-fontsize="['14','14','24','24']"
                          data-lineheight="['24','24','36','36']"
                          data-color="['rgb(51,51,51)','rgb(105,105,105)','rgb(105,105,105)','rgb(105,105,105)']"
-                         data-letterspacing="['1','','0','0']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-letterspacing="['1','','0','0']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":700,"speed":1500,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;rZ:90;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 12; white-space: nowrap; font-size: 14px; line-height: 24px; font-weight: 400; color: #333333; letter-spacing: 1px;font-family:Work Sans;">
-                        ONLINE STORE </div>
+                        ONLINE STORE
+                    </div>
 
                     <!-- LAYER NR. 33 -->
                     <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-29-layer-24"
@@ -763,15 +850,17 @@
                          data-frames='[{"delay":980,"speed":1490,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                         style="z-index: 13;background-color:rgb(155,155,155);"> </div>
+                         style="z-index: 13;background-color:rgb(155,155,155);"></div>
 
                     <!-- LAYER NR. 34 -->
                     <a class="tp-caption   tp-resizeme" href="#" target="_self" id="slide-29-layer-25"
                        data-x="['left','left','center','left']" data-hoffset="['215','42','-598','-393']"
                        data-y="['top','middle','middle','top']" data-voffset="['486','56','119','23']"
                        data-fontsize="['34','34','100','60']" data-lineheight="['72','72','100','90']"
-                       data-color="['rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions='' data-responsive_offset="on"
+                       data-color="['rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)','rgb(51,51,51)']"
+                       data-width="none"
+                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions=''
+                       data-responsive_offset="on"
                        data-frames='[{"delay":1260,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);br:0px 0px 0px 0px;"}]'
                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -783,8 +872,10 @@
                        data-x="['left','center','center','left']" data-hoffset="['215','-435','-661','-292']"
                        data-y="['top','middle','middle','top']" data-voffset="['561','130','-27','251']"
                        data-fontsize="['34','34','100','60']" data-lineheight="['72','72','100','90']"
-                       data-color="['rgb(155,155,155)','rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions='' data-responsive_offset="on"
+                       data-color="['rgb(155,155,155)','rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)']"
+                       data-width="none"
+                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions=''
+                       data-responsive_offset="on"
                        data-frames='[{"delay":1720,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);br:0px 0px 0px 0px;"}]'
                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -796,8 +887,10 @@
                        data-x="['left','center','center','left']" data-hoffset="['215','-435','-654','-390']"
                        data-y="['top','middle','middle','top']" data-voffset="['637','205','-174','495']"
                        data-fontsize="['34','34','100','60']" data-lineheight="['72','72','100','90']"
-                       data-color="['rgb(155,155,155)','rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)']" data-width="none"
-                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions='' data-responsive_offset="on"
+                       data-color="['rgb(155,155,155)','rgb(155,155,155)','rgb(51,51,51)','rgb(51,51,51)']"
+                       data-width="none"
+                       data-height="none" data-whitespace="nowrap" data-type="text" data-actions=''
+                       data-responsive_offset="on"
                        data-frames='[{"delay":2140,"speed":2000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);br:0px 0px 0px 0px;"}]'
                        data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -946,7 +1039,8 @@
                         <div class="countdown-wrapper text-center">
                             <h3>Deal of the day</h3>
                             <div class="deal-countdown" data-countdown="2020/01/01"></div>
-                            <a href="shop-left-sidebar" class="lezada-button lezada-button--medium lezada-button--icon--left">
+                            <a href="shop-left-sidebar"
+                               class="lezada-button lezada-button--medium lezada-button--icon--left">
                                 <i class="icon-left ion-ios-cart"></i> Only $39</a>
                         </div>
                     </div>
@@ -1026,16 +1120,20 @@
 
                             <div class="single-product__floating-icons">
                   <span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                            data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                            data-tippy-animation="shift-away" data-tippy-delay="50"
+                                            data-tippy-arrow="true"
                                             data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                           class="ion-android-favorite-outline"></i></a></span>
                                 <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                         data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                         data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                         data-tippy-arrow="true"
                                                          data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-ios-shuffle-strong"></i></a></span>
                                 <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                           data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                           data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                           data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                           data-tippy-delay="50"
+                                                           data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                           data-tippy-placement="left"><i
                                         class="ion-ios-search-strong"></i></a></span>
                             </div>
                         </div>
@@ -1046,7 +1144,7 @@
 
                         <div class="single-product__content">
                             <div class="title">
-                                <h3> <a href="shop-product-basic">Round Wooden Table</a></h3>
+                                <h3><a href="shop-product-basic">Round Wooden Table</a></h3>
                                 <a href="#">Add to cart</a>
                             </div>
                             <div class="price">
@@ -1076,16 +1174,20 @@
 
                             <div class="single-product__floating-icons">
                   <span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                            data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                            data-tippy-animation="shift-away" data-tippy-delay="50"
+                                            data-tippy-arrow="true"
                                             data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                           class="ion-android-favorite-outline"></i></a></span>
                                 <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                         data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                         data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                         data-tippy-arrow="true"
                                                          data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-ios-shuffle-strong"></i></a></span>
                                 <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                           data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                           data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                           data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                           data-tippy-delay="50"
+                                                           data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                           data-tippy-placement="left"><i
                                         class="ion-ios-search-strong"></i></a></span>
                             </div>
                         </div>
@@ -1096,7 +1198,7 @@
 
                         <div class="single-product__content">
                             <div class="title">
-                                <h3> <a href="shop-product-basic">Comfort Sofa</a></h3>
+                                <h3><a href="shop-product-basic">Comfort Sofa</a></h3>
                                 <a href="#">Add to cart</a>
                             </div>
                             <div class="price">
@@ -1126,16 +1228,20 @@
 
                             <div class="single-product__floating-icons">
                   <span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                            data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                            data-tippy-animation="shift-away" data-tippy-delay="50"
+                                            data-tippy-arrow="true"
                                             data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                           class="ion-android-favorite-outline"></i></a></span>
                                 <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                         data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                         data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                         data-tippy-arrow="true"
                                                          data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-ios-shuffle-strong"></i></a></span>
                                 <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                           data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                           data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                           data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                           data-tippy-delay="50"
+                                                           data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                           data-tippy-placement="left"><i
                                         class="ion-ios-search-strong"></i></a></span>
                             </div>
                         </div>
@@ -1146,7 +1252,7 @@
 
                         <div class="single-product__content">
                             <div class="title">
-                                <h3> <a href="shop-product-basic"> Comfort Sofa Green</a></h3>
+                                <h3><a href="shop-product-basic"> Comfort Sofa Green</a></h3>
                                 <a href="#">Add to cart</a>
                             </div>
                             <div class="price">
@@ -1177,16 +1283,20 @@
 
                             <div class="single-product__floating-icons">
                   <span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                            data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                            data-tippy-animation="shift-away" data-tippy-delay="50"
+                                            data-tippy-arrow="true"
                                             data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                           class="ion-android-favorite-outline"></i></a></span>
                                 <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                         data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                         data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                         data-tippy-arrow="true"
                                                          data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-ios-shuffle-strong"></i></a></span>
                                 <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                           data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                           data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                           data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                           data-tippy-delay="50"
+                                                           data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                           data-tippy-placement="left"><i
                                         class="ion-ios-search-strong"></i></a></span>
                             </div>
                         </div>
@@ -1197,7 +1307,7 @@
 
                         <div class="single-product__content">
                             <div class="title">
-                                <h3> <a href="shop-product-basic">Wooden Round Table</a></h3>
+                                <h3><a href="shop-product-basic">Wooden Round Table</a></h3>
                                 <a href="#">Add to cart</a>
                             </div>
                             <div class="price">
@@ -1227,16 +1337,20 @@
 
                             <div class="single-product__floating-icons">
                   <span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                            data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                            data-tippy-animation="shift-away" data-tippy-delay="50"
+                                            data-tippy-arrow="true"
                                             data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                           class="ion-android-favorite-outline"></i></a></span>
                                 <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                         data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                         data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                         data-tippy-arrow="true"
                                                          data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-ios-shuffle-strong"></i></a></span>
                                 <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                           data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                           data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                           data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                           data-tippy-delay="50"
+                                                           data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                           data-tippy-placement="left"><i
                                         class="ion-ios-search-strong"></i></a></span>
                             </div>
                         </div>
@@ -1247,7 +1361,7 @@
 
                         <div class="single-product__content">
                             <div class="title">
-                                <h3> <a href="shop-product-basic">Wooden Round Table</a></h3>
+                                <h3><a href="shop-product-basic">Wooden Round Table</a></h3>
                                 <a href="#">Add to cart</a>
                             </div>
                             <div class="price">
@@ -1260,7 +1374,6 @@
                     </div>
                 </div>
                 <!--=======  End of single product  =======-->
-
 
 
                 <!--=======  single product  =======-->
@@ -1280,16 +1393,20 @@
 
                             <div class="single-product__floating-icons">
                   <span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                            data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                            data-tippy-animation="shift-away" data-tippy-delay="50"
+                                            data-tippy-arrow="true"
                                             data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                           class="ion-android-favorite-outline"></i></a></span>
                                 <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                         data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                         data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                         data-tippy-arrow="true"
                                                          data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-ios-shuffle-strong"></i></a></span>
                                 <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                           data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                           data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                           data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                           data-tippy-delay="50"
+                                                           data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                           data-tippy-placement="left"><i
                                         class="ion-ios-search-strong"></i></a></span>
                             </div>
                         </div>
@@ -1300,7 +1417,7 @@
 
                         <div class="single-product__content">
                             <div class="title">
-                                <h3> <a href="shop-product-basic">Green Coutch</a></h3>
+                                <h3><a href="shop-product-basic">Green Coutch</a></h3>
                                 <a href="#">Add to cart</a>
                             </div>
                             <div class="price">
@@ -1337,12 +1454,16 @@
                 <!-- SLIDE  -->
                 <li data-index="rs-49" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
                     data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="470"
-                    data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
-                    data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
+                    data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
+                    data-param3=""
+                    data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
+                    data-param10=""
                     data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/images/revimages/transparent.png" data-bgcolor='#ffffff' style='background:#ffffff' alt=""
-                         data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off"
+                    <img src="assets/images/revimages/transparent.png" data-bgcolor='#ffffff' style='background:#ffffff'
+                         alt=""
+                         data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
+                         data-bgparallax="off"
                          class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
 
@@ -1350,12 +1471,13 @@
                     <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-49-layer-1"
                          data-x="['right','right','right','right']" data-hoffset="['0','0','0','0']"
                          data-y="['top','top','top','top']" data-voffset="['49','70','70','70']"
-                         data-width="['1250','708','708','379']" data-height="['540','541','541','290']" data-whitespace="nowrap"
+                         data-width="['1250','708','708','379']" data-height="['540','541','541','290']"
+                         data-whitespace="nowrap"
                          data-type="shape" data-responsive_offset="on"
                          data-frames='[{"delay":410,"speed":1000,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                         style="z-index: 5;background-color:rgb(236,244,246);"> </div>
+                         style="z-index: 5;background-color:rgb(236,244,246);"></div>
 
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-49-layer-4"
@@ -1366,86 +1488,102 @@
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 6;"><img src="assets/images/revimages/smart/sofa.png" alt=""
-                                                  data-ww="['1006px','762px','762px','422px']" data-hh="['429px','325px','325px','180px']" data-no-retina>
+                                                  data-ww="['1006px','762px','762px','422px']"
+                                                  data-hh="['429px','325px','325px','180px']" data-no-retina>
                     </div>
 
                     <!-- LAYER NR. 3 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-49-layer-5" data-x="['right','right','right','right']"
+                    <div class="tp-caption   tp-resizeme" id="slide-49-layer-5"
+                         data-x="['right','right','right','right']"
                          data-hoffset="['0','-12','0','613']" data-y="['top','top','top','top']"
                          data-voffset="['150','316','331','297']" data-fontsize="['200','150','130','130']"
-                         data-lineheight="['200','150','130','130']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-lineheight="['200','150','130','130']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":410,"speed":2020,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 7; white-space: nowrap; font-size: 200px; line-height: 200px; font-weight: 600; color: #ffffff; letter-spacing: 0px;font-family:Work Sans;">
-                        minimal </div>
+                        minimal
+                    </div>
 
                     <!-- LAYER NR. 4 -->
-                    <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-1" id="slide-49-layer-6"
+                    <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-1"
+                         id="slide-49-layer-6"
                          data-x="['left','left','left','left']" data-hoffset="['1583','794','549','330']"
                          data-y="['top','top','top','top']" data-voffset="['315','406','407','394']" data-width="100"
                          data-height="100" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on"
                          data-frames='[{"delay":800,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                         style="z-index: 8;background-color:rgb(51,51,51);border-radius:50px 50px 50px 50px;"> </div>
+                         style="z-index: 8;background-color:rgb(51,51,51);border-radius:50px 50px 50px 50px;"></div>
 
                     <!-- LAYER NR. 5 -->
                     <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-49-layer-7"
                          data-x="['right','right','right','right']" data-hoffset="['263','156','156','76']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['-49','41','41','29']" data-width="none"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['-49','41','41','29']"
+                         data-width="none"
                          data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":970,"speed":1400,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 9; white-space: nowrap; font-size: 16px; line-height: 25px; font-weight: 400; color: #ffffff; letter-spacing: 1px;font-family:Work Sans;">
-                        ONLY </div>
+                        ONLY
+                    </div>
 
                     <!-- LAYER NR. 6 -->
                     <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-49-layer-8"
                          data-x="['right','right','right','right']" data-hoffset="['265','158','158','80']"
-                         data-y="['middle','middle','middle','middle']" data-voffset="['-22','72','72','60']" data-width="none"
+                         data-y="['middle','middle','middle','middle']" data-voffset="['-22','72','72','60']"
+                         data-width="none"
                          data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":970,"speed":1410,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 10; white-space: nowrap; font-size: 20px; line-height: 25px; font-weight: 700; color: #ffffff; letter-spacing: 1px;font-family:Work Sans;">
-                        $39 </div>
+                        $39
+                    </div>
 
                     <!-- LAYER NR. 7 -->
                     <div class="tp-caption   tp-resizeme" id="slide-49-layer-9" data-x="['left','left','left','left']"
                          data-hoffset="['287','287','103','24']" data-y="['top','top','top','top']"
-                         data-voffset="['170','170','124','126']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-voffset="['170','170','124','126']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":660,"speed":1280,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 11; white-space: nowrap; font-size: 16px; line-height: 22px; font-weight: 500; color: #333333; letter-spacing: 2px;font-family:Work Sans;">
-                        FEATURED PRODUCT </div>
+                        FEATURED PRODUCT
+                    </div>
 
                     <!-- LAYER NR. 8 -->
                     <div class="tp-caption   tp-resizeme" id="slide-49-layer-10" data-x="['left','left','left','left']"
                          data-hoffset="['281','281','98','22']" data-y="['top','top','top','top']"
-                         data-voffset="['208','208','162','166']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-voffset="['208','208','162','166']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":1050,"speed":1230,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 12; white-space: nowrap; font-size: 48px; line-height: 64px; font-weight: 400; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                        Wood cloth sofa </div>
+                        Wood cloth sofa
+                    </div>
 
                     <!-- LAYER NR. 9 -->
                     <div class="tp-caption   tp-resizeme" id="slide-49-layer-11" data-x="['left','left','left','left']"
                          data-hoffset="['282','282','99','23']" data-y="['top','top','top','top']"
-                         data-voffset="['296','296','250','250']" data-fontsize="['15','15','15','14']" data-width="none"
+                         data-voffset="['296','296','250','250']" data-fontsize="['15','15','15','14']"
+                         data-width="none"
                          data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":1300,"speed":1180,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 13; white-space: nowrap; font-size: 15px; line-height: 26px; font-weight: 400; color: #7e7e7e; letter-spacing: 0.5px;font-family:Work Sans;">
-                        Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse<br> suscipit sagittis leo estibulum issim
-                        Lorem ipsum dolor sit amet,<br> consectetur cing elit. </div>
+                        Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse<br> suscipit sagittis leo
+                        estibulum issim
+                        Lorem ipsum dolor sit amet,<br> consectetur cing elit.
+                    </div>
 
                     <!-- LAYER NR. 10 -->
                     <div class="tp-caption Slider-button-alt rev-btn " id="slide-49-layer-12"
@@ -1455,7 +1593,8 @@
                          data-responsive="off"
                          data-frames='[{"delay":1580,"speed":1270,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);bg:transparent;"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
-                         data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]"
+                         data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
+                         data-paddingleft="[35,35,35,35]"
                          style="z-index: 14; white-space: nowrap; letter-spacing: 1px;border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         <a class="revslider-button" href="shop-left-sidebar"> ONLY $39</a>
@@ -1517,7 +1656,7 @@
   =            footer area         =
   =============================================-->
 
-    <jsp:include page="include/foot.jsp"/>
+<jsp:include page="include/foot.jsp"/>
 
 <!--=====  End of footer area  ======-->
 
@@ -1551,8 +1690,10 @@
 
                 <div class="single-widget">
                     <h2 class="widget-title">About Us</h2>
-                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products over other
-                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion clothes.</p>
+                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
+                        over other
+                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion
+                        clothes.</p>
                 </div>
 
                 <!--=======  End of single widget  =======-->
@@ -1569,16 +1710,20 @@
                 <div class="social-icons">
                     <ul>
                         <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-twitter"></i></a></li>
                         <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-facebook"></i></a></li>
                         <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-instagram"></i></a></li>
                         <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-youtube-play"></i></a></li>
                     </ul>
                 </div>
@@ -1628,7 +1773,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1647,7 +1793,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="main-price discounted">$300.00</span> <span class="discounted-price">$220.00</span></p>
+                            <p><span class="main-price discounted">$300.00</span> <span
+                                    class="discounted-price">$220.00</span></p>
 
                         </div>
                     </div>
@@ -1666,7 +1813,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$100.00</span> <span class="discounted-price">$80.00</span></p>
+                            <p><span class="main-price discounted">$100.00</span> <span
+                                    class="discounted-price">$80.00</span></p>
 
                         </div>
                     </div>
@@ -1685,7 +1833,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1704,7 +1853,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1946,8 +2096,10 @@
             <span class="discounted-price">$300.00</span>
         </p>
 
-        <p class="description">Hurley Dry-Fit Chino Short. Men's chino short. Outseam Length: 19 Dri-FIT Technology helps
-            keep you dry and comfortable. Made with sweat-wicking fabric. Fitted waist with belt loops. Button waist with
+        <p class="description">Hurley Dry-Fit Chino Short. Men's chino short. Outseam Length: 19 Dri-FIT Technology
+            helps
+            keep you dry and comfortable. Made with sweat-wicking fabric. Fitted waist with belt loops. Button waist
+            with
             zip fly provides a classic look and feel .</p>
 
         <span class="quickview-title">Quantity:</span>
@@ -1963,11 +2115,11 @@
         <div class="quick-view-other-info">
             <table>
                 <tr class="single-info">
-                    <td class="quickview-title">SKU: </td>
+                    <td class="quickview-title">SKU:</td>
                     <td class="quickview-value">12345</td>
                 </tr>
                 <tr class="single-info">
-                    <td class="quickview-title">Categories: </td>
+                    <td class="quickview-title">Categories:</td>
                     <td class="quickview-value">
                         <a href="#">Fashion</a>,
                         <a href="#">Men</a>,
@@ -1975,14 +2127,14 @@
                     </td>
                 </tr>
                 <tr class="single-info">
-                    <td class="quickview-title">Tags: </td>
+                    <td class="quickview-title">Tags:</td>
                     <td class="quickview-value">
                         <a href="#">Fashion</a>,
                         <a href="#">Men</a>
                     </td>
                 </tr>
                 <tr class="single-info">
-                    <td class="quickview-title">Share on: </td>
+                    <td class="quickview-title">Share on:</td>
                     <td class="quickview-value">
                         <ul class="quickview-social-icons">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>

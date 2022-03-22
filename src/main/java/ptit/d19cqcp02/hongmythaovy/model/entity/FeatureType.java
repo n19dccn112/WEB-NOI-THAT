@@ -13,20 +13,19 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "feature_type")
+@Table(name = "featuretype")
 public class FeatureType {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private String featureTypeId;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "id")
+  private Long featureTypeId;
 
-    @Column(name = "name")
-    private String featureTypeName;
+  @Column(name = "name")
+  private String featureTypeName;
 
-    @Column(name = "unit")
-    private String featureTypeUnit;
+  @Column(name = "unit")
+  private String featureTypeUnit;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "featureType")
-    private List<Feature> features;
-
+  @OneToMany(fetch = FetchType.LAZY, mappedBy = "featureType")
+  private List<Feature> features;
 }

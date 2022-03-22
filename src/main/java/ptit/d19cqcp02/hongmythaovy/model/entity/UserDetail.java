@@ -1,34 +1,60 @@
 package ptit.d19cqcp02.hongmythaovy.model.entity;
 
-import lombok.AllArgsConstructor;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity
+@Table(name = "userdetails")
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
-@Table(name = "userdetails")
+@Schema(hidden = true)
 public class UserDetail {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long userdetailId;
+  @Id
+  // @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
-    @Column(name = "address")
-    private String userdetailAddress;
+  @Column(nullable = true)
+  private String firstName;
 
-    @Column(name = "first_name")
-    private String userdetailFirstName;
+  @Column(nullable = true)
+  private String lastName;
 
-    @Column(name = "last_name")
-    private String userdetailLastName;
+  @Column(nullable = true)
+  private String address;
 
-    @OneToOne
-    private User user;
+  @OneToOne(optional = false)
+  @PrimaryKeyJoinColumn
+  private User user;
 
+  public UserDetail(Long id, String firstName, String lastName, String address, User user) {
+    this.id = id;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.address = address;
+    this.user = user;
+  }
+
+  public UserDetail() {}
+
+  @Override
+  public String toString() {
+    return "UserDetail{"
+        + "id="
+        + id
+        + ", firstName='"
+        + firstName
+        + '\''
+        + ", lastName='"
+        + lastName
+        + '\''
+        + ", address='"
+        + address
+        + '\''
+        + ", user="
+        + user
+        + '}';
+  }
 }

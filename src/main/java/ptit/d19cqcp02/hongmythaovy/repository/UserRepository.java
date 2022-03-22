@@ -1,9 +1,8 @@
 package ptit.d19cqcp02.hongmythaovy.repository;
 
-import ptit.d19cqcp02.hongmythaovy.model.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+import ptit.d19cqcp02.hongmythaovy.model.entity.User;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
-}
+public interface UserRepository extends JpaRepository<User, Long> {}

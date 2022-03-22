@@ -1,43 +1,85 @@
 package ptit.d19cqcp02.hongmythaovy.model.entity;
 
-import lombok.AllArgsConstructor;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 
 @Entity
+@Table(
+    name = "username",
+    uniqueConstraints = {
+      @UniqueConstraint(columnNames = {"username"}),
+      @UniqueConstraint(columnNames = {"email"})
+    })
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
-@Table(name = "user")
+@Schema(hidden = true)
 public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long userId;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
-    @Column(name = "email")
-    private String userEmail;
+  @Column(unique = true)
+  private String username;
 
-    @Column(name = "password")
-    private String userPassword;
+  private String password;
+  private String email;
+  // private RoleName roleName;
+  @ManyToMany(fetch = FetchType.LAZY)
+  @JoinTable(
+      name = "user_roles",
+      joinColumns = @JoinColumn(name = "user_id"),
+      inverseJoinColumns = @JoinColumn(name = "role_id"))
+  private Set<Role> roles = new HashSet<>();
 
-    @Column(name = "username")
-    private String userName;
+  public User() {
+    super();
+  }
 
-    @OneToMany(fetch = FetchType.LAZY)
-    private List<Rate> rates;
+  public User(String username, String username1, String email, String encode) {
+    super();
+    // this.name = name;
+    this.username = username;
+    this.email = email;
+    this.password = encode;
+  }
 
-    @OneToMany(fetch = FetchType.LAZY)
-    private List<Order> orders;
+  // @Transient
+  @Override
+  public int hashCode() {
+    return Objects.hash(id);
+  }
 
-    @OneToMany(fetch = FetchType.LAZY)
-    private List<UserDetail> userDetails;
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj) return true;
+    if (obj == null) return false;
+    if (getClass() != obj.getClass()) return false;
+    User other = (User) obj;
+    return Objects.equals(id, other.id);
+  }
 
-    @OneToMany(fetch = FetchType.LAZY)
-    private List<UserRole> userRoles;
+  @Override
+  public String toString() {
+    return "User{"
+        + "id="
+        + id
+        + ", username='"
+        + username
+        + '\''
+        + ", password='"
+        + password
+        + '\''
+        + ", email='"
+        + email
+        + '\''
+        + ", roles="
+        + roles
+        + '}';
+  }
 }

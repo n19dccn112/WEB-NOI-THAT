@@ -17,32 +17,30 @@ import java.util.List;
 @NoArgsConstructor
 @Table(name = "orders")
 public class Order {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "orderid")
-    private Long orderId;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "orderid")
+  private Long orderId;
 
-    @Column(name = "address")
-    private String orderAddress;
+  @Column(name = "address")
+  private String orderAddress;
 
-    @Column(name = "status")
-    private String orderStatus;
+  @Column(name = "status")
+  private String orderStatus;
 
-    @Column(name = "time")
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(pattern = "dd-MM-yyyy hh:mm:ss")
-    private Date orderTime;
+  @Column(name = "time")
+  @Temporal(TemporalType.TIMESTAMP)
+  @DateTimeFormat(pattern = "dd-MM-yyyy hh:mm:ss")
+  private Date orderTime;
 
+  @Column(name = "phone")
+  private String orderPhone;
 
+  @Transient
+  @OneToMany(fetch = FetchType.LAZY)
+  private List<OrderDetail> orderDetails;
 
-    @Column(name = "phone")
-    private String orderPhone;
-
-    @OneToMany(fetch = FetchType.LAZY)
-    private List<OrderDetail> orderDetails;
-
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(columnDefinition = "user_id")
-    private User user;
-
+  @ManyToOne(fetch = FetchType.EAGER)
+  @JoinColumn(name = "user_id")
+  private User user;
 }

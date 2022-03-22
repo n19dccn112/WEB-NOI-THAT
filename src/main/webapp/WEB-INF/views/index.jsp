@@ -427,7 +427,7 @@
 
                 <div class="tab-product-navigation mb-50">
                     <div class="nav nav-tabs justify-content-center" id="nav-tab2" role="tablist">
-                        <c:forEach items="${cates}"  var="category" >
+                        <c:forEach items="${cates}" var="category">
                             <a class="nav-item nav-link active" id="product-tab-1" data-toggle="tab"
                                href="#product-series-1"
                                role="tab" aria-selected="true">${category.categoryName}</a>
@@ -452,7 +452,7 @@
                             <c:forEach var="i" begin="1" end="12">
                                 <c:set var="numRan" value="${Math.random()*products.size()}"/>
 
-                                <!--=======  single product  =======-->
+                                <!--======= single product =======-->
                                 <div class="col-12 col-lg-4 col-md-6 col-sm-6 mb-45">
                                     <div class="single-product">
                                         <!--=======  single product image  =======-->
@@ -465,15 +465,16 @@
                                                      class="img-fluid" alt="">
                                             </a>
 
-<%--                                            <div class="single-product__floating-badges">--%>
-<%--                                                <span class="onsale">-25%</span>--%>
-<%--                                            </div>--%>
+                                                <%--                                            <div class="single-product__floating-badges">--%>
+                                                <%--                                                <span class="onsale">-25%</span>--%>
+                                                <%--                                            </div>--%>
 
                                             <div class="single-product__floating-icons">
                                                     <span class="wishlist"><a href="#" data-tippy="Add to wishlist"
                                                                               data-tippy-inertia="true"
                                                                               data-tippy-animation="shift-away"
-                                                                              data-tippy-delay="50" data-tippy-arrow="true"
+                                                                              data-tippy-delay="50"
+                                                                              data-tippy-arrow="true"
                                                                               data-tippy-theme="sharpborder"
                                                                               data-tippy-placement="left"><i
                                                             class="ion-android-favorite-outline"></i></a></span>
@@ -502,7 +503,8 @@
 
                                         <div class="single-product__content">
                                             <div class="title">
-                                                <h3><a href="shop-product-basic">${products[numRan].productName}</a></h3>
+                                                <h3><a href="shop-product-basic">${products[numRan].productName}</a>
+                                                </h3>
                                                 <a href="#">Add to cart</a>
                                             </div>
                                             <div class="price">
@@ -513,7 +515,7 @@
                                         <!--=======  End of single product content  =======-->
                                     </div>
                                 </div>
-                                <!--=======  End of single product  =======-->
+                                <!--======= End of single product =======-->
                             </c:forEach>
                         </div>
                     </div>

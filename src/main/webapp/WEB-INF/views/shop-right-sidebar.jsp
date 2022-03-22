@@ -5,9 +5,9 @@
   Time: 4:23 CH
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=utf-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -15,7 +15,8 @@
 
 
 <!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/shop-right-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:07:14 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <jsp:include page="include/head.jsp"/>
 
 <body>
@@ -101,7 +102,7 @@
                     <ul class="dl-menu dl-menu-toggle">
                         <li class=""><a href="#">Home</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Home Group One</a>
+                                <li class=""><a href="#">Home Group One</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-trending">Trending</a></li>
                                         <li><a href="index-collection">My collection</a></li>
@@ -110,7 +111,7 @@
                                         <li><a href="index-smart">smart design</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group Two</a>
+                                <li><a href="#">Home Group Two</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-furniture">Furniture </a></li>
                                         <li><a href="index-essentials">Essentials</a></li>
@@ -119,7 +120,7 @@
                                         <li><a href="index-accessories">Accessories</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group three</a>
+                                <li><a href="#">Home Group three</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-shoppable">Shoppable</a></li>
 
@@ -128,7 +129,7 @@
                                         <li><a href="index-cosmetics">Cosmetics</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group four</a>
+                                <li><a href="#">Home Group four</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-decor">Home Decor</a></li>
                                         <li><a href="index-creative">Creative</a></li>
@@ -139,7 +140,7 @@
 
                         <li><a href="#">Shop</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop Pages</a>
+                                <li class=""><a href="#">Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-no-sidebar">Shop No Sidebar</a></li>
                                         <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
@@ -150,7 +151,7 @@
                                         <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Product Details Pages</a>
+                                <li class=""><a href="#">Product Details Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-basic">Basic </a></li>
                                         <li><a href="shop-product-fullwidth">Fullwidth</a></li>
@@ -163,7 +164,7 @@
 
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Other Shop Pages</a>
+                                <li class=""><a href="#">Other Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-with-background">Product with background</a></li>
                                         <li><a href="shop-cart">Shopping Cart</a></li>
@@ -181,7 +182,7 @@
                         </li>
                         <li><a href="#">Elements</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-product-categories">Product Categories</a></li>
                                         <li><a href="element-product-sliders">Product Sliders</a></li>
@@ -190,7 +191,7 @@
                                         <li><a href="element-recent-products">Recent Products</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-sale-products">Sale Products </a></li>
                                         <li><a href="element-featured-products">Featured products</a></li>
@@ -199,7 +200,7 @@
                                         <li><a href="element-product-attributes">Product Attributes</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Theming</a>
+                                <li class=""><a href="#">Theming</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-blog-posts">Blog Posts</a></li>
                                         <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
@@ -354,7 +355,8 @@
                         <!--=======  grid icons  =======-->
 
                         <div class="single-icon grid-icons">
-                            <a data-target="five-column" href="javascript:void(0)"><i class="ti-layout-grid4-alt"></i></a>
+                            <a data-target="five-column" href="javascript:void(0)"><i
+                                    class="ti-layout-grid4-alt"></i></a>
                             <a data-target="four-column" class="active" href="javascript:void(0)"><i
                                     class="ti-layout-grid3-alt"></i></a>
                             <a data-target="three-column" href="javascript:void(0)"><i class="ti-layout-grid2-alt"></i></a>
@@ -366,7 +368,8 @@
                         <!--=======  advance filter icon  =======-->
 
                         <div class="single-icon advance-filter-icon">
-                            <a href="javascript:void(0)" id="advance-filter-active-btn"><i class="ion-android-funnel"></i>
+                            <a href="javascript:void(0)" id="advance-filter-active-btn"><i
+                                    class="ion-android-funnel"></i>
                                 Filters</a>
                         </div>
 
@@ -466,32 +469,50 @@
                                 <li><a class="active" href="#" data-tippy="Black" data-tippy-inertia="true"
                                        data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
                                        data-tippy-theme="sharpborder"><span class="color-picker black"></span></a></li>
-                                <li><a href="#" data-tippy="Blue" data-tippy-inertia="true" data-tippy-animation="shift-away"
-                                       data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span
+                                <li><a href="#" data-tippy="Blue" data-tippy-inertia="true"
+                                       data-tippy-animation="shift-away"
+                                       data-tippy-delay="50" data-tippy-arrow="true"
+                                       data-tippy-theme="sharpborder"><span
                                         class="color-picker blue"></span></a></li>
-                                <li><a href="#" data-tippy="Brown" data-tippy-inertia="true" data-tippy-animation="shift-away"
-                                       data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span
+                                <li><a href="#" data-tippy="Brown" data-tippy-inertia="true"
+                                       data-tippy-animation="shift-away"
+                                       data-tippy-delay="50" data-tippy-arrow="true"
+                                       data-tippy-theme="sharpborder"><span
                                         class="color-picker brown"></span></a></li>
-                                <li><a href="#" data-tippy="Gold" data-tippy-inertia="true" data-tippy-animation="shift-away"
-                                       data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span
+                                <li><a href="#" data-tippy="Gold" data-tippy-inertia="true"
+                                       data-tippy-animation="shift-away"
+                                       data-tippy-delay="50" data-tippy-arrow="true"
+                                       data-tippy-theme="sharpborder"><span
                                         class="color-picker gold"></span></a></li>
-                                <li><a href="#" data-tippy="Green Coral" data-tippy-inertia="true" data-tippy-animation="shift-away"
-                                       data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span
+                                <li><a href="#" data-tippy="Green Coral" data-tippy-inertia="true"
+                                       data-tippy-animation="shift-away"
+                                       data-tippy-delay="50" data-tippy-arrow="true"
+                                       data-tippy-theme="sharpborder"><span
                                         class="color-picker green-coral"></span></a></li>
-                                <li><a href="#" data-tippy="Grey" data-tippy-inertia="true" data-tippy-animation="shift-away"
-                                       data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span
+                                <li><a href="#" data-tippy="Grey" data-tippy-inertia="true"
+                                       data-tippy-animation="shift-away"
+                                       data-tippy-delay="50" data-tippy-arrow="true"
+                                       data-tippy-theme="sharpborder"><span
                                         class="color-picker grey"></span></a></li>
-                                <li><a href="#" data-tippy="Oak" data-tippy-inertia="true" data-tippy-animation="shift-away"
-                                       data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span
+                                <li><a href="#" data-tippy="Oak" data-tippy-inertia="true"
+                                       data-tippy-animation="shift-away"
+                                       data-tippy-delay="50" data-tippy-arrow="true"
+                                       data-tippy-theme="sharpborder"><span
                                         class="color-picker oak"></span></a></li>
-                                <li><a href="#" data-tippy="Pink" data-tippy-inertia="true" data-tippy-animation="shift-away"
-                                       data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span
+                                <li><a href="#" data-tippy="Pink" data-tippy-inertia="true"
+                                       data-tippy-animation="shift-away"
+                                       data-tippy-delay="50" data-tippy-arrow="true"
+                                       data-tippy-theme="sharpborder"><span
                                         class="color-picker pink"></span></a></li>
-                                <li><a href="#" data-tippy="Silver" data-tippy-inertia="true" data-tippy-animation="shift-away"
-                                       data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span
+                                <li><a href="#" data-tippy="Silver" data-tippy-inertia="true"
+                                       data-tippy-animation="shift-away"
+                                       data-tippy-delay="50" data-tippy-arrow="true"
+                                       data-tippy-theme="sharpborder"><span
                                         class="color-picker silver"></span></a></li>
-                                <li><a href="#" data-tippy="White" data-tippy-inertia="true" data-tippy-animation="shift-away"
-                                       data-tippy-delay="50" data-tippy-arrow="true" data-tippy-theme="sharpborder"><span
+                                <li><a href="#" data-tippy="White" data-tippy-inertia="true"
+                                       data-tippy-animation="shift-away"
+                                       data-tippy-delay="50" data-tippy-arrow="true"
+                                       data-tippy-theme="sharpborder"><span
                                         class="color-picker white"></span></a></li>
                             </ul>
                         </div>
@@ -629,7 +650,8 @@
 
                                         <div class="single-widget-product__image">
                                             <a href="shop-product-basic">
-                                                <img src="assets/images/products/product-furniture-2-100x100.jpg" class="img-fluid" alt="">
+                                                <img src="assets/images/products/product-furniture-2-100x100.jpg"
+                                                     class="img-fluid" alt="">
                                             </a>
                                         </div>
 
@@ -640,7 +662,8 @@
                                         <div class="single-widget-product__content">
 
                                             <div class="single-widget-product__content__top">
-                                                <h3 class="product-title"><a href="shop-product-basic">Wooden Table</a></h3>
+                                                <h3 class="product-title"><a href="shop-product-basic">Wooden Table</a>
+                                                </h3>
                                                 <div class="price">
                                                     <span class="main-price discounted">$270.00</span>
                                                     <span class="discounted-price">$220.00</span>
@@ -669,7 +692,8 @@
 
                                         <div class="single-widget-product__image">
                                             <a href="shop-product-basic">
-                                                <img src="assets/images/products/product-furniture-11-100x100.jpg" class="img-fluid" alt="">
+                                                <img src="assets/images/products/product-furniture-11-100x100.jpg"
+                                                     class="img-fluid" alt="">
                                             </a>
                                         </div>
 
@@ -680,7 +704,8 @@
                                         <div class="single-widget-product__content">
 
                                             <div class="single-widget-product__content__top">
-                                                <h3 class="product-title"><a href="shop-product-basic">Sofa with cushion</a></h3>
+                                                <h3 class="product-title"><a href="shop-product-basic">Sofa with
+                                                    cushion</a></h3>
                                                 <div class="price">
                                                     <span class="main-price discounted">$660.00</span>
                                                     <span class="discounted-price">$600.00</span>
@@ -693,7 +718,6 @@
                                                     <i class="ion-android-star"></i>
                                                 </div>
                                             </div>
-
 
 
                                         </div>
@@ -711,7 +735,8 @@
 
                                         <div class="single-widget-product__image">
                                             <a href="shop-product-basic">
-                                                <img src="assets/images/products/soccer-4-100x100.jpg" class="img-fluid" alt="">
+                                                <img src="assets/images/products/soccer-4-100x100.jpg" class="img-fluid"
+                                                     alt="">
                                             </a>
                                         </div>
 
@@ -722,7 +747,8 @@
                                         <div class="single-widget-product__content">
 
                                             <div class="single-widget-product__content__top">
-                                                <h3 class="product-title"><a href="shop-product-basic">High waist trousers</a></h3>
+                                                <h3 class="product-title"><a href="shop-product-basic">High waist
+                                                    trousers</a></h3>
                                                 <div class="price">
                                                     <span class="main-price discounted">$36.00</span>
                                                     <span class="discounted-price">$33.00</span>
@@ -785,8 +811,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/cloth-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/cloth-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/cloth-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/cloth-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -795,19 +823,29 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
 
@@ -834,7 +872,7 @@
                                         <!-- <a href="#" class="clear-link">clear</a> -->
                                     </div>
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">High-waist Trousers</a></h3>
+                                        <h3><a href="shop-product-basic">High-waist Trousers</a></h3>
                                         <a href="#">Select options</a>
                                     </div>
                                     <div class="price">
@@ -850,8 +888,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/cloth-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/cloth-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/cloth-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/cloth-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -860,19 +900,29 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
 
@@ -900,15 +950,18 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">High-waist Trousers</a></h3>
+                                        <h3><a href="shop-product-basic">High-waist Trousers</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price discounted">$160.00</span>
                                         <span class="discounted-price">$180.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -927,8 +980,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/watch-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/watch-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/watch-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/watch-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -936,17 +991,27 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
                                 </div>
@@ -957,7 +1022,7 @@
 
                                 <div class="single-product__content">
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Light Brown Watch</a></h3>
+                                        <h3><a href="shop-product-basic">Light Brown Watch</a></h3>
                                         <a href="#">Add to cart</a>
                                     </div>
                                     <div class="price">
@@ -972,8 +1037,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/watch-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/watch-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/watch-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/watch-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -981,22 +1048,31 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
-
 
 
                                 </div>
@@ -1008,14 +1084,17 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Light Brown Watch</a></h3>
+                                        <h3><a href="shop-product-basic">Light Brown Watch</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price">$130.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -1034,8 +1113,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/watch-2-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/watch-2-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/watch-2-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/watch-2-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -1043,17 +1124,27 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
                                 </div>
@@ -1064,7 +1155,7 @@
 
                                 <div class="single-product__content">
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Dark Gray Watch</a></h3>
+                                        <h3><a href="shop-product-basic">Dark Gray Watch</a></h3>
                                         <a href="#">Add to cart</a>
                                     </div>
                                     <div class="price">
@@ -1080,8 +1171,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/watch-2-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/watch-2-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/watch-2-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/watch-2-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -1089,22 +1182,31 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
-
 
 
                                 </div>
@@ -1116,15 +1218,18 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Dark Gray Watch</a></h3>
+                                        <h3><a href="shop-product-basic">Dark Gray Watch</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price discounted">$260.00</span>
                                         <span class="discounted-price">$230.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -1143,25 +1248,37 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/watch-3-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/watch-3-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/watch-3-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/watch-3-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
                                 </div>
@@ -1172,7 +1289,7 @@
 
                                 <div class="single-product__content">
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic"> Dark Brown Watch</a></h3>
+                                        <h3><a href="shop-product-basic"> Dark Brown Watch</a></h3>
                                         <a href="#">Add to cart</a>
                                     </div>
                                     <div class="price">
@@ -1188,29 +1305,39 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/watch-3-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/watch-3-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/watch-3-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/watch-3-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
 
-
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
-
 
 
                                 </div>
@@ -1222,15 +1349,18 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Dark Brown Watch</a></h3>
+                                        <h3><a href="shop-product-basic">Dark Brown Watch</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price discounted">$120.00</span>
                                         <span class="discounted-price">$100.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -1249,8 +1379,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/cosmetics-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/cosmetics-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/cosmetics-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/cosmetics-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -1258,17 +1390,27 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
                                 </div>
@@ -1279,7 +1421,7 @@
 
                                 <div class="single-product__content">
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Pink Clay Mask</a></h3>
+                                        <h3><a href="shop-product-basic">Pink Clay Mask</a></h3>
                                         <a href="#">Add to cart</a>
                                     </div>
                                     <div class="price">
@@ -1295,8 +1437,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/cosmetics-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/cosmetics-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/cosmetics-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/cosmetics-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -1304,22 +1448,31 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
-
 
 
                                 </div>
@@ -1331,15 +1484,18 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Pink Clay Mask</a></h3>
+                                        <h3><a href="shop-product-basic">Pink Clay Mask</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price discounted">$100.00</span>
                                         <span class="discounted-price">$80.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -1358,8 +1514,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/furniture-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/furniture-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/furniture-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/furniture-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -1367,17 +1525,27 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
                                 </div>
@@ -1388,7 +1556,7 @@
 
                                 <div class="single-product__content">
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Wooden Round Table</a></h3>
+                                        <h3><a href="shop-product-basic">Wooden Round Table</a></h3>
                                         <a href="#">Add to cart</a>
                                     </div>
                                     <div class="price">
@@ -1404,8 +1572,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/furniture-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/furniture-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/furniture-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/furniture-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -1413,22 +1583,31 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
-
 
 
                                 </div>
@@ -1440,15 +1619,18 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Wooden Round Table</a></h3>
+                                        <h3><a href="shop-product-basic">Wooden Round Table</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price discounted">$400.00</span>
                                         <span class="discounted-price">$380.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -1467,25 +1649,37 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/furniture-2-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/furniture-2-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/furniture-2-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/furniture-2-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
                                 </div>
@@ -1496,7 +1690,7 @@
 
                                 <div class="single-product__content">
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Sofa with Cushion</a></h3>
+                                        <h3><a href="shop-product-basic">Sofa with Cushion</a></h3>
                                         <a href="#">Add to cart</a>
                                     </div>
                                     <div class="price">
@@ -1511,29 +1705,39 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/furniture-2-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/furniture-2-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/furniture-2-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/furniture-2-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
 
-
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
-
 
 
                                 </div>
@@ -1545,14 +1749,17 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Sofa with Cushion</a></h3>
+                                        <h3><a href="shop-product-basic">Sofa with Cushion</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price">$85.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -1571,8 +1778,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/furniture-3-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/furniture-3-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/furniture-3-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/furniture-3-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -1580,17 +1789,27 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
                                 </div>
@@ -1601,7 +1820,7 @@
 
                                 <div class="single-product__content">
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Green Coutch</a></h3>
+                                        <h3><a href="shop-product-basic">Green Coutch</a></h3>
                                         <a href="#">Add to cart</a>
                                     </div>
                                     <div class="price">
@@ -1617,8 +1836,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/furniture-3-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/furniture-3-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/furniture-3-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/furniture-3-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -1626,22 +1847,31 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
-
 
 
                                 </div>
@@ -1653,15 +1883,18 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Green Coutch</a></h3>
+                                        <h3><a href="shop-product-basic">Green Coutch</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price discounted">$360.00</span>
                                         <span class="discounted-price">$300.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -1679,8 +1912,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/cloth-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/cloth-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/cloth-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/cloth-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -1689,19 +1924,29 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
 
@@ -1728,7 +1973,7 @@
                                         <!-- <a href="#" class="clear-link">clear</a> -->
                                     </div>
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">High-waist Trousers</a></h3>
+                                        <h3><a href="shop-product-basic">High-waist Trousers</a></h3>
                                         <a href="#">Select options</a>
                                     </div>
                                     <div class="price">
@@ -1744,8 +1989,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/cloth-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/cloth-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/cloth-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/cloth-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -1754,19 +2001,29 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
 
@@ -1794,15 +2051,18 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">High-waist Trousers</a></h3>
+                                        <h3><a href="shop-product-basic">High-waist Trousers</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price discounted">$160.00</span>
                                         <span class="discounted-price">$180.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -1821,8 +2081,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/watch-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/watch-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/watch-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/watch-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -1830,17 +2092,27 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
                                 </div>
@@ -1851,7 +2123,7 @@
 
                                 <div class="single-product__content">
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Light Brown Watch</a></h3>
+                                        <h3><a href="shop-product-basic">Light Brown Watch</a></h3>
                                         <a href="#">Add to cart</a>
                                     </div>
                                     <div class="price">
@@ -1866,8 +2138,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/watch-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/watch-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/watch-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/watch-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -1875,22 +2149,31 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
-
 
 
                                 </div>
@@ -1902,14 +2185,17 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Light Brown Watch</a></h3>
+                                        <h3><a href="shop-product-basic">Light Brown Watch</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price">$130.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -1928,8 +2214,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/watch-2-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/watch-2-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/watch-2-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/watch-2-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -1937,17 +2225,27 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
                                 </div>
@@ -1958,7 +2256,7 @@
 
                                 <div class="single-product__content">
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Dark Gray Watch</a></h3>
+                                        <h3><a href="shop-product-basic">Dark Gray Watch</a></h3>
                                         <a href="#">Add to cart</a>
                                     </div>
                                     <div class="price">
@@ -1974,8 +2272,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/watch-2-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/watch-2-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/watch-2-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/watch-2-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -1983,22 +2283,31 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
-
 
 
                                 </div>
@@ -2010,15 +2319,18 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Dark Gray Watch</a></h3>
+                                        <h3><a href="shop-product-basic">Dark Gray Watch</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price discounted">$260.00</span>
                                         <span class="discounted-price">$230.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -2037,25 +2349,37 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/watch-3-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/watch-3-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/watch-3-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/watch-3-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
                                 </div>
@@ -2066,7 +2390,7 @@
 
                                 <div class="single-product__content">
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic"> Dark Brown Watch</a></h3>
+                                        <h3><a href="shop-product-basic"> Dark Brown Watch</a></h3>
                                         <a href="#">Add to cart</a>
                                     </div>
                                     <div class="price">
@@ -2082,29 +2406,39 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/watch-3-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/watch-3-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/watch-3-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/watch-3-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
 
-
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
-
 
 
                                 </div>
@@ -2116,15 +2450,18 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Dark Brown Watch</a></h3>
+                                        <h3><a href="shop-product-basic">Dark Brown Watch</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price discounted">$120.00</span>
                                         <span class="discounted-price">$100.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -2143,8 +2480,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/cosmetics-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/cosmetics-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/cosmetics-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/cosmetics-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -2152,17 +2491,27 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
                                 </div>
@@ -2173,7 +2522,7 @@
 
                                 <div class="single-product__content">
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Pink Clay Mask</a></h3>
+                                        <h3><a href="shop-product-basic">Pink Clay Mask</a></h3>
                                         <a href="#">Add to cart</a>
                                     </div>
                                     <div class="price">
@@ -2189,8 +2538,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/cosmetics-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/cosmetics-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/cosmetics-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/cosmetics-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -2198,22 +2549,31 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
-
 
 
                                 </div>
@@ -2225,15 +2585,18 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Pink Clay Mask</a></h3>
+                                        <h3><a href="shop-product-basic">Pink Clay Mask</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price discounted">$100.00</span>
                                         <span class="discounted-price">$80.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -2252,8 +2615,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/furniture-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/furniture-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/furniture-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/furniture-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -2261,17 +2626,27 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
                                 </div>
@@ -2282,7 +2657,7 @@
 
                                 <div class="single-product__content">
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Wooden Round Table</a></h3>
+                                        <h3><a href="shop-product-basic">Wooden Round Table</a></h3>
                                         <a href="#">Add to cart</a>
                                     </div>
                                     <div class="price">
@@ -2298,8 +2673,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/furniture-1-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/furniture-1-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/furniture-1-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/furniture-1-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -2307,22 +2684,31 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
-
 
 
                                 </div>
@@ -2334,15 +2720,18 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Wooden Round Table</a></h3>
+                                        <h3><a href="shop-product-basic">Wooden Round Table</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price discounted">$400.00</span>
                                         <span class="discounted-price">$380.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -2361,25 +2750,37 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/furniture-2-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/furniture-2-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/furniture-2-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/furniture-2-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
                                 </div>
@@ -2390,7 +2791,7 @@
 
                                 <div class="single-product__content">
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Sofa with Cushion</a></h3>
+                                        <h3><a href="shop-product-basic">Sofa with Cushion</a></h3>
                                         <a href="#">Add to cart</a>
                                     </div>
                                     <div class="price">
@@ -2405,29 +2806,39 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/furniture-2-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/furniture-2-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/furniture-2-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/furniture-2-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
 
-
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
-
 
 
                                 </div>
@@ -2439,14 +2850,17 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Sofa with Cushion</a></h3>
+                                        <h3><a href="shop-product-basic">Sofa with Cushion</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price">$85.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -2465,8 +2879,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/furniture-3-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/furniture-3-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/furniture-3-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/furniture-3-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -2474,17 +2890,27 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="left"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="left"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
                                 </div>
@@ -2495,7 +2921,7 @@
 
                                 <div class="single-product__content">
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Green Coutch</a></h3>
+                                        <h3><a href="shop-product-basic">Green Coutch</a></h3>
                                         <a href="#">Add to cart</a>
                                     </div>
                                     <div class="price">
@@ -2511,8 +2937,10 @@
 
                                 <div class="single-product__image">
                                     <a class="image-wrap" href="shop-product-basic">
-                                        <img src="assets/images/products/furniture-3-1-600x800.jpg" class="img-fluid" alt="">
-                                        <img src="assets/images/products/furniture-3-2-600x800.jpg" class="img-fluid" alt="">
+                                        <img src="assets/images/products/furniture-3-1-600x800.jpg" class="img-fluid"
+                                             alt="">
+                                        <img src="assets/images/products/furniture-3-2-600x800.jpg" class="img-fluid"
+                                             alt="">
                                     </a>
 
                                     <div class="single-product__floating-badges">
@@ -2520,22 +2948,31 @@
                                     </div>
 
                                     <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
                                                     class="ion-android-favorite-outline"></i></a></span>
 
                                         <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                 data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                 data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                                                 data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                                 data-tippy-arrow="true"
+                                                                 data-tippy-theme="sharpborder"
+                                                                 data-tippy-placement="bottom"><i
                                                 class="ion-ios-shuffle-strong"></i></a></span>
 
-                                        <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                   data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                   data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="bottom"><i
+                                        <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                   data-tippy="Quick View"
+                                                                   data-tippy-inertia="true"
+                                                                   data-tippy-animation="shift-away"
+                                                                   data-tippy-delay="50"
+                                                                   data-tippy-arrow="true"
+                                                                   data-tippy-theme="sharpborder"
+                                                                   data-tippy-placement="bottom"><i
                                                 class="ion-ios-search-strong"></i></a></span>
                                     </div>
-
 
 
                                 </div>
@@ -2547,15 +2984,18 @@
                                 <div class="single-product__content">
 
                                     <div class="title">
-                                        <h3> <a href="shop-product-basic">Green Coutch</a></h3>
+                                        <h3><a href="shop-product-basic">Green Coutch</a></h3>
                                     </div>
                                     <div class="price">
                                         <span class="main-price discounted">$360.00</span>
                                         <span class="discounted-price">$300.00</span>
                                     </div>
-                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente eveniet consectetur
-                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda veritatis,
+                                    <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Laudantium
+                                        consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam, sapiente
+                                        eveniet consectetur
+                                        voluptas quas harum impedit quia quibusdam tempora ab facilis. Non assumenda
+                                        veritatis,
                                     </p>
 
                                     <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
@@ -2588,12 +3028,11 @@
 <!--=====  End of shop page content  ======-->
 
 
-
 <!--=============================================
 =            footer area         =
 =============================================-->
 
-    <jsp:include page="include/foot.jsp"/>
+<jsp:include page="include/foot.jsp"/>
 
 <!--=====  End of footer area  ======-->
 
@@ -2627,8 +3066,10 @@
 
                 <div class="single-widget">
                     <h2 class="widget-title">About Us</h2>
-                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products over other
-                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion clothes.</p>
+                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
+                        over other
+                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion
+                        clothes.</p>
                 </div>
 
                 <!--=======  End of single widget  =======-->
@@ -2655,7 +3096,8 @@
                                data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
                                data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -2704,7 +3146,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -2723,7 +3166,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="main-price discounted">$300.00</span> <span class="discounted-price">$220.00</span></p>
+                            <p><span class="main-price discounted">$300.00</span> <span
+                                    class="discounted-price">$220.00</span></p>
 
                         </div>
                     </div>
@@ -2742,7 +3186,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$100.00</span> <span class="discounted-price">$80.00</span></p>
+                            <p><span class="main-price discounted">$100.00</span> <span
+                                    class="discounted-price">$80.00</span></p>
 
                         </div>
                     </div>
@@ -2761,7 +3206,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -2780,7 +3226,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -3023,8 +3470,10 @@
             <span class="discounted-price">$300.00</span>
         </p>
 
-        <p class="description">Hurley Dry-Fit Chino Short. Men's chino short. Outseam Length: 19 Dri-FIT Technology helps
-            keep you dry and comfortable. Made with sweat-wicking fabric. Fitted waist with belt loops. Button waist with
+        <p class="description">Hurley Dry-Fit Chino Short. Men's chino short. Outseam Length: 19 Dri-FIT Technology
+            helps
+            keep you dry and comfortable. Made with sweat-wicking fabric. Fitted waist with belt loops. Button waist
+            with
             zip fly provides a classic look and feel .</p>
 
         <span class="quickview-title">Quantity:</span>
@@ -3040,11 +3489,11 @@
         <div class="quick-view-other-info">
             <table>
                 <tr class="single-info">
-                    <td class="quickview-title">SKU: </td>
+                    <td class="quickview-title">SKU:</td>
                     <td class="quickview-value">12345</td>
                 </tr>
                 <tr class="single-info">
-                    <td class="quickview-title">Categories: </td>
+                    <td class="quickview-title">Categories:</td>
                     <td class="quickview-value">
                         <a href="#">Fashion</a>,
                         <a href="#">Men</a>,
@@ -3052,14 +3501,14 @@
                     </td>
                 </tr>
                 <tr class="single-info">
-                    <td class="quickview-title">Tags: </td>
+                    <td class="quickview-title">Tags:</td>
                     <td class="quickview-value">
                         <a href="#">Fashion</a>,
                         <a href="#">Men</a>
                     </td>
                 </tr>
                 <tr class="single-info">
-                    <td class="quickview-title">Share on: </td>
+                    <td class="quickview-title">Share on:</td>
                     <td class="quickview-value">
                         <ul class="quickview-social-icons">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>

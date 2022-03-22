@@ -5,9 +5,9 @@
   Time: 5:22 CH
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=utf-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -15,7 +15,8 @@
 
 
 <!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/shop-checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:07:50 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <jsp:include page="include/head.jsp"/>
 
 <body>
@@ -101,7 +102,7 @@
                     <ul class="dl-menu dl-menu-toggle">
                         <li class=""><a href="#">Home</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Home Group One</a>
+                                <li class=""><a href="#">Home Group One</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-trending">Trending</a></li>
                                         <li><a href="index-collection">My collection</a></li>
@@ -110,7 +111,7 @@
                                         <li><a href="index-smart">smart design</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group Two</a>
+                                <li><a href="#">Home Group Two</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-furniture">Furniture </a></li>
                                         <li><a href="index-essentials">Essentials</a></li>
@@ -119,7 +120,7 @@
                                         <li><a href="index-accessories">Accessories</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group three</a>
+                                <li><a href="#">Home Group three</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-shoppable">Shoppable</a></li>
 
@@ -128,7 +129,7 @@
                                         <li><a href="index-cosmetics">Cosmetics</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group four</a>
+                                <li><a href="#">Home Group four</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-decor">Home Decor</a></li>
                                         <li><a href="index-creative">Creative</a></li>
@@ -139,7 +140,7 @@
 
                         <li><a href="#">Shop</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop Pages</a>
+                                <li class=""><a href="#">Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-no-sidebar">Shop No Sidebar</a></li>
                                         <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
@@ -150,7 +151,7 @@
                                         <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Product Details Pages</a>
+                                <li class=""><a href="#">Product Details Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-basic">Basic </a></li>
                                         <li><a href="shop-product-fullwidth">Fullwidth</a></li>
@@ -163,7 +164,7 @@
 
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Other Shop Pages</a>
+                                <li class=""><a href="#">Other Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-with-background">Product with background</a></li>
                                         <li><a href="shop-cart">Shopping Cart</a></li>
@@ -181,7 +182,7 @@
                         </li>
                         <li><a href="#">Elements</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-product-categories">Product Categories</a></li>
                                         <li><a href="element-product-sliders">Product Sliders</a></li>
@@ -190,7 +191,7 @@
                                         <li><a href="element-recent-products">Recent Products</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-sale-products">Sale Products </a></li>
                                         <li><a href="element-featured-products">Featured products</a></li>
@@ -199,7 +200,7 @@
                                         <li><a href="element-product-attributes">Product Attributes</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Theming</a>
+                                <li class=""><a href="#">Theming</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-blog-posts">Blog Posts</a></li>
                                         <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
@@ -505,43 +506,54 @@
                                         <div class="checkout-payment-method">
 
                                             <div class="single-method">
-                                                <input type="radio" id="payment_check" name="payment-method" value="check">
+                                                <input type="radio" id="payment_check" name="payment-method"
+                                                       value="check">
                                                 <label for="payment_check">Check Payment</label>
-                                                <p data-method="check">Please send a Check to Store name with Store Street, Store Town, Store
+                                                <p data-method="check">Please send a Check to Store name with Store
+                                                    Street, Store Town, Store
                                                     State, Store Postcode, Store Country.</p>
                                             </div>
 
                                             <div class="single-method">
-                                                <input type="radio" id="payment_bank" name="payment-method" value="bank">
+                                                <input type="radio" id="payment_bank" name="payment-method"
+                                                       value="bank">
                                                 <label for="payment_bank">Direct Bank Transfer</label>
-                                                <p data-method="bank">Please send a Check to Store name with Store Street, Store Town, Store
+                                                <p data-method="bank">Please send a Check to Store name with Store
+                                                    Street, Store Town, Store
                                                     State, Store Postcode, Store Country.</p>
                                             </div>
 
                                             <div class="single-method">
-                                                <input type="radio" id="payment_cash" name="payment-method" value="cash">
+                                                <input type="radio" id="payment_cash" name="payment-method"
+                                                       value="cash">
                                                 <label for="payment_cash">Cash on Delivery</label>
-                                                <p data-method="cash">Please send a Check to Store name with Store Street, Store Town, Store
+                                                <p data-method="cash">Please send a Check to Store name with Store
+                                                    Street, Store Town, Store
                                                     State, Store Postcode, Store Country.</p>
                                             </div>
 
                                             <div class="single-method">
-                                                <input type="radio" id="payment_paypal" name="payment-method" value="paypal">
+                                                <input type="radio" id="payment_paypal" name="payment-method"
+                                                       value="paypal">
                                                 <label for="payment_paypal">Paypal</label>
-                                                <p data-method="paypal">Please send a Check to Store name with Store Street, Store Town, Store
+                                                <p data-method="paypal">Please send a Check to Store name with Store
+                                                    Street, Store Town, Store
                                                     State, Store Postcode, Store Country.</p>
                                             </div>
 
                                             <div class="single-method">
-                                                <input type="radio" id="payment_payoneer" name="payment-method" value="payoneer">
+                                                <input type="radio" id="payment_payoneer" name="payment-method"
+                                                       value="payoneer">
                                                 <label for="payment_payoneer">Payoneer</label>
-                                                <p data-method="payoneer">Please send a Check to Store name with Store Street, Store Town,
+                                                <p data-method="payoneer">Please send a Check to Store name with Store
+                                                    Street, Store Town,
                                                     Store State, Store Postcode, Store Country.</p>
                                             </div>
 
                                             <div class="single-method">
                                                 <input type="checkbox" id="accept_terms">
-                                                <label for="accept_terms">I’ve read and accept the terms & conditions</label>
+                                                <label for="accept_terms">I’ve read and accept the terms &
+                                                    conditions</label>
                                             </div>
 
                                         </div>
@@ -568,7 +580,7 @@
 =            footer area         =
 =============================================-->
 
-    <jsp:include page="include/foot.jsp"/>
+<jsp:include page="include/foot.jsp"/>
 
 <!--=====  End of footer area  ======-->
 
@@ -602,8 +614,10 @@
 
                 <div class="single-widget">
                     <h2 class="widget-title">About Us</h2>
-                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products over other
-                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion clothes.</p>
+                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
+                        over other
+                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion
+                        clothes.</p>
                 </div>
 
                 <!--=======  End of single widget  =======-->
@@ -630,7 +644,8 @@
                                data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
                                data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -679,7 +694,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -698,7 +714,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="main-price discounted">$300.00</span> <span class="discounted-price">$220.00</span></p>
+                            <p><span class="main-price discounted">$300.00</span> <span
+                                    class="discounted-price">$220.00</span></p>
 
                         </div>
                     </div>
@@ -717,7 +734,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$100.00</span> <span class="discounted-price">$80.00</span></p>
+                            <p><span class="main-price discounted">$100.00</span> <span
+                                    class="discounted-price">$80.00</span></p>
 
                         </div>
                     </div>
@@ -736,7 +754,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -755,7 +774,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>

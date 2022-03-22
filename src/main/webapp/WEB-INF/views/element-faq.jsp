@@ -5,9 +5,9 @@
   Time: 4:57 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=utf-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -16,7 +16,8 @@
 
 
 <!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/element-faq.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:08:16 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <jsp:include page="include/head.jsp"/>
 
 <body>
@@ -102,7 +103,7 @@
                     <ul class="dl-menu dl-menu-toggle">
                         <li class=""><a href="#">Home</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Home Group One</a>
+                                <li class=""><a href="#">Home Group One</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-trending">Trending</a></li>
                                         <li><a href="index-collection">My collection</a></li>
@@ -111,7 +112,7 @@
                                         <li><a href="index-smart">smart design</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group Two</a>
+                                <li><a href="#">Home Group Two</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-furniture">Furniture </a></li>
                                         <li><a href="index-essentials">Essentials</a></li>
@@ -120,7 +121,7 @@
                                         <li><a href="index-accessories">Accessories</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group three</a>
+                                <li><a href="#">Home Group three</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-shoppable">Shoppable</a></li>
 
@@ -129,7 +130,7 @@
                                         <li><a href="index-cosmetics">Cosmetics</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group four</a>
+                                <li><a href="#">Home Group four</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-decor">Home Decor</a></li>
                                         <li><a href="index-creative">Creative</a></li>
@@ -140,7 +141,7 @@
 
                         <li><a href="#">Shop</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop Pages</a>
+                                <li class=""><a href="#">Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-no-sidebar">Shop No Sidebar</a></li>
                                         <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
@@ -151,7 +152,7 @@
                                         <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Product Details Pages</a>
+                                <li class=""><a href="#">Product Details Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-basic">Basic </a></li>
                                         <li><a href="shop-product-fullwidth">Fullwidth</a></li>
@@ -164,7 +165,7 @@
 
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Other Shop Pages</a>
+                                <li class=""><a href="#">Other Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-with-background">Product with background</a></li>
                                         <li><a href="shop-cart">Shopping Cart</a></li>
@@ -182,7 +183,7 @@
                         </li>
                         <li><a href="#">Elements</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-product-categories">Product Categories</a></li>
                                         <li><a href="element-product-sliders">Product Sliders</a></li>
@@ -191,7 +192,7 @@
                                         <li><a href="element-recent-products">Recent Products</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-sale-products">Sale Products </a></li>
                                         <li><a href="element-featured-products">Featured products</a></li>
@@ -200,7 +201,7 @@
                                         <li><a href="element-product-attributes">Product Attributes</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Theming</a>
+                                <li class=""><a href="#">Theming</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-blog-posts">Blog Posts</a></li>
                                         <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
@@ -325,17 +326,21 @@
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true"
                                             aria-controls="collapseOne">
                                         What Shipping Methods are Available?
                                     </button>
                                 </h5>
                             </div>
 
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#shippingInfo">
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                 data-parent="#shippingInfo">
                                 <div class="card-body">
-                                    <p>Depending on the item(s) you purchase on garageclothing.com and the location to which the item(s)
-                                        will be delivered, different shipping methods will be available. At checkout, you will be prompted
+                                    <p>Depending on the item(s) you purchase on garageclothing.com and the location to
+                                        which the item(s)
+                                        will be delivered, different shipping methods will be available. At checkout,
+                                        you will be prompted
                                         to choose a variety of shipping methods.</p>
                                 </div>
                             </div>
@@ -343,17 +348,21 @@
                         <div class="card">
                             <div class="card-header" id="headingTwo">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
                                         Do You Ship Internationally?
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#shippingInfo">
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                 data-parent="#shippingInfo">
                                 <div class="card-body">
-                                    <p>At the moment, we only ship to Canada and the United States. For international orders, please
+                                    <p>At the moment, we only ship to Canada and the United States. For international
+                                        orders, please
                                         contact internationalorders@dynamite.ca.
-                                        If you have any questions, please don’t hesitate to contact our Customer Experience Department by
+                                        If you have any questions, please don’t hesitate to contact our Customer
+                                        Experience Department by
                                         mail or by phone at 1-888-882-1138 (Canada) and 1-888-342-7243 (USA).</p>
                                 </div>
                             </div>
@@ -361,16 +370,20 @@
                         <div class="card">
                             <div class="card-header" id="headingThree">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseThree"
                                             aria-expanded="false" aria-controls="collapseThree">
                                         How to Track My Order?
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#shippingInfo">
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                 data-parent="#shippingInfo">
                                 <div class="card-body">
-                                    <p>Once your order has been shipped, you will receive an email with your tracking and shipping
-                                        information. Simply click on the link in the email or select the ‘track order’ option here and
+                                    <p>Once your order has been shipped, you will receive an email with your tracking
+                                        and shipping
+                                        information. Simply click on the link in the email or select the ‘track order’
+                                        option here and
                                         enter your order number and email address or sign into your account.</p>
                                 </div>
                             </div>
@@ -378,18 +391,24 @@
                         <div class="card">
                             <div class="card-header" id="headingFour">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseFour"
                                             aria-expanded="false" aria-controls="collapseFour">
                                         How Long Will It Take To Get My Package?
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#shippingInfo">
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                 data-parent="#shippingInfo">
                                 <div class="card-body">
-                                    <p>We ship only on business days. Business days are from Monday to Friday, excluding holidays. Any
-                                        order placed after 12 P.M. ET will be processed the following business day. Due to a high volume
-                                        period, your order may take longer than anticipated. For remote locations, please add an
-                                        additional 2-5 business day to each shipping method’s expected delivery time. If you are not sure
+                                    <p>We ship only on business days. Business days are from Monday to Friday, excluding
+                                        holidays. Any
+                                        order placed after 12 P.M. ET will be processed the following business day. Due
+                                        to a high volume
+                                        period, your order may take longer than anticipated. For remote locations,
+                                        please add an
+                                        additional 2-5 business day to each shipping method’s expected delivery time. If
+                                        you are not sure
                                         whether your location is remote, please click here for all the details.</p>
                                 </div>
                             </div>
@@ -410,20 +429,27 @@
                         <div class="card">
                             <div class="card-header" id="headingNine">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true"
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseNine"
+                                            aria-expanded="true"
                                             aria-controls="collapseNine">
                                         How do I place an Order?
                                     </button>
                                 </h5>
                             </div>
 
-                            <div id="collapseNine" class="collapse show" aria-labelledby="headingNine" data-parent="#orderInfo">
+                            <div id="collapseNine" class="collapse show" aria-labelledby="headingNine"
+                                 data-parent="#orderInfo">
                                 <div class="card-body">
-                                    <p>Click on a Product Photo or Product Name to see more detailed information. To place your order,
-                                        choose the specification you want and enter the quantity, and click ‘Buy Now’.Please enter the
-                                        required information such as Delivery Address, Quantity Type etc. Before clicking “Place Order”,
-                                        please check your Order Details carefully. If you want to add a new Delivery Address, click ” Add
-                                        a new address”. If you want to edit a current Delivery Address, click ‘Edit this address’. After
+                                    <p>Click on a Product Photo or Product Name to see more detailed information. To
+                                        place your order,
+                                        choose the specification you want and enter the quantity, and click ‘Buy
+                                        Now’.Please enter the
+                                        required information such as Delivery Address, Quantity Type etc. Before
+                                        clicking “Place Order”,
+                                        please check your Order Details carefully. If you want to add a new Delivery
+                                        Address, click ” Add
+                                        a new address”. If you want to edit a current Delivery Address, click ‘Edit this
+                                        address’. After
                                         confirming your Order, you will be automatically taken to the Payment page</p>
                                 </div>
                             </div>
@@ -431,16 +457,20 @@
                         <div class="card">
                             <div class="card-header" id="headingTen">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTen"
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseTen"
                                             aria-expanded="false" aria-controls="collapseTen">
                                         How Can I Cancel Or Change My Order?
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#orderInfo">
+                            <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
+                                 data-parent="#orderInfo">
                                 <div class="card-body">
-                                    <p>Go to Your Orders. Click Cancel Items. Note: Select the checkbox next to each item you wish to
-                                        remove from the order. If you want to cancel the entire order, select all of the items. Click
+                                    <p>Go to Your Orders. Click Cancel Items. Note: Select the checkbox next to each
+                                        item you wish to
+                                        remove from the order. If you want to cancel the entire order, select all of the
+                                        items. Click
                                         Cancel checked items when finished.</p>
                                 </div>
                             </div>
@@ -448,15 +478,18 @@
                         <div class="card">
                             <div class="card-header" id="headingEleven">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEleven"
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseEleven"
                                             aria-expanded="false" aria-controls="collapseEleven">
                                         Who Should I Contact If I Have Any Queries?
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#orderInfo">
+                            <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
+                                 data-parent="#orderInfo">
                                 <div class="card-body">
-                                    <p>You can contact our customer support team by provided email or mobile phone. In case, it’s not
+                                    <p>You can contact our customer support team by provided email or mobile phone. In
+                                        case, it’s not
                                         convenient to talk, you can come to our store to make your request.</p>
                                 </div>
                             </div>
@@ -478,7 +511,7 @@
 =            footer area         =
 =============================================-->
 
-    <jsp:include page="include/foot.jsp"/>
+<jsp:include page="include/foot.jsp"/>
 
 <!--=====  End of footer area  ======-->
 
@@ -512,8 +545,10 @@
 
                 <div class="single-widget">
                     <h2 class="widget-title">About Us</h2>
-                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products over other
-                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion clothes.</p>
+                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
+                        over other
+                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion
+                        clothes.</p>
                 </div>
 
                 <!--=======  End of single widget  =======-->
@@ -540,7 +575,8 @@
                                data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
                                data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -589,7 +625,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -608,7 +645,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="main-price discounted">$300.00</span> <span class="discounted-price">$220.00</span></p>
+                            <p><span class="main-price discounted">$300.00</span> <span
+                                    class="discounted-price">$220.00</span></p>
 
                         </div>
                     </div>
@@ -627,7 +665,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$100.00</span> <span class="discounted-price">$80.00</span></p>
+                            <p><span class="main-price discounted">$100.00</span> <span
+                                    class="discounted-price">$80.00</span></p>
 
                         </div>
                     </div>
@@ -646,7 +685,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -665,7 +705,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>

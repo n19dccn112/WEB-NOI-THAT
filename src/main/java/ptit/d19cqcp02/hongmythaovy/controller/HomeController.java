@@ -1,6 +1,5 @@
 package ptit.d19cqcp02.hongmythaovy.controller;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -18,93 +17,141 @@ import java.util.List;
 @Controller
 @RequestMapping("")
 public class HomeController {
-    @Autowired
-    CategoryService categoryService;
+  @Autowired CategoryService categoryService;
 
-    @Autowired
-    ProductService productService;
-    @GetMapping("")
-    public String index(HttpServletRequest request, HttpServletResponse response, ModelMap model)
-    {
-        List<Category> categories = categoryService.findAll();
-        List<Product> products = productService.findAll();
-        request.setAttribute("cates",categories);
-        request.setAttribute("products",products);
-        return "index";
-    }
+  @Autowired ProductService productService;
 
-    @RequestMapping("index-trending")
-    public String indexTrending() { return "index-trending"; }
+  @GetMapping("")
+  public String index(HttpServletRequest request, HttpServletResponse response, ModelMap model) {
+    List<Category> categories = categoryService.findAll();
+    List<Product> products = productService.findAll();
+    request.setAttribute("cates", categories);
+    request.setAttribute("products", products);
+    return "index";
+  }
 
-    @RequestMapping("index-collection")
-    public String indexCollection() {return "index-collection";}
+  @RequestMapping("index-trending")
+  public String indexTrending() {
+    return "index-trending";
+  }
 
-    @RequestMapping("index-special")
-    public String indexSpecial() {return "index-special";}
+  @RequestMapping("index-collection")
+  public String indexCollection() {
+    return "index-collection";
+  }
 
-    @RequestMapping("index-concept")
-    public String indexConcept() {return "index-concept";}
+  @RequestMapping("index-special")
+  public String indexSpecial() {
+    return "index-special";
+  }
 
-    @RequestMapping("index-smart")
-    public String indexSmart() {return "index-smart";}
+  @RequestMapping("index-concept")
+  public String indexConcept() {
+    return "index-concept";
+  }
 
-    @RequestMapping("index-furniture")
-    public String indexFurniture() {return "index-furniture";}
+  @RequestMapping("index-smart")
+  public String indexSmart() {
+    return "index-smart";
+  }
 
-    @RequestMapping("index-essentials")
-    public String indexEssentials() {return "index-essentials";}
+  @RequestMapping("index-furniture")
+  public String indexFurniture() {
+    return "index-furniture";
+  }
 
-    @RequestMapping ("index-lookbook")
-    public String indexLookbook() {return "index-lookbook";}
+  @RequestMapping("index-essentials")
+  public String indexEssentials() {
+    return "index-essentials";
+  }
 
-    @RequestMapping("index-wearables")
-    public String indexWearanles() {return "index-wearables";}
+  @RequestMapping("index-lookbook")
+  public String indexLookbook() {
+    return "index-lookbook";
+  }
 
-    @RequestMapping("index-accessories")
-    public String indexAccessories() {return "index-accessories";}
+  @RequestMapping("index-wearables")
+  public String indexWearanles() {
+    return "index-wearables";
+  }
 
-    @RequestMapping("index-shoppable")
-    public String indexShoppable() {return "index-shoppable";}
+  @RequestMapping("index-accessories")
+  public String indexAccessories() {
+    return "index-accessories";
+  }
 
-    @RequestMapping("index-fashion")
-    public String indexFashion() {return "index-fashion";}
+  @RequestMapping("index-shoppable")
+  public String indexShoppable() {
+    return "index-shoppable";
+  }
 
-    @RequestMapping("index-perfumes")
-    public String indexPerfumes() {return "index-perfumes";}
+  @RequestMapping("index-fashion")
+  public String indexFashion() {
+    return "index-fashion";
+  }
 
-    @RequestMapping("index-cosmetics")
-    public String indexCosmetics() {return "index-cosmetics";}
+  @RequestMapping("index-perfumes")
+  public String indexPerfumes() {
+    return "index-perfumes";
+  }
 
-    @RequestMapping("index-decor")
-    public String indexDecor() {return "index-decor";}
+  @RequestMapping("index-cosmetics")
+  public String indexCosmetics() {
+    return "index-cosmetics";
+  }
 
-    @RequestMapping("index-creative")
-    public String indexCreative() {return "index-creative";}
+  @RequestMapping("index-decor")
+  public String indexDecor() {
+    return "index-decor";
+  }
 
-    @RequestMapping("index-2")
-    public String index2() {return "index-2";}
+  @RequestMapping("index-creative")
+  public String indexCreative() {
+    return "index-creative";
+  }
 
-    @RequestMapping("about-us")
-    public String aboutUs(){return "about-us";}
+  @RequestMapping("index-2")
+  public String index2() {
+    return "index-2";
+  }
 
-    @RequestMapping("about-us-2")
-    public String aboutUs2(){return "about-us-2";}
+  @RequestMapping("about-us")
+  public String aboutUs() {
+    return "about-us";
+  }
 
-    @RequestMapping("contact-us")
-    public String contactUs(){return "contact-us";}
+  @RequestMapping("about-us-2")
+  public String aboutUs2() {
+    return "about-us-2";
+  }
 
-    @RequestMapping("faq")
-    public String faq(){return "faq";}
+  @RequestMapping("contact-us")
+  public String contactUs() {
+    return "contact-us";
+  }
 
-    @RequestMapping("coming-soon")
-    public String comingSoon(){return "coming-soon";}
+  @RequestMapping("faq")
+  public String faq() {
+    return "faq";
+  }
 
-    @RequestMapping("404")
-    public String index404(){return "404";}
+  @RequestMapping("coming-soon")
+  public String comingSoon() {
+    return "coming-soon";
+  }
 
-    @RequestMapping("my-account")
-    public String myAccount(){return "my-account";}
+  @RequestMapping("404")
+  public String index404() {
+    return "404";
+  }
 
-    @RequestMapping("compare")
-    public String compare(){return "compare";}
+  @RequestMapping("my-account")
+  public String myAccount() {
+    return "my-account";
+  }
+
+  @RequestMapping("compare")
+  public String compare() {
+    return "compare";
+  }
 }

@@ -4,9 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import ptit.d19cqcp02.hongmythaovy.model.embeded.RateId;
 
-import javax.persistence.*;
-import java.util.List;
+import javax.persistence.Column;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Getter
@@ -15,21 +18,11 @@ import java.util.List;
 @NoArgsConstructor
 @Table(name = "rates")
 public class Rate {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long rateId;
+  @EmbeddedId private RateId id;
 
-    @OneToMany
-    private List<User> users;
+  @Column(name = "comment")
+  private String rateComment;
 
-    @OneToMany
-    private List<Product> products;
-
-    @Column(name = "comment")
-    private String rateComment;
-
-    @Column(name = "point")
-    private Long ratePoint;
-
+  @Column(name = "point")
+  private Long ratePoint;
 }

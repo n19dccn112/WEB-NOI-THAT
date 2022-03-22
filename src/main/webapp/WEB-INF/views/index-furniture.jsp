@@ -5,9 +5,9 @@
   Time: 16:30
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=utf-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -16,7 +16,8 @@
 
 
 <!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/index-furniture.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:05:20 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <jsp:include page="include/head.jsp"/>
 
 <body>
@@ -41,7 +42,6 @@
                 <!--=======  logo with off canvas  =======-->
 
                 <div class="logo-with-offcanvas d-flex">
-
 
 
                     <!--=======  logo   =======-->
@@ -95,7 +95,7 @@
                     <ul class="dl-menu dl-menu-toggle">
                         <li class=""><a href="#">Home</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Home Group One</a>
+                                <li class=""><a href="#">Home Group One</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-trending">Trending</a></li>
                                         <li><a href="index-collection">My collection</a></li>
@@ -104,7 +104,7 @@
                                         <li><a href="index-smart">smart design</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group Two</a>
+                                <li><a href="#">Home Group Two</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-furniture">Furniture </a></li>
                                         <li><a href="index-essentials">Essentials</a></li>
@@ -113,7 +113,7 @@
                                         <li><a href="index-accessories">Accessories</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group three</a>
+                                <li><a href="#">Home Group three</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-shoppable">Shoppable</a></li>
 
@@ -122,7 +122,7 @@
                                         <li><a href="index-cosmetics">Cosmetics</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group four</a>
+                                <li><a href="#">Home Group four</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-decor">Home Decor</a></li>
                                         <li><a href="index-creative">Creative</a></li>
@@ -133,7 +133,7 @@
 
                         <li><a href="#">Shop</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop Pages</a>
+                                <li class=""><a href="#">Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-no-sidebar">Shop No Sidebar</a></li>
                                         <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
@@ -144,7 +144,7 @@
                                         <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Product Details Pages</a>
+                                <li class=""><a href="#">Product Details Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-basic">Basic </a></li>
                                         <li><a href="shop-product-fullwidth">Fullwidth</a></li>
@@ -157,7 +157,7 @@
 
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Other Shop Pages</a>
+                                <li class=""><a href="#">Other Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-with-background">Product with background</a></li>
                                         <li><a href="shop-cart">Shopping Cart</a></li>
@@ -175,7 +175,7 @@
                         </li>
                         <li><a href="#">Elements</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-product-categories">Product Categories</a></li>
                                         <li><a href="element-product-sliders">Product Sliders</a></li>
@@ -184,7 +184,7 @@
                                         <li><a href="element-recent-products">Recent Products</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-sale-products">Sale Products </a></li>
                                         <li><a href="element-featured-products">Featured products</a></li>
@@ -193,7 +193,7 @@
                                         <li><a href="element-product-attributes">Product Attributes</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Theming</a>
+                                <li class=""><a href="#">Theming</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-blog-posts">Blog Posts</a></li>
                                         <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
@@ -288,10 +288,12 @@
     <div class="container wide">
         <div class="row">
             <div class="col-lg-12">
-                <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="homepage-6"
+                <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
+                     data-alias="homepage-6"
                      data-source="gallery">
                     <!-- START REVOLUTION SLIDER 5.4.7 auto mode -->
-                    <div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7">
+                    <div id="rev_slider_4_1" class="rev_slider fullwidthabanner" style="display:none;"
+                         data-version="5.4.7">
                         <ul>
                             <!-- SLIDE  -->
                             <li data-index="rs-10"
@@ -302,49 +304,68 @@
                                 data-easeout="default,default,default,default,default,default,default,default"
                                 data-masterspeed="700,default,default,default,default,default,default,default"
                                 data-thumb="assets/images/revimages/furniture/100x50_slider-homepage6-img1.png"
-                                data-rotate="0,0,0,0,0,0,0,0" data-saveperformance="off" data-title="Slide" data-param1=""
-                                data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+                                data-rotate="0,0,0,0,0,0,0,0" data-saveperformance="off" data-title="Slide"
+                                data-param1=""
+                                data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+                                data-param7=""
                                 data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
                                 <img src="assets/images/revimages/dummy.png" alt=""
                                      data-lazyload="assets/images/revimages/furniture/slider-homepage6-img1.png"
-                                     data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone"
-                                     data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-                                     data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                                     data-bgposition="center center" data-kenburns="on" data-duration="10000"
+                                     data-ease="Linear.easeNone"
+                                     data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0"
+                                     data-blurstart="0"
+                                     data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg"
+                                     data-no-retina>
                                 <!-- LAYERS -->
 
                                 <!-- LAYER NR. 1 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-10-layer-13" data-x="['left','center','left','left']"
+                                <div class="tp-caption   tp-resizeme" id="slide-10-layer-13"
+                                     data-x="['left','center','left','left']"
                                      data-hoffset="['376','-301','81','32']" data-y="['top','top','top','top']"
                                      data-voffset="['280','305','275','216']"
                                      data-color="['rgb(51,51,51)','rgb(105,105,105)','rgb(105,105,105)','rgb(105,105,105)']"
-                                     data-letterspacing="['','','0','0']" data-width="none" data-height="none" data-whitespace="nowrap"
+                                     data-letterspacing="['','','0','0']" data-width="none" data-height="none"
+                                     data-whitespace="nowrap"
                                      data-type="text" data-responsive_offset="on"
                                      data-frames='[{"delay":700,"speed":1790,"sfxcolor":"#ffffff","sfx_effect":"blockfromtop","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 5; white-space: nowrap; font-size: 24px; line-height: 36px; font-weight: 400; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                                    Free delivery from $30 </div>
+                                    Free delivery from $30
+                                </div>
 
                                 <!-- LAYER NR. 2 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-10-layer-3" data-x="['left','center','center','left']"
+                                <div class="tp-caption   tp-resizeme" id="slide-10-layer-3"
+                                     data-x="['left','center','center','left']"
                                      data-hoffset="['372','-209','-85','34']" data-y="['top','middle','middle','top']"
-                                     data-voffset="['330','0','-127','271']" data-fontsize="['56','56','56','50']" data-width="none"
-                                     data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                     data-voffset="['330','0','-127','271']" data-fontsize="['56','56','56','50']"
+                                     data-width="none"
+                                     data-height="none" data-whitespace="nowrap" data-type="text"
+                                     data-responsive_offset="on"
                                      data-frames='[{"delay":1270,"speed":1750,"sfxcolor":"#ffffff","sfx_effect":"blockfromtop","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 6; white-space: nowrap; font-size: 56px; line-height: 60px; font-weight: 300; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                                    Innovative design </div>
+                                    Innovative design
+                                </div>
 
                                 <!-- LAYER NR. 3 -->
                                 <div class="tp-caption Slider-button-alt rev-btn  tp-resizeme" id="slide-10-layer-20"
-                                     data-x="['left','center','center','left']" data-hoffset="['377','-358','-233','32']"
-                                     data-y="['top','top','top','top']" data-voffset="['438','457','427','368']" data-width="none"
+                                     data-x="['left','center','center','left']"
+                                     data-hoffset="['377','-358','-233','32']"
+                                     data-y="['top','top','top','top']" data-voffset="['438','457','427','368']"
+                                     data-width="none"
                                      data-height="none" data-whitespace="nowrap" data-type="button" data-actions=''
                                      data-responsive_offset="on"
                                      data-frames='[{"delay":1990,"speed":1040,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);bg:transparent;"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[12,12,12,12]"
                                      data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
                                      data-paddingleft="[35,35,35,35]"
                                      style="z-index: 7; white-space: nowrap; letter-spacing: 1px;border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
@@ -355,53 +376,73 @@
                             <li data-index="rs-11"
                                 data-transition="boxslide,slotslide-horizontal,slotslide-vertical,boxfade,slotfade-horizontal,slotfade-vertical"
                                 data-slotamount="default,default,default,default,default,default" data-hideafterloop="0"
-                                data-hideslideonmobile="off" data-easein="default,default,default,default,default,default"
+                                data-hideslideonmobile="off"
+                                data-easein="default,default,default,default,default,default"
                                 data-easeout="default,default,default,default,default,default"
                                 data-masterspeed="700,default,default,default,default,default"
                                 data-thumb="assets/images/revimages/furniture/100x50_slider-homepage6-img2.png"
-                                data-rotate="0,0,0,0,0,0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
-                                data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                                data-rotate="0,0,0,0,0,0" data-saveperformance="off" data-title="Slide" data-param1=""
+                                data-param2=""
+                                data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+                                data-param8=""
                                 data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
                                 <img src="assets/images/revimages/dummy.png" alt=""
                                      data-lazyload="assets/images/revimages/furniture/slider-homepage6-img2.png"
-                                     data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone"
-                                     data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-                                     data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                                     data-bgposition="center center" data-kenburns="on" data-duration="10000"
+                                     data-ease="Linear.easeNone"
+                                     data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0"
+                                     data-blurstart="0"
+                                     data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg"
+                                     data-no-retina>
                                 <!-- LAYERS -->
 
                                 <!-- LAYER NR. 4 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-11-layer-13" data-x="['left','center','left','left']"
+                                <div class="tp-caption   tp-resizeme" id="slide-11-layer-13"
+                                     data-x="['left','center','left','left']"
                                      data-hoffset="['376','-301','81','32']" data-y="['top','top','top','top']"
                                      data-voffset="['280','305','275','216']"
                                      data-color="['rgb(51,51,51)','rgb(105,105,105)','rgb(105,105,105)','rgb(105,105,105)']"
-                                     data-letterspacing="['','','0','0']" data-width="none" data-height="none" data-whitespace="nowrap"
+                                     data-letterspacing="['','','0','0']" data-width="none" data-height="none"
+                                     data-whitespace="nowrap"
                                      data-type="text" data-responsive_offset="on"
                                      data-frames='[{"delay":700,"speed":2020,"sfxcolor":"#ffffff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 5; white-space: nowrap; font-size: 24px; line-height: 36px; font-weight: 400; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                                    Free delivery from $30 </div>
+                                    Free delivery from $30
+                                </div>
 
                                 <!-- LAYER NR. 5 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-11-layer-3" data-x="['left','center','center','left']"
+                                <div class="tp-caption   tp-resizeme" id="slide-11-layer-3"
+                                     data-x="['left','center','center','left']"
                                      data-hoffset="['372','-209','-85','34']" data-y="['top','middle','middle','top']"
-                                     data-voffset="['330','0','-127','271']" data-fontsize="['56','56','56','50']" data-width="none"
-                                     data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                     data-voffset="['330','0','-127','271']" data-fontsize="['56','56','56','50']"
+                                     data-width="none"
+                                     data-height="none" data-whitespace="nowrap" data-type="text"
+                                     data-responsive_offset="on"
                                      data-frames='[{"delay":700,"speed":2000,"sfxcolor":"#ffffff","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 6; white-space: nowrap; font-size: 56px; line-height: 60px; font-weight: 300; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                                    Beautiful interior </div>
+                                    Beautiful interior
+                                </div>
 
                                 <!-- LAYER NR. 6 -->
                                 <div class="tp-caption Slider-button-alt rev-btn  tp-resizeme" id="slide-11-layer-20"
-                                     data-x="['left','center','center','left']" data-hoffset="['377','-358','-233','32']"
-                                     data-y="['top','top','top','top']" data-voffset="['438','457','427','368']" data-width="none"
+                                     data-x="['left','center','center','left']"
+                                     data-hoffset="['377','-358','-233','32']"
+                                     data-y="['top','top','top','top']" data-voffset="['438','457','427','368']"
+                                     data-width="none"
                                      data-height="none" data-whitespace="nowrap" data-type="button" data-actions=''
                                      data-responsive_offset="on"
                                      data-frames='[{"delay":2130,"speed":1470,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);bg:transparent;"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[12,12,12,12]"
                                      data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
                                      data-paddingleft="[35,35,35,35]"
                                      style="z-index: 7; white-space: nowrap; letter-spacing: 1px;border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
@@ -417,15 +458,20 @@
                                 data-easeout="default,default,default,default,default,default,default,default"
                                 data-masterspeed="700,default,default,default,default,default,default,default"
                                 data-thumb="assets/images/revimages/furniture/100x50_slider-homepage6-img3.png"
-                                data-rotate="0,0,0,0,0,0,0,0" data-saveperformance="off" data-title="Slide" data-param1=""
-                                data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+                                data-rotate="0,0,0,0,0,0,0,0" data-saveperformance="off" data-title="Slide"
+                                data-param1=""
+                                data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+                                data-param7=""
                                 data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
                                 <img src="assets/images/revimages/dummy.png" alt=""
                                      data-lazyload="assets/images/revimages/furniture/slider-homepage6-img3.png"
-                                     data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone"
-                                     data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
-                                     data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg" data-no-retina>
+                                     data-bgposition="center center" data-kenburns="on" data-duration="10000"
+                                     data-ease="Linear.easeNone"
+                                     data-scalestart="100" data-scaleend="110" data-rotatestart="0" data-rotateend="0"
+                                     data-blurstart="0"
+                                     data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg"
+                                     data-no-retina>
                                 <!-- LAYERS -->
 
                                 <!-- LAYER NR. 7 -->
@@ -434,34 +480,45 @@
                                      data-y="['top','top','top','top']" data-voffset="['107','94','151','186']"
                                      data-fontsize="['24','24','24','18']"
                                      data-color="['rgb(51,51,51)','rgb(105,105,105)','rgb(105,105,105)','rgb(105,105,105)']"
-                                     data-letterspacing="['','','0','0']" data-width="none" data-height="none" data-whitespace="nowrap"
+                                     data-letterspacing="['','','0','0']" data-width="none" data-height="none"
+                                     data-whitespace="nowrap"
                                      data-type="text" data-responsive_offset="on"
                                      data-frames='[{"delay":700,"speed":1300,"sfxcolor":"#ffffff","sfx_effect":"blockfromleft","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 5; white-space: nowrap; font-size: 24px; line-height: 36px; font-weight: 400; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                                    Summer sale up to 30% </div>
+                                    Summer sale up to 30%
+                                </div>
 
                                 <!-- LAYER NR. 8 -->
                                 <div class="tp-caption   tp-resizeme" id="slide-12-layer-3"
                                      data-x="['center','center','center','center']" data-hoffset="['0','14','0','0']"
                                      data-y="['top','middle','middle','top']" data-voffset="['171','-202','-230','235']"
-                                     data-fontsize="['56','56','56','40']" data-lineheight="['60','60','60','50']" data-width="none"
-                                     data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                     data-fontsize="['56','56','56','40']" data-lineheight="['60','60','60','50']"
+                                     data-width="none"
+                                     data-height="none" data-whitespace="nowrap" data-type="text"
+                                     data-responsive_offset="on"
                                      data-frames='[{"delay":1540,"speed":1400,"sfxcolor":"#ffffff","sfx_effect":"blockfromright","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 6; white-space: nowrap; font-size: 56px; line-height: 60px; font-weight: 300; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                                    Beautiful interior </div>
+                                    Beautiful interior
+                                </div>
 
                                 <!-- LAYER NR. 9 -->
                                 <div class="tp-caption Slider-button-alt rev-btn  tp-resizeme" id="slide-12-layer-20"
                                      data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                                     data-y="['top','top','top','top']" data-voffset="['278','261','345','323']" data-width="none"
+                                     data-y="['top','top','top','top']" data-voffset="['278','261','345','323']"
+                                     data-width="none"
                                      data-height="none" data-whitespace="nowrap" data-type="button" data-actions=''
                                      data-responsive_offset="on"
                                      data-frames='[{"delay":2210,"speed":1780,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);bg:transparent;"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[12,12,12,12]"
                                      data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
                                      data-paddingleft="[35,35,35,35]"
                                      style="z-index: 7; white-space: nowrap; letter-spacing: 1px;border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
@@ -661,17 +718,22 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
                     </div>
@@ -682,7 +744,7 @@
 
                     <div class="single-product__content">
                         <div class="title">
-                            <h3> <a href="shop-product-basic">Wooden Round Table</a></h3>
+                            <h3><a href="shop-product-basic">Wooden Round Table</a></h3>
                             <a href="#">Add to cart</a>
                         </div>
                         <div class="price">
@@ -711,17 +773,22 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
                     </div>
@@ -732,7 +799,7 @@
 
                     <div class="single-product__content">
                         <div class="title">
-                            <h3> <a href="shop-product-basic">Sofa with Cushion</a></h3>
+                            <h3><a href="shop-product-basic">Sofa with Cushion</a></h3>
                             <a href="#">Add to cart</a>
                         </div>
                         <div class="price">
@@ -761,17 +828,22 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
                     </div>
@@ -782,7 +854,7 @@
 
                     <div class="single-product__content">
                         <div class="title">
-                            <h3> <a href="shop-product-basic">Green Coutch</a></h3>
+                            <h3><a href="shop-product-basic">Green Coutch</a></h3>
                             <a href="#">Add to cart</a>
                         </div>
                         <div class="price">
@@ -812,17 +884,22 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
                     </div>
@@ -833,7 +910,7 @@
 
                     <div class="single-product__content">
                         <div class="title">
-                            <h3> <a href="shop-product-basic">Wooden Tool Table</a></h3>
+                            <h3><a href="shop-product-basic">Wooden Tool Table</a></h3>
                             <a href="#">Add to cart</a>
                         </div>
                         <div class="price">
@@ -862,17 +939,22 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
                     </div>
@@ -883,7 +965,7 @@
 
                     <div class="single-product__content">
                         <div class="title">
-                            <h3> <a href="shop-product-basic">Candle Holder</a></h3>
+                            <h3><a href="shop-product-basic">Candle Holder</a></h3>
                             <a href="#">Add to cart</a>
                         </div>
                         <div class="price">
@@ -911,17 +993,22 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
                     </div>
@@ -932,7 +1019,7 @@
 
                     <div class="single-product__content">
                         <div class="title">
-                            <h3> <a href="shop-product-basic">Green Coutch</a></h3>
+                            <h3><a href="shop-product-basic">Green Coutch</a></h3>
                             <a href="#">Add to cart</a>
                         </div>
                         <div class="price">
@@ -962,17 +1049,22 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
                     </div>
@@ -983,7 +1075,7 @@
 
                     <div class="single-product__content">
                         <div class="title">
-                            <h3> <a href="shop-product-basic">Glass Candle Holder</a></h3>
+                            <h3><a href="shop-product-basic">Glass Candle Holder</a></h3>
                             <a href="#">Add to cart</a>
                         </div>
                         <div class="price">
@@ -1011,17 +1103,22 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
                     </div>
@@ -1032,7 +1129,7 @@
 
                     <div class="single-product__content">
                         <div class="title">
-                            <h3> <a href="shop-product-basic">Wooden Tool</a></h3>
+                            <h3><a href="shop-product-basic">Wooden Tool</a></h3>
                             <a href="#">Add to cart</a>
                         </div>
                         <div class="price">
@@ -1070,7 +1167,8 @@
                         <div class="countdown-wrapper text-center">
                             <h3>Deal of the day</h3>
                             <div class="deal-countdown" data-countdown="2020/01/01"></div>
-                            <a href="shop-left-sidebar" class="lezada-button lezada-button--medium lezada-button--icon--left">
+                            <a href="shop-left-sidebar"
+                               class="lezada-button lezada-button--medium lezada-button--icon--left">
                                 <i class="icon-left ion-ios-cart"></i> Only $39</a>
                         </div>
                     </div>
@@ -1136,12 +1234,14 @@
                     <div class="col">
                         <div class="testimonial-item multi-testimonial-single-item">
                             <div class="multi-testimonial-single-item__text">
-                                I can say your dedication is second to none. I like the fact that you are strongly proud of your work
+                                I can say your dedication is second to none. I like the fact that you are strongly proud
+                                of your work
                                 in every way.
                             </div>
                             <div class="multi-testimonial-single-item__author-info">
                                 <div class="image">
-                                    <img src="assets/images/testimonial/testimonial-1-80x80.png" class="img-fluid" alt="">
+                                    <img src="assets/images/testimonial/testimonial-1-80x80.png" class="img-fluid"
+                                         alt="">
                                 </div>
 
                                 <div class="content">
@@ -1159,12 +1259,14 @@
                     <div class="col">
                         <div class="testimonial-item multi-testimonial-single-item">
                             <div class="multi-testimonial-single-item__text">
-                                This has already been my fifth-time purchasing their theme. I have been highly satisfied with their
+                                This has already been my fifth-time purchasing their theme. I have been highly satisfied
+                                with their
                                 work.
                             </div>
                             <div class="multi-testimonial-single-item__author-info">
                                 <div class="image">
-                                    <img src="assets/images/testimonial/testimonial-2-80x80.jpg" class="img-fluid" alt="">
+                                    <img src="assets/images/testimonial/testimonial-2-80x80.jpg" class="img-fluid"
+                                         alt="">
                                 </div>
 
                                 <div class="content">
@@ -1182,12 +1284,14 @@
                     <div class="col">
                         <div class="testimonial-item multi-testimonial-single-item">
                             <div class="multi-testimonial-single-item__text">
-                                There's nothing would satisfy me much more than a worry-free clean and responsive theme for my
+                                There's nothing would satisfy me much more than a worry-free clean and responsive theme
+                                for my
                                 high-traffic site.
                             </div>
                             <div class="multi-testimonial-single-item__author-info">
                                 <div class="image">
-                                    <img src="assets/images/testimonial/testimonial-3-80x80.jpg" class="img-fluid" alt="">
+                                    <img src="assets/images/testimonial/testimonial-3-80x80.jpg" class="img-fluid"
+                                         alt="">
                                 </div>
 
                                 <div class="content">
@@ -1205,12 +1309,14 @@
                     <div class="col">
                         <div class="testimonial-item multi-testimonial-single-item">
                             <div class="multi-testimonial-single-item__text">
-                                Five-star for good customer support. They have the ability to resolve any issue in less than the time
+                                Five-star for good customer support. They have the ability to resolve any issue in less
+                                than the time
                                 for a coffee cup.
                             </div>
                             <div class="multi-testimonial-single-item__author-info">
                                 <div class="image">
-                                    <img src="assets/images/testimonial/testimonial-4-80x80.jpg" class="img-fluid" alt="">
+                                    <img src="assets/images/testimonial/testimonial-4-80x80.jpg" class="img-fluid"
+                                         alt="">
                                 </div>
 
                                 <div class="content">
@@ -1253,16 +1359,22 @@
                      data-alias="banner-cabinet" data-source="gallery"
                      style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
                     <!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
-                    <div id="rev_slider_6_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7">
+                    <div id="rev_slider_6_1" class="rev_slider fullwidthabanner" style="display:none;"
+                         data-version="5.4.7">
                         <ul>
                             <!-- SLIDE  -->
-                            <li data-index="rs-14" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
-                                data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="470"
-                                data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
-                                data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                            <li data-index="rs-14" data-transition="fade" data-slotamount="default"
+                                data-hideafterloop="0"
+                                data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                                data-masterspeed="470"
+                                data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1=""
+                                data-param2=""
+                                data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+                                data-param8=""
                                 data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="assets/images/revimages/transparent.png" data-bgcolor='#ffffff' style='background:#ffffff'
+                                <img src="assets/images/revimages/transparent.png" data-bgcolor='#ffffff'
+                                     style='background:#ffffff'
                                      alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat"
                                      data-bgparallax="off" class="rev-slidebg" data-no-retina>
                                 <!-- LAYERS -->
@@ -1274,116 +1386,162 @@
                                      data-width="['560','560','560','320']" data-height="['560','560','560','320']"
                                      data-whitespace="nowrap" data-type="shape" data-responsive_offset="on"
                                      data-frames='[{"delay":410,"speed":1000,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 5;background-color:rgb(236,244,246);border-radius:280px 280px 280px 280px;">
                                     <div class="rs-looped rs-pulse" data-easing="" data-speed="5" data-zoomstart="0.8"
-                                         data-zoomend="1.1"> </div>
+                                         data-zoomend="1.1"></div>
                                 </div>
 
                                 <!-- LAYER NR. 2 -->
                                 <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-14-layer-4"
                                      data-x="['left','left','left','left']" data-hoffset="['836','132','84','33']"
-                                     data-y="['top','top','top','top']" data-voffset="['351','414','464','469']" data-width="none"
-                                     data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on"
+                                     data-y="['top','top','top','top']" data-voffset="['351','414','464','469']"
+                                     data-width="none"
+                                     data-height="none" data-whitespace="nowrap" data-type="image"
+                                     data-responsive_offset="on"
                                      data-frames='[{"delay":610,"speed":2170,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 6;"><img src="assets/images/revimages/furniture/cabinet.png" alt=""
-                                                              data-ww="['788auto','762px','593px','422px']" data-hh="['402px','325px','253px','180px']"
-                                                              data-no-retina> </div>
+                                                              data-ww="['788auto','762px','593px','422px']"
+                                                              data-hh="['402px','325px','253px','180px']"
+                                                              data-no-retina></div>
 
                                 <!-- LAYER NR. 3 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-14-layer-5" data-x="['right','right','right','right']"
+                                <div class="tp-caption   tp-resizeme" id="slide-14-layer-5"
+                                     data-x="['right','right','right','right']"
                                      data-hoffset="['480','-41','-32','613']" data-y="['top','top','top','top']"
                                      data-voffset="['313','322','302','297']" data-fontsize="['77','70','70','130']"
-                                     data-lineheight="['80','80','80','130']" data-fontweight="['700','600','600','600']"
-                                     data-color="['rgb(51,51,51)','rgb(51,51,51)','rgb(51,51,51)','rgb(255,255,255)']" data-width="none"
-                                     data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                     data-lineheight="['80','80','80','130']"
+                                     data-fontweight="['700','600','600','600']"
+                                     data-color="['rgb(51,51,51)','rgb(51,51,51)','rgb(51,51,51)','rgb(255,255,255)']"
+                                     data-width="none"
+                                     data-height="none" data-whitespace="nowrap" data-type="text"
+                                     data-responsive_offset="on"
                                      data-frames='[{"delay":410,"speed":2020,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;rZ:90;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 7; white-space: nowrap; font-size: 77px; line-height: 80px; font-weight: 700; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                                    ss-18 </div>
+                                    ss-18
+                                </div>
 
                                 <!-- LAYER NR. 4 -->
-                                <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-1" id="slide-14-layer-6"
+                                <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-1"
+                                     id="slide-14-layer-6"
                                      data-x="['left','left','left','left']" data-hoffset="['1583','794','549','330']"
-                                     data-y="['top','top','top','top']" data-voffset="['315','406','407','394']" data-width="100"
-                                     data-height="100" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on"
+                                     data-y="['top','top','top','top']" data-voffset="['315','406','407','394']"
+                                     data-width="100"
+                                     data-height="100" data-whitespace="nowrap" data-type="shape"
+                                     data-responsive_offset="on"
                                      data-frames='[{"delay":800,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                     style="z-index: 8;background-color:rgb(51,51,51);border-radius:50px 50px 50px 50px;"> </div>
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
+                                     style="z-index: 8;background-color:rgb(51,51,51);border-radius:50px 50px 50px 50px;"></div>
 
                                 <!-- LAYER NR. 5 -->
                                 <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-14-layer-7"
                                      data-x="['right','right','right','right']" data-hoffset="['263','156','156','76']"
-                                     data-y="['middle','middle','middle','middle']" data-voffset="['-49','41','41','29']"
+                                     data-y="['middle','middle','middle','middle']"
+                                     data-voffset="['-49','41','41','29']"
                                      data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
                                      data-responsive_offset="on"
                                      data-frames='[{"delay":970,"speed":1400,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 9; white-space: nowrap; font-size: 16px; line-height: 25px; font-weight: 400; color: #ffffff; letter-spacing: 1px;font-family:Work Sans;">
-                                    ONLY </div>
+                                    ONLY
+                                </div>
 
                                 <!-- LAYER NR. 6 -->
                                 <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-14-layer-8"
                                      data-x="['right','right','right','right']" data-hoffset="['265','158','158','80']"
-                                     data-y="['middle','middle','middle','middle']" data-voffset="['-22','72','72','60']"
+                                     data-y="['middle','middle','middle','middle']"
+                                     data-voffset="['-22','72','72','60']"
                                      data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
                                      data-responsive_offset="on"
                                      data-frames='[{"delay":970,"speed":1410,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 10; white-space: nowrap; font-size: 20px; line-height: 25px; font-weight: 700; color: #ffffff; letter-spacing: 1px;font-family:Work Sans;">
-                                    $39 </div>
+                                    $39
+                                </div>
 
                                 <!-- LAYER NR. 7 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-14-layer-9" data-x="['left','left','left','left']"
+                                <div class="tp-caption   tp-resizeme" id="slide-14-layer-9"
+                                     data-x="['left','left','left','left']"
                                      data-hoffset="['287','93','89','21']" data-y="['top','top','top','top']"
-                                     data-voffset="['170','73','58','108']" data-width="none" data-height="none" data-whitespace="nowrap"
+                                     data-voffset="['170','73','58','108']" data-width="none" data-height="none"
+                                     data-whitespace="nowrap"
                                      data-type="text" data-responsive_offset="on"
                                      data-frames='[{"delay":660,"speed":1280,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 11; white-space: nowrap; font-size: 16px; line-height: 22px; font-weight: 500; color: #333333; letter-spacing: 2px;font-family:Work Sans;">
-                                    FEATURED PRODUCT </div>
+                                    FEATURED PRODUCT
+                                </div>
 
                                 <!-- LAYER NR. 8 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-14-layer-10" data-x="['left','left','left','left']"
+                                <div class="tp-caption   tp-resizeme" id="slide-14-layer-10"
+                                     data-x="['left','left','left','left']"
                                      data-hoffset="['281','91','88','21']" data-y="['top','top','top','top']"
                                      data-voffset="['208','116','97','142']" data-fontsize="['48','48','48','40']"
                                      data-lineheight="['64','64','64','45']" data-width="none" data-height="none"
                                      data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                                      data-frames='[{"delay":1050,"speed":1230,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 12; white-space: nowrap; font-size: 48px; line-height: 64px; font-weight: 400; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
                                     Montana shelf <br>
-                                    collection </div>
+                                    collection
+                                </div>
 
                                 <!-- LAYER NR. 9 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-14-layer-11" data-x="['left','left','left','left']"
+                                <div class="tp-caption   tp-resizeme" id="slide-14-layer-11"
+                                     data-x="['left','left','left','left']"
                                      data-hoffset="['282','90','90','23']" data-y="['top','top','top','top']"
-                                     data-voffset="['368','283','262','250']" data-fontsize="['15','15','15','14']" data-width="none"
-                                     data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                     data-voffset="['368','283','262','250']" data-fontsize="['15','15','15','14']"
+                                     data-width="none"
+                                     data-height="none" data-whitespace="nowrap" data-type="text"
+                                     data-responsive_offset="on"
                                      data-frames='[{"delay":1300,"speed":1180,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 13; white-space: nowrap; font-size: 15px; line-height: 26px; font-weight: 400; color: #7e7e7e; letter-spacing: 0.5px;font-family:Work Sans;">
-                                    Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse<br> suscipit sagittis leo estibulum
-                                    issim Lorem ipsum dolor sit amet,<br> consectetur cing elit. </div>
+                                    Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse<br> suscipit
+                                    sagittis leo estibulum
+                                    issim Lorem ipsum dolor sit amet,<br> consectetur cing elit.
+                                </div>
 
                                 <!-- LAYER NR. 10 -->
                                 <div class="tp-caption Slider-button-alt rev-btn " id="slide-14-layer-12"
                                      data-x="['left','left','left','left']" data-hoffset="['282','91','89','29']"
-                                     data-y="['top','top','top','top']" data-voffset="['478','384','364','349']" data-width="none"
-                                     data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on"
+                                     data-y="['top','top','top','top']" data-voffset="['478','384','364','349']"
+                                     data-width="none"
+                                     data-height="none" data-whitespace="nowrap" data-type="button"
+                                     data-responsive_offset="on"
                                      data-responsive="off"
                                      data-frames='[{"delay":1580,"speed":1270,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(51,51,51);bg:transparent;"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[12,12,12,12]"
                                      data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
                                      data-paddingleft="[35,35,35,35]"
                                      style="z-index: 14; white-space: nowrap; letter-spacing: 1px;border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
@@ -1406,7 +1564,7 @@
 =            footer area         =
 =============================================-->
 
-    <jsp:include page="include/foot.jsp"/>
+<jsp:include page="include/foot.jsp"/>
 
 <!--=====  End of footer area  ======-->
 
@@ -1441,8 +1599,10 @@
 
                 <div class="single-widget">
                     <h2 class="widget-title">About Us</h2>
-                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products over other
-                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion clothes.</p>
+                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
+                        over other
+                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion
+                        clothes.</p>
                 </div>
 
                 <!--=======  End of single widget  =======-->
@@ -1459,16 +1619,20 @@
                 <div class="social-icons">
                     <ul>
                         <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-twitter"></i></a></li>
                         <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-facebook"></i></a></li>
                         <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-instagram"></i></a></li>
                         <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-youtube-play"></i></a></li>
                     </ul>
                 </div>
@@ -1518,7 +1682,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1537,7 +1702,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="main-price discounted">$300.00</span> <span class="discounted-price">$220.00</span></p>
+                            <p><span class="main-price discounted">$300.00</span> <span
+                                    class="discounted-price">$220.00</span></p>
 
                         </div>
                     </div>
@@ -1556,7 +1722,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$100.00</span> <span class="discounted-price">$80.00</span></p>
+                            <p><span class="main-price discounted">$100.00</span> <span
+                                    class="discounted-price">$80.00</span></p>
 
                         </div>
                     </div>
@@ -1575,7 +1742,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1594,7 +1762,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1836,8 +2005,10 @@
             <span class="discounted-price">$300.00</span>
         </p>
 
-        <p class="description">Hurley Dry-Fit Chino Short. Men's chino short. Outseam Length: 19 Dri-FIT Technology helps
-            keep you dry and comfortable. Made with sweat-wicking fabric. Fitted waist with belt loops. Button waist with
+        <p class="description">Hurley Dry-Fit Chino Short. Men's chino short. Outseam Length: 19 Dri-FIT Technology
+            helps
+            keep you dry and comfortable. Made with sweat-wicking fabric. Fitted waist with belt loops. Button waist
+            with
             zip fly provides a classic look and feel .</p>
 
         <span class="quickview-title">Quantity:</span>
@@ -1853,11 +2024,11 @@
         <div class="quick-view-other-info">
             <table>
                 <tr class="single-info">
-                    <td class="quickview-title">SKU: </td>
+                    <td class="quickview-title">SKU:</td>
                     <td class="quickview-value">12345</td>
                 </tr>
                 <tr class="single-info">
-                    <td class="quickview-title">Categories: </td>
+                    <td class="quickview-title">Categories:</td>
                     <td class="quickview-value">
                         <a href="#">Fashion</a>,
                         <a href="#">Men</a>,
@@ -1865,14 +2036,14 @@
                     </td>
                 </tr>
                 <tr class="single-info">
-                    <td class="quickview-title">Tags: </td>
+                    <td class="quickview-title">Tags:</td>
                     <td class="quickview-value">
                         <a href="#">Fashion</a>,
                         <a href="#">Men</a>
                     </td>
                 </tr>
                 <tr class="single-info">
-                    <td class="quickview-title">Share on: </td>
+                    <td class="quickview-title">Share on:</td>
                     <td class="quickview-value">
                         <ul class="quickview-social-icons">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>

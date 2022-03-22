@@ -5,9 +5,9 @@
   Time: 5:08 CH
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=utf-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -15,7 +15,8 @@
 
 
 <!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/shop-product-bought-together.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:07:49 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <jsp:include page="include/head.jsp"/>
 
 <body>
@@ -101,7 +102,7 @@
                     <ul class="dl-menu dl-menu-toggle">
                         <li class=""><a href="#">Home</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Home Group One</a>
+                                <li class=""><a href="#">Home Group One</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-trending">Trending</a></li>
                                         <li><a href="index-collection">My collection</a></li>
@@ -110,7 +111,7 @@
                                         <li><a href="index-smart">smart design</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group Two</a>
+                                <li><a href="#">Home Group Two</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-furniture">Furniture </a></li>
                                         <li><a href="index-essentials">Essentials</a></li>
@@ -119,7 +120,7 @@
                                         <li><a href="index-accessories">Accessories</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group three</a>
+                                <li><a href="#">Home Group three</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-shoppable">Shoppable</a></li>
 
@@ -128,7 +129,7 @@
                                         <li><a href="index-cosmetics">Cosmetics</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group four</a>
+                                <li><a href="#">Home Group four</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-decor">Home Decor</a></li>
                                         <li><a href="index-creative">Creative</a></li>
@@ -139,7 +140,7 @@
 
                         <li><a href="#">Shop</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop Pages</a>
+                                <li class=""><a href="#">Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-no-sidebar">Shop No Sidebar</a></li>
                                         <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
@@ -150,7 +151,7 @@
                                         <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Product Details Pages</a>
+                                <li class=""><a href="#">Product Details Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-basic">Basic </a></li>
                                         <li><a href="shop-product-fullwidth">Fullwidth</a></li>
@@ -163,7 +164,7 @@
 
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Other Shop Pages</a>
+                                <li class=""><a href="#">Other Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-with-background">Product with background</a></li>
                                         <li><a href="shop-cart">Shopping Cart</a></li>
@@ -181,7 +182,7 @@
                         </li>
                         <li><a href="#">Elements</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-product-categories">Product Categories</a></li>
                                         <li><a href="element-product-sliders">Product Sliders</a></li>
@@ -190,7 +191,7 @@
                                         <li><a href="element-recent-products">Recent Products</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-sale-products">Sale Products </a></li>
                                         <li><a href="element-featured-products">Featured products</a></li>
@@ -199,7 +200,7 @@
                                         <li><a href="element-product-attributes">Product Attributes</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Theming</a>
+                                <li class=""><a href="#">Theming</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-blog-posts">Blog Posts</a></li>
                                         <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
@@ -332,7 +333,8 @@
                                             <!--=======  single image  =======-->
 
                                             <div class="single-image">
-                                                <img src="assets/images/shop-product/soccer-1-170x225.png" class="img-fluid" alt="">
+                                                <img src="assets/images/shop-product/soccer-1-170x225.png"
+                                                     class="img-fluid" alt="">
                                             </div>
 
                                             <!--=======  End of single image  =======-->
@@ -340,7 +342,8 @@
                                             <!--=======  single image  =======-->
 
                                             <div class="single-image">
-                                                <img src="assets/images/shop-product/soccer-2-170x225.png" class="img-fluid" alt="">
+                                                <img src="assets/images/shop-product/soccer-2-170x225.png"
+                                                     class="img-fluid" alt="">
                                             </div>
 
                                             <!--=======  End of single image  =======-->
@@ -348,7 +351,8 @@
                                             <!--=======  single image  =======-->
 
                                             <div class="single-image">
-                                                <img src="assets/images/shop-product/soccer-3-170x225.png" class="img-fluid" alt="">
+                                                <img src="assets/images/shop-product/soccer-3-170x225.png"
+                                                     class="img-fluid" alt="">
                                             </div>
 
                                             <!--=======  End of single image  =======-->
@@ -356,7 +360,8 @@
                                             <!--=======  single image  =======-->
 
                                             <div class="single-image">
-                                                <img src="assets/images/shop-product/soccer-4-170x225.jpg" class="img-fluid" alt="">
+                                                <img src="assets/images/shop-product/soccer-4-170x225.jpg"
+                                                     class="img-fluid" alt="">
                                             </div>
 
                                             <!--=======  End of single image  =======-->
@@ -364,7 +369,8 @@
                                             <!--=======  single image  =======-->
 
                                             <div class="single-image">
-                                                <img src="assets/images/shop-product/soccer-5-170x225.png" class="img-fluid" alt="">
+                                                <img src="assets/images/shop-product/soccer-5-170x225.png"
+                                                     class="img-fluid" alt="">
                                             </div>
 
                                             <!--=======  End of single image  =======-->
@@ -372,7 +378,8 @@
                                             <!--=======  single image  =======-->
 
                                             <div class="single-image">
-                                                <img src="assets/images/shop-product/trendcoat-1-170x225.jpg" class="img-fluid" alt="">
+                                                <img src="assets/images/shop-product/trendcoat-1-170x225.jpg"
+                                                     class="img-fluid" alt="">
                                             </div>
 
                                             <!--=======  End of single image  =======-->
@@ -380,7 +387,8 @@
                                             <!--=======  single image  =======-->
 
                                             <div class="single-image">
-                                                <img src="assets/images/shop-product/trendcoat-2-170x225.jpg" class="img-fluid" alt="">
+                                                <img src="assets/images/shop-product/trendcoat-2-170x225.jpg"
+                                                     class="img-fluid" alt="">
                                             </div>
 
                                             <!--=======  End of single image  =======-->
@@ -406,13 +414,18 @@
 
                                         <div class="shop-product-rightside-icons">
 												<span class="wishlist-icon">
-													<a href="#" data-tippy="Add to wishlist" data-tippy-placement="left" data-tippy-inertia="true"
-                                                       data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                       data-tippy-theme="sharpborder"><i class="ion-android-favorite-outline"></i></a>
+													<a href="#" data-tippy="Add to wishlist" data-tippy-placement="left"
+                                                       data-tippy-inertia="true"
+                                                       data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                       data-tippy-arrow="true"
+                                                       data-tippy-theme="sharpborder"><i
+                                                            class="ion-android-favorite-outline"></i></a>
 												</span>
                                             <span class="enlarge-icon">
-													<a class="btn-zoom-popup" href="#" data-tippy="Click to enlarge" data-tippy-placement="left"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
+													<a class="btn-zoom-popup" href="#" data-tippy="Click to enlarge"
+                                                       data-tippy-placement="left"
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
                                                        data-tippy-arrow="true" data-tippy-theme="sharpborder"><i
                                                             class="ion-android-expand"></i></a>
 												</span>
@@ -425,7 +438,8 @@
                                             <!--=======  single image  =======-->
 
                                             <div class="single-image">
-                                                <img src="assets/images/shop-product/soccer-1.png" class="img-fluid" alt="">
+                                                <img src="assets/images/shop-product/soccer-1.png" class="img-fluid"
+                                                     alt="">
                                             </div>
 
                                             <!--=======  End of single image  =======-->
@@ -433,7 +447,8 @@
                                             <!--=======  single image  =======-->
 
                                             <div class="single-image">
-                                                <img src="assets/images/shop-product/soccer-2.png" class="img-fluid" alt="">
+                                                <img src="assets/images/shop-product/soccer-2.png" class="img-fluid"
+                                                     alt="">
                                             </div>
 
                                             <!--=======  End of single image  =======-->
@@ -441,7 +456,8 @@
                                             <!--=======  single image  =======-->
 
                                             <div class="single-image">
-                                                <img src="assets/images/shop-product/soccer-3.png" class="img-fluid" alt="">
+                                                <img src="assets/images/shop-product/soccer-3.png" class="img-fluid"
+                                                     alt="">
                                             </div>
 
                                             <!--=======  End of single image  =======-->
@@ -449,7 +465,8 @@
                                             <!--=======  single image  =======-->
 
                                             <div class="single-image">
-                                                <img src="assets/images/shop-product/soccer-4.jpg" class="img-fluid" alt="">
+                                                <img src="assets/images/shop-product/soccer-4.jpg" class="img-fluid"
+                                                     alt="">
                                             </div>
 
                                             <!--=======  End of single image  =======-->
@@ -457,7 +474,8 @@
                                             <!--=======  single image  =======-->
 
                                             <div class="single-image">
-                                                <img src="assets/images/shop-product/soccer-5.png" class="img-fluid" alt="">
+                                                <img src="assets/images/shop-product/soccer-5.png" class="img-fluid"
+                                                     alt="">
                                             </div>
 
                                             <!--=======  End of single image  =======-->
@@ -465,7 +483,8 @@
                                             <!--=======  single image  =======-->
 
                                             <div class="single-image">
-                                                <img src="assets/images/shop-product/trendcoat-1.jpg" class="img-fluid" alt="">
+                                                <img src="assets/images/shop-product/trendcoat-1.jpg" class="img-fluid"
+                                                     alt="">
                                             </div>
 
                                             <!--=======  End of single image  =======-->
@@ -473,7 +492,8 @@
                                             <!--=======  single image  =======-->
 
                                             <div class="single-image">
-                                                <img src="assets/images/shop-product/trendcoat-2.jpg" class="img-fluid" alt="">
+                                                <img src="assets/images/shop-product/trendcoat-2.jpg" class="img-fluid"
+                                                     alt="">
                                             </div>
 
                                             <!--=======  End of single image  =======-->
@@ -484,7 +504,6 @@
                                     <!--=======  End of shop product big image gallery  =======-->
                                 </div>
                             </div>
-
 
 
                         </div>
@@ -540,9 +559,12 @@
                                 <!--=======  shop product short description  =======-->
 
                                 <div class="shop-product__short-desc mb-50">
-                                    Hurley Dry-Fit Chino Short. Men's chino short. Outseam Length: 19 Dri-FIT Technology helps keep you
-                                    dry and comfortable. Made with sweat-wicking fabric. Fitted waist with belt loops. Button waist with
-                                    zip fly provides a classic look and feel . Back welt pockets and coin pocket for storage. Dual side
+                                    Hurley Dry-Fit Chino Short. Men's chino short. Outseam Length: 19 Dri-FIT Technology
+                                    helps keep you
+                                    dry and comfortable. Made with sweat-wicking fabric. Fitted waist with belt loops.
+                                    Button waist with
+                                    zip fly provides a classic look and feel . Back welt pockets and coin pocket for
+                                    storage. Dual side
                                     seam pockets. Heat transferred logos. 70% nylon 24% polyester 6% spandex. Imported.
                                 </div>
 
@@ -551,7 +573,7 @@
                                 <!--=======  shop product size block  =======-->
 
                                 <div class="shop-product__block shop-product__block--size mb-20">
-                                    <div class="shop-product__block__title">Size: </div>
+                                    <div class="shop-product__block__title">Size:</div>
                                     <div class="shop-product__block__value">
                                         <div class="shop-product-size-list">
                                             <span class="single-size">L</span>
@@ -567,15 +589,17 @@
                                 <!--=======  shop product color block  =======-->
 
                                 <div class="shop-product__block shop-product__block--color mb-20">
-                                    <div class="shop-product__block__title">Color: </div>
+                                    <div class="shop-product__block__title">Color:</div>
                                     <div class="shop-product__block__value">
                                         <div class="shop-product-color-list">
 
                                             <ul class="single-filter-widget--list single-filter-widget--list--color">
                                                 <li class="mb-0 pt-0 pb-0 mr-10"><a class="active" href="#"><span
                                                         class="color-picker black"></span></a></li>
-                                                <li class="mb-0 pt-0 pb-0 mr-10"><a href="#"><span class="color-picker blue"></span></a></li>
-                                                <li class="mb-0 pt-0 pb-0 mr-10"><a href="#"><span class="color-picker brown"></span></a></li>
+                                                <li class="mb-0 pt-0 pb-0 mr-10"><a href="#"><span
+                                                        class="color-picker blue"></span></a></li>
+                                                <li class="mb-0 pt-0 pb-0 mr-10"><a href="#"><span
+                                                        class="color-picker brown"></span></a></li>
 
                                             </ul>
                                         </div>
@@ -587,7 +611,7 @@
                                 <!--=======  shop product quantity block  =======-->
 
                                 <div class="shop-product__block shop-product__block--quantity mb-40">
-                                    <div class="shop-product__block__title">Quantity: </div>
+                                    <div class="shop-product__block__title">Quantity:</div>
                                     <div class="shop-product__block__value">
                                         <div class="pro-qty d-inline-block mx-0 pt-0">
                                             <input type="text" value="1">
@@ -601,9 +625,12 @@
 
                                 <div class="shop-product__buttons mb-40">
                                     <a class="lezada-button lezada-button--medium" href="#">add to cart</a>
-                                    <a class="lezada-compare-button ml-20" href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                       data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-placement="left"
-                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"><i class="ion-ios-shuffle"></i></a>
+                                    <a class="lezada-compare-button ml-20" href="#" data-tippy="Compare"
+                                       data-tippy-inertia="true"
+                                       data-tippy-animation="shift-away" data-tippy-delay="50"
+                                       data-tippy-placement="left"
+                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"><i
+                                            class="ion-ios-shuffle"></i></a>
                                 </div>
 
                                 <!--=======  End of shop product buttons  =======-->
@@ -629,11 +656,11 @@
                                 <div class="quick-view-other-info pb-0">
                                     <table>
                                         <tr class="single-info">
-                                            <td class="quickview-title">SKU: </td>
+                                            <td class="quickview-title">SKU:</td>
                                             <td class="quickview-value">12345</td>
                                         </tr>
                                         <tr class="single-info">
-                                            <td class="quickview-title">Categories: </td>
+                                            <td class="quickview-title">Categories:</td>
                                             <td class="quickview-value">
                                                 <a href="#">Fashion</a>,
                                                 <a href="#">Men</a>,
@@ -641,14 +668,14 @@
                                             </td>
                                         </tr>
                                         <tr class="single-info">
-                                            <td class="quickview-title">Tags: </td>
+                                            <td class="quickview-title">Tags:</td>
                                             <td class="quickview-value">
                                                 <a href="#">Fashion</a>,
                                                 <a href="#">Men</a>
                                             </td>
                                         </tr>
                                         <tr class="single-info">
-                                            <td class="quickview-title">Share on: </td>
+                                            <td class="quickview-title">Share on:</td>
                                             <td class="quickview-value">
                                                 <ul class="quickview-social-icons">
                                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -678,11 +705,14 @@
 
                                 <div class="tab-product-navigation tab-product-navigation--product-desc mb-50">
                                     <div class="nav nav-tabs justify-content-center" id="nav-tab2" role="tablist">
-                                        <a class="nav-item nav-link active" id="product-tab-1" data-toggle="tab" href="#product-series-1"
+                                        <a class="nav-item nav-link active" id="product-tab-1" data-toggle="tab"
+                                           href="#product-series-1"
                                            role="tab" aria-selected="true">Description</a>
-                                        <a class="nav-item nav-link" id="product-tab-2" data-toggle="tab" href="#product-series-2"
+                                        <a class="nav-item nav-link" id="product-tab-2" data-toggle="tab"
+                                           href="#product-series-2"
                                            role="tab" aria-selected="false">Additional information</a>
-                                        <a class="nav-item nav-link" id="product-tab-3" data-toggle="tab" href="#product-series-3"
+                                        <a class="nav-item nav-link" id="product-tab-3" data-toggle="tab"
+                                           href="#product-series-3"
                                            role="tab" aria-selected="false">Reviews (3)</a>
                                     </div>
                                 </div>
@@ -698,17 +728,22 @@
                                         <!--=======  shop product long description  =======-->
 
                                         <div class="shop-product__long-desc shop-product__long-desc--wide mb-30">
-                                            <p>Hurley Dry-Fit Chino Short. Men’s chino short. Outseam Length: 19 Dri-FIT Technology helps
-                                                keep you dry and comfortable. Made with sweat-wicking fabric. Fitted waist with belt loops.
-                                                Button waist with zip fly provides a classic look and feel . Back welt pockets and coin pocket
-                                                for storage. Dual side seam pockets. Heat transferred logos. 70% nylon 24% polyester 6%
+                                            <p>Hurley Dry-Fit Chino Short. Men’s chino short. Outseam Length: 19 Dri-FIT
+                                                Technology helps
+                                                keep you dry and comfortable. Made with sweat-wicking fabric. Fitted
+                                                waist with belt loops.
+                                                Button waist with zip fly provides a classic look and feel . Back welt
+                                                pockets and coin pocket
+                                                for storage. Dual side seam pockets. Heat transferred logos. 70% nylon
+                                                24% polyester 6%
                                                 spandex. Imported.</p>
                                         </div>
 
                                         <!--=======  End of shop product long description  =======-->
                                     </div>
 
-                                    <div class="tab-pane fade" id="product-series-2" role="tabpanel" aria-labelledby="product-tab-2">
+                                    <div class="tab-pane fade" id="product-series-2" role="tabpanel"
+                                         aria-labelledby="product-tab-2">
                                         <!--=======  shop product additional information  =======-->
 
                                         <div class="shop-product__additional-info">
@@ -733,7 +768,8 @@
                                         <!--=======  End of shop product additional information  =======-->
                                     </div>
 
-                                    <div class="tab-pane fade" id="product-series-3" role="tabpanel" aria-labelledby="product-tab-3">
+                                    <div class="tab-pane fade" id="product-series-3" role="tabpanel"
+                                         aria-labelledby="product-tab-3">
                                         <!--=======  shop product reviews  =======-->
 
                                         <div class="shop-product__review shop-product__review--wide">
@@ -762,14 +798,16 @@
 
                                                     <!--=======  username and date  =======-->
 
-                                                    <p class="username">Scott James <span class="date">/ April 5, 2018</span></p>
+                                                    <p class="username">Scott James <span
+                                                            class="date">/ April 5, 2018</span></p>
 
                                                     <!--=======  End of username and date  =======-->
 
                                                     <!--=======  message  =======-->
 
                                                     <p class="message">
-                                                        Thanks for always keeping your HTML themes up to date. Your level of support and
+                                                        Thanks for always keeping your HTML themes up to date. Your
+                                                        level of support and
                                                         dedication is second to none.
                                                     </p>
 
@@ -802,14 +840,16 @@
 
                                                     <!--=======  username and date  =======-->
 
-                                                    <p class="username">Owen Christ <span class="date">/ April 7, 2018</span></p>
+                                                    <p class="username">Owen Christ <span
+                                                            class="date">/ April 7, 2018</span></p>
 
                                                     <!--=======  End of username and date  =======-->
 
                                                     <!--=======  message  =======-->
 
                                                     <p class="message">
-                                                        I didn’t expect this poster to arrive folded. Now there are lines on the poster and one
+                                                        I didn’t expect this poster to arrive folded. Now there are
+                                                        lines on the poster and one
                                                         sad Ninja.
                                                     </p>
 
@@ -842,14 +882,16 @@
 
                                                     <!--=======  username and date  =======-->
 
-                                                    <p class="username">Edna Watson <span class="date">/ April 5, 2018</span></p>
+                                                    <p class="username">Edna Watson <span
+                                                            class="date">/ April 5, 2018</span></p>
 
                                                     <!--=======  End of username and date  =======-->
 
                                                     <!--=======  message  =======-->
 
                                                     <p class="message">
-                                                        Can’t wait to start mixin’ with this one! Irba-irr-Up-up-up-up-date your theme!
+                                                        Can’t wait to start mixin’ with this one!
+                                                        Irba-irr-Up-up-up-up-date your theme!
                                                     </p>
 
                                                     <!--=======  End of message  =======-->
@@ -859,7 +901,8 @@
                                             <!--=======  End of single review  =======-->
 
                                             <h2 class="review-title mb-20">Add a review</h2>
-                                            <p class="text-center">Your email address will not be published. Required fields are marked *
+                                            <p class="text-center">Your email address will not be published. Required
+                                                fields are marked *
                                             </p>
 
                                             <!--=======  review form  =======-->
@@ -885,10 +928,13 @@
 																</span>
                                                         </div>
                                                         <div class="col-lg-12 mb-20">
-                                                            <textarea cols="30" rows="10" placeholder="Your review *"></textarea>
+                                                            <textarea cols="30" rows="10"
+                                                                      placeholder="Your review *"></textarea>
                                                         </div>
                                                         <div class="col-lg-12 text-center">
-                                                            <button type="submit" class="lezada-button lezada-button--medium">submit</button>
+                                                            <button type="submit"
+                                                                    class="lezada-button lezada-button--medium">submit
+                                                            </button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -921,12 +967,11 @@
 <!--=====  End of shop page content  ======-->
 
 
-
 <!--=============================================
 =            footer area         =
 =============================================-->
 
-    <jsp:include page="include/foot.jsp"/>
+<jsp:include page="include/foot.jsp"/>
 
 <!--=====  End of footer area  ======-->
 
@@ -960,8 +1005,10 @@
 
                 <div class="single-widget">
                     <h2 class="widget-title">About Us</h2>
-                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products over other
-                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion clothes.</p>
+                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
+                        over other
+                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion
+                        clothes.</p>
                 </div>
 
                 <!--=======  End of single widget  =======-->
@@ -988,7 +1035,8 @@
                                data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
                                data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -1037,7 +1085,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1056,7 +1105,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="main-price discounted">$300.00</span> <span class="discounted-price">$220.00</span></p>
+                            <p><span class="main-price discounted">$300.00</span> <span
+                                    class="discounted-price">$220.00</span></p>
 
                         </div>
                     </div>
@@ -1075,7 +1125,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$100.00</span> <span class="discounted-price">$80.00</span></p>
+                            <p><span class="main-price discounted">$100.00</span> <span
+                                    class="discounted-price">$80.00</span></p>
 
                         </div>
                     </div>
@@ -1094,7 +1145,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1113,7 +1165,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1324,7 +1377,6 @@
 <!--=======  End of search overlay  =======-->
 
 <!--=====  End of overlay items  ======-->
-
 
 
 <!-- scroll to top  -->

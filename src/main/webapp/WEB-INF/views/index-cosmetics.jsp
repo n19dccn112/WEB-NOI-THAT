@@ -5,9 +5,9 @@
   Time: 16:45
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=utf-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -16,7 +16,8 @@
 
 
 <!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/index-cosmetics.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:06:51 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <jsp:include page="include/head.jsp"/>
 
 <body>
@@ -39,36 +40,45 @@
                     data-hideafterloop="0" data-hideslideonmobile="off"
                     data-easein="default,default,default,default,default,default,default,default,default,default"
                     data-easeout="default,default,default,default,default,default,default,default,default,default"
-                    data-masterspeed="700,default,default,default,default,default,default,default,default,default" data-thumb=""
+                    data-masterspeed="700,default,default,default,default,default,default,default,default,default"
+                    data-thumb=""
                     data-rotate="0,0,0,0,0,0,0,0,0,0" data-saveperformance="off" data-title="Slide" data-param1=""
-                    data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                    data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+                    data-param8=""
                     data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/images/revimages/dummy.png" data-bgcolor='#f8f8f8' style='background:#f8f8f8' alt=""
-                         data-lazyload="assets/images/revimages/transparent.png" data-bgposition="center center" data-bgfit="cover"
+                    <img src="assets/images/revimages/dummy.png" data-bgcolor='#f8f8f8' style='background:#f8f8f8'
+                         alt=""
+                         data-lazyload="assets/images/revimages/transparent.png" data-bgposition="center center"
+                         data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
 
                     <!-- LAYER NR. 1 -->
                     <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-42-layer-23"
                          data-x="['left','left','left','left']" data-hoffset="['532','180','66','28']"
-                         data-y="['middle','top','middle','middle']" data-voffset="['0','166','0','-3']" data-width="none"
+                         data-y="['middle','top','middle','middle']" data-voffset="['0','166','0','-3']"
+                         data-width="none"
                          data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on"
                          data-frames='[{"delay":710,"speed":2760,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 5;">
-                        <div class="rs-looped rs-slideloop" data-easing="" data-speed="2" data-xs="0" data-xe="0" data-ys="0"
+                        <div class="rs-looped rs-slideloop" data-easing="" data-speed="2" data-xs="0" data-xe="0"
+                             data-ys="0"
                              data-ye="20"><img src="assets/images/revimages/dummy.png" alt=""
-                                               data-ww="['722px','586px','586px','402px']" data-hh="['537px','436px','436px','299px']"
-                                               data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img1.png" data-no-retina> </div>
+                                               data-ww="['722px','586px','586px','402px']"
+                                               data-hh="['537px','436px','436px','299px']"
+                                               data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img1.png"
+                                               data-no-retina></div>
                     </div>
 
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption button-under-line rev-btn  tp-resizeme" id="slide-42-layer-20"
                          data-x="['left','center','center','left']" data-hoffset="['1197','230','197','265']"
                          data-y="['top','top','top','top']" data-voffset="['712','492','489','347']" data-width="none"
-                         data-height="none" data-whitespace="nowrap" data-type="button" data-actions='' data-responsive_offset="on"
+                         data-height="none" data-whitespace="nowrap" data-type="button" data-actions=''
+                         data-responsive_offset="on"
                          data-frames='[{"delay":1100,"speed":1790,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(211,18,42);bc:rgb(211,18,42);"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[3,3,3,3]" data-paddingleft="[0,0,0,0]"
@@ -79,38 +89,48 @@
                     <!-- LAYER NR. 3 -->
                     <div class="tp-caption   tp-resizeme" id="slide-42-layer-22" data-x="['left','left','left','left']"
                          data-hoffset="['979','501','384','206']" data-y="['top','top','top','top']"
-                         data-voffset="['488','308','330','233']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-voffset="['488','308','330','233']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="image" data-responsive_offset="on"
                          data-frames='[{"delay":700,"speed":2000,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 7;"><img src="assets/images/revimages/dummy.png" alt=""
-                                                  data-ww="['585px','453px','368px','261px']" data-hh="['186px','144px','117px','83px']"
-                                                  data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img4.png" data-no-retina> </div>
+                                                  data-ww="['585px','453px','368px','261px']"
+                                                  data-hh="['186px','144px','117px','83px']"
+                                                  data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img4.png"
+                                                  data-no-retina></div>
 
                     <!-- LAYER NR. 4 -->
                     <div class="tp-caption   tp-resizeme" id="slide-42-layer-24" data-x="['left','left','left','left']"
                          data-hoffset="['0','0','0','0']" data-y="['bottom','bottom','bottom','bottom']"
-                         data-voffset="['0','-44','-44','-44']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-voffset="['0','-44','-44','-44']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="image" data-responsive_offset="on"
                          data-frames='[{"delay":1140,"speed":1200,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 8;"><img src="assets/images/revimages/dummy.png" alt=""
-                                                  data-ww="['348px','316px','271px','271px']" data-hh="['195px','177px','152px','152px']"
-                                                  data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img3.png" data-no-retina> </div>
+                                                  data-ww="['348px','316px','271px','271px']"
+                                                  data-hh="['195px','177px','152px','152px']"
+                                                  data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img3.png"
+                                                  data-no-retina></div>
 
                     <!-- LAYER NR. 5 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-42-layer-25" data-x="['right','right','right','right']"
-                         data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
+                    <div class="tp-caption   tp-resizeme" id="slide-42-layer-25"
+                         data-x="['right','right','right','right']"
+                         data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
+                         data-voffset="['0','0','0','0']"
                          data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
                          data-responsive_offset="on"
                          data-frames='[{"delay":1820,"speed":1200,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 9;"><img src="assets/images/revimages/dummy.png" alt=""
-                                                  data-ww="['345px','239px','201px','152px']" data-hh="['281px','195px','164px','124px']"
-                                                  data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img2.png" data-no-retina> </div>
+                                                  data-ww="['345px','239px','201px','152px']"
+                                                  data-hh="['281px','195px','164px','124px']"
+                                                  data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img2.png"
+                                                  data-no-retina></div>
                 </li>
                 <!-- SLIDE  -->
                 <li data-index="rs-43"
@@ -119,14 +139,18 @@
                     data-hideslideonmobile="off" data-easein="default,default,default,default,default,default,default"
                     data-easeout="default,default,default,default,default,default,default"
                     data-masterspeed="700,default,default,default,default,default,default"
-                    data-thumb="assets/images/revimages/cosmetics/100x50_home14-slider2-bg.png" data-rotate="0,0,0,0,0,0,0"
-                    data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4=""
+                    data-thumb="assets/images/revimages/cosmetics/100x50_home14-slider2-bg.png"
+                    data-rotate="0,0,0,0,0,0,0"
+                    data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3=""
+                    data-param4=""
                     data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
                     data-description="">
                     <!-- MAIN IMAGE -->
                     <img src="assets/images/revimages/dummy.png" alt=""
-                         data-lazyload="assets/images/revimages/cosmetics/home14-slider2-bg.png" data-bgposition="center center"
-                         data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+                         data-lazyload="assets/images/revimages/cosmetics/home14-slider2-bg.png"
+                         data-bgposition="center center"
+                         data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg"
+                         data-no-retina>
                     <!-- LAYERS -->
 
                     <!-- LAYER NR. 6 -->
@@ -138,64 +162,81 @@
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 5;"><img src="assets/images/revimages/dummy.png" alt=""
-                                                  data-ww="['294px','294px','294px','294px']" data-hh="['176px','176px','176px','176px']"
-                                                  data-lazyload="assets/images/revimages/cosmetics/home14-slider2-element-2.png" data-no-retina> </div>
+                                                  data-ww="['294px','294px','294px','294px']"
+                                                  data-hh="['176px','176px','176px','176px']"
+                                                  data-lazyload="assets/images/revimages/cosmetics/home14-slider2-element-2.png"
+                                                  data-no-retina></div>
 
                     <!-- LAYER NR. 7 -->
                     <div class="tp-caption   tp-resizeme" id="slide-43-layer-28" data-x="['left','left','left','left']"
-                         data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
+                         data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
+                         data-voffset="['0','0','0','0']"
                          data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
                          data-responsive_offset="on"
                          data-frames='[{"delay":970,"speed":1890,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 6;"><img src="assets/images/revimages/dummy.png" alt=""
-                                                  data-ww="['174px','174px','174px','174px']" data-hh="['129px','129px','129px','129px']"
-                                                  data-lazyload="assets/images/revimages/cosmetics/home14-slider2-element-3.png" data-no-retina> </div>
+                                                  data-ww="['174px','174px','174px','174px']"
+                                                  data-hh="['129px','129px','129px','129px']"
+                                                  data-lazyload="assets/images/revimages/cosmetics/home14-slider2-element-3.png"
+                                                  data-no-retina></div>
 
                     <!-- LAYER NR. 8 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-43-layer-29" data-x="['right','right','right','right']"
-                         data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
+                    <div class="tp-caption   tp-resizeme" id="slide-43-layer-29"
+                         data-x="['right','right','right','right']"
+                         data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']"
+                         data-voffset="['0','0','0','0']"
                          data-width="none" data-height="none" data-whitespace="nowrap" data-type="image"
                          data-responsive_offset="on"
                          data-frames='[{"delay":1160,"speed":1890,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 7;"><img src="assets/images/revimages/dummy.png" alt=""
-                                                  data-ww="['268px','268px','268px','132px']" data-hh="['1218px','1218px','1218px','600px']"
-                                                  data-lazyload="assets/images/revimages/cosmetics/home14-slider2-element-4.png" data-no-retina> </div>
+                                                  data-ww="['268px','268px','268px','132px']"
+                                                  data-hh="['1218px','1218px','1218px','600px']"
+                                                  data-lazyload="assets/images/revimages/cosmetics/home14-slider2-element-4.png"
+                                                  data-no-retina></div>
 
                     <!-- LAYER NR. 9 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-43-layer-25" data-x="['left','left','center','center']"
+                    <div class="tp-caption   tp-resizeme" id="slide-43-layer-25"
+                         data-x="['left','left','center','center']"
                          data-hoffset="['1119','590','1','1']" data-y="['top','top','top','top']"
-                         data-voffset="['426','286','141','141']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-voffset="['426','286','141','141']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":690,"speed":1540,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 8; white-space: nowrap; font-size: 18px; line-height: 36px; font-weight: 400; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                        Free delivery from $30 </div>
+                        Free delivery from $30
+                    </div>
 
                     <!-- LAYER NR. 10 -->
                     <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-43-layer-23"
                          data-x="['left','left','left','left']" data-hoffset="['248','43','123','53']"
-                         data-y="['middle','top','middle','middle']" data-voffset="['-12','45','124','126']" data-width="none"
+                         data-y="['middle','top','middle','middle']" data-voffset="['-12','45','124','126']"
+                         data-width="none"
                          data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on"
                          data-frames='[{"delay":710,"speed":2760,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 9;">
-                        <div class="rs-looped rs-slideloop" data-easing="" data-speed="2" data-xs="0" data-xe="0" data-ys="0"
+                        <div class="rs-looped rs-slideloop" data-easing="" data-speed="2" data-xs="0" data-xe="0"
+                             data-ys="0"
                              data-ye="20"><img src="assets/images/revimages/dummy.png" alt=""
-                                               data-ww="['661px','564auto','564auto','386px']" data-hh="['863px','736px','736px','504px']"
-                                               data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img5-1.png" data-no-retina> </div>
+                                               data-ww="['661px','564auto','564auto','386px']"
+                                               data-hh="['863px','736px','736px','504px']"
+                                               data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img5-1.png"
+                                               data-no-retina></div>
                     </div>
 
                     <!-- LAYER NR. 11 -->
                     <div class="tp-caption button-under-line rev-btn  tp-resizeme" id="slide-43-layer-20"
                          data-x="['left','center','center','left']" data-hoffset="['1152','176','-3','167']"
                          data-y="['top','top','top','top']" data-voffset="['677','481','296','276']" data-width="none"
-                         data-height="none" data-whitespace="nowrap" data-type="button" data-actions='' data-responsive_offset="on"
+                         data-height="none" data-whitespace="nowrap" data-type="button" data-actions=''
+                         data-responsive_offset="on"
                          data-frames='[{"delay":950,"speed":1790,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(211,18,42);bc:rgb(211,18,42);"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[3,3,3,3]" data-paddingleft="[0,0,0,0]"
@@ -204,16 +245,20 @@
                     </div>
 
                     <!-- LAYER NR. 12 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-43-layer-22" data-x="['left','left','center','center']"
+                    <div class="tp-caption   tp-resizeme" id="slide-43-layer-22"
+                         data-x="['left','left','center','center']"
                          data-hoffset="['870','435','0','0']" data-y="['top','top','top','top']"
-                         data-voffset="['513','357','195','184']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-voffset="['513','357','195','184']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="image" data-responsive_offset="on"
                          data-frames='[{"delay":700,"speed":1330,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 11;"><img src="assets/images/revimages/dummy.png" alt=""
-                                                   data-ww="['684px','499px','447px','384px']" data-hh="['107px','78px','70px','60px']"
-                                                   data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img7.png" data-no-retina> </div>
+                                                   data-ww="['684px','499px','447px','384px']"
+                                                   data-hh="['107px','78px','70px','60px']"
+                                                   data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img7.png"
+                                                   data-no-retina></div>
                 </li>
                 <!-- SLIDE  -->
                 <li data-index="rs-44"
@@ -224,11 +269,14 @@
                     data-easeout="default,default,default,default,default,default,default,default,default,default,default"
                     data-masterspeed="700,default,default,default,default,default,default,default,default,default,default"
                     data-thumb="" data-rotate="0,0,0,0,0,0,0,0,0,0,0" data-saveperformance="off" data-title="Slide"
-                    data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+                    data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+                    data-param7=""
                     data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="assets/images/revimages/dummy.png" data-bgcolor='#f9f0ee' style='background:#f9f0ee' alt=""
-                         data-lazyload="assets/images/revimages/transparent.png" data-bgposition="center center" data-bgfit="cover"
+                    <img src="assets/images/revimages/dummy.png" data-bgcolor='#f9f0ee' style='background:#f9f0ee'
+                         alt=""
+                         data-lazyload="assets/images/revimages/transparent.png" data-bgposition="center center"
+                         data-bgfit="cover"
                          data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
 
@@ -236,44 +284,53 @@
                     <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-44-layer-27"
                          data-x="['left','left','left','left']" data-hoffset="['285','40','193','111']"
                          data-y="['top','top','top','top']" data-voffset="['174','103','411','394']"
-                         data-width="['620','493','417','279']" data-height="['620','493','417','279']" data-whitespace="nowrap"
+                         data-width="['620','493','417','279']" data-height="['620','493','417','279']"
+                         data-whitespace="nowrap"
                          data-type="shape" data-responsive_offset="on"
                          data-frames='[{"delay":680,"speed":1000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                         style="z-index: 5;background-color:rgb(255,255,255);border-radius:100% 100% 100% 100%;"> </div>
+                         style="z-index: 5;background-color:rgb(255,255,255);border-radius:100% 100% 100% 100%;"></div>
 
                     <!-- LAYER NR. 14 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-44-layer-25" data-x="['left','left','center','center']"
+                    <div class="tp-caption   tp-resizeme" id="slide-44-layer-25"
+                         data-x="['left','left','center','center']"
                          data-hoffset="['1258','634','0','9']" data-y="['top','top','top','top']"
-                         data-voffset="['361','213','113','127']" data-fontsize="['18','18','18','14']" data-width="none"
+                         data-voffset="['361','213','113','127']" data-fontsize="['18','18','18','14']"
+                         data-width="none"
                          data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                          data-frames='[{"delay":690,"speed":1540,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 6; white-space: nowrap; font-size: 18px; line-height: 36px; font-weight: 400; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
-                        Free delivery from $30 </div>
+                        Free delivery from $30
+                    </div>
 
                     <!-- LAYER NR. 15 -->
                     <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-44-layer-23"
                          data-x="['left','left','left','left']" data-hoffset="['345','68','207','130']"
-                         data-y="['middle','top','middle','middle']" data-voffset="['0','77','239','201']" data-width="none"
+                         data-y="['middle','top','middle','middle']" data-voffset="['0','77','239','201']"
+                         data-width="none"
                          data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on"
                          data-frames='[{"delay":1220,"speed":2760,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 7;">
-                        <div class="rs-looped rs-slideloop" data-easing="" data-speed="2" data-xs="0" data-xe="0" data-ys="0"
+                        <div class="rs-looped rs-slideloop" data-easing="" data-speed="2" data-xs="0" data-xe="0"
+                             data-ys="0"
                              data-ye="20"><img src="assets/images/revimages/dummy.png" alt=""
-                                               data-ww="['491px','440px','396px','251px']" data-hh="['696px','660px','662px','356px']"
-                                               data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img6.png" data-no-retina> </div>
+                                               data-ww="['491px','440px','396px','251px']"
+                                               data-hh="['696px','660px','662px','356px']"
+                                               data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img6.png"
+                                               data-no-retina></div>
                     </div>
 
                     <!-- LAYER NR. 16 -->
                     <div class="tp-caption button-under-line rev-btn  tp-resizeme" id="slide-44-layer-20"
                          data-x="['left','center','center','left']" data-hoffset="['1291','222','-2','174']"
                          data-y="['top','top','top','top']" data-voffset="['718','506','353','331']" data-width="none"
-                         data-height="none" data-whitespace="nowrap" data-type="button" data-actions='' data-responsive_offset="on"
+                         data-height="none" data-whitespace="nowrap" data-type="button" data-actions=''
+                         data-responsive_offset="on"
                          data-frames='[{"delay":950,"speed":1790,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(211,18,42);bc:rgb(211,18,42);"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[3,3,3,3]" data-paddingleft="[0,0,0,0]"
@@ -282,16 +339,20 @@
                     </div>
 
                     <!-- LAYER NR. 17 -->
-                    <div class="tp-caption   tp-resizeme" id="slide-44-layer-22" data-x="['left','left','center','center']"
+                    <div class="tp-caption   tp-resizeme" id="slide-44-layer-22"
+                         data-x="['left','left','center','center']"
                          data-hoffset="['1095','533','0','17']" data-y="['top','top','top','top']"
-                         data-voffset="['451','274','165','174']" data-width="none" data-height="none" data-whitespace="nowrap"
+                         data-voffset="['451','274','165','174']" data-width="none" data-height="none"
+                         data-whitespace="nowrap"
                          data-type="image" data-responsive_offset="on"
                          data-frames='[{"delay":700,"speed":1330,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                          data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                          data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                          style="z-index: 9;"><img src="assets/images/revimages/dummy.png" alt=""
-                                                  data-ww="['511auto','454px','390px','297px']" data-hh="['215px','191px','164px','125px']"
-                                                  data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img8.png" data-no-retina> </div>
+                                                  data-ww="['511auto','454px','390px','297px']"
+                                                  data-hh="['215px','191px','164px','125px']"
+                                                  data-lazyload="assets/images/revimages/cosmetics/slider-homepage14-img8.png"
+                                                  data-no-retina></div>
                 </li>
             </ul>
             <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
@@ -321,7 +382,6 @@
                 <!--=======  logo with off canvas  =======-->
 
                 <div class="logo-with-offcanvas d-flex">
-
 
 
                     <!--=======  logo   =======-->
@@ -375,7 +435,7 @@
                     <ul class="dl-menu dl-menu-toggle">
                         <li class=""><a href="#">Home</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Home Group One</a>
+                                <li class=""><a href="#">Home Group One</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-trending">Trending</a></li>
                                         <li><a href="index-collection">My collection</a></li>
@@ -384,7 +444,7 @@
                                         <li><a href="index-smart">smart design</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group Two</a>
+                                <li><a href="#">Home Group Two</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-furniture">Furniture </a></li>
                                         <li><a href="index-essentials">Essentials</a></li>
@@ -393,7 +453,7 @@
                                         <li><a href="index-accessories">Accessories</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group three</a>
+                                <li><a href="#">Home Group three</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-shoppable">Shoppable</a></li>
 
@@ -402,7 +462,7 @@
                                         <li><a href="index-cosmetics">Cosmetics</a></li>
                                     </ul>
                                 </li>
-                                <li> <a href="#">Home Group four</a>
+                                <li><a href="#">Home Group four</a>
                                     <ul class="dl-submenu">
                                         <li><a href="index-decor">Home Decor</a></li>
                                         <li><a href="index-creative">Creative</a></li>
@@ -413,7 +473,7 @@
 
                         <li><a href="#">Shop</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop Pages</a>
+                                <li class=""><a href="#">Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-no-sidebar">Shop No Sidebar</a></li>
                                         <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
@@ -424,7 +484,7 @@
                                         <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Product Details Pages</a>
+                                <li class=""><a href="#">Product Details Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-basic">Basic </a></li>
                                         <li><a href="shop-product-fullwidth">Fullwidth</a></li>
@@ -437,7 +497,7 @@
 
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Other Shop Pages</a>
+                                <li class=""><a href="#">Other Shop Pages</a>
                                     <ul class="dl-submenu">
                                         <li><a href="shop-product-with-background">Product with background</a></li>
                                         <li><a href="shop-cart">Shopping Cart</a></li>
@@ -455,7 +515,7 @@
                         </li>
                         <li><a href="#">Elements</a>
                             <ul class="dl-submenu">
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-product-categories">Product Categories</a></li>
                                         <li><a href="element-product-sliders">Product Sliders</a></li>
@@ -464,7 +524,7 @@
                                         <li><a href="element-recent-products">Recent Products</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Shop / Products</a>
+                                <li class=""><a href="#">Shop / Products</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-sale-products">Sale Products </a></li>
                                         <li><a href="element-featured-products">Featured products</a></li>
@@ -473,7 +533,7 @@
                                         <li><a href="element-product-attributes">Product Attributes</a></li>
                                     </ul>
                                 </li>
-                                <li class=""> <a href="#">Theming</a>
+                                <li class=""><a href="#">Theming</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-blog-posts">Blog Posts</a></li>
                                         <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
@@ -571,7 +631,8 @@
                 <div class="cosmetics-home-intro">
                     <p class="label">NEW COLLECTION /</p>
                     <h2 class="title">Professional <br> skin care for you</h2>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit sagittis leo
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur cing elit. Suspe ndisse suscipit
+                        sagittis leo
                         sit met condimentum estibulum issim Lorem ipsum dolor sit amet, consectetur cing elit.</p>
                     <a href="shop-left-sidebar" class="lezada-shop-link">LEARN MORE</a>
 
@@ -639,65 +700,90 @@
                 <!--=======  revulation banner area  =======-->
 
                 <div class="revolution-banner-area">
-                    <div id="rev_slider_18_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7">
+                    <div id="rev_slider_18_1" class="rev_slider fullwidthabanner" style="display:none;"
+                         data-version="5.4.7">
                         <ul>
                             <!-- SLIDE  -->
-                            <li data-index="rs-48" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
-                                data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
-                                data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2=""
-                                data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8=""
+                            <li data-index="rs-48" data-transition="fade" data-slotamount="default"
+                                data-hideafterloop="0"
+                                data-hideslideonmobile="off" data-easein="default" data-easeout="default"
+                                data-masterspeed="300"
+                                data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1=""
+                                data-param2=""
+                                data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+                                data-param8=""
                                 data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="assets/images/revimages/transparent.png" alt="" data-bgposition="center center"
+                                <img src="assets/images/revimages/transparent.png" alt=""
+                                     data-bgposition="center center"
                                      data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                                 <!-- LAYERS -->
 
                                 <!-- LAYER NR. 1 -->
                                 <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-48-layer-2"
                                      data-x="['left','left','left','left']" data-hoffset="['51','51','105','105']"
-                                     data-y="['top','top','top','top']" data-voffset="['131','131','129','129']" data-width="300"
-                                     data-height="300" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on"
+                                     data-y="['top','top','top','top']" data-voffset="['131','131','129','129']"
+                                     data-width="300"
+                                     data-height="300" data-whitespace="nowrap" data-type="shape"
+                                     data-responsive_offset="on"
                                      data-frames='[{"delay":310,"speed":1320,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                     style="z-index: 5;background-color:rgb(242,242,242);border-radius:150px 150px 150px 150px;"> </div>
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
+                                     style="z-index: 5;background-color:rgb(242,242,242);border-radius:150px 150px 150px 150px;"></div>
 
                                 <!-- LAYER NR. 2 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-48-layer-1" data-x="['left','left','left','left']"
+                                <div class="tp-caption   tp-resizeme" id="slide-48-layer-1"
+                                     data-x="['left','left','left','left']"
                                      data-hoffset="['0','0','52','52']" data-y="['top','top','top','top']"
-                                     data-voffset="['-5','-5','11','11']" data-width="none" data-height="none" data-whitespace="nowrap"
+                                     data-voffset="['-5','-5','11','11']" data-width="none" data-height="none"
+                                     data-whitespace="nowrap"
                                      data-type="image" data-responsive_offset="on"
                                      data-frames='[{"delay":550,"speed":1860,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 6;">
-                                    <div class="rs-looped rs-slideloop" data-easing="" data-speed="2" data-xs="0" data-xe="0"
-                                         data-ys="0" data-ye="20"><img src="assets/images/revimages/cosmetics/organic.png" alt=""
-                                                                       data-ww="['456px','456px','456px','456px']" data-hh="['582px','582px','582px','582px']"
-                                                                       data-no-retina> </div>
+                                    <div class="rs-looped rs-slideloop" data-easing="" data-speed="2" data-xs="0"
+                                         data-xe="0"
+                                         data-ys="0" data-ye="20"><img
+                                            src="assets/images/revimages/cosmetics/organic.png" alt=""
+                                            data-ww="['456px','456px','456px','456px']"
+                                            data-hh="['582px','582px','582px','582px']"
+                                            data-no-retina></div>
                                 </div>
 
                                 <!-- LAYER NR. 3 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-48-layer-3" data-x="['left','left','left','left']"
+                                <div class="tp-caption   tp-resizeme" id="slide-48-layer-3"
+                                     data-x="['left','left','left','left']"
                                      data-hoffset="['331','331','392','392']" data-y="['top','top','top','top']"
                                      data-voffset="['224','224','226','226']" data-width="none" data-height="none"
                                      data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                                      data-frames='[{"delay":550,"speed":1850,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 7; white-space: nowrap; font-size: 34px; line-height: 48px; font-weight: 400; color: #333333; letter-spacing: 0px;font-family:Work Sans;">
                                     Organic<br>
-                                    cosmetology </div>
+                                    cosmetology
+                                </div>
 
                                 <!-- LAYER NR. 4 -->
                                 <div class="tp-caption button-under-line rev-btn " id="slide-48-layer-4"
                                      data-x="['left','left','left','left']" data-hoffset="['336','336','397','397']"
-                                     data-y="['top','top','top','top']" data-voffset="['344','344','353','353']" data-width="none"
-                                     data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on"
+                                     data-y="['top','top','top','top']" data-voffset="['344','344','353','353']"
+                                     data-width="none"
+                                     data-height="none" data-whitespace="nowrap" data-type="button"
+                                     data-responsive_offset="on"
                                      data-responsive="off"
                                      data-frames='[{"delay":1230,"speed":1840,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(211,18,42);bc:rgb(211,18,42);"}]'
-                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[3,3,0,0]" data-paddingleft="[0,0,0,0]"
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[3,3,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
                                      style="z-index: 8; white-space: nowrap; border-color:rgb(51,51,51);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
                                     <a class="revslider-button-red" href="shop-left-sidebar"> SHOP NOW</a>
                                 </div>
@@ -829,7 +915,8 @@
                                 </div>
 
                                 <div class="text mb-40">
-                                    I can say your dedication is second to none. I like the fact that you are strongly proud of your
+                                    I can say your dedication is second to none. I like the fact that you are strongly
+                                    proud of your
                                     work in every way.
                                 </div>
 
@@ -861,7 +948,8 @@
                                 </div>
 
                                 <div class="text mb-40">
-                                    This has already been my fifth-time purchasing their theme. I have been highly satisfied with their
+                                    This has already been my fifth-time purchasing their theme. I have been highly
+                                    satisfied with their
                                     work.
                                 </div>
 
@@ -893,7 +981,8 @@
                                 </div>
 
                                 <div class="text mb-40">
-                                    There's nothing would satisfy me much more than a worry-free clean and responsive theme for my
+                                    There's nothing would satisfy me much more than a worry-free clean and responsive
+                                    theme for my
                                     high-traffic site.
                                 </div>
 
@@ -925,7 +1014,8 @@
                                 </div>
 
                                 <div class="text mb-40">
-                                    Five-star for good customer support. They have the ability to resolve any issue in less than the
+                                    Five-star for good customer support. They have the ability to resolve any issue in
+                                    less than the
                                     time for a coffee cup.
                                 </div>
 
@@ -998,19 +1088,24 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
 
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
 
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
 
@@ -1037,7 +1132,7 @@
                             <!-- <a href="#" class="clear-link">clear</a> -->
                         </div>
                         <div class="title">
-                            <h3> <a href="shop-product-basic">Jesmine green tea</a></h3>
+                            <h3><a href="shop-product-basic">Jesmine green tea</a></h3>
                             <a href="#">Select options</a>
                         </div>
                         <div class="price">
@@ -1067,17 +1162,22 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
                     </div>
@@ -1088,7 +1188,7 @@
 
                     <div class="single-product__content">
                         <div class="title">
-                            <h3> <a href="shop-product-basic">Coco rose body lotion</a></h3>
+                            <h3><a href="shop-product-basic">Coco rose body lotion</a></h3>
                             <a href="#">Add to cart</a>
                         </div>
                         <div class="price">
@@ -1117,17 +1217,22 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
                     </div>
@@ -1138,7 +1243,7 @@
 
                     <div class="single-product__content">
                         <div class="title">
-                            <h3> <a href="shop-product-basic">Coconut milk bath soak</a></h3>
+                            <h3><a href="shop-product-basic">Coconut milk bath soak</a></h3>
                             <a href="#">Add to cart</a>
                         </div>
                         <div class="price">
@@ -1167,17 +1272,22 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
                     </div>
@@ -1188,7 +1298,7 @@
 
                     <div class="single-product__content">
                         <div class="title">
-                            <h3> <a href="shop-product-basic"> Jasemin body oil</a></h3>
+                            <h3><a href="shop-product-basic"> Jasemin body oil</a></h3>
                             <a href="#">Add to cart</a>
                         </div>
                         <div class="price">
@@ -1217,17 +1327,22 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
                     </div>
@@ -1238,7 +1353,7 @@
 
                     <div class="single-product__content">
                         <div class="title">
-                            <h3> <a href="shop-product-basic">Pink Clay Mask</a></h3>
+                            <h3><a href="shop-product-basic">Pink Clay Mask</a></h3>
                             <a href="#">Add to cart</a>
                         </div>
                         <div class="price">
@@ -1268,19 +1383,24 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
 
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
 
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
 
@@ -1307,7 +1427,7 @@
                             <!-- <a href="#" class="clear-link">clear</a> -->
                         </div>
                         <div class="title">
-                            <h3> <a href="shop-product-basic">Jesmine green tea</a></h3>
+                            <h3><a href="shop-product-basic">Jesmine green tea</a></h3>
                             <a href="#">Select options</a>
                         </div>
                         <div class="price">
@@ -1336,17 +1456,22 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
                     </div>
@@ -1357,7 +1482,7 @@
 
                     <div class="single-product__content">
                         <div class="title">
-                            <h3> <a href="shop-product-basic">Coco rose body lotion</a></h3>
+                            <h3><a href="shop-product-basic">Coco rose body lotion</a></h3>
                             <a href="#">Add to cart</a>
                         </div>
                         <div class="price">
@@ -1386,17 +1511,22 @@
                         </div>
 
                         <div class="single-product__floating-icons">
-								<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                          data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+								<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                          data-tippy-inertia="true"
+                                                          data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                          data-tippy-arrow="true"
                                                           data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                         class="ion-android-favorite-outline"></i></a></span>
                             <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                                     data-tippy-animation="shift-away" data-tippy-delay="50"
+                                                     data-tippy-arrow="true"
                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
                                     class="ion-ios-shuffle-strong"></i></a></span>
                             <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
+                                                       data-tippy-inertia="true" data-tippy-animation="shift-away"
+                                                       data-tippy-delay="50"
+                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"
+                                                       data-tippy-placement="left"><i
                                     class="ion-ios-search-strong"></i></a></span>
                         </div>
                     </div>
@@ -1407,7 +1537,7 @@
 
                     <div class="single-product__content">
                         <div class="title">
-                            <h3> <a href="shop-product-basic">Coconut milk bath soak</a></h3>
+                            <h3><a href="shop-product-basic">Coconut milk bath soak</a></h3>
                             <a href="#">Add to cart</a>
                         </div>
                         <div class="price">
@@ -1481,7 +1611,7 @@
 =            footer area         =
 =============================================-->
 
-    <jsp:include page="include/foot.jsp"/>
+<jsp:include page="include/foot.jsp"/>
 
 <!--=====  End of footer area  ======-->
 
@@ -1516,8 +1646,10 @@
 
                 <div class="single-widget">
                     <h2 class="widget-title">About Us</h2>
-                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products over other
-                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion clothes.</p>
+                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
+                        over other
+                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion
+                        clothes.</p>
                 </div>
 
                 <!--=======  End of single widget  =======-->
@@ -1534,16 +1666,20 @@
                 <div class="social-icons">
                     <ul>
                         <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-twitter"></i></a></li>
                         <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-facebook"></i></a></li>
                         <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-instagram"></i></a></li>
                         <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true" target="_blank"><i
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               target="_blank"><i
                                 class="fa fa-youtube-play"></i></a></li>
                     </ul>
                 </div>
@@ -1593,7 +1729,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1612,7 +1749,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="main-price discounted">$300.00</span> <span class="discounted-price">$220.00</span></p>
+                            <p><span class="main-price discounted">$300.00</span> <span
+                                    class="discounted-price">$220.00</span></p>
 
                         </div>
                     </div>
@@ -1631,7 +1769,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$100.00</span> <span class="discounted-price">$80.00</span></p>
+                            <p><span class="main-price discounted">$100.00</span> <span
+                                    class="discounted-price">$80.00</span></p>
 
                         </div>
                     </div>
@@ -1650,7 +1789,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1669,7 +1809,8 @@
                         </div>
                         <div class="content">
                             <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span class="discounted-price">$180.00</span></p>
+                            <p><span class="main-price discounted">$200.00</span> <span
+                                    class="discounted-price">$180.00</span></p>
 
                         </div>
                     </div>
@@ -1888,7 +2029,8 @@
 <div id="qv-1" class="cd-quick-view">
     <div class="cd-slider-wrapper">
         <ul class="cd-slider">
-            <li class="selected"><img src="assets/images/products/product-instagram-19-600x800.jpg" alt="Product 2"></li>
+            <li class="selected"><img src="assets/images/products/product-instagram-19-600x800.jpg" alt="Product 2">
+            </li>
             <li><img src="assets/images/products/product-instagram-18-600x800.jpg" alt="Product 1"></li>
         </ul> <!-- cd-slider -->
 
@@ -1911,8 +2053,10 @@
             <span class="discounted-price">$300.00</span>
         </p>
 
-        <p class="description">Hurley Dry-Fit Chino Short. Men's chino short. Outseam Length: 19 Dri-FIT Technology helps
-            keep you dry and comfortable. Made with sweat-wicking fabric. Fitted waist with belt loops. Button waist with
+        <p class="description">Hurley Dry-Fit Chino Short. Men's chino short. Outseam Length: 19 Dri-FIT Technology
+            helps
+            keep you dry and comfortable. Made with sweat-wicking fabric. Fitted waist with belt loops. Button waist
+            with
             zip fly provides a classic look and feel .</p>
 
         <span class="quickview-title">Quantity:</span>
@@ -1928,11 +2072,11 @@
         <div class="quick-view-other-info">
             <table>
                 <tr class="single-info">
-                    <td class="quickview-title">SKU: </td>
+                    <td class="quickview-title">SKU:</td>
                     <td class="quickview-value">12345</td>
                 </tr>
                 <tr class="single-info">
-                    <td class="quickview-title">Categories: </td>
+                    <td class="quickview-title">Categories:</td>
                     <td class="quickview-value">
                         <a href="#">Fashion</a>,
                         <a href="#">Men</a>,
@@ -1940,14 +2084,14 @@
                     </td>
                 </tr>
                 <tr class="single-info">
-                    <td class="quickview-title">Tags: </td>
+                    <td class="quickview-title">Tags:</td>
                     <td class="quickview-value">
                         <a href="#">Fashion</a>,
                         <a href="#">Men</a>
                     </td>
                 </tr>
                 <tr class="single-info">
-                    <td class="quickview-title">Share on: </td>
+                    <td class="quickview-title">Share on:</td>
                     <td class="quickview-value">
                         <ul class="quickview-social-icons">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>

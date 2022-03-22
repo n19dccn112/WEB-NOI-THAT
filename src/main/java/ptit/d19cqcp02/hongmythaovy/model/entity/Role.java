@@ -1,29 +1,55 @@
 package ptit.d19cqcp02.hongmythaovy.model.entity;
 
-import lombok.AllArgsConstructor;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.NaturalId;
+import ptit.d19cqcp02.hongmythaovy.model.RoleName;
 
 import javax.persistence.*;
-import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
 @Table(name = "roles")
+@Schema(hidden = true)
 public class Role {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long roleId;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
-    @Column(name = "name")
-    private String roleName;
+  @Enumerated(EnumType.STRING)
+  @NaturalId
+  @Column(length = 60)
+  private RoleName name;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "role")
-    private List<UserRole> userRoles;
+  public Role() {
+    super();
+  }
 
+  public Role(Long id, RoleName name) {
+    super();
+    this.id = id;
+    this.name = name;
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(id);
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj) return true;
+    if (obj == null) return false;
+    if (getClass() != obj.getClass()) return false;
+    Role other = (Role) obj;
+    return Objects.equals(id, other.id);
+  }
+
+  @Override
+  public String toString() {
+    return "Role [id=" + id + ", name=" + name + "]";
+  }
 }

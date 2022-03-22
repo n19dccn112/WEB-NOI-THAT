@@ -1,13 +1,14 @@
 package ptit.d19cqcp02.hongmythaovy.model.entity;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import ptit.d19cqcp02.hongmythaovy.model.embeded.OrderDetailId;
 
-import javax.persistence.*;
-import java.util.List;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Getter
@@ -17,15 +18,7 @@ import java.util.List;
 @Table(name = "orderdetails")
 public class OrderDetail {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long orderDetailId;
+  @EmbeddedId private OrderDetailId id;
 
-    @OneToOne
-    private Product product;
-
-    @OneToOne
-    private Order order;
-
+  private Integer amount;
 }
