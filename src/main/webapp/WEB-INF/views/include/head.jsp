@@ -13,6 +13,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <head>
     <meta charset="utf-8">
+    <c:set var="namePath" value="${ pageContext.servletContext.contextPath }"/>
+    <base href="${ namePath }/" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Lezada - Multipurpose eCommerce Bootstrap4 Template</title>
     <meta name="description" content="">

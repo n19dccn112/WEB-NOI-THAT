@@ -317,7 +317,7 @@
         <div class="row">
             <div class="col-lg-6 mb-md-50 mb-sm-50">
                 <div class="lezada-form login-form">
-                    <form action="#">
+                    <form:form action="shop-customer-login" method="post" modelAttribute="user">
                         <div class="row">
                             <div class="col-lg-12">
                                 <!--=======  login title  =======-->
@@ -330,10 +330,13 @@
                                 <!--=======  End of login title  =======-->
                             </div>
                             <div class="col-lg-12 mb-60">
-                                <input type="text" placeholder="Username or email address" required>
+                                <form:input type="text" path="username"></form:input>
                             </div>
                             <div class="col-lg-12 mb-60">
-                                <input type="password" placeholder="Password" required>
+                                <form:input type="password"  path="password"/>
+                            </div>
+                            <div class="col-lg-12 mb-60">
+                                <form:input type="text"  path="email"/>
                             </div>
                             <div class="col-lg-12 text-center mb-30">
                                 <button class="lezada-button lezada-button--medium">login</button>
@@ -344,7 +347,7 @@
                                 <a href="#" class="reset-pass-link">Lost your password?</a>
                             </div>
                         </div>
-                    </form>
+                    </form:form>
                 </div>
             </div>
             <div class="col-lg-6">

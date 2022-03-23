@@ -34,7 +34,7 @@ public class UserDetail {
     this.firstName = firstName;
     this.lastName = lastName;
     this.address = address;
-    this.user = user;
+    // this.user = user;
   }
 
   public UserDetail() {}

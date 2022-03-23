@@ -77,51 +77,29 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .and()
         .authorizeRequests()
         .antMatchers(HttpMethod.POST, "/api/auth/changePass**")
-        .hasAnyRole("USER", "PM", "ADMIN")
+        .hasAnyRole("USER", "SHOP", "ADMIN")
         .antMatchers(
-            "/**",
-            "/assets/**",
-            "/api/v1/public**",
-            "/swagger-ui**",
-            "/swagger-ui/**",
-            "/v3/api-docs/**")
+            // "/**",
+            "/assets/**", "/swagger-ui**", "/swagger-ui/**", "/v3/api-docs/**")
         .permitAll()
-        .antMatchers(
-            HttpMethod.GET,
-            "/api/categories**",
-            "/api/categories/**",
-            "/api/images**",
-            "/api/images/**",
-            "/api/rates**",
-            "/api/rates/**",
-            "/api/features**",
-            "/api/features/**",
-            "/api/featureTypes**",
-            "/api/featureTypes/**",
-            "/api/products/**",
-            "/api/products**")
+        .antMatchers(HttpMethod.GET, "/api/products**")
         .permitAll()
-        .antMatchers(
-            "/api/v1/admin**",
-            "/api/categories**",
-            "/api/categories/**",
-            "/api/images**",
-            "/api/images/**",
-            "/api/users**",
-            "/api/users/**",
-            "/api/features**",
-            "/api/features/**",
-            "/api/featureTypes**",
-            "/api/featureTypes/**",
-            "/api/products/**",
-            "/api/products**")
+        .antMatchers("/api/products**")
         .hasRole("ADMIN")
         .antMatchers("api/rates**", "api/rates/**")
         .hasRole("USER")
-        .antMatchers("/api/v1/**")
-        .hasAnyRole("USER", "PM", "ADMIN")
+        .antMatchers("/shop**")
+        .hasAnyRole("USER", "SHOP", "ADMIN")
         .anyRequest()
-        .authenticated();
+        .authenticated()
+        .and()
+        .formLogin()
+        .loginPage("/shop-customer-login")
+        .loginProcessingUrl("/shop-customer-login")
+        .permitAll()
+        .and()
+        .logout()
+        .permitAll();
 
     http.addFilterBefore(
         authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
