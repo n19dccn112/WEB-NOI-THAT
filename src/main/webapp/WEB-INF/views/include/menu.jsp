@@ -67,17 +67,23 @@
                     </ul>
                 </li>
                 <li class="menu-item-has-children"><a href="shop-left-sidebar">Category</a>
-<%--                    SỐ DƯ--%>
-                    <c:set var="numberSurplus" value="${cates.size()-(cates.size()/3)*3}"/>
+                    <c:set var="numberSurplus" value="${cates.size()%3}"/>
 
+                    <c:choose>
+                        <c:when test="${numberSurplus == 0}">
+                            <c:set var="numberItem" value="${cates.size()/3-1}"/>
+                        </c:when>
+                        <c:otherwise>
+                            <c:set var="numberItem" value="${cates.size()/3}"/>
+                        </c:otherwise>
+                    </c:choose>
 
-                    <c:if test="${numberSurplus==0}">
-                        <c:set var="numberItem" value="${cates.size()/3}"/>
-                    </c:if>
-
-                    <c:if test="${numberSurplus!=0}">
-                        <c:set var="numberItem" value="${cates.size()/3+1}"/>
-                    </c:if>
+                    <%--                    <c:if test="${numberSurplus==0}">--%>
+                    <%--                        <c:set var="numberItem" value="${cates.size()/3-1}"/>--%>
+                    <%--                    </c:if>--%>
+                    <%--                    <c:if test="${numberSurplus!=0}">--%>
+                    <%--                        <c:set var="numberItem" value="${cates.size()/3}"/>--%>
+                    <%--                    </c:if>--%>
 
                     <ul class="sub-menu mega-menu mega-menu-column-4">
                         <li><a href="javascript:void(0)" class="mega-column-title">Category</a>
@@ -90,14 +96,16 @@
                         </li>
                         <li><a href="javascript:void(0)" class="mega-column-title">Category</a>
                             <ul class="mega-sub-menu">
-                                <c:forEach items="${cates}" var="category" begin="${numberItem+1}" end="${2*numberItem}">
+                                <c:forEach items="${cates}" var="category" begin="${numberItem+1}"
+                                           end="${2*numberItem}">
                                     <li><a href="shop-product-basic">${category.categoryName}</a></li>
                                 </c:forEach>
                             </ul>
                         </li>
                         <li><a href="javascript:void(0)" class="mega-column-title">Category</a>
                             <ul class="mega-sub-menu">
-                                <c:forEach items="${cates}" var="category" begin="${2*numberItem+1}" end="${3*numberItem-numberSurplus}">
+                                <c:forEach items="${cates}" var="category" begin="${2*numberItem+1}"
+                                           end="${3*numberItem-numberSurplus+1}">
                                     <li><a href="shop-product-with-background">${category.categoryName}</a></li>
                                 </c:forEach>
                             </ul>
