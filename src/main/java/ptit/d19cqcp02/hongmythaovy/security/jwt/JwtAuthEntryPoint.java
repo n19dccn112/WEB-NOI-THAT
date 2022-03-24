@@ -20,8 +20,6 @@ public class JwtAuthEntryPoint implements AuthenticationEntryPoint {
   public void commence(
       HttpServletRequest request, HttpServletResponse response, AuthenticationException e)
       throws IOException, ServletException {
-
-    log.error("Unauthorized error: {}", e.getMessage());
-    response.sendRedirect(request.getContextPath()+"/shop-customer-login");
+    response.sendRedirect(request.getContextPath()+"/login");
   }
 }

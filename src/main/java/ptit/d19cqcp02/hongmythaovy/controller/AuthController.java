@@ -1,18 +1,18 @@
 package ptit.d19cqcp02.hongmythaovy.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.*;
-import ptit.d19cqcp02.hongmythaovy.model.entity.User;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import ptit.d19cqcp02.hongmythaovy.service.UserService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@CrossOrigin(origins = "*", maxAge = 3600)
 @Controller
 @Slf4j
 @RequestMapping("")
@@ -24,25 +24,28 @@ public class AuthController {
 
     this.service = service;
   }
-  @GetMapping("shop-customer-login")
-  public String shopCustomerLogin(ModelMap model) {
-    User user = new User();
-    model.addAttribute("user",user);
+
+  @GetMapping("login")
+  public String shopCustomerLogin() {
+
     return "shop-customer-login";
   }
-  @PostMapping("shop-customer-login")
+
+  @PostMapping(value = "login")
   public String authenticateUser(
-          HttpServletRequest request,
-          HttpServletResponse response,
-          @ModelAttribute("user") User user, BindingResult err) {
+      HttpServletRequest request,
+      HttpServletResponse response,
+      @RequestParam String username,
+      @RequestParam String password) {
     HttpSession session = request.getSession();
-    String token = service.checkLogin(user.getUsername(), user.getPassword());
-    log.info("username:"+user.getUsername());
-    log.info("password:"+user.getPassword());
-    log.info("email:"+user.getEmail());
+    String token = service.checkLogin(username, password);
+    log.info("username:" + username);
+    log.info("password:" + password);
+    // log.info("email:"+user.getEmail());
     log.info("token:" + token, token);
-    session.setAttribute("Authorization", "Bearer " + token);
-    response.setHeader("Authorization", "Bearer " + token);
-    return "redirect:/my-account";
+    session.setAttribute(HttpHeaders.AUTHORIZATION, "Bearer " + token);
+
+    response.setHeader(HttpHeaders.AUTHORIZATION, "Bearer " + token);
+    return "my-account";
   }
 }

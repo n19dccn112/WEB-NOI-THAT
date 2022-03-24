@@ -7,6 +7,7 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -64,6 +65,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
   }
 
   @Override
+  public void configure(WebSecurity web) throws Exception {
+    web.ignoring().antMatchers("/assets/**","/login","/login");
+  }
+
+  @Override
   protected void configure(HttpSecurity http) throws Exception {
     http.cors()
         .and()
@@ -78,9 +84,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .authorizeRequests()
         .antMatchers(HttpMethod.POST, "/api/auth/changePass**")
         .hasAnyRole("USER", "SHOP", "ADMIN")
-        .antMatchers(
-            // "/**",
-            "/assets/**", "/swagger-ui**", "/swagger-ui/**", "/v3/api-docs/**")
+        .antMatchers("/swagger-ui**", "/swagger-ui/**", "/v3/api-docs/**")
         .permitAll()
         .antMatchers(HttpMethod.GET, "/api/products**")
         .permitAll()
@@ -91,15 +95,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .antMatchers("/shop**")
         .hasAnyRole("USER", "SHOP", "ADMIN")
         .anyRequest()
-        .authenticated()
-        .and()
-        .formLogin()
-        .loginPage("/shop-customer-login")
-        .loginProcessingUrl("/shop-customer-login")
-        .permitAll()
-        .and()
-        .logout()
-        .permitAll();
+        .authenticated();
+
 
     http.addFilterBefore(
         authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
