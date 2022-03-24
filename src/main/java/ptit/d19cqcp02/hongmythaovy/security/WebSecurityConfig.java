@@ -84,7 +84,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .authorizeRequests()
         .antMatchers(HttpMethod.POST, "/api/auth/changePass**")
         .hasAnyRole("USER", "SHOP", "ADMIN")
+
         .antMatchers("/swagger-ui**", "/swagger-ui/**", "/v3/api-docs/**")
+
         .permitAll()
         .antMatchers(HttpMethod.GET, "/api/products**")
         .permitAll()
