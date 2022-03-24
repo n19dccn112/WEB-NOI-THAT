@@ -24,8 +24,6 @@ public class CategoryController {
 
     @GetMapping("cate-{cateId}")
     public String shopNoSidebar(HttpServletRequest request, @PathVariable Long cateId) {
-        List<Product> products = productService.findAll();
-        request.setAttribute("products", products);
         Category cate = categoryService.findById(cateId);
         request.setAttribute("category",cate);
         return "cate-1";

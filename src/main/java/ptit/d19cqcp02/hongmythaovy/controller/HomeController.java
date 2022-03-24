@@ -23,9 +23,7 @@ public class HomeController {
 
   @GetMapping("")
   public String index(HttpServletRequest request, HttpServletResponse response, ModelMap model) {
-    List<Category> categories = categoryService.findAll();
     List<Product> products = productService.findAll();
-    request.setAttribute("cates", categories);
     request.setAttribute("products", products);
     return "index";
   }

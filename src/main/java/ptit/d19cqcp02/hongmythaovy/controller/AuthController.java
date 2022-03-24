@@ -46,6 +46,6 @@ public class AuthController {
     session.setAttribute(HttpHeaders.AUTHORIZATION, "Bearer " + token);
 
     response.setHeader(HttpHeaders.AUTHORIZATION, "Bearer " + token);
-    return "my-account";
+    return "redirect:/my-account";
   }
 }

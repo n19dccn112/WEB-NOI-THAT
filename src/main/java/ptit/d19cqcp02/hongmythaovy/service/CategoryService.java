@@ -11,14 +11,14 @@ import java.util.List;
 @Service
 public class CategoryService {
   @Autowired private CategoryRepository categoryRepository;
-  @Autowired private ProductRepository productRepository;
+  @Autowired private ProductService productService;
   public List<Category> findAll() {
     return categoryRepository.findAll();
   }
 
   public Category findById(Long categoryId) {
     Category cate = categoryRepository.findById(categoryId).get();
-    cate.setProducts(productRepository.findAllByCategoryCateId(categoryId));
+    setProducts(cate);
     return cate;
   }
 
@@ -30,7 +30,7 @@ public class CategoryService {
     categoryRepository.delete(entity);
   }
 
-  //    public Category timCategoryBangDesc(String desc){
-  //        return categoryRepository.findByDescription(desc);
-  //    }
+  private void setProducts(final Category category){
+    category.setProducts(productService.findAllByCategoryCateId(category.getCateId()));
+  }
 }

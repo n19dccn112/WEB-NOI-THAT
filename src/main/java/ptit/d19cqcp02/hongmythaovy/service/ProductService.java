@@ -2,7 +2,6 @@ package ptit.d19cqcp02.hongmythaovy.service;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import ptit.d19cqcp02.hongmythaovy.model.entity.Category;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
 import ptit.d19cqcp02.hongmythaovy.repository.ImageRepository;
 import ptit.d19cqcp02.hongmythaovy.repository.ProductRepository;
@@ -17,9 +16,7 @@ public class ProductService {
 
   public List<Product> findAll() {
     List<Product> products = productRepository.findAll();
-    for (Product product : products) {
-      product.setImages(imageRepository.findAllByProductProductId(product.getProductId()));
-    }
+    setImage(products);
     return products;
   }
 
@@ -35,5 +32,17 @@ public class ProductService {
 
   public void delete(Product entity) {
     productRepository.delete(entity);
+  }
+
+  public List<Product> findAllByCategoryCateId(Long categoryId) {
+    List<Product> products = productRepository.findAllByCategoryCateId(categoryId);
+    setImage(products);
+    return products;
+  }
+
+  private void setImage(final List<Product> products) {
+    for (Product product : products) {
+      product.setImages(imageRepository.findAllByProductProductId(product.getProductId()));
+    }
   }
 }
