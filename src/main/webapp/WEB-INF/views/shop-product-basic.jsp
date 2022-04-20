@@ -359,7 +359,7 @@
                                     <!--=======  single image  =======-->
 
                                     <div class="single-image">
-                                        <img src="assets/images/shop-product/soccer-1.png" class="img-fluid" alt="">
+                                        <img src="${product.images[0].imageUrl}" class="img-fluid" alt="">
                                     </div>
 
                                     <!--=======  End of single image  =======-->
@@ -367,48 +367,48 @@
                                     <!--=======  single image  =======-->
 
                                     <div class="single-image">
-                                        <img src="assets/images/shop-product/soccer-2.png" class="img-fluid" alt="">
+                                        <img src="${product.images[1].imageUrl}" class="img-fluid" alt="">
                                     </div>
 
                                     <!--=======  End of single image  =======-->
 
                                     <!--=======  single image  =======-->
 
-                                    <div class="single-image">
+                                    <!--<div class="single-image">
                                         <img src="assets/images/shop-product/soccer-3.png" class="img-fluid" alt="">
-                                    </div>
+                                    </div> -->
 
                                     <!--=======  End of single image  =======-->
 
                                     <!--=======  single image  =======-->
 
-                                    <div class="single-image">
-                                        <img src="assets/images/shop-product/soccer-4.jpg" class="img-fluid" alt="">
-                                    </div>
+<%--                                    <div class="single-image">--%>
+<%--                                        <img src="assets/images/shop-product/soccer-4.jpg" class="img-fluid" alt="">--%>
+<%--                                    </div>--%>
 
                                     <!--=======  End of single image  =======-->
 
                                     <!--=======  single image  =======-->
 
-                                    <div class="single-image">
-                                        <img src="assets/images/shop-product/soccer-5.png" class="img-fluid" alt="">
-                                    </div>
+<%--                                    <div class="single-image">--%>
+<%--                                        <img src="assets/images/shop-product/soccer-5.png" class="img-fluid" alt="">--%>
+<%--                                    </div>--%>
 
                                     <!--=======  End of single image  =======-->
 
                                     <!--=======  single image  =======-->
 
-                                    <div class="single-image">
-                                        <img src="assets/images/shop-product/trendcoat-1.jpg" class="img-fluid" alt="">
-                                    </div>
+<%--                                    <div class="single-image">--%>
+<%--                                        <img src="assets/images/shop-product/trendcoat-1.jpg" class="img-fluid" alt="">--%>
+<%--                                    </div>--%>
 
                                     <!--=======  End of single image  =======-->
 
                                     <!--=======  single image  =======-->
 
-                                    <div class="single-image">
-                                        <img src="assets/images/shop-product/trendcoat-2.jpg" class="img-fluid" alt="">
-                                    </div>
+<%--                                    <div class="single-image">--%>
+<%--                                        <img src="assets/images/shop-product/trendcoat-2.jpg" class="img-fluid" alt="">--%>
+<%--                                    </div>--%>
 
                                     <!--=======  End of single image  =======-->
                                 </div>
@@ -426,7 +426,7 @@
                                     <!--=======  single image  =======-->
 
                                     <div class="single-image">
-                                        <img src="assets/images/shop-product/soccer-1-100x100.png" class="img-fluid"
+                                        <img src="${product.images[0].imageUrl}" class="img-fluid"
                                              alt="">
                                     </div>
 
@@ -435,7 +435,7 @@
                                     <!--=======  single image  =======-->
 
                                     <div class="single-image">
-                                        <img src="assets/images/shop-product/soccer-2-100x100.png" class="img-fluid"
+                                        <img src="${product.images[1].imageUrl}" class="img-fluid"
                                              alt="">
                                     </div>
 
@@ -444,7 +444,7 @@
                                     <!--=======  single image  =======-->
 
                                     <div class="single-image">
-                                        <img src="assets/images/shop-product/soccer-3-100x100.png" class="img-fluid"
+                                        <img src="${product.images[0].imageUrl}" class="img-fluid"
                                              alt="">
                                     </div>
 
@@ -453,7 +453,7 @@
                                     <!--=======  single image  =======-->
 
                                     <div class="single-image">
-                                        <img src="assets/images/shop-product/soccer-4-100x100.jpg" class="img-fluid"
+                                        <img src="${product.images[1].imageUrl}"class="img-fluid"
                                              alt="">
                                     </div>
 
@@ -462,7 +462,7 @@
                                     <!--=======  single image  =======-->
 
                                     <div class="single-image">
-                                        <img src="assets/images/shop-product/soccer-5-100x100.png" class="img-fluid"
+                                        <img src="${product.images[0].imageUrl}" class="img-fluid"
                                              alt="">
                                     </div>
 
@@ -471,7 +471,7 @@
                                     <!--=======  single image  =======-->
 
                                     <div class="single-image">
-                                        <img src="assets/images/shop-product/trendcoat-1-100x100.jpg" class="img-fluid"
+                                        <img src="${product.images[1].imageUrl}" class="img-fluid"
                                              alt="">
                                     </div>
 
@@ -480,7 +480,7 @@
                                     <!--=======  single image  =======-->
 
                                     <div class="single-image">
-                                        <img src="assets/images/shop-product/trendcoat-2-100x100.jpg" class="img-fluid"
+                                        <img src="${product.images[0].imageUrl}" class="img-fluid"
                                              alt="">
                                     </div>
 
@@ -526,7 +526,7 @@
                                 <!--=======  shop product title  =======-->
 
                                 <div class="shop-product__title mb-15">
-                                    <h2>High waist trousers</h2>
+                                    <h2>${product.productName}</h2>
                                 </div>
 
                                 <!--=======  End of shop product title  =======-->
@@ -534,8 +534,7 @@
                                 <!--=======  shop product price  =======-->
 
                                 <div class="shop-product__price mb-30">
-                                    <span class="main-price discounted">$160.00</span>
-                                    <span class="discounted-price">$180.00</span>
+                                    <span class="discounted-price">$${product.productPrice}</span>
                                 </div>
 
                                 <!--=======  End of shop product price  =======-->
@@ -543,29 +542,22 @@
                                 <!--=======  shop product short description  =======-->
 
                                 <div class="shop-product__short-desc mb-50">
-                                    Hurley Dry-Fit Chino Short. Men's chino short. Outseam Length: 19 Dri-FIT Technology
-                                    helps keep you
-                                    dry and comfortable. Made with sweat-wicking fabric. Fitted waist with belt loops.
-                                    Button waist with
-                                    zip fly provides a classic look and feel . Back welt pockets and coin pocket for
-                                    storage. Dual side
-                                    seam pockets. Heat transferred logos. 70% nylon 24% polyester 6% spandex. Imported.
+                                    ${product.productDescription}
                                 </div>
 
                                 <!--=======  End of shop product short description  =======-->
 
                                 <!--=======  shop product size block  =======-->
-
                                 <div class="shop-product__block shop-product__block--size mb-20">
                                     <div class="shop-product__block__title">Size:</div>
                                     <div class="shop-product__block__value">
                                         <div class="shop-product-size-list">
-                                            <span class="single-size">L</span>
-                                            <span class="single-size">M</span>
-                                            <span class="single-size">S</span>
-                                            <span class="single-size">XS</span>
+<%--                                            <span class="single-size">${product.featureType[i].feature[0].featureSpecific}</span>--%>
+<%--&lt;%&ndash;                                            <span class="single-size">${product.features[1].featureSpecific}</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                            <span class="single-size">${product.features[2].featureSpecific}</span>&ndash;%&gt;--%>
                                         </div>
                                     </div>
+
                                 </div>
 
                                 <!--=======  End of shop product size block  =======-->
@@ -646,16 +638,15 @@
                                         <tr class="single-info">
                                             <td class="quickview-title">Categories:</td>
                                             <td class="quickview-value">
-                                                <a href="#">Fashion</a>,
-                                                <a href="#">Men</a>,
-                                                <a href="#">Sunglasses</a>
+                                                <a href="#">
+                                                    ${product.category.categoryName}
+                                                </a>
                                             </td>
                                         </tr>
                                         <tr class="single-info">
                                             <td class="quickview-title">Tags:</td>
                                             <td class="quickview-value">
-                                                <a href="#">Fashion</a>,
-                                                <a href="#">Men</a>
+                                                <a href="#">Furniture</a>
                                             </td>
                                         </tr>
                                         <tr class="single-info">
@@ -711,15 +702,7 @@
                                         <!--=======  shop product long description  =======-->
 
                                         <div class="shop-product__long-desc mb-30">
-                                            <p>Hurley Dry-Fit Chino Short. Men’s chino short. Outseam Length: 19 Dri-FIT
-                                                Technology helps
-                                                keep you dry and comfortable. Made with sweat-wicking fabric. Fitted
-                                                waist with belt loops.
-                                                Button waist with zip fly provides a classic look and feel . Back welt
-                                                pockets and coin pocket
-                                                for storage. Dual side seam pockets. Heat transferred logos. 70% nylon
-                                                24% polyester 6%
-                                                spandex. Imported.</p>
+                                            <p>${product.productDescription}</p>
                                         </div>
 
                                         <!--=======  End of shop product long description  =======-->

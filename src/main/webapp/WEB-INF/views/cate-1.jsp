@@ -717,7 +717,7 @@
                                         <div class="single-widget-product__content">
 
                                             <div class="single-widget-product__content__top">
-                                                <h3 class="product-title"><a href="shop-product-basic">High waist trousers</a></h3>
+                                                <h3 class="product-title"><a href="shop-product-basic">${product.productName}</a></h3>
                                                 <div class="price">
                                                     <span class="main-price discounted">$36.00</span>
                                                     <span class="discounted-price">$33.00</span>
@@ -778,7 +778,7 @@
                                     <!--=======  single product image  =======-->
 
                                     <div class="single-product__image">
-                                        <a class="image-wrap" href="shop-product-basic">
+                                        <a class="image-wrap" href="product/${category.products[i].productId}">
                                             <img src="${category.products[i].images[0].imageUrl}"
                                                  class="img-fluid" alt="">
                                             <img src="${category.products[i].images[1].imageUrl}"

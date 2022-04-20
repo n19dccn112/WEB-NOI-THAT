@@ -1,8 +1,12 @@
 package ptit.d19cqcp02.hongmythaovy.service;
 
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import ptit.d19cqcp02.hongmythaovy.model.entity.Category;
 import ptit.d19cqcp02.hongmythaovy.model.entity.FeatureType;
+import ptit.d19cqcp02.hongmythaovy.repository.CategoryRepository;
+import ptit.d19cqcp02.hongmythaovy.repository.FeatureRepository;
 import ptit.d19cqcp02.hongmythaovy.repository.FeatureTypeRepository;
 
 import java.util.List;
@@ -11,7 +15,8 @@ import java.util.List;
 @AllArgsConstructor
 public class FeatureTypeService {
 
-  public final FeatureTypeRepository featureTypeRepository;
+  @Autowired
+  private FeatureTypeRepository featureTypeRepository;
 
   public List<FeatureType> findAll() {
     return featureTypeRepository.findAll();
@@ -28,4 +33,5 @@ public class FeatureTypeService {
   public void delete(FeatureType entity) {
     featureTypeRepository.delete(entity);
   }
+
 }

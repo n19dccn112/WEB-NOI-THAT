@@ -1,8 +1,10 @@
 package ptit.d19cqcp02.hongmythaovy.service;
 
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
+import ptit.d19cqcp02.hongmythaovy.repository.FeatureRepository;
 import ptit.d19cqcp02.hongmythaovy.repository.ImageRepository;
 import ptit.d19cqcp02.hongmythaovy.repository.ProductRepository;
 
@@ -22,7 +24,7 @@ public class ProductService {
 
   public Product findById(Long productId) {
     Product product = productRepository.findById(productId).get();
-    product.setImages(imageRepository.findAllByProductProductId(productId));
+    product.setImages(imageRepository.findAllByProductProductId(product.getProductId()));
     return product;
   }
 
@@ -45,4 +47,5 @@ public class ProductService {
       product.setImages(imageRepository.findAllByProductProductId(product.getProductId()));
     }
   }
+
 }

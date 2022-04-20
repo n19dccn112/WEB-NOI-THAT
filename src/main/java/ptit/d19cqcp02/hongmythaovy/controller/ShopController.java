@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Category;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
 import ptit.d19cqcp02.hongmythaovy.service.CategoryService;
+import ptit.d19cqcp02.hongmythaovy.service.FeatureService;
 import ptit.d19cqcp02.hongmythaovy.service.ProductService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -23,11 +24,12 @@ public class ShopController {
 
   @Autowired
   ProductService productService;
-  @GetMapping("")
 
-  @RequestMapping("shop-product-basic")
-  public String shopProductBasic()
+  @GetMapping("product/{productId}")
+  public String shopProductBasic(HttpServletRequest request, @PathVariable Long productId)
   {
+    Product product = productService.findById(productId);
+    request.setAttribute("product",product);
     return "shop-product-basic";
   }
 

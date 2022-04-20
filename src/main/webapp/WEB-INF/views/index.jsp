@@ -482,7 +482,7 @@
                                                                          data-tippy-inertia="true"
                                                                          data-tippy-animation="shift-away"
                                                                          data-tippy-delay="50" data-tippy-arrow="true"
-                                                                         data-tippy-theme="sharpborder"
+                                                                         dproduct/${product[0].productId}ata-tippy-theme="sharpborder"
                                                                          data-tippy-placement="left"><i
                                                         class="ion-ios-shuffle-strong"></i></a></span>
                                                 <span class="quickview"><a class="cd-trigger" href="#qv-1"

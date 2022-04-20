@@ -4,5 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Feature;
 
+import java.util.List;
+
 @Repository
 public interface FeatureRepository extends JpaRepository<Feature, Long> {}

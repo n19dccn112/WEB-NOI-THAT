@@ -19,12 +19,13 @@ import java.util.List;
 @NoArgsConstructor
 @Table(name = "products")
 public class Product {
+
   @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
   @JoinTable(
       name = "feature_detail",
       joinColumns = @JoinColumn(name = "product_id"),
       inverseJoinColumns = @JoinColumn(name = "feature_id"))
-  List<Feature> features;
+      List<Feature> features;
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
