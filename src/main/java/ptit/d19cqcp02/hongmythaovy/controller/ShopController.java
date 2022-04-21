@@ -1,6 +1,7 @@
 package ptit.d19cqcp02.hongmythaovy.controller;
 
 
+import org.apache.jasper.tagplugins.jstl.core.ForEach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -8,28 +9,57 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Category;
+import ptit.d19cqcp02.hongmythaovy.model.entity.Feature;
+import ptit.d19cqcp02.hongmythaovy.model.entity.FeatureType;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
 import ptit.d19cqcp02.hongmythaovy.service.CategoryService;
 import ptit.d19cqcp02.hongmythaovy.service.FeatureService;
+import ptit.d19cqcp02.hongmythaovy.service.FeatureTypeService;
 import ptit.d19cqcp02.hongmythaovy.service.ProductService;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("")
 public class ShopController {
-  @Autowired
-  CategoryService categoryService;
-
-  @Autowired
+//  @Autowired
+//  CategoryService categoryService;
+//
+   @Autowired
   ProductService productService;
 
+  @Autowired
+  FeatureService featureService;
+
+//  @Autowired
+//  FeatureTypeService featureTypeService;
+
   @GetMapping("product/{productId}")
-  public String shopProductBasic(HttpServletRequest request, @PathVariable Long productId)
+  public String shopProductBasic(HttpServletRequest request , @PathVariable Long productId)
   {
     Product product = productService.findById(productId);
     request.setAttribute("product",product);
+
+    List<Feature> featuresByProduct = featureService.findByProductId(productId);
+    request.setAttribute("featuresbyproduct", featuresByProduct);
+
+    Map<Long, String> featuresType = new HashMap<>();
+    for (Feature f : featuresByProduct) {
+      featuresType.put(f.getFeatureType().getFeatureTypeId(), f.getFeatureType().getFeatureTypeName());
+    }
+    request.setAttribute("featurestype", featuresType);
+
+//    List<Feature> featuresByFeatureType = new LinkedList<>();
+//    for
+//    request.setAttribute("featuresbyfeaturetype", featuresByFeatureType);
+
+//    FeatureType featureType = featureTypeService.findById(featureTypeId);
+//    request.setAttribute("featuretype", featureType);
+
     return "shop-product-basic";
   }
 

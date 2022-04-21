@@ -547,55 +547,58 @@
 
                                 <!--=======  End of shop product short description  =======-->
 
-                                <!--=======  shop product size block  =======-->
-                                <div class="shop-product__block shop-product__block--size mb-20">
-                                    <div class="shop-product__block__title">Size:</div>
-                                    <div class="shop-product__block__value">
-                                        <div class="shop-product-size-list">
-<%--                                            <span class="single-size">${product.featureType[i].feature[0].featureSpecific}</span>--%>
-<%--&lt;%&ndash;                                            <span class="single-size">${product.features[1].featureSpecific}</span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                            <span class="single-size">${product.features[2].featureSpecific}</span>&ndash;%&gt;--%>
-                                        </div>
-                                    </div>
+<%--                                <!--=======  shop product size block  =======-->--%>
+<%--                                <div class="shop-product__block shop-product__block--size mb-20">--%>
+<%--                                    <div class="shop-product__block__title">Size:</div>--%>
+<%--                                    <div class="shop-product__block__value">--%>
+<%--                                        <div class="shop-product-size-list">--%>
+<%--&lt;%&ndash;                                            <span class="single-size">${product.featureType[i].feature[0].featureSpecific}</span>&ndash;%&gt;--%>
+<%--&lt;%&ndash;&lt;%&ndash;                                            <span class="single-size">${product.features[1].featureSpecific}</span>&ndash;%&gt;&ndash;%&gt;--%>
+<%--&lt;%&ndash;&lt;%&ndash;                                            <span class="single-size">${product.features[2].featureSpecific}</span>&ndash;%&gt;&ndash;%&gt;--%>
+<%--                                        </div>--%>
+<%--                                    </div>--%>
 
-                                </div>
+<%--                                </div>--%>
 
-                                <!--=======  End of shop product size block  =======-->
+<%--                                <!--=======  End of shop product size block  =======-->--%>
 
                                 <!--=======  shop product color block  =======-->
 
-                                <div class="shop-product__block shop-product__block--color mb-20">
-                                    <div class="shop-product__block__title">Color:</div>
-                                    <div class="shop-product__block__value">
-                                        <div class="shop-product-color-list">
+                                <c:forEach var="ft" items="${featurestype}">
+                                    <div class="shop-product__block shop-product__block--${ft.getValue()} mb-20">
+                                        <div class="shop-product__block__title">${ft.getValue()}</div>
+                                        <div class="shop-product__block__value">
+                                            <div class="shop-product-${ft.getValue()}-list">
+                                                <ul class="single-filter-widget--list single-filter-widget--list--color">
+                                                        <c:forEach var="f" items="${featuresbyproduct}">
+<%--                                                            <c:choose>--%>
+<%--                                                                <c:when test="${ft.getKey()=='1'}">--%>
+<%--                                                                    <li class="mb-0 pt-0 pb-0 mr-10"><a class="active" ><span--%>
+<%--                                                                            class="color-picker ${f.featureTypeName}"></span></a></li>--%>
+<%--                                                                </c:when>--%>
+<%--                                                            </c:choose>--%>
+                                                        </c:forEach>
 
-                                            <ul class="single-filter-widget--list single-filter-widget--list--color">
-                                                <li class="mb-0 pt-0 pb-0 mr-10"><a class="active" href="#"><span
-                                                        class="color-picker black"></span></a></li>
-                                                <li class="mb-0 pt-0 pb-0 mr-10"><a href="#"><span
-                                                        class="color-picker blue"></span></a></li>
-                                                <li class="mb-0 pt-0 pb-0 mr-10"><a href="#"><span
-                                                        class="color-picker brown"></span></a></li>
-
-                                            </ul>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </c:forEach>
 
                                 <!--=======  End of shop product color block  =======-->
 
-                                <!--=======  shop product quantity block  =======-->
+<%--                                <!--=======  shop product quantity block  =======-->--%>
 
-                                <div class="shop-product__block shop-product__block--quantity mb-40">
-                                    <div class="shop-product__block__title">Quantity:</div>
-                                    <div class="shop-product__block__value">
-                                        <div class="pro-qty d-inline-block mx-0 pt-0">
-                                            <input type="text" value="1">
-                                        </div>
-                                    </div>
-                                </div>
+<%--                                <div class="shop-product__block shop-product__block--quantity mb-40">--%>
+<%--                                    <div class="shop-product__block__title">Quantity:</div>--%>
+<%--                                    <div class="shop-product__block__value">--%>
+<%--                                        <div class="pro-qty d-inline-block mx-0 pt-0">--%>
+<%--                                            <input type="text" value="1">--%>
+<%--                                        </div>--%>
+<%--                                    </div>--%>
+<%--                                </div>--%>
 
-                                <!--=======  End of shop product quantity block  =======-->
+<%--                                <!--=======  End of shop product quantity block  =======-->--%>
 
                                 <!--=======  shop product buttons  =======-->
 
