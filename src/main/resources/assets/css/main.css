@@ -11909,11 +11909,11 @@ nav.site-nav > ul > li ul.mega-menu-column-5 > li .mega-sub-menu li:last-child a
 }
 
 .single-filter-widget--list--color li a span.brown {
-    background-color: #dd9933;
+    background-color: #b2b0ae;
 }
 
 .single-filter-widget--list--color li a span.gold {
-    background-color: #cc9933;
+    background-color: #4c3706;
 }
 
 .single-filter-widget--list--color li a span.green-coral {
@@ -11939,6 +11939,15 @@ nav.site-nav > ul > li ul.mega-menu-column-5 > li .mega-sub-menu li:last-child a
 .single-filter-widget--list--color li a span.white {
     background-color: #ffffff;
 }
+
+.single-filter-widget--list--color li a span.yellow {
+    background-color: #f7ff00;
+}
+
+.single-filter-widget--list--color li a span.red {
+    background-color: #ff0026;
+}
+
 
 .single-filter-widget--list--color li a.active span {
     -webkit-box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px rgba(0, 0, 0, 0.3);

@@ -71,36 +71,36 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
   @Override
   protected void configure(HttpSecurity http) throws Exception {
-    http.cors()
-        .and()
-        .csrf()
-        .disable()
-        .exceptionHandling()
-        .authenticationEntryPoint(unauthorizedHandler)
-        .and()
-        .sessionManagement()
-        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-        .and()
-        .authorizeRequests()
-        .antMatchers(HttpMethod.POST, "/api/auth/changePass**")
-        .hasAnyRole("USER", "SHOP", "ADMIN")
-
-        .antMatchers("/swagger-ui**", "/swagger-ui/**", "/v3/api-docs/**")
-
-        .permitAll()
-        .antMatchers(HttpMethod.GET, "/api/products**")
-        .permitAll()
-        .antMatchers("/api/products**")
-        .hasRole("ADMIN")
-        .antMatchers("api/rates**", "api/rates/**")
-        .hasRole("USER")
-        .antMatchers("/shop**")
-        .hasAnyRole("USER", "SHOP", "ADMIN")
-        .anyRequest()
-        .authenticated();
-
-
-    http.addFilterBefore(
-        authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
+//    http.cors()
+//        .and()
+//        .csrf()
+//        .disable()
+//        .exceptionHandling()
+//        .authenticationEntryPoint(unauthorizedHandler)
+//        .and()
+//        .sessionManagement()
+//        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+//        .and()
+//        .authorizeRequests()
+//        .antMatchers(HttpMethod.POST, "/api/auth/changePass**")
+//        .hasAnyRole("USER", "SHOP", "ADMIN")
+//
+//        .antMatchers("/swagger-ui**", "/swagger-ui/**", "/v3/api-docs/**")
+//
+//        .permitAll()
+//        .antMatchers(HttpMethod.GET, "/api/products**")
+//        .permitAll()
+//        .antMatchers("/api/products**")
+//        .hasRole("ADMIN")
+//        .antMatchers("api/rates**", "api/rates/**")
+//        .hasRole("USER")
+//        .antMatchers("/shop**")
+//        .hasAnyRole("USER", "SHOP", "ADMIN")
+//        .anyRequest()
+//        .authenticated();
+//
+//
+//    http.addFilterBefore(
+//        authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
   }
 }

@@ -18,10 +18,7 @@ import ptit.d19cqcp02.hongmythaovy.service.FeatureTypeService;
 import ptit.d19cqcp02.hongmythaovy.service.ProductService;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Controller
 @RequestMapping("")
@@ -47,11 +44,12 @@ public class ShopController {
     List<Feature> featuresByProduct = featureService.findByProductId(productId);
     request.setAttribute("featuresbyproduct", featuresByProduct);
 
-    Map<Long, String> featuresType = new HashMap<>();
+    Set<FeatureType> featuresType = new HashSet<>();
     for (Feature f : featuresByProduct) {
-      featuresType.put(f.getFeatureType().getFeatureTypeId(), f.getFeatureType().getFeatureTypeName());
+      featuresType.add(f.getFeatureType());
     }
     request.setAttribute("featurestype", featuresType);
+
 
 //    List<Feature> featuresByFeatureType = new LinkedList<>();
 //    for

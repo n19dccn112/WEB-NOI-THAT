@@ -26,6 +26,6 @@ public class FeatureType {
   @Column(name = "unit")
   private String featureTypeUnit;
 
-  @OneToMany(fetch = FetchType.LAZY, mappedBy = "featureType")
+  @OneToMany(fetch = FetchType.EAGER, mappedBy = "featureType")
   private List<Feature> features;
 }

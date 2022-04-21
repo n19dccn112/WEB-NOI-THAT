@@ -564,22 +564,33 @@
 
                                 <!--=======  shop product color block  =======-->
 
-                                <c:forEach var="ft" items="${featurestype}">
-                                    <div class="shop-product__block shop-product__block--${ft.getValue()} mb-20">
-                                        <div class="shop-product__block__title">${ft.getValue()}</div>
-                                        <div class="shop-product__block__value">
-                                            <div class="shop-product-${ft.getValue()}-list">
-                                                <ul class="single-filter-widget--list single-filter-widget--list--color">
-                                                        <c:forEach var="f" items="${featuresbyproduct}">
-<%--                                                            <c:choose>--%>
-<%--                                                                <c:when test="${ft.getKey()=='1'}">--%>
-<%--                                                                    <li class="mb-0 pt-0 pb-0 mr-10"><a class="active" ><span--%>
-<%--                                                                            class="color-picker ${f.featureTypeName}"></span></a></li>--%>
-<%--                                                                </c:when>--%>
-<%--                                                            </c:choose>--%>
-                                                        </c:forEach>
 
-                                                </ul>
+
+                                <c:forEach var="ft" items="${featurestype}">
+                                    <div class="shop-product__block shop-product__block--${ft.featureTypeName} mb-20">
+                                        <div class="shop-product__block__title">${ft.featureTypeName}</div>
+                                        <div class="shop-product__block__value">
+                                            <div class="shop-product-${ft.featureTypeName}-list">
+                                                <c:choose>
+                                                    <c:when test="${ft.featureTypeName.equals('Color')}">
+                                                        <ul class="single-filter-widget--list single-filter-widget--list--color">
+                                                            <c:forEach var="f" items="${featuresbyproduct}">
+                                                                <c:if test="${ft.featureTypeId.equals(f.featureType.featureTypeId)}">
+                                                                    <li class="mb-0 pt-0 pb-0 mr-10"><a class="active" ><span
+                                                                            class="color-picker ${f.featureSpecific}"></span></a></li>
+                                                                </c:if>
+                                                            </c:forEach>
+                                                        </ul>
+                                                    </c:when>
+                                                    <c:otherwise>
+                                                        <c:forEach var="f" items="${featuresbyproduct}">
+                                                            <c:if test="${ft.featureTypeId.equals(f.featureType.featureTypeId)}">
+                                                                <span class="single-size">${f.featureSpecific}</span>
+                                                            </c:if>
+                                                        </c:forEach>
+                                                        
+                                                    </c:otherwise>
+                                                </c:choose>
                                             </div>
                                         </div>
                                     </div>
