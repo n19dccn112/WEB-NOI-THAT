@@ -8,6 +8,7 @@ import ptit.d19cqcp02.hongmythaovy.repository.FeatureRepository;
 import ptit.d19cqcp02.hongmythaovy.repository.ImageRepository;
 import ptit.d19cqcp02.hongmythaovy.repository.ProductRepository;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Service
@@ -28,9 +29,8 @@ public class ProductService {
     return product;
   }
 
-
-  public void save(Product entity) {
-    productRepository.save(entity);
+  public void save(Product product) {
+    productRepository.save(product);
   }
 
   public void delete(Product entity) {

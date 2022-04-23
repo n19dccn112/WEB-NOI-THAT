@@ -11909,11 +11909,11 @@ nav.site-nav > ul > li ul.mega-menu-column-5 > li .mega-sub-menu li:last-child a
 }
 
 .single-filter-widget--list--color li a span.brown {
-    background-color: #b2b0ae;
+    background-color: rgba(75, 31, 1, 0.78);
 }
 
 .single-filter-widget--list--color li a span.gold {
-    background-color: #4c3706;
+    background-color: #866110;
 }
 
 .single-filter-widget--list--color li a span.green-coral {

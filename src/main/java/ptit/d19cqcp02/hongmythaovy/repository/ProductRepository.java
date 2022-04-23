@@ -6,11 +6,10 @@ import org.springframework.stereotype.Repository;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Feature;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
     List<Product> findAllByCategoryCateId(Long cateId);
-
-
 }

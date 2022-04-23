@@ -547,21 +547,6 @@
 
                                 <!--=======  End of shop product short description  =======-->
 
-<%--                                <!--=======  shop product size block  =======-->--%>
-<%--                                <div class="shop-product__block shop-product__block--size mb-20">--%>
-<%--                                    <div class="shop-product__block__title">Size:</div>--%>
-<%--                                    <div class="shop-product__block__value">--%>
-<%--                                        <div class="shop-product-size-list">--%>
-<%--&lt;%&ndash;                                            <span class="single-size">${product.featureType[i].feature[0].featureSpecific}</span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;                                            <span class="single-size">${product.features[1].featureSpecific}</span>&ndash;%&gt;&ndash;%&gt;--%>
-<%--&lt;%&ndash;&lt;%&ndash;                                            <span class="single-size">${product.features[2].featureSpecific}</span>&ndash;%&gt;&ndash;%&gt;--%>
-<%--                                        </div>--%>
-<%--                                    </div>--%>
-
-<%--                                </div>--%>
-
-<%--                                <!--=======  End of shop product size block  =======-->--%>
-
                                 <!--=======  shop product color block  =======-->
 
 
@@ -597,19 +582,6 @@
                                 </c:forEach>
 
                                 <!--=======  End of shop product color block  =======-->
-
-<%--                                <!--=======  shop product quantity block  =======-->--%>
-
-<%--                                <div class="shop-product__block shop-product__block--quantity mb-40">--%>
-<%--                                    <div class="shop-product__block__title">Quantity:</div>--%>
-<%--                                    <div class="shop-product__block__value">--%>
-<%--                                        <div class="pro-qty d-inline-block mx-0 pt-0">--%>
-<%--                                            <input type="text" value="1">--%>
-<%--                                        </div>--%>
-<%--                                    </div>--%>
-<%--                                </div>--%>
-
-<%--                                <!--=======  End of shop product quantity block  =======-->--%>
 
                                 <!--=======  shop product buttons  =======-->
 

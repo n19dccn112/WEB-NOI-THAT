@@ -309,888 +309,483 @@
 
 <!--=======  End of breadcrumb area =======-->
 
+<!--=== Admin ===-->
 
-<!--=============================================
-=            section title  container      =
-=============================================-->
+<div class="container main-content list">
 
-<div class="section-title-container mb-60">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <!--=======  section title  =======-->
-
-                <div class="section-title section-title--one text-center">
-                    <p class="subtitle subtitle--deep">STYLE 01</p>
-                    <h1>Creative team</h1>
-                </div>
-
-                <!--=======  End of section title  =======-->
-            </div>
-        </div>
+    <div class="row">
+        <a href="element-mailchimp-form" class="btn btn-success">Add Product</a>
     </div>
-</div>
 
-<!--=====  End of section title container ======-->
-
-<!--=============================================
-=            team member one style         =
-=============================================-->
-
-<div class="team-member-area mb-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
-
-                <div class="single-team-member text-center">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-1.jpg" class="img-fluid" alt="">
-
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="member-caption">
-                        <h2 class="name">Cynthia Casey</h2>
-                        <span class="subtext">Design</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
-
-                <div class="single-team-member text-center">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-2.jpg" class="img-fluid" alt="">
-
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="member-caption">
-                        <h2 class="name">Dollie Horton</h2>
-                        <span class="subtext">Marketing</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
-
-                <div class="single-team-member text-center">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-3.jpg" class="img-fluid" alt="">
-
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="member-caption">
-                        <h2 class="name">Ravi Tamada</h2>
-                        <span class="subtext">Design</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
-
-                <div class="single-team-member text-center">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-4.jpg" class="img-fluid" alt="">
-
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="member-caption">
-                        <h2 class="name">Terry Myers</h2>
-                        <span class="subtext">Developer</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
-
-                <div class="single-team-member text-center">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-5.jpg" class="img-fluid" alt="">
-
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="member-caption">
-                        <h2 class="name">Phillip Butler</h2>
-                        <span class="subtext">Director</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
-
-                <div class="single-team-member text-center">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-6.jpg" class="img-fluid" alt="">
-
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="member-caption">
-                        <h2 class="name">Erik Murray</h2>
-                        <span class="subtext">Marketing</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
-
-                <div class="single-team-member text-center">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-7.jpg" class="img-fluid" alt="">
-
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="member-caption">
-                        <h2 class="name">Phillip Butler</h2>
-                        <span class="subtext">Director</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
-
-                <div class="single-team-member text-center">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-8.jpg" class="img-fluid" alt="">
-
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="member-caption">
-                        <h2 class="name">Eva Byrd</h2>
-                        <span class="subtext">Marketing</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-        </div>
+    <div class="row">
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Description</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Remain</th>
+                <th>CateName</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <c:forEach var="s" items="${product}">
+                <tr>
+                    <td>${s.productId}</td>
+                    <td>${s.productDescription}</td>
+                    <td>${s.productName}</td>
+                    <td>${s.productPrice}</td>
+                    <td>${s.productRemain}</td>
+                    <td>${s.category.categoryName}</td>
+                    <td align="center">
+                        <a href="update/${s.productId}" class="btn btn-outline-warning"><em class="fa fa-pencil"></em></a>
+                    </td>
+                    <td>
+                        <a class="btn btn-outline-danger"><em class="fa fa-trash"></em></a>
+                    </td>
+                </tr>
+            </c:forEach>
+            </tbody>
+        </table>
     </div>
-</div>
-
-<!--=====  End of team member one style  ======-->
 
 
-<!--=============================================
-=            section title  container      =
-=============================================-->
+    <!--==== End Admin ====-->
 
-<div class="section-title-container mb-60">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <!--=======  section title  =======-->
+    <!--=============================================
+    =            footer area         =
+    =============================================-->
 
-                <div class="section-title section-title--one text-center">
-                    <p class="subtitle subtitle--deep">STYLE 02</p>
-                    <h1>Our best team</h1>
-                </div>
+    <jsp:include page="include/foot.jsp"/>
 
-                <!--=======  End of section title  =======-->
-            </div>
-        </div>
-    </div>
-</div>
+    <!--=====  End of footer area  ======-->
 
-<!--=====  End of section title container ======-->
+    <!--=============================================
+    =            overlay items         =
+    =============================================-->
 
-<!--=============================================
-=            team member two style         =
-=============================================-->
+    <!--=======  about overlay  =======-->
 
-<div class="team-member-area mb-70">
-    <div class="container wide">
-        <div class="row">
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
+    <div class="header-offcanvas about-overlay" id="about-overlay">
+        <div class="overlay-close inactive"></div>
+        <div class="overlay-content">
 
-                <div class="single-team-member single-team-member--style-square">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-1.jpg" class="img-fluid" alt="">
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+            <!--=======  close icon  =======-->
 
-                    <div class="member-caption">
-                        <h2 class="name">Cynthia Casey</h2>
-                        <span class="subtext">Design</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
-
-                <div class="single-team-member single-team-member--style-square">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-2.jpg" class="img-fluid" alt="">
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="member-caption">
-                        <h2 class="name">Dollie Horton</h2>
-                        <span class="subtext">Marketing</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
-
-                <div class="single-team-member single-team-member--style-square">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-3.jpg" class="img-fluid" alt="">
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="member-caption">
-                        <h2 class="name">Ravi Tamada</h2>
-                        <span class="subtext">Design</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
-
-                <div class="single-team-member single-team-member--style-square">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-4.jpg" class="img-fluid" alt="">
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="member-caption">
-                        <h2 class="name">Terry Myers</h2>
-                        <span class="subtext">Developer</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
-
-                <div class="single-team-member single-team-member--style-square">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-5.jpg" class="img-fluid" alt="">
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="member-caption">
-                        <h2 class="name">Phillip Butler</h2>
-                        <span class="subtext">Director</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
-
-                <div class="single-team-member single-team-member--style-square">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-6.jpg" class="img-fluid" alt="">
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="member-caption">
-                        <h2 class="name">Erik Murray</h2>
-                        <span class="subtext">Marketing</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
-
-                <div class="single-team-member single-team-member--style-square">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-7.jpg" class="img-fluid" alt="">
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="member-caption">
-                        <h2 class="name">Phillip Butler</h2>
-                        <span class="subtext">Director</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-            <div class="col-lg-3 col-md-4 mb-30">
-                <!--=======  single team member  =======-->
-
-                <div class="single-team-member single-team-member--style-square">
-                    <div class="member-image">
-                        <img src="assets/images/team/team-member-8.jpg" class="img-fluid" alt="">
-                        <div class="social-inside">
-                            <ul class="social-list">
-                                <li class="social-list__item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li class="social-list__item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="member-caption">
-                        <h2 class="name">Eva Byrd</h2>
-                        <span class="subtext">Developer</span>
-                    </div>
-                </div>
-
-                <!--=======  End of single team member  =======-->
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--=====  End of team member two style  ======-->
-
-
-<!--=============================================
-=            footer area         =
-=============================================-->
-
-<jsp:include page="include/foot.jsp"/>
-
-<!--=====  End of footer area  ======-->
-
-<!--=============================================
-=            overlay items         =
-=============================================-->
-
-<!--=======  about overlay  =======-->
-
-<div class="header-offcanvas about-overlay" id="about-overlay">
-    <div class="overlay-close inactive"></div>
-    <div class="overlay-content">
-
-        <!--=======  close icon  =======-->
-
-        <span class="close-icon" id="about-close-icon">
+            <span class="close-icon" id="about-close-icon">
 				<a href="javascript:void(0)">
 					<i class="ti-close"></i>
 				</a>
 			</span>
 
-        <!--=======  End of close icon  =======-->
+            <!--=======  End of close icon  =======-->
 
-        <!--=======  overlay content container  =======-->
+            <!--=======  overlay content container  =======-->
 
-        <div class="overlay-content-container d-flex flex-column justify-content-between h-100">
-            <!--=======  widget wrapper  =======-->
+            <div class="overlay-content-container d-flex flex-column justify-content-between h-100">
+                <!--=======  widget wrapper  =======-->
 
-            <div class="widget-wrapper">
-                <!--=======  single widget  =======-->
+                <div class="widget-wrapper">
+                    <!--=======  single widget  =======-->
 
-                <div class="single-widget">
-                    <h2 class="widget-title">About Us</h2>
-                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
-                        over other
-                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion
-                        clothes.</p>
+                    <div class="single-widget">
+                        <h2 class="widget-title">About Us</h2>
+                        <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
+                            over other
+                            factors. Our fashion items never get outdated. They are not short-lived as normal fashion
+                            clothes.</p>
+                    </div>
+
+                    <!--=======  End of single widget  =======-->
                 </div>
 
-                <!--=======  End of single widget  =======-->
-            </div>
+                <!--=======  End of widget wrapper  =======-->
 
-            <!--=======  End of widget wrapper  =======-->
+                <!--=======  contact widget  =======-->
 
-            <!--=======  contact widget  =======-->
+                <div class="contact-widget">
+                    <p class="email"><a href="mailto:contact@lezada.com">contact@lezada.com</a></p>
+                    <p class="phone">(+00) 123 567990</p>
 
-            <div class="contact-widget">
-                <p class="email"><a href="mailto:contact@lezada.com">contact@lezada.com</a></p>
-                <p class="phone">(+00) 123 567990</p>
-
-                <div class="social-icons">
-                    <ul>
-                        <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                        </li>
-                    </ul>
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
+                <!--=======  End of contact widget  =======-->
             </div>
 
-            <!--=======  End of contact widget  =======-->
+            <!--=======  End of overlay content container  =======-->
         </div>
-
-        <!--=======  End of overlay content container  =======-->
     </div>
-</div>
 
-<!--=======  End of about overlay  =======-->
+    <!--=======  End of about overlay  =======-->
 
-<!--=======  wishlist overlay  =======-->
+    <!--=======  wishlist overlay  =======-->
 
-<div class="wishlist-overlay" id="wishlist-overlay">
-    <div class="wishlist-overlay-close inactive"></div>
-    <div class="wishlist-overlay-content">
-        <!--=======  close icon  =======-->
+    <div class="wishlist-overlay" id="wishlist-overlay">
+        <div class="wishlist-overlay-close inactive"></div>
+        <div class="wishlist-overlay-content">
+            <!--=======  close icon  =======-->
 
-        <span class="close-icon" id="wishlist-close-icon">
+            <span class="close-icon" id="wishlist-close-icon">
 				<a href="javascript:void(0)">
 					<i class="ion-android-close"></i>
 				</a>
 			</span>
 
-        <!--=======  End of close icon  =======-->
+            <!--=======  End of close icon  =======-->
 
-        <!--=======  offcanvas wishlist content container  =======-->
+            <!--=======  offcanvas wishlist content container  =======-->
 
-        <div class="offcanvas-cart-content-container">
-            <h3 class="cart-title">Wishlist</h3>
+            <div class="offcanvas-cart-content-container">
+                <h3 class="cart-title">Wishlist</h3>
 
-            <div class="cart-product-wrapper">
-                <div class="cart-product-container  ps-scroll">
-                    <!--=======  single cart product  =======-->
+                <div class="cart-product-wrapper">
+                    <div class="cart-product-container  ps-scroll">
+                        <!--=======  single cart product  =======-->
 
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
+                                <p><span class="main-price discounted">$200.00</span> <span
+                                        class="discounted-price">$180.00</span></p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span
-                                    class="discounted-price">$180.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Dining Chair</a></h5>
+                                <p><span class="main-price discounted">$300.00</span> <span
+                                        class="discounted-price">$220.00</span></p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="main-price discounted">$300.00</span> <span
-                                    class="discounted-price">$220.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
+                                <p><span class="main-price discounted">$100.00</span> <span
+                                        class="discounted-price">$80.00</span></p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$100.00</span> <span
-                                    class="discounted-price">$80.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
+                                <p><span class="main-price discounted">$200.00</span> <span
+                                        class="discounted-price">$180.00</span></p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span
-                                    class="discounted-price">$180.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span
-                                    class="discounted-price">$180.00</span></p>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
+                                <p><span class="main-price discounted">$200.00</span> <span
+                                        class="discounted-price">$180.00</span></p>
 
+                            </div>
                         </div>
+
+                        <!--=======  End of single cart product  =======-->
                     </div>
 
-                    <!--=======  End of single cart product  =======-->
+                    <!--=======  cart buttons  =======-->
+
+                    <div class="cart-buttons">
+                        <a href="shop-wishlist">view wishlist</a>
+                    </div>
+
+                    <!--=======  End of cart buttons  =======-->
                 </div>
-
-                <!--=======  cart buttons  =======-->
-
-                <div class="cart-buttons">
-                    <a href="shop-wishlist">view wishlist</a>
-                </div>
-
-                <!--=======  End of cart buttons  =======-->
             </div>
+
+            <!--=======  End of offcanvas wishlist content container   =======-->
         </div>
-
-        <!--=======  End of offcanvas wishlist content container   =======-->
     </div>
-</div>
 
-<!--=======  End of wishlist overlay  =======-->
+    <!--=======  End of wishlist overlay  =======-->
 
-<!--=======  cart overlay  =======-->
+    <!--=======  cart overlay  =======-->
 
-<div class="cart-overlay" id="cart-overlay">
-    <div class="cart-overlay-close inactive"></div>
-    <div class="cart-overlay-content">
-        <!--=======  close icon  =======-->
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-overlay-close inactive"></div>
+        <div class="cart-overlay-content">
+            <!--=======  close icon  =======-->
 
-        <span class="close-icon" id="cart-close-icon">
+            <span class="close-icon" id="cart-close-icon">
 				<a href="javascript:void(0)">
 					<i class="ion-android-close"></i>
 				</a>
 			</span>
 
-        <!--=======  End of close icon  =======-->
+            <!--=======  End of close icon  =======-->
 
-        <!--=======  offcanvas cart content container  =======-->
+            <!--=======  offcanvas cart content container  =======-->
 
-        <div class="offcanvas-cart-content-container">
-            <h3 class="cart-title">Cart</h3>
+            <div class="offcanvas-cart-content-container">
+                <h3 class="cart-title">Cart</h3>
 
-            <div class="cart-product-wrapper">
-                <div class="cart-product-container  ps-scroll">
-                    <!--=======  single cart product  =======-->
+                <div class="cart-product-wrapper">
+                    <div class="cart-product-container  ps-scroll">
+                        <!--=======  single cart product  =======-->
 
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
+                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Dining Chair</a></h5>
+                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$220.00</span></p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$220.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
+                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$80.00</span></p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$80.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
+                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
+                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
 
+                            </div>
                         </div>
+
+                        <!--=======  End of single cart product  =======-->
                     </div>
 
-                    <!--=======  End of single cart product  =======-->
+                    <!--=======  subtotal calculation  =======-->
+
+                    <p class="cart-subtotal">
+                        <span class="subtotal-title">Subtotal:</span>
+                        <span class="subtotal-amount">$200.00</span>
+                    </p>
+
+                    <!--=======  End of subtotal calculation  =======-->
+
+                    <!--=======  cart buttons  =======-->
+
+                    <div class="cart-buttons">
+                        <a href="shop-cart">view cart</a>
+                        <a href="shop-checkout">checkout</a>
+                    </div>
+
+                    <!--=======  End of cart buttons  =======-->
+
+                    <!--=======  free shipping text  =======-->
+
+                    <p class="free-shipping-text">
+                        Free Shipping on All Orders Over $100!
+                    </p>
+
+                    <!--=======  End of free shipping text  =======-->
                 </div>
-
-                <!--=======  subtotal calculation  =======-->
-
-                <p class="cart-subtotal">
-                    <span class="subtotal-title">Subtotal:</span>
-                    <span class="subtotal-amount">$200.00</span>
-                </p>
-
-                <!--=======  End of subtotal calculation  =======-->
-
-                <!--=======  cart buttons  =======-->
-
-                <div class="cart-buttons">
-                    <a href="shop-cart">view cart</a>
-                    <a href="shop-checkout">checkout</a>
-                </div>
-
-                <!--=======  End of cart buttons  =======-->
-
-                <!--=======  free shipping text  =======-->
-
-                <p class="free-shipping-text">
-                    Free Shipping on All Orders Over $100!
-                </p>
-
-                <!--=======  End of free shipping text  =======-->
             </div>
+
+            <!--=======  End of offcanvas cart content container   =======-->
         </div>
-
-        <!--=======  End of offcanvas cart content container   =======-->
     </div>
-</div>
 
-<!--=======  End of cart overlay  =======-->
+    <!--=======  End of cart overlay  =======-->
 
 
-<!--=======  search overlay  =======-->
+    <!--=======  search overlay  =======-->
 
-<div class="search-overlay" id="search-overlay">
+    <div class="search-overlay" id="search-overlay">
 
-    <!--=======  close icon  =======-->
+        <!--=======  close icon  =======-->
 
-    <span class="close-icon search-close-icon">
+        <span class="close-icon search-close-icon">
 			<a href="javascript:void(0)" id="search-close-icon">
 				<i class="ti-close"></i>
 			</a>
 		</span>
 
-    <!--=======  End of close icon  =======-->
+        <!--=======  End of close icon  =======-->
 
-    <!--=======  search overlay content  =======-->
+        <!--=======  search overlay content  =======-->
 
-    <div class="search-overlay-content">
-        <div class="input-box">
-            <form action="https://htmldemo.hasthemes.com/lezada/lezada/index">
-                <input type="search" placeholder="Search Products...">
-            </form>
+        <div class="search-overlay-content">
+            <div class="input-box">
+                <form action="https://htmldemo.hasthemes.com/lezada/lezada/index">
+                    <input type="search" placeholder="Search Products...">
+                </form>
+            </div>
+            <div class="search-hint">
+                <span># Hit enter to search or ESC to close</span>
+            </div>
         </div>
-        <div class="search-hint">
-            <span># Hit enter to search or ESC to close</span>
-        </div>
+
+        <!--=======  End of search overlay content  =======-->
     </div>
 
-    <!--=======  End of search overlay content  =======-->
-</div>
+    <!--=======  End of search overlay  =======-->
 
-<!--=======  End of search overlay  =======-->
+    <!--=====  End of overlay items  ======-->
 
-<!--=====  End of overlay items  ======-->
+    <!-- scroll to top  -->
+    <a href="#" class="scroll-top"></a>
+    <!-- end of scroll to top -->
 
-<!-- scroll to top  -->
-<a href="#" class="scroll-top"></a>
-<!-- end of scroll to top -->
+    <!-- JS
+    ============================================ -->
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
 
-<!-- JS
-============================================ -->
-<!-- jQuery JS -->
-<script src="assets/js/vendor/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="assets/js/popper.min.js"></script>
 
-<!-- Popper JS -->
-<script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
 
-<!-- Bootstrap JS -->
-<script src="assets/js/bootstrap.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins.js"></script>
 
-<!-- Plugins JS -->
-<script src="assets/js/plugins.js"></script>
-
-<!-- Main JS -->
-<script src="assets/js/main.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
