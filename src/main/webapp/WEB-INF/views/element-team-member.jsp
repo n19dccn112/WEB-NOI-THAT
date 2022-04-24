@@ -294,7 +294,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="breadcrumb-title">Team Member</h1>
+                <h1 class="breadcrumb-title">Admin Page</h1>
 
                 <!--=======  breadcrumb list  =======-->
 
@@ -313,8 +313,13 @@
 
 <div class="container main-content list">
 
+    <form href="element-team-member/${products.productName}" style="all: unset" class="form-inline float-sm-right">
+        <input type="text" class="form-control" placeholder="Type product name" name="keyword" required>
+        <button type="submit" class="btn btn-outline-info">Search</button>
+    </form>
+
     <div class="row">
-        <a href="element-mailchimp-form" class="btn btn-success">Add Product</a>
+        <a href="element-mailchimp-form" class="btn btn-outline-success">Add Product</a>
     </div>
 
     <div class="row">
@@ -322,8 +327,9 @@
             <thead>
             <tr>
                 <th>Id</th>
-                <th>Description</th>
                 <th>Name</th>
+                <th>Description</th>
+                <th>Image</th>
                 <th>Price</th>
                 <th>Remain</th>
                 <th>CateName</th>
@@ -335,22 +341,34 @@
             <c:forEach var="s" items="${product}">
                 <tr>
                     <td>${s.productId}</td>
-                    <td>${s.productDescription}</td>
                     <td>${s.productName}</td>
+                    <td>${s.productDescription}</td>
+                    <td>
+                        <img width="100px" src="${s.images[0].imageUrl}">
+                        <img width="100px" src="${s.images[1].imageUrl}">
+                    </td>
                     <td>${s.productPrice}</td>
                     <td>${s.productRemain}</td>
                     <td>${s.category.categoryName}</td>
                     <td align="center">
-                        <a href="update/${s.productId}" class="btn btn-outline-warning"><em class="fa fa-pencil"></em></a>
+                        <a href="update/${s.productId}"><em class="fa fa-pencil"></em></a>
                     </td>
-                    <td>
-                        <a class="btn btn-outline-danger"><em class="fa fa-trash"></em></a>
+                    <td align="center">
+                        <a href="element-team-member/${s.productId}"
+                           onclick="return confirm('Deleted product cannot be restored. ' +
+                            'Are you sure you want to delete the product?')"
+                           class="btn btn-outline-danger"><em class="fa fa-trash"></em></a>
                     </td>
                 </tr>
             </c:forEach>
             </tbody>
         </table>
     </div>
+    <script type="text/javascript">
+        function clearFilter(){
+            window.location = '/';
+        }
+    </script>
 
 
     <!--==== End Admin ====-->
@@ -417,10 +435,12 @@
                                    data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
                                    data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-facebook"></i></a>
+                            </li>
                             <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
                                    data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a>
+                            </li>
                             <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
                                    data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
                                    data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
@@ -613,7 +633,8 @@
                             </div>
                             <div class="content">
                                 <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
+                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span>
+                                </p>
 
                             </div>
                         </div>
@@ -632,7 +653,8 @@
                             </div>
                             <div class="content">
                                 <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$220.00</span></p>
+                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$220.00</span>
+                                </p>
 
                             </div>
                         </div>
@@ -670,7 +692,8 @@
                             </div>
                             <div class="content">
                                 <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
+                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span>
+                                </p>
 
                             </div>
                         </div>
@@ -689,7 +712,8 @@
                             </div>
                             <div class="content">
                                 <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
+                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span>
+                                </p>
 
                             </div>
                         </div>

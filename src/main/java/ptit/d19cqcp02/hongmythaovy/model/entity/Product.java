@@ -41,7 +41,7 @@ public class Product {
   private Date productCreateDate;
 
   @Column(name = "price")
-  @DecimalMin(value = "0")
+  @DecimalMin(value = "0", message = "Product price must greater than 0")
   @NotNull
   private BigDecimal productPrice;
 
@@ -49,8 +49,8 @@ public class Product {
   private String productDescription;
 
   @Column(name = "name")
-  @NotNull
-  @NotBlank
+  @NotNull(message = "Product name must not be null")
+  @NotBlank(message = "Product name must not be blank")
   private String productName;
 
 
@@ -61,7 +61,7 @@ public class Product {
   private Date productUpDate;
 
   @Column(name = "remain")
-  @DecimalMin(value = "0")
+  @DecimalMin(value = "0", message = "Product remain must greater than 0")
   private Long productRemain;
 
   @ManyToOne(fetch = FetchType.EAGER)

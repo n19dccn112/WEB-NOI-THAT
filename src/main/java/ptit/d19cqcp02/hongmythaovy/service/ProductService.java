@@ -28,15 +28,17 @@ public class ProductService {
     product.setImages(imageRepository.findAllByProductProductId(product.getProductId()));
     return product;
   }
+  public List<Product> findByProductNameContaining (String productName){
+    return productRepository.findByProductNameContaining(productName);
+  }
 
   public void save(Product product) {
     productRepository.save(product);
   }
 
-  public void delete(Product entity) {
-    productRepository.delete(entity);
+  public void delete(Long productId) {
+    productRepository.deleteById(productId);
   }
-
   public List<Product> findAllByCategoryCateId(Long categoryId) {
     List<Product> products = productRepository.findAllByCategoryCateId(categoryId);
     setImage(products);

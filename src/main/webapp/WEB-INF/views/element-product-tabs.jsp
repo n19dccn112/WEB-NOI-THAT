@@ -315,13 +315,14 @@
 </div>
 
 <style>
-    .container{
+    .container {
         rwidth: 30%;
         margin: auto;
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 20px;
     }
+
     input[type=text] {
         width: 100%;
         padding: 12px;
@@ -351,514 +352,592 @@
 <!--=============================================
 =            icon box one         =
 =============================================-->
-<div class="icon-box-area mb-100 mb-sm-70">
-    <div class="container">
-        <div class="row">
-            <div class="row-cols-md-12 mb-sm-30">
-                <div class="panel">
-                    <div class="panel-heading">
-                    </div>
-                    <h2>Update product</h2>
-                    <h4>${message}</h4>
-                    <form:form method="POST" modelAttribute="product" action="update/${product.productId}">
-                        <label>Product Name</label>
-                        <form:input path="productName" type="text" id="productName" name="productName"/>
-<%--                        <script>--%>
-<%--                            function setProductName(){--%>
-<%--                                let productName = '${product.productName}';--%>
-<%--                                document.getElementById('productName').value = productName;--%>
-<%--                            }--%>
-<%--                        </script>--%>
 
-                        <label>Product Description</label>
-                        <form:input path="productDescription" type="text" id="productDescription" name="productDescription" />
-                        <form:errors path="productDescription"/>
-
-                        <label>Product Price</label>
-                        <br>
-                        <form:input path="productPrice" type="number" id="productPrice" name="productPrice" />
-                        <form:errors path="productPrice" />
-                        <br>
-                        <br>
-
-                        <label>Produc tRemain</label>
-                        <br>
-                        <form:input path="productRemain" type="number" id="productRemain" name="productRemain" />
-                        <form:errors path="productRemain"/>
-                        <br>
-                        <br>
-
-                        <div class="form-group">
-                            <label>Category ${product.category.cateId}</label>
-                            <br>
-                            <form:select path="category.cateId">
-                                <option value="-1">Select a type</option>
-                                <c:forEach var="c" items="${cates}">
-                                    <option value="${c.cateId}" ${product.category.cateId == c.cateId ? 'selected=""' : ''}>${c.categoryName}</option>
-                                </c:forEach>
-                            </form:select><br />
+<div class="contact-form-area mb-60 mb-100 mb-sm-70">
+    <div class="form-group">
+        <div class="container">
+            <div class="row">
+                <div class="row-cols-md-12 mb-sm-30 offset-md-3 col-md-6">
+                    <div class="panel">
+                        <div class="panel-heading">
                         </div>
-                        <br>
+                        <h3>${message}</h3>
+                        <div class="lezada-form contact-form">
+                            <form:form method="POST" modelAttribute="product" action="update/${product.productId}">
+                                <div class="form-group">
+                                    <label>Product Name</label>
+                                    <form:input path="productName" type="text" id="productName" name="productName"/>
+                                    <form:errors path="productName" cssClass="alert-danger"/>
+                                </div>
+                                <br>
 
-                        <form:input path="productCreateDate" type="hidden"/>
+                                <div class="form-group">
+                                    <label>Product Description</label>
+                                    <form:input path="productDescription" type="text" id="productDescription"
+                                                name="productDescription"/>
+                                    <form:errors path="productDescription" cssClass="alert-danger"/>
+                                </div>
+                                <br>
 
-                        <button type="submit" value="Update">Update</button>
-                        <button type="reset" value="Cancel">Cancel</button>
-                    </form:form>
+                                <div class="form-group">
+                                    <label>Product Price</label>
+                                    <br>
+                                    <form:input path="productPrice" type="number" id="productPrice"
+                                                name="productPrice"/>
+                                    <form:errors path="productPrice" cssClass="alert-danger"/>
+                                </div>
+                                <br>
+
+                                <div class="form-group">
+                                    <label>Product Remain</label>
+                                    <br>
+                                    <form:input path="productRemain" type="number" id="productRemain"
+                                                name="productRemain"/>
+                                    <form:errors path="productRemain" cssClass="alert-danger"/>
+                                </div>
+                                <br>
+
+                                <div class="form-group">
+                                    <label>Category</label>
+                                    <br>
+                                    <form:select path="category.cateId">
+                                        <option value="-1">Select a type</option>
+                                        <c:forEach var="c" items="${cates}">
+                                            <option value="${c.cateId}" ${product.category.cateId == c.cateId ? 'selected=""' : ''}>${c.categoryName}</option>
+                                        </c:forEach>
+                                    </form:select>
+                                </div>
+                                <br>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Delete</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <c:forEach var="i" items="${product.images}">
+                                                <tr>
+                                                    <td>
+                                                        <img width="100px"
+                                                             height="100px" src="${i.imageUrl}">
+                                                    </td>
+                                                    <c:choose>
+                                                        <c:when test="${product.images.size()>2}">
+                                                            <td>
+                                                                <a class="btn btn-danger" type="submit"
+                                                                   onclick="return confirm('Are you sure?')"
+                                                                   href="DeleteImage?imageId=${i.imageId}&&productId=${product.productId}">
+                                                                    Delete
+                                                                </a>
+                                                            </td>
+                                                        </c:when>
+                                                        <c:otherwise>
+                                                            <td>The number of photos is at least two</td>
+                                                        </c:otherwise>
+                                                    </c:choose>
+                                                </tr>
+                                            </c:forEach>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="row">
+                                        <table class="table">
+                                            <thead>
+                                            <tr>
+                                                <th>
+                                                    <input type="text" placeholder="Please fill in the photo link"
+                                                           name="url"
+                                                           id="url" oninput="changeImageUrl(this.value);">
+                                                </th>
+                                                <th align="center">
+                                                    <a class="btn btn-info" id="btnAddImage"
+                                                       href="InsertImage?imageUrl=&&productId=${product.productId}">Add</a>
+                                                </th>
+                                            </tr>
+                                            </thead>
+
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <form:input path="productCreateDate" type="hidden"/>
+                                    <form:input path="productId" id="productId" type="hidden"/>
+                                </div>
+
+                                <div class="form-group">
+                                    <button class="btn btn-success" type="submit" value="Update">Update
+                                    </button>
+                                    <button class="btn btn-warning" type="reset" value="Cancel">Cancel
+                                    </button>
+                                </div>
+                            </form:form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!--=====  End of icon box one  ======-->
+    <!--=====  End of icon box one  ======-->
 
+    <!--=============================================
+    =            footer area         =
+    =============================================-->
+    <br><br>
 
-<!--=============================================
-=            icon box two         =
-=============================================-->
+    <div class="form-group">
+        <jsp:include page="include/foot.jsp"/>
+    </div>
 
+    <!--=====  End of footer area  ======-->
 
-<!--=====  End of icon box two  ======-->
+    <!--=============================================
+    =            overlay items         =
+    =============================================-->
 
-<!--=============================================
-=            icon box three         =
-=============================================-->
+    <!--=======  about overlay  =======-->
 
+    <div class="header-offcanvas about-overlay" id="about-overlay">
+        <div class="overlay-close inactive"></div>
+        <div class="overlay-content">
 
-<!--=====  End of icon box three  ======-->
+            <!--=======  close icon  =======-->
 
-
-<!--=============================================
-=            footer area         =
-=============================================-->
-
-<jsp:include page="include/foot.jsp"/>
-
-<!--=====  End of footer area  ======-->
-
-<!--=============================================
-=            overlay items         =
-=============================================-->
-
-<!--=======  about overlay  =======-->
-
-<div class="header-offcanvas about-overlay" id="about-overlay">
-    <div class="overlay-close inactive"></div>
-    <div class="overlay-content">
-
-        <!--=======  close icon  =======-->
-
-        <span class="close-icon" id="about-close-icon">
+            <span class="close-icon" id="about-close-icon">
 				<a href="javascript:void(0)">
 					<i class="ti-close"></i>
 				</a>
 			</span>
 
-        <!--=======  End of close icon  =======-->
+            <!--=======  End of close icon  =======-->
 
-        <!--=======  overlay content container  =======-->
+            <!--=======  overlay content container  =======-->
 
-        <div class="overlay-content-container d-flex flex-column justify-content-between h-100">
-            <!--=======  widget wrapper  =======-->
+            <div class="overlay-content-container d-flex flex-column justify-content-between h-100">
+                <!--=======  widget wrapper  =======-->
 
-            <div class="widget-wrapper">
-                <!--=======  single widget  =======-->
+                <div class="widget-wrapper">
+                    <!--=======  single widget  =======-->
 
-                <div class="single-widget">
-                    <h2 class="widget-title">About Us</h2>
-                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
-                        over other
-                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion
-                        clothes.</p>
+                    <div class="single-widget">
+                        <h2 class="widget-title">About Us</h2>
+                        <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
+                            over other
+                            factors. Our fashion items never get outdated. They are not short-lived as normal fashion
+                            clothes.</p>
+                    </div>
+
+                    <!--=======  End of single widget  =======-->
                 </div>
 
-                <!--=======  End of single widget  =======-->
-            </div>
+                <!--=======  End of widget wrapper  =======-->
 
-            <!--=======  End of widget wrapper  =======-->
+                <!--=======  contact widget  =======-->
 
-            <!--=======  contact widget  =======-->
+                <div class="contact-widget">
+                    <p class="email"><a href="mailto:contact@lezada.com">contact@lezada.com</a></p>
+                    <p class="phone">(+00) 123 567990</p>
 
-            <div class="contact-widget">
-                <p class="email"><a href="mailto:contact@lezada.com">contact@lezada.com</a></p>
-                <p class="phone">(+00) 123 567990</p>
-
-                <div class="social-icons">
-                    <ul>
-                        <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                        </li>
-                    </ul>
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
+                <!--=======  End of contact widget  =======-->
             </div>
 
-            <!--=======  End of contact widget  =======-->
+            <!--=======  End of overlay content container  =======-->
         </div>
-
-        <!--=======  End of overlay content container  =======-->
     </div>
-</div>
 
-<!--=======  End of about overlay  =======-->
+    <!--=======  End of about overlay  =======-->
 
-<!--=======  wishlist overlay  =======-->
+    <!--=======  wishlist overlay  =======-->
 
-<div class="wishlist-overlay" id="wishlist-overlay">
-    <div class="wishlist-overlay-close inactive"></div>
-    <div class="wishlist-overlay-content">
-        <!--=======  close icon  =======-->
+    <div class="wishlist-overlay" id="wishlist-overlay">
+        <div class="wishlist-overlay-close inactive"></div>
+        <div class="wishlist-overlay-content">
+            <!--=======  close icon  =======-->
 
-        <span class="close-icon" id="wishlist-close-icon">
+            <span class="close-icon" id="wishlist-close-icon">
 				<a href="javascript:void(0)">
 					<i class="ion-android-close"></i>
 				</a>
 			</span>
 
-        <!--=======  End of close icon  =======-->
+            <!--=======  End of close icon  =======-->
 
-        <!--=======  offcanvas wishlist content container  =======-->
+            <!--=======  offcanvas wishlist content container  =======-->
 
-        <div class="offcanvas-cart-content-container">
-            <h3 class="cart-title">Wishlist</h3>
+            <div class="offcanvas-cart-content-container">
+                <h3 class="cart-title">Wishlist</h3>
 
-            <div class="cart-product-wrapper">
-                <div class="cart-product-container  ps-scroll">
-                    <!--=======  single cart product  =======-->
+                <div class="cart-product-wrapper">
+                    <div class="cart-product-container  ps-scroll">
+                        <!--=======  single cart product  =======-->
 
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
+                                <p><span class="main-price discounted">$200.00</span> <span
+                                        class="discounted-price">$180.00</span></p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span
-                                    class="discounted-price">$180.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Dining Chair</a></h5>
+                                <p><span class="main-price discounted">$300.00</span> <span
+                                        class="discounted-price">$220.00</span></p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="main-price discounted">$300.00</span> <span
-                                    class="discounted-price">$220.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
+                                <p><span class="main-price discounted">$100.00</span> <span
+                                        class="discounted-price">$80.00</span></p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$100.00</span> <span
-                                    class="discounted-price">$80.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
+                                <p><span class="main-price discounted">$200.00</span> <span
+                                        class="discounted-price">$180.00</span></p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span
-                                    class="discounted-price">$180.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span
-                                    class="discounted-price">$180.00</span></p>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
+                                <p><span class="main-price discounted">$200.00</span> <span
+                                        class="discounted-price">$180.00</span></p>
 
+                            </div>
                         </div>
+
+                        <!--=======  End of single cart product  =======-->
                     </div>
 
-                    <!--=======  End of single cart product  =======-->
+                    <!--=======  cart buttons  =======-->
+
+                    <div class="cart-buttons">
+                        <a href="shop-wishlist">view wishlist</a>
+                    </div>
+
+                    <!--=======  End of cart buttons  =======-->
                 </div>
-
-                <!--=======  cart buttons  =======-->
-
-                <div class="cart-buttons">
-                    <a href="shop-wishlist">view wishlist</a>
-                </div>
-
-                <!--=======  End of cart buttons  =======-->
             </div>
+
+            <!--=======  End of offcanvas wishlist content container   =======-->
         </div>
-
-        <!--=======  End of offcanvas wishlist content container   =======-->
     </div>
-</div>
 
-<!--=======  End of wishlist overlay  =======-->
+    <!--=======  End of wishlist overlay  =======-->
 
-<!--=======  cart overlay  =======-->
+    <!--=======  cart overlay  =======-->
 
-<div class="cart-overlay" id="cart-overlay">
-    <div class="cart-overlay-close inactive"></div>
-    <div class="cart-overlay-content">
-        <!--=======  close icon  =======-->
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-overlay-close inactive"></div>
+        <div class="cart-overlay-content">
+            <!--=======  close icon  =======-->
 
-        <span class="close-icon" id="cart-close-icon">
+            <span class="close-icon" id="cart-close-icon">
 				<a href="javascript:void(0)">
 					<i class="ion-android-close"></i>
 				</a>
 			</span>
 
-        <!--=======  End of close icon  =======-->
+            <!--=======  End of close icon  =======-->
 
-        <!--=======  offcanvas cart content container  =======-->
+            <!--=======  offcanvas cart content container  =======-->
 
-        <div class="offcanvas-cart-content-container">
-            <h3 class="cart-title">Cart</h3>
+            <div class="offcanvas-cart-content-container">
+                <h3 class="cart-title">Cart</h3>
 
-            <div class="cart-product-wrapper">
-                <div class="cart-product-container  ps-scroll">
-                    <!--=======  single cart product  =======-->
+                <div class="cart-product-wrapper">
+                    <div class="cart-product-container  ps-scroll">
+                        <!--=======  single cart product  =======-->
 
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
+                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span>
+                                </p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Dining Chair</a></h5>
+                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$220.00</span>
+                                </p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$220.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
+                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$80.00</span></p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$80.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
+                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span>
+                                </p>
+
+                            </div>
                         </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
 
-                        </div>
-                    </div>
+                        <!--=======  End of single cart product  =======-->
+                        <!--=======  single cart product  =======-->
 
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
+                        <div class="single-cart-product">
 							<span class="cart-close-icon">
 								<a href="#"><i class="ti-close"></i></a>
 							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
+                            <div class="image">
+                                <a href="shop-product-basic">
+                                    <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
+                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span>
+                                </p>
 
+                            </div>
                         </div>
+
+                        <!--=======  End of single cart product  =======-->
                     </div>
 
-                    <!--=======  End of single cart product  =======-->
+                    <!--=======  subtotal calculation  =======-->
+
+                    <p class="cart-subtotal">
+                        <span class="subtotal-title">Subtotal:</span>
+                        <span class="subtotal-amount">$200.00</span>
+                    </p>
+
+                    <!--=======  End of subtotal calculation  =======-->
+
+                    <!--=======  cart buttons  =======-->
+
+                    <div class="cart-buttons">
+                        <a href="shop-cart">view cart</a>
+                        <a href="shop-checkout">checkout</a>
+                    </div>
+
+                    <!--=======  End of cart buttons  =======-->
+
+                    <!--=======  free shipping text  =======-->
+
+                    <p class="free-shipping-text">
+                        Free Shipping on All Orders Over $100!
+                    </p>
+
+                    <!--=======  End of free shipping text  =======-->
                 </div>
-
-                <!--=======  subtotal calculation  =======-->
-
-                <p class="cart-subtotal">
-                    <span class="subtotal-title">Subtotal:</span>
-                    <span class="subtotal-amount">$200.00</span>
-                </p>
-
-                <!--=======  End of subtotal calculation  =======-->
-
-                <!--=======  cart buttons  =======-->
-
-                <div class="cart-buttons">
-                    <a href="shop-cart">view cart</a>
-                    <a href="shop-checkout">checkout</a>
-                </div>
-
-                <!--=======  End of cart buttons  =======-->
-
-                <!--=======  free shipping text  =======-->
-
-                <p class="free-shipping-text">
-                    Free Shipping on All Orders Over $100!
-                </p>
-
-                <!--=======  End of free shipping text  =======-->
             </div>
+
+            <!--=======  End of offcanvas cart content container   =======-->
         </div>
-
-        <!--=======  End of offcanvas cart content container   =======-->
     </div>
-</div>
 
-<!--=======  End of cart overlay  =======-->
+    <!--=======  End of cart overlay  =======-->
 
 
-<!--=======  search overlay  =======-->
+    <!--=======  search overlay  =======-->
 
-<div class="search-overlay" id="search-overlay">
+    <div class="search-overlay" id="search-overlay">
 
-    <!--=======  close icon  =======-->
+        <!--=======  close icon  =======-->
 
-    <span class="close-icon search-close-icon">
+        <span class="close-icon search-close-icon">
 			<a href="javascript:void(0)" id="search-close-icon">
 				<i class="ti-close"></i>
 			</a>
 		</span>
 
-    <!--=======  End of close icon  =======-->
+        <!--=======  End of close icon  =======-->
 
-    <!--=======  search overlay content  =======-->
+        <!--=======  search overlay content  =======-->
 
-    <div class="search-overlay-content">
-        <div class="input-box">
-            <form action="https://htmldemo.hasthemes.com/lezada/lezada/index">
-                <input type="search" placeholder="Search Products...">
-            </form>
+        <div class="search-overlay-content">
+            <div class="input-box">
+                <form action="https://htmldemo.hasthemes.com/lezada/lezada/index">
+                    <input type="search" placeholder="Search Products...">
+                </form>
+            </div>
+            <div class="search-hint">
+                <span># Hit enter to search or ESC to close</span>
+            </div>
         </div>
-        <div class="search-hint">
-            <span># Hit enter to search or ESC to close</span>
-        </div>
+
+        <!--=======  End of search overlay content  =======-->
     </div>
 
-    <!--=======  End of search overlay content  =======-->
-</div>
+    <!--=======  End of search overlay  =======-->
 
-<!--=======  End of search overlay  =======-->
+    <!--=====  End of overlay items  ======-->
 
-<!--=====  End of overlay items  ======-->
+    <!-- scroll to top  -->
+    <a href="#" class="scroll-top"></a>
+    <!-- end of scroll to top -->
+    <script>
+        function changeImageUrl(e) {
+            //console.log(e)
+            //tìm thẻ a dựa vào id
+            var a = document.getElementById('btnAddImage');
+            //tìm product id dựa vào cái input hidden
+            var productId = document.getElementById('productId').value
+            //console.log(productId)
+            a.setAttribute('href', `InsertImage?imageUrl=` + e + `&&productId=` + productId)
+        }
 
-<!-- scroll to top  -->
-<a href="#" class="scroll-top"></a>
-<!-- end of scroll to top -->
+    </script>
+    <!-- JS
+    ============================================ -->
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
 
-<!-- JS
-============================================ -->
-<!-- jQuery JS -->
-<script src="assets/js/vendor/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="assets/js/popper.min.js"></script>
 
-<!-- Popper JS -->
-<script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
 
-<!-- Bootstrap JS -->
-<script src="assets/js/bootstrap.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins.js"></script>
 
-<!-- Plugins JS -->
-<script src="assets/js/plugins.js"></script>
-
-<!-- Main JS -->
-<script src="assets/js/main.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 
