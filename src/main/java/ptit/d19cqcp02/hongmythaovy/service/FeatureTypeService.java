@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Category;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Feature;
 import ptit.d19cqcp02.hongmythaovy.model.entity.FeatureType;
+import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
 import ptit.d19cqcp02.hongmythaovy.repository.CategoryRepository;
 import ptit.d19cqcp02.hongmythaovy.repository.FeatureRepository;
 import ptit.d19cqcp02.hongmythaovy.repository.FeatureTypeRepository;
@@ -24,11 +25,10 @@ public class FeatureTypeService {
     return featureTypeRepository.findAll();
   }
 
-  public FeatureType findById(Long featureTypeId) {
-    FeatureType featureType = featureTypeRepository.findById(featureTypeId).get();
-
-    return featureType;
-  }
+//  public FeatureType findById(Long featureTypeId) {
+//    FeatureType featureType = featureTypeRepository.findById(featureTypeId).get();
+//    return featureType;
+//  }
 
   public void save(FeatureType entity) {
     featureTypeRepository.save(entity);
@@ -38,5 +38,7 @@ public class FeatureTypeService {
     featureTypeRepository.delete(entity);
   }
 
+  public void findAllByFeaturesFeatureId(Long featureId){
 
+  }
 }

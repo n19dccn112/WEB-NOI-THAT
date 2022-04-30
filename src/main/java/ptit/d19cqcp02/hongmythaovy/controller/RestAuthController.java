@@ -19,7 +19,7 @@ public class RestAuthController {
     public String authenticateUser( @RequestParam(required = true) String username,
                                    @RequestParam(required = true) String password) {
 
-        String token = service.checkLogin(username,password);
+        String token = service.checkLogin(username,password).get("jwt");
 
         return token;
     }

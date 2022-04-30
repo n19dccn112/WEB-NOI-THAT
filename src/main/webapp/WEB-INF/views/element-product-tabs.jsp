@@ -363,7 +363,8 @@
                         </div>
                         <h3>${message}</h3>
                         <div class="lezada-form contact-form">
-                            <form:form method="POST" modelAttribute="product" action="update/${product.productId}">
+                            <form:form method="POST" id="formUpdate" modelAttribute="product"
+                                       action="update/${product.productId}">
                                 <div class="form-group">
                                     <label>Product Name</label>
                                     <form:input path="productName" type="text" id="productName" name="productName"/>
@@ -407,6 +408,43 @@
                                         </c:forEach>
                                     </form:select>
                                 </div>
+                                <br>
+                                <label>Feature</label><br>
+                                <c:forEach var="ft" items="${featuretypes}">
+                                    <div class="form-group  row ">
+                                        <label class="col-2">${ft.featureTypeName}</label><br><br>
+                                        <div class="row col-10">
+                                            <c:forEach var="f" items="${ft.features}">
+                                                <div class="col-md-4 shop-product-Color-list">
+                                                    <ul class="single-filter-widget--list single-filter-widget--list--color row">
+
+                                                        <input onchange="doOnchangeFeature(this, ${f.featureFeatureId});"
+                                                               type="checkbox" class="col-md-4" name="featureSpecific" value="featureSpecific"
+                                                                ${product.features.contains(f) ? 'checked' : ''}>
+                                                        <c:choose>
+                                                            <c:when test="${ft.featureTypeName.equals('Color')}">
+                                                                <li class="mb-0 pt-0 pb-0 mr-10 col-md-8">
+                                                                    <a class="active"><span
+                                                                        class="color-picker ${f.featureSpecific}"></span></a>
+                                                                </li>
+                                                                <br>
+                                                            </c:when>
+                                                            <c:otherwise>
+                                                                <span class="single-size">${f.featureSpecific}</span>
+                                                            </c:otherwise>
+                                                        </c:choose>
+
+                                                    </ul>
+                                                    <br>
+                                                </div>
+                                            </c:forEach>
+                                            <c:forEach var="f" items="${ft.features}">
+
+                                            </c:forEach>
+                                        </div>
+                                            <%--                                    <form:errors path="productRemain" cssClass="alert-danger"/>--%>
+                                    </div>
+                                </c:forEach>
                                 <br>
 
                                 <div class="form-group">
@@ -592,122 +630,7 @@
 
             <!--=======  offcanvas wishlist content container  =======-->
 
-            <div class="offcanvas-cart-content-container">
-                <h3 class="cart-title">Wishlist</h3>
-
-                <div class="cart-product-wrapper">
-                    <div class="cart-product-container  ps-scroll">
-                        <!--=======  single cart product  =======-->
-
-                        <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                            <div class="image">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                                <p><span class="main-price discounted">$200.00</span> <span
-                                        class="discounted-price">$180.00</span></p>
-
-                            </div>
-                        </div>
-
-                        <!--=======  End of single cart product  =======-->
-                        <!--=======  single cart product  =======-->
-
-                        <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                            <div class="image">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                                <p><span class="main-price discounted">$300.00</span> <span
-                                        class="discounted-price">$220.00</span></p>
-
-                            </div>
-                        </div>
-
-                        <!--=======  End of single cart product  =======-->
-                        <!--=======  single cart product  =======-->
-
-                        <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                            <div class="image">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                                <p><span class="main-price discounted">$100.00</span> <span
-                                        class="discounted-price">$80.00</span></p>
-
-                            </div>
-                        </div>
-
-                        <!--=======  End of single cart product  =======-->
-                        <!--=======  single cart product  =======-->
-
-                        <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                            <div class="image">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                                <p><span class="main-price discounted">$200.00</span> <span
-                                        class="discounted-price">$180.00</span></p>
-
-                            </div>
-                        </div>
-
-                        <!--=======  End of single cart product  =======-->
-                        <!--=======  single cart product  =======-->
-
-                        <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                            <div class="image">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                                <p><span class="main-price discounted">$200.00</span> <span
-                                        class="discounted-price">$180.00</span></p>
-
-                            </div>
-                        </div>
-
-                        <!--=======  End of single cart product  =======-->
-                    </div>
-
-                    <!--=======  cart buttons  =======-->
-
-                    <div class="cart-buttons">
-                        <a href="shop-wishlist">view wishlist</a>
-                    </div>
-
-                    <!--=======  End of cart buttons  =======-->
-                </div>
-            </div>
+            <jsp:include page="include/cart.jsp"/>
 
             <!--=======  End of offcanvas wishlist content container   =======-->
         </div>
@@ -919,6 +842,24 @@
             var productId = document.getElementById('productId').value
             //console.log(productId)
             a.setAttribute('href', `InsertImage?imageUrl=` + e + `&&productId=` + productId)
+        };
+        let listFeatures = []
+
+        function doOnchangeFeature(e, featureId) {
+            if (e.checked) {
+                console.log(e, featureId);
+                listFeatures.push(featureId);
+            } else {
+                let newList = listFeatures.filter(item => item !== featureId)
+                listFeatures = newList;
+            }
+            let urlAction = "?";
+            listFeatures.forEach(feature => {
+                urlAction += "featureIds=" + feature + "&&"
+            })
+            var form = document.getElementById('formUpdate');
+            form.setAttribute('action', 'update/${productId}' + urlAction.substr(0, urlAction.length - 2))
+            console.log(urlAction)
         }
 
     </script>

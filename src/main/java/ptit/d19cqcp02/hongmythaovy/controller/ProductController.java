@@ -1,5 +1,6 @@
 package ptit.d19cqcp02.hongmythaovy.controller;
 
+import org.apache.jasper.tagplugins.jstl.core.ForEach;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -15,11 +16,11 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.w3c.dom.stylesheets.LinkStyle;
+import ptit.d19cqcp02.hongmythaovy.model.entity.Feature;
+import ptit.d19cqcp02.hongmythaovy.model.entity.FeatureType;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Image;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
-import ptit.d19cqcp02.hongmythaovy.service.CategoryService;
-import ptit.d19cqcp02.hongmythaovy.service.ImageService;
-import ptit.d19cqcp02.hongmythaovy.service.ProductService;
+import ptit.d19cqcp02.hongmythaovy.service.*;
 
 import javax.imageio.ImageIO;
 import javax.persistence.Query;
@@ -31,9 +32,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Date;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 @Controller
 public class ProductController {
@@ -45,6 +44,13 @@ public class ProductController {
 
     @Autowired
     ImageService imageService;
+
+    @Autowired
+    FeatureService featureService;
+
+    @Autowired
+    FeatureTypeService featureTypeService;
+
 
     @GetMapping("element-team-member")
     public String index(Model model) {
@@ -63,16 +69,6 @@ public class ProductController {
     public String save(Product product) {
         productService.save(product);
         return "redirect:element-team-member";
-    }
-
-    @GetMapping(value = "update/{productId}")
-    public String elementProductTabs(ModelMap model, @PathVariable Long productId) {
-
-        Product product = productService.findById(productId);
-
-        model.addAttribute("product", product);
-
-        return "element-product-tabs";
     }
     @GetMapping(value = "element-team-member/{productId}")
     public String delete(@PathVariable Long productId, Model model){
@@ -97,24 +93,55 @@ public class ProductController {
         model.addAttribute("products", list);
         return "element-team-member";
     }
+    @GetMapping(value = "update/{productId}")
+    public String productUpdate(ModelMap model, @PathVariable Long productId) {
+        Product product = productService.findById(productId);
+        model.addAttribute("product", product);
+        model.addAttribute("featuretypes", featureTypeService.findAll());
+        return "element-product-tabs";
+    }
     @PostMapping(value = "update/{productId}")
-    public String elementProductTabs(HttpServletRequest request,
+    public String productUpdate(HttpServletRequest request, ModelMap model,
                                      @Validated @ModelAttribute("product") Product product,
-                                     BindingResult errors)
-            throws IllegalStateException, SystemException, IOException {
+                                     BindingResult errors) throws IllegalStateException, SystemException, IOException {
         if (!errors.hasErrors()) {
             product.setProductUpDate(new Date());
             productService.save(product);
             request.setAttribute("message", "Product has been updated!");
-
-        } else
+        }
+        else
             request.setAttribute("message", "Updated fail!");
-
+        model.addAttribute("product", product);
+        model.addAttribute("featuretypes", featureTypeService.findAll());
         return "element-product-tabs";
     }
 
+    @PostMapping(value = "update/{productId}",params = {"featureIds"})
+    public String featureTypeUpdate(HttpServletRequest request, ModelMap model,
+                                     @Validated @ModelAttribute("product") Product product,
+                                     @RequestParam("featureIds") List<Long> featureIds,
+                                     @RequestParam Long productId ,
+                                     BindingResult errors) throws IllegalStateException, SystemException, IOException {
+        if (!errors.hasErrors()) {
+            List<Feature> features = new LinkedList<>();
+
+            for (Long featureId : featureIds){
+                features.add(featureService.findById(featureId));
+            }
+
+            product.setProductUpDate(new Date());
+            product.setFeatures(features);
+            productService.save(product);
+            request.setAttribute("message", "Product has been updated!");
+        } else
+            request.setAttribute("message", "Updated fail!");
+        model.addAttribute("product", product);
+        model.addAttribute("featuretypes", featureTypeService.findAll());
+        System.out.println(request.getRequestURI());
+        return "redirect:" + request.getRequestURI();
+    }
     @GetMapping(value = "DeleteImage", params = {"imageId","productId"})
-    public String deleteImage(HttpServletRequest request,
+    public String deleteImageInProduct(HttpServletRequest request,
                               @RequestParam Long imageId,
                               @RequestParam Long productId  ) {
         imageService.delete(imageId);
@@ -145,7 +172,7 @@ public class ProductController {
     }
 
     @GetMapping(value = "InsertImage", params = {"imageUrl","productId"})
-    public String insertImage(@RequestParam String imageUrl,
+    public String insertImageInProduct(@RequestParam String imageUrl,
                               //@ModelAttribute("product") Product product,
                               @RequestParam Long productId) {
         if (testImage(imageUrl)) {

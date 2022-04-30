@@ -328,131 +328,42 @@
                             <th class="product-remove">&nbsp;</th>
                         </tr>
                         </thead>
-
+                        <c:set var="totalPrice" value="0"/>
                         <tbody>
-                        <tr>
-                            <td class="product-thumbnail">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/products/bag-1-1-600x800.jpg" class="img-fluid" alt="">
-                                </a>
-                            </td>
-                            <td class="product-name">
-                                <a href="shop-product-basic">Black Fabric Watch</a>
-                                <span class="product-variation">Color: Black</span>
-                            </td>
+                        <c:forEach var="order" items="${listOrder}">
+                            <tr>
+                                <td class="product-thumbnail">
+                                    <a href="product/${order.productId}">
+                                        <img src="${order.url}" class="img-fluid" alt="">
+                                    </a>
+                                </td>
+                                <td class="product-name">
+                                    <a href="shop-product-basic">${order.name}</a>
+                                    <span class="product-variation">Color: Black</span>
+                                </td>
 
-                            <td class="product-price"><span class="price">$100.00</span></td>
+                                <td class="product-price"><span class="price"  id="price${order.productId}">${order.price}</span></td>
 
-                            <td class="product-quantity">
-                                <div class="pro-qty d-inline-block mx-0">
-                                    <input type="text" value="1">
-                                </div>
-                            </td>
+                                <td class="product-quantity">
+                                        ${order.amount}
+                                </td>
 
-                            <td class="total-price"><span class="price">$100.00</span></td>
+                                <td class="total-price"><span class="price" id="total${order.productId}">${order.price*order.amount}</span></td>
 
-                            <td class="product-remove">
-                                <a href="#">
-                                    <i class="ion-android-close"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="product-thumbnail">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/products/watch-1-1-600x800.jpg" class="img-fluid" alt="">
-                                </a>
-                            </td>
-                            <td class="product-name">
-                                <a href="shop-product-basic">Brown watch</a>
-                                <span class="product-variation">Color: Brown</span>
-                            </td>
-
-                            <td class="product-price"><span class="price">$150.00</span></td>
-
-                            <td class="product-quantity">
-                                <div class="pro-qty d-inline-block mx-0">
-                                    <input type="text" value="1">
-                                </div>
-                            </td>
-
-                            <td class="total-price"><span class="price">$250.00</span></td>
-
-                            <td class="product-remove">
-                                <a href="#">
-                                    <i class="ion-android-close"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="product-thumbnail">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/products/cloth-1-1-600x800.jpg" class="img-fluid" alt="">
-                                </a>
-                            </td>
-                            <td class="product-name">
-                                <a href="shop-product-basic">High weist pant</a>
-                                <span class="product-variation">Color: Blue</span>
-                            </td>
-
-                            <td class="product-price"><span class="price">$10.00</span></td>
-
-                            <td class="product-quantity">
-                                <div class="pro-qty d-inline-block mx-0">
-                                    <input type="text" value="1">
-                                </div>
-                            </td>
-
-                            <td class="total-price"><span class="price">$260.00</span></td>
-
-                            <td class="product-remove">
-                                <a href="#">
-                                    <i class="ion-android-close"></i>
-                                </a>
-                            </td>
-                        </tr>
+                                <td class="product-remove">
+                                    <a href="#">
+                                        <i class="ion-android-close"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </c:forEach>
                         </tbody>
                     </table>
                 </div>
 
                 <!--=======  End of cart table  =======-->
             </div>
-            <div class="col-lg-12 mb-80">
-                <!--=======  coupon area  =======-->
 
-                <div class="cart-coupon-area pb-30">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 mb-md-30 mb-sm-30">
-                            <!--=======  coupon form  =======-->
-
-                            <div class="lezada-form coupon-form">
-                                <form action="#">
-                                    <div class="row">
-                                        <div class="col-md-7 mb-sm-10">
-                                            <input type="text" placeholder="Enter your coupon code">
-                                        </div>
-                                        <div class="col-md-5">
-                                            <button class="lezada-button lezada-button--medium">apply coupon</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                            <!--=======  End of coupon form  =======-->
-                        </div>
-
-                        <div class="col-lg-6 text-left text-lg-right">
-                            <!--=======  update cart button  =======-->
-
-                            <button class="lezada-button lezada-button--medium">update cart</button>
-
-                            <!--=======  End of update cart button  =======-->
-                        </div>
-                    </div>
-                </div>
-
-                <!--=======  End of coupon area  =======-->
-            </div>
 
             <div class="col-xl-4 offset-xl-8 col-lg-5 offset-lg-7">
                 <div class="cart-calculation-area">
@@ -895,7 +806,13 @@
 <!-- scroll to top  -->
 <a href="#" class="scroll-top"></a>
 <!-- end of scroll to top -->
-
+<script>
+    function changeNumber(e,productId,price){
+        var total = document.getElementById("total"+productId)
+        console.log(e,productId,price,total)
+        total.text = e.value*price
+    }
+</script>
 <!-- JS
 ============================================ -->
 <!-- jQuery JS -->

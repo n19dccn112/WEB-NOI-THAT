@@ -43,7 +43,7 @@
     <!--=======  single-icon  =======-->
 
     <div class="single-icon cart">
-        <a href="javascript:void(0)" id="offcanvas-cart-icon">
+        <a href="cart" id="offcanvas-cart-icon">
             <i class="ion-ios-cart"></i>
             <span class="count">3</span>
         </a>

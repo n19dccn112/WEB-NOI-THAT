@@ -382,33 +382,33 @@
 
                                     <!--=======  single image  =======-->
 
-<%--                                    <div class="single-image">--%>
-<%--                                        <img src="assets/images/shop-product/soccer-4.jpg" class="img-fluid" alt="">--%>
-<%--                                    </div>--%>
+                                    <%--                                    <div class="single-image">--%>
+                                    <%--                                        <img src="assets/images/shop-product/soccer-4.jpg" class="img-fluid" alt="">--%>
+                                    <%--                                    </div>--%>
 
                                     <!--=======  End of single image  =======-->
 
                                     <!--=======  single image  =======-->
 
-<%--                                    <div class="single-image">--%>
-<%--                                        <img src="assets/images/shop-product/soccer-5.png" class="img-fluid" alt="">--%>
-<%--                                    </div>--%>
+                                    <%--                                    <div class="single-image">--%>
+                                    <%--                                        <img src="assets/images/shop-product/soccer-5.png" class="img-fluid" alt="">--%>
+                                    <%--                                    </div>--%>
 
                                     <!--=======  End of single image  =======-->
 
                                     <!--=======  single image  =======-->
 
-<%--                                    <div class="single-image">--%>
-<%--                                        <img src="assets/images/shop-product/trendcoat-1.jpg" class="img-fluid" alt="">--%>
-<%--                                    </div>--%>
+                                    <%--                                    <div class="single-image">--%>
+                                    <%--                                        <img src="assets/images/shop-product/trendcoat-1.jpg" class="img-fluid" alt="">--%>
+                                    <%--                                    </div>--%>
 
                                     <!--=======  End of single image  =======-->
 
                                     <!--=======  single image  =======-->
 
-<%--                                    <div class="single-image">--%>
-<%--                                        <img src="assets/images/shop-product/trendcoat-2.jpg" class="img-fluid" alt="">--%>
-<%--                                    </div>--%>
+                                    <%--                                    <div class="single-image">--%>
+                                    <%--                                        <img src="assets/images/shop-product/trendcoat-2.jpg" class="img-fluid" alt="">--%>
+                                    <%--                                    </div>--%>
 
                                     <!--=======  End of single image  =======-->
                                 </div>
@@ -453,7 +453,7 @@
                                     <!--=======  single image  =======-->
 
                                     <div class="single-image">
-                                        <img src="${product.images[1].imageUrl}"class="img-fluid"
+                                        <img src="${product.images[1].imageUrl}" class="img-fluid"
                                              alt="">
                                     </div>
 
@@ -549,8 +549,6 @@
 
                                 <!--=======  shop product color block  =======-->
 
-
-
                                 <c:forEach var="ft" items="${featurestype}">
                                     <div class="shop-product__block shop-product__block--${ft.featureTypeName} mb-20">
                                         <div class="shop-product__block__title">${ft.featureTypeName}</div>
@@ -558,23 +556,49 @@
                                             <div class="shop-product-${ft.featureTypeName}-list">
                                                 <c:choose>
                                                     <c:when test="${ft.featureTypeName.equals('Color')}">
+
                                                         <ul class="single-filter-widget--list single-filter-widget--list--color">
+
                                                             <c:forEach var="f" items="${featuresbyproduct}">
                                                                 <c:if test="${ft.featureTypeId.equals(f.featureType.featureTypeId)}">
-                                                                    <li class="mb-0 pt-0 pb-0 mr-10"><a class="active" ><span
-                                                                            class="color-picker ${f.featureSpecific}"></span></a></li>
+                                                                    <li class="mb-0 pt-0 pb-0 mr-10"><a
+                                                                            class="active"><span
+                                                                            class="color-picker ${f.featureSpecific}"></span></a>
+                                                                    </li>
                                                                 </c:if>
                                                             </c:forEach>
+
+                                                            <select name="color" id="color">
+                                                                <option value="-1">Select a color</option>
+                                                                <c:forEach var="f" items="${featuresbyproduct}">
+                                                                    <c:if test="${ft.featureTypeId.equals(f.featureType.featureTypeId)}">
+                                                                        <option value="${f.featureSpecific}">${f.featureSpecific}</option>
+                                                                    </c:if>
+                                                                </c:forEach>
+                                                            </select>
+
                                                         </ul>
                                                     </c:when>
                                                     <c:otherwise>
-                                                        <c:forEach var="f" items="${featuresbyproduct}">
-                                                            <c:if test="${ft.featureTypeId.equals(f.featureType.featureTypeId)}">
-                                                                <span class="single-size">${f.featureSpecific}</span>
-                                                            </c:if>
-                                                        </c:forEach>
-                                                        
+                                                        <div class="shop-product-size-list">
+
+                                                            <c:forEach var="f" items="${featuresbyproduct}">
+                                                                <c:if test="${ft.featureTypeId.equals(f.featureType.featureTypeId)}">
+                                                                    <span class="single-size">${f.featureSpecific}</span>
+                                                                </c:if>
+                                                            </c:forEach>
+
+                                                            <select name="size" id="size">
+                                                                <option value="-1">Select a size</option>
+                                                                <c:forEach var="f" items="${featuresbyproduct}">
+                                                                    <c:if test="${ft.featureTypeId.equals(f.featureType.featureTypeId)}">
+                                                                        <option value="${f.featureSpecific}">${f.featureSpecific}</option>
+                                                                    </c:if>
+                                                                </c:forEach>
+                                                            </select>
+                                                        </div>
                                                     </c:otherwise>
+
                                                 </c:choose>
                                             </div>
                                         </div>
@@ -583,16 +607,21 @@
 
                                 <!--=======  End of shop product color block  =======-->
 
+                                <%-- ================================================--%>
+                                <div class="shop-product__block shop-product__block--quantity mb-40">
+                                    <div class="shop-product__block__title">Quantity: </div>
+                                    <div class="shop-product__block__value">
+                                        <div class="pro-qty d-inline-block mx-0 pt-0"><a href="#" class="dec qty-btn"></a>
+                                            <input type="text" value="1">
+                                            <a href="#" class="inc qty-btn"></a></div>
+                                    </div>
+                                </div>
+                                <%-- ================================================--%>
+
                                 <!--=======  shop product buttons  =======-->
 
                                 <div class="shop-product__buttons mb-40">
                                     <a class="lezada-button lezada-button--medium" href="#">add to cart</a>
-                                    <a class="lezada-compare-button ml-20" href="#" data-tippy="Compare"
-                                       data-tippy-inertia="true"
-                                       data-tippy-animation="shift-away" data-tippy-delay="50"
-                                       data-tippy-placement="left"
-                                       data-tippy-arrow="true" data-tippy-theme="sharpborder"><i
-                                            class="ion-ios-shuffle"></i></a>
                                 </div>
 
                                 <!--=======  End of shop product buttons  =======-->

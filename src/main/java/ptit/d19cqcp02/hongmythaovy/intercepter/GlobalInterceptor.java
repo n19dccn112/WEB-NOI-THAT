@@ -5,7 +5,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Category;
+import ptit.d19cqcp02.hongmythaovy.model.entity.Order;
+import ptit.d19cqcp02.hongmythaovy.model.entity.OrderDetail;
+import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
 import ptit.d19cqcp02.hongmythaovy.service.CategoryService;
+import ptit.d19cqcp02.hongmythaovy.service.OrderDetailService;
+import ptit.d19cqcp02.hongmythaovy.service.OrderService;
+import ptit.d19cqcp02.hongmythaovy.service.ProductService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

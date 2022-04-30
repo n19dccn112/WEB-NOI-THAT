@@ -350,7 +350,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="lezada-form login-form--register">
-                    <form action="#">
+                    <form action="signup", method="post">
                         <div class="row">
                             <div class="col-lg-12">
                                 <!--=======  login title  =======-->
@@ -362,13 +362,11 @@
 
                                 <!--=======  End of login title  =======-->
                             </div>
-                            <div class="col-lg-12 mb-30">
-                                <label for="regEmail">Email Address <span class="required">*</span> </label>
-                                <input type="text" id="regEmail" required>
+                            <div class="col-lg-12 mb-60">
+                                <input type="text"  name="regusername" id="regusername">
                             </div>
-                            <div class="col-lg-12 mb-50">
-                                <label for="regPassword">Password <span class="required">*</span> </label>
-                                <input type="password" id="regPassword" required>
+                            <div class="col-lg-12 mb-60">
+                                <input type="password" name="regpassword" id="regpassword">
                             </div>
                             <div class="col-lg-12 text-center">
                                 <button class="lezada-button lezada-button--medium">register</button>

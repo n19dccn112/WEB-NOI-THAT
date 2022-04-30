@@ -39,6 +39,7 @@ public class ProductService {
   public void delete(Long productId) {
     productRepository.deleteById(productId);
   }
+
   public List<Product> findAllByCategoryCateId(Long categoryId) {
     List<Product> products = productRepository.findAllByCategoryCateId(categoryId);
     setImage(products);
