@@ -11911,6 +11911,9 @@ nav.site-nav > ul > li ul.mega-menu-column-5 > li .mega-sub-menu li:last-child a
 .single-filter-widget--list--color li a span.black {
     background-color: #000;
 }
+.single-filter-widget--list--color li a span.purple {
+    background-color: #7d357d;
+}
 
 .single-filter-widget--list--color li a span.blue {
     background-color: #1e73be;

@@ -186,7 +186,7 @@
                                     <ul class="dl-submenu">
                                         <li><a href="element-product-categories">Product Categories</a></li>
                                         <li><a href="element-product-sliders">Product Sliders</a></li>
-                                        <li><a href="element-product-tabs">Product Tabs</a></li>
+                                        <li><a href="update-product">Product Tabs</a></li>
                                         <li><a href="element-product-widget">Product Widget</a></li>
                                         <li><a href="element-recent-products">Recent Products</a></li>
                                     </ul>
@@ -203,9 +203,9 @@
                                 <li class=""><a href="#">Theming</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-blog-posts">Blog Posts</a></li>
-                                        <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
+                                        <li><a href="product/add">Mailchimp Form</a></li>
                                         <li><a href="element-icon-box">Icon Box</a></li>
-                                        <li><a href="element-team-member">Team Member</a></li>
+                                        <li><a href="products">Team Member</a></li>
                                         <li><a href="element-instagram">Instagram</a></li>
 
                                     </ul>
@@ -311,7 +311,6 @@
 <!--=============================================
 =            checkout page content         =
 =============================================-->
-
 <div class="checkout-page-area mb-130">
     <div class="container">
         <div class="row">
@@ -331,137 +330,22 @@
 
                                         <div class="col-md-6 col-12 mb-20">
                                             <label>First Name*</label>
-                                            <input type="text" placeholder="First Name">
+                                            <input type="text" placeholder="${listOrder[0].firstName}">
                                         </div>
 
                                         <div class="col-md-6 col-12 mb-20">
                                             <label>Last Name*</label>
-                                            <input type="text" placeholder="Last Name">
-                                        </div>
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>Email Address*</label>
-                                            <input type="email" placeholder="Email Address">
+                                            <input type="text" placeholder="${listOrder[0].lastName}">
                                         </div>
 
                                         <div class="col-md-6 col-12 mb-20">
                                             <label>Phone no*</label>
-                                            <input type="text" placeholder="Phone number">
-                                        </div>
-
-                                        <div class="col-12 mb-20">
-                                            <label>Company Name</label>
-                                            <input type="text" placeholder="Company Name">
+                                            <input type="text" placeholder="${listOrder[0].phone}">
                                         </div>
 
                                         <div class="col-12 mb-20">
                                             <label>Address*</label>
-                                            <input type="text" placeholder="Address line 1">
-                                            <input type="text" placeholder="Address line 2">
-                                        </div>
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>Country*</label>
-                                            <select class="nice-select">
-                                                <option>Bangladesh</option>
-                                                <option>China</option>
-                                                <option>country</option>
-                                                <option>India</option>
-                                                <option>Japan</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>Town/City*</label>
-                                            <input type="text" placeholder="Town/City">
-                                        </div>
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>State*</label>
-                                            <input type="text" placeholder="State">
-                                        </div>
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>Zip Code*</label>
-                                            <input type="text" placeholder="Zip Code">
-                                        </div>
-
-                                        <div class="col-12 mb-20">
-                                            <div class="check-box">
-                                                <input type="checkbox" id="create_account">
-                                                <label for="create_account">Create an Acount?</label>
-                                            </div>
-                                            <div class="check-box">
-                                                <input type="checkbox" id="shiping_address" data-shipping>
-                                                <label for="shiping_address">Ship to Different Address</label>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <!-- Shipping Address -->
-                                <div id="shipping-form" class="mb-40">
-                                    <h4 class="checkout-title">Shipping Address</h4>
-
-                                    <div class="row">
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>First Name*</label>
-                                            <input type="text" placeholder="First Name">
-                                        </div>
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>Last Name*</label>
-                                            <input type="text" placeholder="Last Name">
-                                        </div>
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>Email Address*</label>
-                                            <input type="email" placeholder="Email Address">
-                                        </div>
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>Phone no*</label>
-                                            <input type="text" placeholder="Phone number">
-                                        </div>
-
-                                        <div class="col-12 mb-20">
-                                            <label>Company Name</label>
-                                            <input type="text" placeholder="Company Name">
-                                        </div>
-
-                                        <div class="col-12 mb-20">
-                                            <label>Address*</label>
-                                            <input type="text" placeholder="Address line 1">
-                                            <input type="text" placeholder="Address line 2">
-                                        </div>
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>Country*</label>
-                                            <select class="nice-select">
-                                                <option>Bangladesh</option>
-                                                <option>China</option>
-                                                <option>country</option>
-                                                <option>India</option>
-                                                <option>Japan</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>Town/City*</label>
-                                            <input type="text" placeholder="Town/City">
-                                        </div>
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>State*</label>
-                                            <input type="text" placeholder="State">
-                                        </div>
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>Zip Code*</label>
-                                            <input type="text" placeholder="Zip Code">
+                                            <input type="text" placeholder="${listOrder[0].address}">
                                         </div>
 
                                     </div>
@@ -479,87 +363,21 @@
                                         <h4 class="checkout-title">Cart Total</h4>
 
                                         <div class="checkout-cart-total">
-
                                             <h4>Product <span>Total</span></h4>
-
                                             <ul>
-                                                <li>Cillum dolore tortor nisl X 01 <span>$25.00</span></li>
-                                                <li>Auctor gravida pellentesque X 02 <span>$50.00</span></li>
-                                                <li>Condimentum posuere consectetur X 01 <span>$29.00</span></li>
-                                                <li>Habitasse dictumst elementum X 01 <span>$10.00</span></li>
+                                                    <c:forEach var="order" items="${listOrder}">
+                                                        <li>${order.name} X ${order.amount}
+                                                            <span>$${order.price*order.amount}</span></li>
+                                                    </c:forEach>
                                             </ul>
-
-                                            <p>Sub Total <span>$104.00</span></p>
-                                            <p>Shipping Fee <span>$00.00</span></p>
-
-                                            <h4>Grand Total <span>$104.00</span></h4>
+                                            <h4>Grand Total <span>$${totalOrder}</span></h4>
 
                                         </div>
-
-                                    </div>
-
-                                    <!-- Payment Method -->
-                                    <div class="col-12">
-
-                                        <h4 class="checkout-title">Payment Method</h4>
-
-                                        <div class="checkout-payment-method">
-
-                                            <div class="single-method">
-                                                <input type="radio" id="payment_check" name="payment-method"
-                                                       value="check">
-                                                <label for="payment_check">Check Payment</label>
-                                                <p data-method="check">Please send a Check to Store name with Store
-                                                    Street, Store Town, Store
-                                                    State, Store Postcode, Store Country.</p>
-                                            </div>
-
-                                            <div class="single-method">
-                                                <input type="radio" id="payment_bank" name="payment-method"
-                                                       value="bank">
-                                                <label for="payment_bank">Direct Bank Transfer</label>
-                                                <p data-method="bank">Please send a Check to Store name with Store
-                                                    Street, Store Town, Store
-                                                    State, Store Postcode, Store Country.</p>
-                                            </div>
-
-                                            <div class="single-method">
-                                                <input type="radio" id="payment_cash" name="payment-method"
-                                                       value="cash">
-                                                <label for="payment_cash">Cash on Delivery</label>
-                                                <p data-method="cash">Please send a Check to Store name with Store
-                                                    Street, Store Town, Store
-                                                    State, Store Postcode, Store Country.</p>
-                                            </div>
-
-                                            <div class="single-method">
-                                                <input type="radio" id="payment_paypal" name="payment-method"
-                                                       value="paypal">
-                                                <label for="payment_paypal">Paypal</label>
-                                                <p data-method="paypal">Please send a Check to Store name with Store
-                                                    Street, Store Town, Store
-                                                    State, Store Postcode, Store Country.</p>
-                                            </div>
-
-                                            <div class="single-method">
-                                                <input type="radio" id="payment_payoneer" name="payment-method"
-                                                       value="payoneer">
-                                                <label for="payment_payoneer">Payoneer</label>
-                                                <p data-method="payoneer">Please send a Check to Store name with Store
-                                                    Street, Store Town,
-                                                    Store State, Store Postcode, Store Country.</p>
-                                            </div>
-
-                                            <div class="single-method">
-                                                <input type="checkbox" id="accept_terms">
-                                                <label for="accept_terms">I’ve read and accept the terms &
-                                                    conditions</label>
-                                            </div>
-
+                                        <div class="lezada-button lezada-button--medium mt-30">
+                                            <a class="lezada-button lezada-button--medium"
+                                               href="checkout">
+                                                Place order</a>
                                         </div>
-
-                                        <button class="lezada-button lezada-button--medium mt-30">Place order</button>
-
                                     </div>
 
                                 </div>
@@ -676,122 +494,7 @@
 
         <!--=======  offcanvas wishlist content container  =======-->
 
-        <div class="offcanvas-cart-content-container">
-            <h3 class="cart-title">Wishlist</h3>
-
-            <div class="cart-product-wrapper">
-                <div class="cart-product-container  ps-scroll">
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span
-                                    class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="main-price discounted">$300.00</span> <span
-                                    class="discounted-price">$220.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$100.00</span> <span
-                                    class="discounted-price">$80.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span
-                                    class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span
-                                    class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                </div>
-
-                <!--=======  cart buttons  =======-->
-
-                <div class="cart-buttons">
-                    <a href="shop-wishlist">view wishlist</a>
-                </div>
-
-                <!--=======  End of cart buttons  =======-->
-            </div>
-        </div>
+        <jsp:include page="include/cart.jsp"/>
 
         <!--=======  End of offcanvas wishlist content container   =======-->
     </div>
@@ -816,135 +519,7 @@
 
         <!--=======  offcanvas cart content container  =======-->
 
-        <div class="offcanvas-cart-content-container">
-            <h3 class="cart-title">Cart</h3>
-
-            <div class="cart-product-wrapper">
-                <div class="cart-product-container  ps-scroll">
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$220.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$80.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                </div>
-
-                <!--=======  subtotal calculation  =======-->
-
-                <p class="cart-subtotal">
-                    <span class="subtotal-title">Subtotal:</span>
-                    <span class="subtotal-amount">$200.00</span>
-                </p>
-
-                <!--=======  End of subtotal calculation  =======-->
-
-                <!--=======  cart buttons  =======-->
-
-                <div class="cart-buttons">
-                    <a href="shop-cart">view cart</a>
-                    <a href="shop-checkout">checkout</a>
-                </div>
-
-                <!--=======  End of cart buttons  =======-->
-
-                <!--=======  free shipping text  =======-->
-
-                <p class="free-shipping-text">
-                    Free Shipping on All Orders Over $100!
-                </p>
-
-                <!--=======  End of free shipping text  =======-->
-            </div>
-        </div>
+        <jsp:include page="include/cart.jsp"/>
 
         <!--=======  End of offcanvas cart content container   =======-->
     </div>

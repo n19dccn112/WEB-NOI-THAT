@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 public interface OrderDetailView {
     Long getOrderId();
     String getFirstName();
+    String getStatus();
     String getLastName();
     String getUAddress();
     String getAddress();

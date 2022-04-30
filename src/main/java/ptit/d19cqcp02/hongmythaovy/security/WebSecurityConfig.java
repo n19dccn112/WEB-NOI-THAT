@@ -68,7 +68,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(WebSecurity web) throws Exception {
         // định dạng mẫu URL k bị phân quyền
         //assets - trang hình ảnh
-        web.ignoring().antMatchers("/assets/**", "/login", "/signup", "/", "/cate-*", "/product/*", "update/*", "/api/auth/**");
+        web.ignoring().antMatchers("/assets/**", "/login", "/signup", "/",
+                "/cate-**", "/product/**");
     }
 
     @Override
@@ -92,27 +93,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 //hasRole: dùng với 1 quyền duy nhất
 
                 // mỗi cái antMatchers là một cấu hình, đi với role, là quyền tương ứng với cấu hình đó
-                .antMatchers("/update/*")
+                .antMatchers("/update/**", "/products", "/product/add", "/products/**")
                 .hasRole("SHOP")
 
-                .antMatchers("/shop-cart")
+                .antMatchers("/cart", "/checkout")
                 .hasRole("USER")
-                // 3 cái tên ở rolename entity
-
-                .antMatchers("/swagger-ui**", "/swagger-ui/**", "/v3/api-docs/**")
-                .permitAll()
-
-                .antMatchers(HttpMethod.GET, "/api/products**")
-                .permitAll()
-
-                .antMatchers("/api/products**")
-                .hasRole("ADMIN")
-
-                .antMatchers("api/rates**", "api/rates/**")
-                .hasRole("USER")
-
-                .antMatchers("/shop**")
-                .hasAnyRole("USER", "SHOP", "ADMIN")
 
                 // những yêu cầu còn lại
                 .anyRequest()

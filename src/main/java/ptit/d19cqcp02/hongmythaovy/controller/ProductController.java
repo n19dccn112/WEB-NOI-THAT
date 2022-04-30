@@ -52,32 +52,32 @@ public class ProductController {
     FeatureTypeService featureTypeService;
 
 
-    @GetMapping("element-team-member")
+    @GetMapping("products")
     public String index(Model model) {
         model.addAttribute("product", productService.findAll());
-        return "element-team-member";
+        return "products";
     }
 
-    @GetMapping("element-mailchimp-form")
+    @GetMapping("product/add")
     public String elementMailchimpForm(Model model, HttpServletRequest request) {
         Product product = new Product();
         model.addAttribute("product", product);
-        return "element-mailchimp-form";
+        return "product-add";
     }
 
-    @PostMapping(value = "element-team-member")
+    @PostMapping(value = "products")
     public String save(Product product) {
         productService.save(product);
-        return "redirect:element-team-member";
+        return "redirect:products";
     }
-    @GetMapping(value = "element-team-member/{productId}")
+    @GetMapping(value = "products/{productId}")
     public String delete(@PathVariable Long productId, Model model){
         productService.delete(productId);
         model.addAttribute("product", productService.findAll());
-        return "element-team-member";
+        return "products";
     }
 
-    @RequestMapping("element-team-member/{productName}")
+    @RequestMapping("products/{productName}")
     public String search(ModelMap model, @RequestParam(name = "productName", required = false) String productName){
         List<Product> list = null;
 
@@ -91,14 +91,14 @@ public class ProductController {
             list = productService.findAll();
         }
         model.addAttribute("products", list);
-        return "element-team-member";
+        return "products";
     }
     @GetMapping(value = "update/{productId}")
     public String productUpdate(ModelMap model, @PathVariable Long productId) {
         Product product = productService.findById(productId);
         model.addAttribute("product", product);
         model.addAttribute("featuretypes", featureTypeService.findAll());
-        return "element-product-tabs";
+        return "update-product";
     }
     @PostMapping(value = "update/{productId}")
     public String productUpdate(HttpServletRequest request, ModelMap model,
@@ -113,7 +113,7 @@ public class ProductController {
             request.setAttribute("message", "Updated fail!");
         model.addAttribute("product", product);
         model.addAttribute("featuretypes", featureTypeService.findAll());
-        return "element-product-tabs";
+        return "update-product";
     }
 
     @PostMapping(value = "update/{productId}",params = {"featureIds"})

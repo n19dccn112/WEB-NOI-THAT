@@ -26,7 +26,8 @@ public class Order {
   private String orderAddress;
 
   @Column(name = "status")
-  private String orderStatus;
+  @Enumerated(EnumType.STRING)
+  private OrderStatus orderStatus;
 
   @Column(name = "time")
   @Temporal(TemporalType.TIMESTAMP)

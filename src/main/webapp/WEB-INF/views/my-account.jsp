@@ -187,7 +187,7 @@
                                     <ul class="dl-submenu">
                                         <li><a href="element-product-categories">Product Categories</a></li>
                                         <li><a href="element-product-sliders">Product Sliders</a></li>
-                                        <li><a href="element-product-tabs">Product Tabs</a></li>
+                                        <li><a href="update-product">Product Tabs</a></li>
                                         <li><a href="element-product-widget">Product Widget</a></li>
                                         <li><a href="element-recent-products">Recent Products</a></li>
                                     </ul>
@@ -204,9 +204,9 @@
                                 <li class=""><a href="#">Theming</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-blog-posts">Blog Posts</a></li>
-                                        <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
+                                        <li><a href="product/add">Mailchimp Form</a></li>
                                         <li><a href="element-icon-box">Icon Box</a></li>
-                                        <li><a href="element-team-member">Team Member</a></li>
+                                        <li><a href="products">Team Member</a></li>
                                         <li><a href="element-instagram">Instagram</a></li>
 
                                     </ul>
@@ -323,9 +323,6 @@
                             <a href="#dashboad" class="active" data-toggle="tab">
                                 Dashboard</a>
                             <a href="#orders" data-toggle="tab"> Orders</a>
-                            <a href="#download" data-toggle="tab"> Download</a>
-                            <a href="#payment-method" data-toggle="tab"> Payment
-                                Method</a>
                             <a href="#address-edit" data-toggle="tab"> address</a>
                             <a href="#account-info" data-toggle="tab"> Account Details</a>
                             <a href="shop-customer-login"> Logout</a>
@@ -340,8 +337,9 @@
                                 <div class="myaccount-content">
                                     <h3>Dashboard</h3>
                                     <div class="welcome">
-                                        <p>Hello, <strong>Alex Tuntuni</strong> (If Not <strong>Tuntuni !</strong><a
-                                                href="shop-customer-login" class="logout"> Logout</a>)</p>
+                                        <p>Hello, <strong>${listOrder[0].lastName} ${listOrder[0].firstName}</strong>
+                                            (If Not <strong>${listOrder[0].firstName} !</strong><a
+                                                    href="shop-customer-login" class="logout"> Logout</a>)</p>
                                     </div>
 
                                     <p class="mb-0">From your account dashboard. you can easily check & view your recent
@@ -360,82 +358,23 @@
                                             <thead class="thead-light">
                                             <tr>
                                                 <th>Order</th>
-                                                <th>Date</th>
                                                 <th>Status</th>
                                                 <th>Total</th>
                                                 <th>Action</th>
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Aug 22, 2018</td>
-                                                <td>Pending</td>
-                                                <td>$3000</td>
-                                                <td><a href="shop-cart" class="check-btn sqr-btn ">View</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>July 22, 2018</td>
-                                                <td>Approved</td>
-                                                <td>$200</td>
-                                                <td><a href="shop-cart" class="check-btn sqr-btn ">View</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>June 12, 2017</td>
-                                                <td>On Hold</td>
-                                                <td>$990</td>
-                                                <td><a href="shop-cart" class="check-btn sqr-btn ">View</a></td>
-                                            </tr>
+                                            <c:forEach var="order" items="${listOrder}">
+                                                <tr>
+                                                    <td>${order.orderId}</td>
+                                                    <td>${order.name}</td>
+                                                    <td>$${order.price*order.amount}</td>
+                                                    <td><a href="cart" class="check-btn sqr-btn ">View</a></td>
+                                                </tr>
+                                            </c:forEach>
                                             </tbody>
                                         </table>
                                     </div>
-                                </div>
-                            </div>
-                            <!-- Single Tab Content End -->
-                            <!-- Single Tab Content Start -->
-                            <div class="tab-pane fade" id="download" role="tabpanel">
-                                <div class="myaccount-content">
-                                    <h3>Downloads</h3>
-                                    <div class="myaccount-table table-responsive text-center">
-                                        <table class="table table-bordered">
-                                            <thead class="thead-light">
-                                            <tr>
-                                                <th>Product</th>
-                                                <th>Date</th>
-                                                <th>Expire</th>
-                                                <th>Download</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>Haven - Free Real Estate PSD Template</td>
-                                                <td>Aug 22, 2018</td>
-                                                <td>Yes</td>
-                                                <td><a href="#" class="check-btn sqr-btn "><i
-                                                        class="fa fa-cloud-download"></i> Download
-                                                    File</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>HasTech - Profolio Business Template</td>
-                                                <td>Sep 12, 2018</td>
-                                                <td>Never</td>
-                                                <td><a href="#" class="check-btn sqr-btn "><i
-                                                        class="fa fa-cloud-download"></i> Download
-                                                    File</a></td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Tab Content End -->
-                            <!-- Single Tab Content Start -->
-                            <div class="tab-pane fade" id="payment-method" role="tabpanel">
-                                <div class="myaccount-content">
-                                    <h3>Payment Method</h3>
-                                    <p class="saved-message">You Can't Saved Your Payment Method yet.</p>
                                 </div>
                             </div>
                             <!-- Single Tab Content End -->
@@ -444,12 +383,11 @@
                                 <div class="myaccount-content">
                                     <h3>Billing Address</h3>
                                     <address>
-                                        <p><strong>Alex Tuntuni</strong></p>
-                                        <p>1355 Market St, Suite 900 <br>
-                                            San Francisco, CA 94103</p>
-                                        <p>Mobile: (123) 456-7890</p>
+                                            <p><strong>${listOrder[0].lastName} ${listOrder[0].firstName}</strong></p>
+                                            <p>${listOrder[0].address}<br></p>
+                                        <p>Mobile: ${listOrder[0].phone}</p>
                                     </address>
-                                    <a href="#" class="check-btn sqr-btn "><i class="fa fa-edit"></i> Edit Address</a>
+                                    <a class="check-btn sqr-btn "><i class="fa fa-edit"></i> Edit Address</a>
                                 </div>
                             </div>
                             <!-- Single Tab Content End -->
@@ -761,135 +699,7 @@
 
         <!--=======  offcanvas cart content container  =======-->
 
-        <div class="offcanvas-cart-content-container">
-            <h3 class="cart-title">Cart</h3>
-
-            <div class="cart-product-wrapper">
-                <div class="cart-product-container  ps-scroll">
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-              <span class="cart-close-icon">
-                <a href="#"><i class="ti-close"></i></a>
-              </span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-              <span class="cart-close-icon">
-                <a href="#"><i class="ti-close"></i></a>
-              </span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$220.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-              <span class="cart-close-icon">
-                <a href="#"><i class="ti-close"></i></a>
-              </span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$80.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-              <span class="cart-close-icon">
-                <a href="#"><i class="ti-close"></i></a>
-              </span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-              <span class="cart-close-icon">
-                <a href="#"><i class="ti-close"></i></a>
-              </span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                </div>
-
-                <!--=======  subtotal calculation  =======-->
-
-                <p class="cart-subtotal">
-                    <span class="subtotal-title">Subtotal:</span>
-                    <span class="subtotal-amount">$200.00</span>
-                </p>
-
-                <!--=======  End of subtotal calculation  =======-->
-
-                <!--=======  cart buttons  =======-->
-
-                <div class="cart-buttons">
-                    <a href="shop-cart">view cart</a>
-                    <a href="shop-checkout">checkout</a>
-                </div>
-
-                <!--=======  End of cart buttons  =======-->
-
-                <!--=======  free shipping text  =======-->
-
-                <p class="free-shipping-text">
-                    Free Shipping on All Orders Over $100!
-                </p>
-
-                <!--=======  End of free shipping text  =======-->
-            </div>
-        </div>
+        <jsp:include page="include/cart.jsp"/>
 
         <!--=======  End of offcanvas cart content container   =======-->
     </div>

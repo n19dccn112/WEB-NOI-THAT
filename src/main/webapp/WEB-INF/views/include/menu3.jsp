@@ -12,7 +12,5 @@
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <ul class="breadcrumb-list">
-    <li class="breadcrumb-list__item"><a href="index-2">HOME</a></li>
-    <li class="breadcrumb-list__item"><a href="#">ELEMENTS</a></li>
-    <li class="breadcrumb-list__item breadcrumb-list__item--active">BEST SELLING PRODUCTS</li>
+    <li class="breadcrumb-list__item"><a href="/">HOME</a></li>
 </ul>
