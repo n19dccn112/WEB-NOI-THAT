@@ -178,7 +178,7 @@
                                     <ul class="dl-submenu">
                                         <li><a href="element-product-categories">Product Categories</a></li>
                                         <li><a href="element-product-sliders">Product Sliders</a></li>
-                                        <li><a href="element-product-tabs">Product Tabs</a></li>
+                                        <li><a href="update-product">Product Tabs</a></li>
                                         <li><a href="element-product-widget">Product Widget</a></li>
                                         <li><a href="element-recent-products">Recent Products</a></li>
                                     </ul>
@@ -423,25 +423,6 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <!--=======  tab product navigation  =======-->
-
-                <div class="tab-product-navigation mb-50">
-                    <div class="nav nav-tabs justify-content-center" id="nav-tab2" role="tablist">
-                        <c:forEach items="${cates}" var="category">
-                            <a class="nav-item nav-link active" id="product-tab-1" data-toggle="tab"
-                               href="#product-series-1"
-                               role="tab" aria-selected="true">${category.categoryName}</a>
-                        </c:forEach>
-                        <%--                        <a class="nav-item nav-link" id="product-tab-2" data-toggle="tab" href="#product-series-2"--%>
-                        <%--                           role="tab"--%>
-                        <%--                           aria-selected="false">${cates[1].categoryName}</a>--%>
-                        <%--                        <a class="nav-item nav-link" id="product-tab-3" data-toggle="tab" href="#product-series-3"--%>
-                        <%--                           role="tab"--%>
-                        <%--                           aria-selected="false">Sale</a>--%>
-                    </div>
-                </div>
-
-                <!--=======  End of tab product navigation  =======-->
 
                 <!--=======  tab product content  =======-->
 
@@ -458,7 +439,7 @@
                                         <!--=======  single product image  =======-->
 
                                         <div class="single-product__image">
-                                            <a class="image-wrap" href="shop-product-basic">
+                                            <a class="image-wrap" href="product/${products[numRan].productId}">
                                                 <img src="${products[numRan].images[0].imageUrl}"
                                                      class="img-fluid" alt="">
                                                 <img src="${products[numRan].images[1].imageUrl}"
@@ -482,7 +463,7 @@
                                                                          data-tippy-inertia="true"
                                                                          data-tippy-animation="shift-away"
                                                                          data-tippy-delay="50" data-tippy-arrow="true"
-                                                                         data-tippy-theme="sharpborder"
+                                                                         dproduct/${product[0].productId}ata-tippy-theme="sharpborder"
                                                                          data-tippy-placement="left"><i
                                                         class="ion-ios-shuffle-strong"></i></a></span>
                                                 <span class="quickview"><a class="cd-trigger" href="#qv-1"
@@ -741,122 +722,7 @@
 
         <!--=======  offcanvas wishlist content container  =======-->
 
-        <div class="offcanvas-cart-content-container">
-            <h3 class="cart-title">Wishlist</h3>
-
-            <div class="cart-product-wrapper">
-                <div class="cart-product-container  ps-scroll">
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span
-                                    class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="main-price discounted">$300.00</span> <span
-                                    class="discounted-price">$220.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$100.00</span> <span
-                                    class="discounted-price">$80.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span
-                                    class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span
-                                    class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                </div>
-
-                <!--=======  cart buttons  =======-->
-
-                <div class="cart-buttons">
-                    <a href="shop-wishlist">view wishlist</a>
-                </div>
-
-                <!--=======  End of cart buttons  =======-->
-            </div>
-        </div>
+        <jsp:include page="include/cart.jsp"/>
 
         <!--=======  End of offcanvas wishlist content container   =======-->
     </div>
@@ -881,135 +747,7 @@
 
         <!--=======  offcanvas cart content container  =======-->
 
-        <div class="offcanvas-cart-content-container">
-            <h3 class="cart-title">Cart</h3>
-
-            <div class="cart-product-wrapper">
-                <div class="cart-product-container  ps-scroll">
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$220.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$80.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                </div>
-
-                <!--=======  subtotal calculation  =======-->
-
-                <p class="cart-subtotal">
-                    <span class="subtotal-title">Subtotal:</span>
-                    <span class="subtotal-amount">$200.00</span>
-                </p>
-
-                <!--=======  End of subtotal calculation  =======-->
-
-                <!--=======  cart buttons  =======-->
-
-                <div class="cart-buttons">
-                    <a href="shop-cart">view cart</a>
-                    <a href="shop-checkout">checkout</a>
-                </div>
-
-                <!--=======  End of cart buttons  =======-->
-
-                <!--=======  free shipping text  =======-->
-
-                <p class="free-shipping-text">
-                    Free Shipping on All Orders Over $100!
-                </p>
-
-                <!--=======  End of free shipping text  =======-->
-            </div>
-        </div>
+        <jsp:include page="include/cart.jsp"/>
 
         <!--=======  End of offcanvas cart content container   =======-->
     </div>

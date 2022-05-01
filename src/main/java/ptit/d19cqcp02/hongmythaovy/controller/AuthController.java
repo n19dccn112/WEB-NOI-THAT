@@ -12,6 +12,7 @@ import ptit.d19cqcp02.hongmythaovy.service.UserService;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.Map;
 
 @Controller
 @Slf4j
@@ -38,14 +39,23 @@ public class AuthController {
       @RequestParam String username,
       @RequestParam String password) {
     HttpSession session = request.getSession();
-    String token = service.checkLogin(username, password);
+    Map<String, String> token = service.checkLogin(username, password);
     log.info("username:" + username);
     log.info("password:" + password);
     // log.info("email:"+user.getEmail());
     log.info("token:" + token, token);
-    session.setAttribute(HttpHeaders.AUTHORIZATION, "Bearer " + token);
-
+    session.setAttribute(HttpHeaders.AUTHORIZATION, "Bearer " + token.get("jwt"));
+    session.setAttribute("currentUserId", Long.parseLong(token.get("userId")));
+    log.info(String.valueOf(session.getAttribute("currentUserId")));
     response.setHeader(HttpHeaders.AUTHORIZATION, "Bearer " + token);
     return "redirect:/my-account";
+  }
+  @PostMapping(value = "signup")
+  public String registerUser(@RequestParam("regusername")  String username,
+                             @RequestParam("regpassword")  String password) {
+    log.info(username);
+    log.info(password);
+    service.register(username,password);
+    return "shop-customer-login";
   }
 }

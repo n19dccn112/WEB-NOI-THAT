@@ -7,6 +7,9 @@ import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
@@ -19,12 +22,13 @@ import java.util.List;
 @NoArgsConstructor
 @Table(name = "products")
 public class Product {
+
   @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
   @JoinTable(
       name = "feature_detail",
       joinColumns = @JoinColumn(name = "product_id"),
       inverseJoinColumns = @JoinColumn(name = "feature_id"))
-  List<Feature> features;
+      List<Feature> features;
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -37,13 +41,18 @@ public class Product {
   private Date productCreateDate;
 
   @Column(name = "price")
+  @DecimalMin(value = "0", message = "Product price must greater than 0")
+  @NotNull
   private BigDecimal productPrice;
 
   @Column(name = "description")
   private String productDescription;
 
   @Column(name = "name")
+  @NotNull(message = "Product name must not be null")
+  @NotBlank(message = "Product name must not be blank")
   private String productName;
+
 
   @Column(name = "update_date")
   @Temporal(TemporalType.TIMESTAMP)
@@ -52,6 +61,7 @@ public class Product {
   private Date productUpDate;
 
   @Column(name = "remain")
+  @DecimalMin(value = "0", message = "Product remain must greater than 0")
   private Long productRemain;
 
   @ManyToOne(fetch = FetchType.EAGER)

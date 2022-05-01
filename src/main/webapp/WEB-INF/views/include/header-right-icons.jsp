@@ -33,9 +33,8 @@
     <!--=======  single-icon  =======-->
 
     <div class="single-icon wishlist">
-        <a href="javascript:void(0)" id="offcanvas-wishlist-icon">
+        <a href="products" id="offcanvas-wishlist-icon">
             <i class="ion-android-favorite-outline"></i>
-            <span class="count">2</span>
         </a>
     </div>
 
@@ -45,7 +44,8 @@
     <div class="single-icon cart">
         <a href="javascript:void(0)" id="offcanvas-cart-icon">
             <i class="ion-ios-cart"></i>
-            <span class="count">3</span>
+            <c:if test="${listOrder.size()>0}">
+                <span class="count">${listOrder.size()}</span></c:if>
         </a>
     </div>
     <!--=======  End of single-icon  =======-->

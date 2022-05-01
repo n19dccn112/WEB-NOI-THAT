@@ -18,9 +18,7 @@ import ptit.d19cqcp02.hongmythaovy.repository.UserRepository;
 import ptit.d19cqcp02.hongmythaovy.security.jwt.JwtUtils;
 import ptit.d19cqcp02.hongmythaovy.security.services.UserDetailsImpl;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -53,7 +51,7 @@ public class UserService {
     userRepository.delete(entity);
   }
 
-  public String checkLogin(String username, String password) {
+  public Map<String, String> checkLogin(String username, String password) {
     // TODO, authenticate when login
     // Username, pass from client
     // com.nashtech.rookies.security.WebSecurityConfig.configure(org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder)
@@ -76,7 +74,10 @@ public class UserService {
             .map(item -> item.getAuthority())
             .collect(Collectors.toList());
     UserDetail entity = this.getDetail(userDetails.getId());
-    return jwt;
+    Map<String, String> login = new HashMap<>();
+    login.put("jwt", jwt);
+    login.put("userId",String.valueOf(userDetails.getId()));
+    return login;
   }
 
   private UserDetail getDetail(Long id) {
@@ -99,7 +100,7 @@ public class UserService {
     user.setUsername(username);
     user.setEmail(username);
     Set<String> roles = new HashSet<>();
-    roles.add("ADMIN");
+    roles.add("USER");
     user.setRoles(getRole(roles));
 
     user.setPassword(encoder.encode(password));

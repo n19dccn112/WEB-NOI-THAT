@@ -629,7 +629,9 @@
     $(".qty-btn").on("click", function (e) {
         e.preventDefault();
         var $button = $(this);
-        var oldValue = $button.parent().find("input").val();
+        var input = $button.parent().find("input");
+        var oldValue = input.val();
+
         if ($button.hasClass("inc")) {
             var newVal = parseFloat(oldValue) + 1;
         } else {
@@ -641,6 +643,12 @@
             }
         }
         $button.parent().find("input").val(newVal);
+
+        // var id = input[0].id;
+        //
+        // var total = document.getElementById("total"+String(id).substr(6,id.length-6))
+        // var price = document.getElementById("price"+String(id).substr(6,id.length-6))
+        // total.innerText=(newVal* parseFloat(price.innerText)).toFixed(2)
     });
 
     /*---------- custom quick view  ----------*/

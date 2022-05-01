@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
-  User: PC
-  Date: 09/01/2022
-  Time: 5:22 CH
+  User: n19dc
+  Date: 1/9/2022
+  Time: 5:10 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page language="java" contentType="text/html; charset=utf-8" %>
@@ -11,10 +11,11 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+
 <html class="no-js" lang="zxx">
 
 
-<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/shop-checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:07:50 GMT -->
+<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/products.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:08:08 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <jsp:include page="include/head.jsp"/>
@@ -289,11 +290,11 @@
 
 <!--=======  breadcrumb area =======-->
 
-<div class="breadcrumb-area breadcrumb-bg-1 pt-50 pb-70 mb-130">
+<div class="breadcrumb-area breadcrumb-bg-1 pt-50 pb-70 mb-100">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="breadcrumb-title">Checkout</h1>
+                <h1 class="breadcrumb-title">Admin Page</h1>
 
                 <!--=======  breadcrumb list  =======-->
 
@@ -308,283 +309,265 @@
 
 <!--=======  End of breadcrumb area =======-->
 
-<!--=============================================
-=            checkout page content         =
-=============================================-->
-<div class="checkout-page-area mb-130">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="lezada-form">
-                    <!-- Checkout Form s-->
-                    <form action="#" class="checkout-form">
-                        <div class="row row-40">
+<!--=== Admin ===-->
 
-                            <div class="col-lg-7 mb-20">
+<div class="container main-content list">
 
-                                <!-- Billing Address -->
-                                <div id="billing-form" class="mb-40">
-                                    <h4 class="checkout-title">Billing Address</h4>
+    <form href="products/${products.productName}" style="all: unset" class="form-inline float-sm-right">
+        <input type="text" class="form-control" placeholder="Type product name" name="keyword" required>
+        <button type="submit" class="btn btn-outline-info">Search</button>
+    </form>
 
-                                    <div class="row">
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>First Name*</label>
-                                            <input type="text" placeholder="${listOrder[0].firstName}">
-                                        </div>
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>Last Name*</label>
-                                            <input type="text" placeholder="${listOrder[0].lastName}">
-                                        </div>
-
-                                        <div class="col-md-6 col-12 mb-20">
-                                            <label>Phone no*</label>
-                                            <input type="text" placeholder="${listOrder[0].phone}">
-                                        </div>
-
-                                        <div class="col-12 mb-20">
-                                            <label>Address*</label>
-                                            <input type="text" placeholder="${listOrder[0].address}">
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-lg-5">
-                                <div class="row">
-
-                                    <!-- Cart Total -->
-                                    <div class="col-12 mb-60">
-
-                                        <h4 class="checkout-title">Cart Total</h4>
-
-                                        <div class="checkout-cart-total">
-                                            <h4>Product <span>Total</span></h4>
-                                            <ul>
-                                                    <c:forEach var="order" items="${listOrder}">
-                                                        <li>${order.name} X ${order.amount}
-                                                            <span>$${order.price*order.amount}</span></li>
-                                                    </c:forEach>
-                                            </ul>
-                                            <h4>Grand Total <span>$${totalOrder}</span></h4>
-
-                                        </div>
-                                        <div class="lezada-button lezada-button--medium mt-30">
-                                            <a class="lezada-button lezada-button--medium"
-                                               href="checkout">
-                                                Place order</a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+    <div class="row">
+        <a href="product/add" class="btn btn-outline-success">Add Product</a>
     </div>
-</div>
 
-<!--=====  End of checkout page content  ======-->
+    <div class="row">
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Description</th>
+<%--                <th>Image</th>--%>
+                <th>Price</th>
+                <th>Remain</th>
+                <th>CateName</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            <c:forEach var="s" items="${product}">
+                <tr>
+                    <td>${s.productId}</td>
+                    <td>${s.productName}</td>
+                    <td>${s.productDescription}</td>
+                    <td>
+                        <img width="100px" src="${s.images[0].imageUrl}">
+                        <img width="100px" src="${s.images[1].imageUrl}">
+                    </td>
+                    <td>${s.productPrice}</td>
+                    <td>${s.productRemain}</td>
+                    <td>${s.category.categoryName}</td>
+                    <td align="center">
+                        <a href="update/${s.productId}"><em class="fa fa-pencil"></em></a>
+                    </td>
+                    <td align="center">
+                        <a href="products/${s.productId}"
+                           onclick="return confirm('Deleted product cannot be restored. ' +
+                            'Are you sure you want to delete the product?')"
+                           class="btn btn-outline-danger"><em class="fa fa-trash"></em></a>
+                    </td>
+                </tr>
+            </c:forEach>
+            </tbody>
+        </table>
+    </div>
 
 
-<!--=============================================
-=            footer area         =
-=============================================-->
+    <!--==== End Admin ====-->
 
-<jsp:include page="include/foot.jsp"/>
+    <!--=============================================
+    =            footer area         =
+    =============================================-->
 
-<!--=====  End of footer area  ======-->
+    <jsp:include page="include/foot.jsp"/>
 
-<!--=============================================
-=            overlay items         =
-=============================================-->
+    <!--=====  End of footer area  ======-->
 
-<!--=======  about overlay  =======-->
+    <!--=============================================
+    =            overlay items         =
+    =============================================-->
 
-<div class="header-offcanvas about-overlay" id="about-overlay">
-    <div class="overlay-close inactive"></div>
-    <div class="overlay-content">
+    <!--=======  about overlay  =======-->
 
-        <!--=======  close icon  =======-->
+    <div class="header-offcanvas about-overlay" id="about-overlay">
+        <div class="overlay-close inactive"></div>
+        <div class="overlay-content">
 
-        <span class="close-icon" id="about-close-icon">
+            <!--=======  close icon  =======-->
+
+            <span class="close-icon" id="about-close-icon">
 				<a href="javascript:void(0)">
 					<i class="ti-close"></i>
 				</a>
 			</span>
 
-        <!--=======  End of close icon  =======-->
+            <!--=======  End of close icon  =======-->
 
-        <!--=======  overlay content container  =======-->
+            <!--=======  overlay content container  =======-->
 
-        <div class="overlay-content-container d-flex flex-column justify-content-between h-100">
-            <!--=======  widget wrapper  =======-->
+            <div class="overlay-content-container d-flex flex-column justify-content-between h-100">
+                <!--=======  widget wrapper  =======-->
 
-            <div class="widget-wrapper">
-                <!--=======  single widget  =======-->
+                <div class="widget-wrapper">
+                    <!--=======  single widget  =======-->
 
-                <div class="single-widget">
-                    <h2 class="widget-title">About Us</h2>
-                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
-                        over other
-                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion
-                        clothes.</p>
+                    <div class="single-widget">
+                        <h2 class="widget-title">About Us</h2>
+                        <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
+                            over other
+                            factors. Our fashion items never get outdated. They are not short-lived as normal fashion
+                            clothes.</p>
+                    </div>
+
+                    <!--=======  End of single widget  =======-->
                 </div>
 
-                <!--=======  End of single widget  =======-->
-            </div>
+                <!--=======  End of widget wrapper  =======-->
 
-            <!--=======  End of widget wrapper  =======-->
+                <!--=======  contact widget  =======-->
 
-            <!--=======  contact widget  =======-->
+                <div class="contact-widget">
+                    <p class="email"><a href="mailto:contact@lezada.com">contact@lezada.com</a></p>
+                    <p class="phone">(+00) 123 567990</p>
 
-            <div class="contact-widget">
-                <p class="email"><a href="mailto:contact@lezada.com">contact@lezada.com</a></p>
-                <p class="phone">(+00) 123 567990</p>
-
-                <div class="social-icons">
-                    <ul>
-                        <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                        </li>
-                    </ul>
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
+                <!--=======  End of contact widget  =======-->
             </div>
 
-            <!--=======  End of contact widget  =======-->
+            <!--=======  End of overlay content container  =======-->
         </div>
-
-        <!--=======  End of overlay content container  =======-->
     </div>
-</div>
 
-<!--=======  End of about overlay  =======-->
+    <!--=======  End of about overlay  =======-->
 
-<!--=======  wishlist overlay  =======-->
+    <!--=======  wishlist overlay  =======-->
 
-<div class="wishlist-overlay" id="wishlist-overlay">
-    <div class="wishlist-overlay-close inactive"></div>
-    <div class="wishlist-overlay-content">
-        <!--=======  close icon  =======-->
+    <div class="wishlist-overlay" id="wishlist-overlay">
+        <div class="wishlist-overlay-close inactive"></div>
+        <div class="wishlist-overlay-content">
+            <!--=======  close icon  =======-->
 
-        <span class="close-icon" id="wishlist-close-icon">
+            <span class="close-icon" id="wishlist-close-icon">
 				<a href="javascript:void(0)">
 					<i class="ion-android-close"></i>
 				</a>
 			</span>
 
-        <!--=======  End of close icon  =======-->
+            <!--=======  End of close icon  =======-->
 
-        <!--=======  offcanvas wishlist content container  =======-->
+            <!--=======  offcanvas wishlist content container  =======-->
 
-        <jsp:include page="include/cart.jsp"/>
+            <jsp:include page="include/cart.jsp"/>
 
-        <!--=======  End of offcanvas wishlist content container   =======-->
+            <!--=======  End of offcanvas wishlist content container   =======-->
+        </div>
     </div>
-</div>
 
-<!--=======  End of wishlist overlay  =======-->
+    <!--=======  End of wishlist overlay  =======-->
 
-<!--=======  cart overlay  =======-->
+    <!--=======  cart overlay  =======-->
 
-<div class="cart-overlay" id="cart-overlay">
-    <div class="cart-overlay-close inactive"></div>
-    <div class="cart-overlay-content">
-        <!--=======  close icon  =======-->
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-overlay-close inactive"></div>
+        <div class="cart-overlay-content">
+            <!--=======  close icon  =======-->
 
-        <span class="close-icon" id="cart-close-icon">
+            <span class="close-icon" id="cart-close-icon">
 				<a href="javascript:void(0)">
 					<i class="ion-android-close"></i>
 				</a>
 			</span>
 
-        <!--=======  End of close icon  =======-->
+            <!--=======  End of close icon  =======-->
 
-        <!--=======  offcanvas cart content container  =======-->
+            <!--=======  offcanvas cart content container  =======-->
 
-        <jsp:include page="include/cart.jsp"/>
+            <jsp:include page="include/cart.jsp"/>
 
-        <!--=======  End of offcanvas cart content container   =======-->
+            <!--=======  End of offcanvas cart content container   =======-->
+        </div>
     </div>
-</div>
 
-<!--=======  End of cart overlay  =======-->
+    <!--=======  End of cart overlay  =======-->
 
 
-<!--=======  search overlay  =======-->
+    <!--=======  search overlay  =======-->
 
-<div class="search-overlay" id="search-overlay">
+    <div class="search-overlay" id="search-overlay">
 
-    <!--=======  close icon  =======-->
+        <!--=======  close icon  =======-->
 
-    <span class="close-icon search-close-icon">
+        <span class="close-icon search-close-icon">
 			<a href="javascript:void(0)" id="search-close-icon">
 				<i class="ti-close"></i>
 			</a>
 		</span>
 
-    <!--=======  End of close icon  =======-->
+        <!--=======  End of close icon  =======-->
 
-    <!--=======  search overlay content  =======-->
+        <!--=======  search overlay content  =======-->
 
-    <div class="search-overlay-content">
-        <div class="input-box">
-            <form action="https://htmldemo.hasthemes.com/lezada/lezada/index">
-                <input type="search" placeholder="Search Products...">
-            </form>
+        <div class="search-overlay-content">
+            <div class="input-box">
+                <form action="https://htmldemo.hasthemes.com/lezada/lezada/index">
+                    <input type="search" placeholder="Search Products...">
+                </form>
+            </div>
+            <div class="search-hint">
+                <span># Hit enter to search or ESC to close</span>
+            </div>
         </div>
-        <div class="search-hint">
-            <span># Hit enter to search or ESC to close</span>
-        </div>
+
+        <!--=======  End of search overlay content  =======-->
     </div>
 
-    <!--=======  End of search overlay content  =======-->
-</div>
+    <!--=======  End of search overlay  =======-->
 
-<!--=======  End of search overlay  =======-->
+    <!--=====  End of overlay items  ======-->
 
-<!--=====  End of overlay items  ======-->
+    <!-- scroll to top  -->
+    <a href="#" class="scroll-top"></a>
+    <!-- end of scroll to top -->
 
-<!-- scroll to top  -->
-<a href="#" class="scroll-top"></a>
-<!-- end of scroll to top -->
+    <!-- JS
+    ============================================ -->
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
 
-<!-- JS
-============================================ -->
-<!-- jQuery JS -->
-<script src="assets/js/vendor/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="assets/js/popper.min.js"></script>
 
-<!-- Popper JS -->
-<script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
 
-<!-- Bootstrap JS -->
-<script src="assets/js/bootstrap.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins.js"></script>
 
-<!-- Plugins JS -->
-<script src="assets/js/plugins.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
 
-<!-- Main JS -->
-<script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        function clearFilter(){
+            window.location = '/';
+        }
+    </script>
+
 
 </body>
 
 
-<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/shop-checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:07:50 GMT -->
+<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/products.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:08:16 GMT -->
 </html>
