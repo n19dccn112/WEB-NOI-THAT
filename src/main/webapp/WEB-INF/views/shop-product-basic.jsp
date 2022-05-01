@@ -507,6 +507,7 @@
 
                                 <!--=======  shop product rating  =======-->
 
+
                                 <div class="shop-product__rating mb-15">
 										<span class="product-rating">
 											<i class="active ion-android-star"></i>
@@ -520,6 +521,7 @@
 											<a href="#">(3 customer reviews)</a>
 										</span>
                                 </div>
+
 
                                 <!--=======  End of shop product rating  =======-->
 
@@ -617,11 +619,14 @@
                                             class="ion-ios-shuffle"></i></a>
                                 </div>
 
+
                                 <!--=======  End of shop product buttons  =======-->
 
                                 <!--=======  shop product brands  =======-->
 
+
                                 <div class="shop-product__brands mb-20">
+
 
                                     <a href="#">
                                         <img src="assets/images/brands/brand-1.png" class="img-fluid" alt="">
@@ -677,6 +682,17 @@
 
                             <!--=======  End of shop product description  =======-->
                         </div>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <jsp:include page="include/user_rating.jsp"/>
+                        </ul>
+                        <ul>
+
+                            <jsp:include page="include/rating.jsp"/>
+                        </ul>
+
                     </div>
 
                     <div class="row">
@@ -756,7 +772,7 @@
                                         <!--=======  shop product reviews  =======-->
 
                                         <div class="shop-product__review">
-                                            <h2 class="review-title mb-20">3 reviews for High-waist Trousers</h2>
+                                            <h2 class="review-title mb-20">Reviews</h2>
 
                                             <!--=======  single review  =======-->
 
@@ -769,6 +785,19 @@
 
                                                     <div class="shop-product__rating">
 															<span class="product-rating">
+<%--                                                                <c:set var="start" value="${5 - rates.point}}"/>--%>
+<%--                                                                    <c:choose>--%>
+<%--                                                                        <c:when test="${start == 5}">--%>
+<%--                                                                            <c:forEach begin="0" end="${start-0}">--%>
+<%--                                                                                <i class="active ion-android-star"></i>--%>
+<%--                                                                            </c:forEach>--%>
+
+<%--                                                                            <c:forEach begin="0" end="${start-5}">--%>
+<%--                                                                                <i class="ion-android-star-outline"></i>--%>
+<%--                                                                            </c:forEach>--%>
+<%--                                                                        </c:when>--%>
+<%--                                                                    </c:choose>--%>
+
 																<i class="active ion-android-star"></i>
 																<i class="active ion-android-star"></i>
 																<i class="active ion-android-star"></i>
@@ -953,6 +982,7 @@
 <!--=============================================
 =            footer area         =
 =============================================-->
+
 
 <jsp:include page="include/foot.jsp"/>
 
