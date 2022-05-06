@@ -16,8 +16,8 @@ public class OrderDetailService {
     return orderDetailRepository.findAll();
   }
 
-  public OrderDetail findById(Long orderDetailId) {
-    return orderDetailRepository.findById(orderDetailId).get();
+  public OrderDetail findByProductIdAndOrderId(Long productId, Long orderId){
+    return orderDetailRepository.findByProductIdAndOrderId(productId, orderId);
   }
 
   public void save(OrderDetail entity) {

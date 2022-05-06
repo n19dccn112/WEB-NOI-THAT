@@ -15,7 +15,7 @@
 <html class="no-js" lang="zxx">
 
 
-<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/element-team-member.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:08:08 GMT -->
+<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/products.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:08:08 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <jsp:include page="include/head.jsp"/>
@@ -187,7 +187,7 @@
                                     <ul class="dl-submenu">
                                         <li><a href="element-product-categories">Product Categories</a></li>
                                         <li><a href="element-product-sliders">Product Sliders</a></li>
-                                        <li><a href="element-product-tabs">Product Tabs</a></li>
+                                        <li><a href="update-product">Product Tabs</a></li>
                                         <li><a href="element-product-widget">Product Widget</a></li>
                                         <li><a href="element-recent-products">Recent Products</a></li>
                                     </ul>
@@ -204,9 +204,9 @@
                                 <li class=""><a href="#">Theming</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-blog-posts">Blog Posts</a></li>
-                                        <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
+                                        <li><a href="product/add">Mailchimp Form</a></li>
                                         <li><a href="element-icon-box">Icon Box</a></li>
-                                        <li><a href="element-team-member">Team Member</a></li>
+                                        <li><a href="products">Team Member</a></li>
                                         <li><a href="element-instagram">Instagram</a></li>
 
                                     </ul>
@@ -313,13 +313,13 @@
 
 <div class="container main-content list">
 
-    <form href="element-team-member/${products.productName}" style="all: unset" class="form-inline float-sm-right">
+    <form href="search-products/${products.productName}" style="all: unset" class="form-inline float-sm-right">
         <input type="text" class="form-control" placeholder="Type product name" name="keyword" required>
         <button type="submit" class="btn btn-outline-info">Search</button>
     </form>
 
     <div class="row">
-        <a href="element-mailchimp-form" class="btn btn-outline-success">Add Product</a>
+        <a href="product/add" class="btn btn-outline-success">Add Product</a>
     </div>
 
     <div class="row">
@@ -351,10 +351,10 @@
                     <td>${s.productRemain}</td>
                     <td>${s.category.categoryName}</td>
                     <td align="center">
-                        <a href="update/${s.productId}"><em class="fa fa-pencil"></em></a>
+                        <a href="update/${s.productId}" class="btn btn-outline-warning"><em class="fa fa-pencil"></em></a>
                     </td>
                     <td align="center">
-                        <a href="element-team-member/${s.productId}"
+                        <a href="dlt-products/${s.productId}"
                            onclick="return confirm('Deleted product cannot be restored. ' +
                             'Are you sure you want to delete the product?')"
                            class="btn btn-outline-danger"><em class="fa fa-trash"></em></a>
@@ -364,11 +364,6 @@
             </tbody>
         </table>
     </div>
-    <script type="text/javascript">
-        function clearFilter(){
-            window.location = '/';
-        }
-    </script>
 
 
     <!--==== End Admin ====-->
@@ -475,122 +470,7 @@
 
             <!--=======  offcanvas wishlist content container  =======-->
 
-            <div class="offcanvas-cart-content-container">
-                <h3 class="cart-title">Wishlist</h3>
-
-                <div class="cart-product-wrapper">
-                    <div class="cart-product-container  ps-scroll">
-                        <!--=======  single cart product  =======-->
-
-                        <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                            <div class="image">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                                <p><span class="main-price discounted">$200.00</span> <span
-                                        class="discounted-price">$180.00</span></p>
-
-                            </div>
-                        </div>
-
-                        <!--=======  End of single cart product  =======-->
-                        <!--=======  single cart product  =======-->
-
-                        <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                            <div class="image">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                                <p><span class="main-price discounted">$300.00</span> <span
-                                        class="discounted-price">$220.00</span></p>
-
-                            </div>
-                        </div>
-
-                        <!--=======  End of single cart product  =======-->
-                        <!--=======  single cart product  =======-->
-
-                        <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                            <div class="image">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                                <p><span class="main-price discounted">$100.00</span> <span
-                                        class="discounted-price">$80.00</span></p>
-
-                            </div>
-                        </div>
-
-                        <!--=======  End of single cart product  =======-->
-                        <!--=======  single cart product  =======-->
-
-                        <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                            <div class="image">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                                <p><span class="main-price discounted">$200.00</span> <span
-                                        class="discounted-price">$180.00</span></p>
-
-                            </div>
-                        </div>
-
-                        <!--=======  End of single cart product  =======-->
-                        <!--=======  single cart product  =======-->
-
-                        <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                            <div class="image">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                                <p><span class="main-price discounted">$200.00</span> <span
-                                        class="discounted-price">$180.00</span></p>
-
-                            </div>
-                        </div>
-
-                        <!--=======  End of single cart product  =======-->
-                    </div>
-
-                    <!--=======  cart buttons  =======-->
-
-                    <div class="cart-buttons">
-                        <a href="shop-wishlist">view wishlist</a>
-                    </div>
-
-                    <!--=======  End of cart buttons  =======-->
-                </div>
-            </div>
+            <jsp:include page="include/cart.jsp"/>
 
             <!--=======  End of offcanvas wishlist content container   =======-->
         </div>
@@ -615,139 +495,7 @@
 
             <!--=======  offcanvas cart content container  =======-->
 
-            <div class="offcanvas-cart-content-container">
-                <h3 class="cart-title">Cart</h3>
-
-                <div class="cart-product-wrapper">
-                    <div class="cart-product-container  ps-scroll">
-                        <!--=======  single cart product  =======-->
-
-                        <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                            <div class="image">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span>
-                                </p>
-
-                            </div>
-                        </div>
-
-                        <!--=======  End of single cart product  =======-->
-                        <!--=======  single cart product  =======-->
-
-                        <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                            <div class="image">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$220.00</span>
-                                </p>
-
-                            </div>
-                        </div>
-
-                        <!--=======  End of single cart product  =======-->
-                        <!--=======  single cart product  =======-->
-
-                        <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                            <div class="image">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$80.00</span></p>
-
-                            </div>
-                        </div>
-
-                        <!--=======  End of single cart product  =======-->
-                        <!--=======  single cart product  =======-->
-
-                        <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                            <div class="image">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span>
-                                </p>
-
-                            </div>
-                        </div>
-
-                        <!--=======  End of single cart product  =======-->
-                        <!--=======  single cart product  =======-->
-
-                        <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                            <div class="image">
-                                <a href="shop-product-basic">
-                                    <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                                </a>
-                            </div>
-                            <div class="content">
-                                <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                                <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span>
-                                </p>
-
-                            </div>
-                        </div>
-
-                        <!--=======  End of single cart product  =======-->
-                    </div>
-
-                    <!--=======  subtotal calculation  =======-->
-
-                    <p class="cart-subtotal">
-                        <span class="subtotal-title">Subtotal:</span>
-                        <span class="subtotal-amount">$200.00</span>
-                    </p>
-
-                    <!--=======  End of subtotal calculation  =======-->
-
-                    <!--=======  cart buttons  =======-->
-
-                    <div class="cart-buttons">
-                        <a href="shop-cart">view cart</a>
-                        <a href="shop-checkout">checkout</a>
-                    </div>
-
-                    <!--=======  End of cart buttons  =======-->
-
-                    <!--=======  free shipping text  =======-->
-
-                    <p class="free-shipping-text">
-                        Free Shipping on All Orders Over $100!
-                    </p>
-
-                    <!--=======  End of free shipping text  =======-->
-                </div>
-            </div>
+            <jsp:include page="include/cart.jsp"/>
 
             <!--=======  End of offcanvas cart content container   =======-->
         </div>
@@ -779,7 +527,7 @@
                 </form>
             </div>
             <div class="search-hint">
-                <span># Hit enter to search or ESC to close</span>
+                <span># Enter to search or ESC to close</span>
             </div>
         </div>
 
@@ -811,8 +559,15 @@
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 
+    <script type="text/javascript">
+        function clearFilter(){
+            window.location = '/';
+        }
+    </script>
+
+
 </body>
 
 
-<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/element-team-member.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:08:16 GMT -->
+<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/products.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:08:16 GMT -->
 </html>

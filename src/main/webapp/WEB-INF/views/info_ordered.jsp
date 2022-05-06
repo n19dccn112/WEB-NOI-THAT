@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
-  User: T440
+  User: PC
   Date: 09/01/2022
-  Time: 17:13
+  Time: 5:22 CH
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page language="java" contentType="text/html; charset=utf-8" %>
@@ -11,11 +11,10 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
-
 <html class="no-js" lang="zxx">
 
 
-<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/compare.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:08:25 GMT -->
+<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/shop-checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:07:50 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <jsp:include page="include/head.jsp"/>
@@ -187,7 +186,7 @@
                                     <ul class="dl-submenu">
                                         <li><a href="element-product-categories">Product Categories</a></li>
                                         <li><a href="element-product-sliders">Product Sliders</a></li>
-                                        <li><a href="element-product-tabs">Product Tabs</a></li>
+                                        <li><a href="update-product">Product Tabs</a></li>
                                         <li><a href="element-product-widget">Product Widget</a></li>
                                         <li><a href="element-recent-products">Recent Products</a></li>
                                     </ul>
@@ -204,9 +203,9 @@
                                 <li class=""><a href="#">Theming</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-blog-posts">Blog Posts</a></li>
-                                        <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
+                                        <li><a href="product/add">Mailchimp Form</a></li>
                                         <li><a href="element-icon-box">Icon Box</a></li>
-                                        <li><a href="element-team-member">Team Member</a></li>
+                                        <li><a href="products">Team Member</a></li>
                                         <li><a href="element-instagram">Instagram</a></li>
 
                                     </ul>
@@ -294,7 +293,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="breadcrumb-title">Compare</h1>
+                <h1 class="breadcrumb-title">Checkout</h1>
 
                 <!--=======  breadcrumb list  =======-->
 
@@ -310,96 +309,85 @@
 <!--=======  End of breadcrumb area =======-->
 
 <!--=============================================
-=            compare page content         =
+=            checkout page content         =
 =============================================-->
-
-<div class="compare-area mb-130 mb-md-70 mb-sm-70 mb-xs-70 mb-xxs-70">
+<div class="checkout-page-area mb-130">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <!-- Compare Page Content Start -->
-                <div class="compare-page-content-wrap">
-                    <div class="compare-table table-responsive">
-                        <table class="table table-bordered mb-0">
-                            <tbody>
-                            <tr>
-                                <th class="first-column">Product Info</th>
-                                <td class="product-image-title">
-                                    <div class="compare-remove">
-                                        <a href="#"><i class="fa fa-times"></i>remove</a>
+            <div class="col-12">
+                <div class="lezada-form">
+                    <!-- Checkout Form s-->
+                    <form action="#" class="checkout-form">
+                        <div class="row row-40">
+
+                            <div class="col-lg-7 mb-20">
+
+                                <!-- Billing Address -->
+                                <div id="billing-form" class="mb-40">
+                                    <h4 class="checkout-title">Your Order</h4>
+                                    <h4>${message}</h4>
+
+                                    <div class="row">
+
+                                        <div class="col-md-6 col-12 mb-20">
+                                            <label>First Name*</label>
+                                            <input type="text" placeholder="${listOrder[0].firstName}">
+                                        </div>
+
+                                        <div class="col-md-6 col-12 mb-20">
+                                            <label>Last Name*</label>
+                                            <input type="text" placeholder="${listOrder[0].lastName}">
+                                        </div>
+
+                                        <div class="col-md-6 col-12 mb-20">
+                                            <label>Phone no*</label>
+                                            <input type="text" placeholder="${listOrder[0].phone}">
+                                        </div>
+
+                                        <div class="col-12 mb-20">
+                                            <label>Address*</label>
+                                            <input type="text" placeholder="${listOrder[0].address}">
+                                        </div>
+
                                     </div>
-                                    <a href="shop-product-basic" class="image">
-                                        <img class="img-fluid" src="assets/images/products/cloth-1-1-600x800.jpg"
-                                             alt="Compare Product">
-                                    </a>
-                                    <div class="pro-title">
-                                        <a href="shop-product-basic">High Collar Jacket</a>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-5">
+                                <div class="row">
+
+                                    <!-- Cart Total -->
+                                    <div class="col-12 mb-60">
+
+                                        <h4 class="checkout-title">Cart Total</h4>
+
+                                        <div class="checkout-cart-total">
+                                            <h4>Product <span>Total</span></h4>
+                                            <ul>
+                                                <c:forEach var="order" items="${listOrder}">
+                                                    <li>${order.name} X ${order.amount}
+                                                        <span>$${order.price*order.amount}</span></li>
+                                                </c:forEach>
+                                            </ul>
+                                            <h4>Grand Total <span>$${totalOrder}</span></h4>
+
+                                        </div>
                                     </div>
-                                    <div class="compare-btn">
-                                        <a href="#">Add to cart</a>
-                                    </div>
-                                </td>
-                                <td class="product-image-title">
-                                    <div class="compare-remove">
-                                        <a href="#"><i class="fa fa-times"></i>remove</a>
-                                    </div>
-                                    <a href="shop-product-basic" class="image">
-                                        <img class="img-fluid" src="assets/images/products/cloth-1-2-600x800.jpg"
-                                             alt="Compare Product">
-                                    </a>
-                                    <div class="pro-title">
-                                        <a href="shop-product-basic">Off-shoulder striped dress</a>
-                                    </div>
-                                    <div class="compare-btn">
-                                        <a href="#">Add to cart</a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="first-column">Price</th>
-                                <td class="pro-price">$295</td>
-                                <td class="pro-price">$275</td>
-                            </tr>
-                            <tr>
-                                <th class="first-column">Sku</th>
-                                <td class="pro-sku">REF. LA-103</td>
-                                <td class="pro-sku">REF. LA-101</td>
-                            </tr>
-                            <tr>
-                                <th class="first-column">Description</th>
-                                <td class="pro-desc">
-                                    <p>Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas…</p>
-                                </td>
-                                <td class="pro-desc">
-                                    <p>Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas…</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th class="first-column">Availability</th>
-                                <td class="pro-stock">In Stock</td>
-                                <td class="pro-stock">in stock</td>
-                            </tr>
-                            <tr>
-                                <th class="first-column">Weight</th>
-                                <td class="pro-weight">N/A</td>
-                                <td class="pro-weight">N/A</td>
-                            </tr>
-                            <tr>
-                                <th class="first-column">Dimensions</th>
-                                <td class="pro-dimensions">N/A</td>
-                                <td class="pro-dimensions">N/A</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
                 </div>
-                <!-- Compare Page Content End -->
             </div>
         </div>
     </div>
 </div>
 
-<!--=====  End of compare page content  ======-->
+<!--=====  End of checkout page content  ======-->
 
 
 <!--=============================================
@@ -502,122 +490,7 @@
 
         <!--=======  offcanvas wishlist content container  =======-->
 
-        <div class="offcanvas-cart-content-container">
-            <h3 class="cart-title">Wishlist</h3>
-
-            <div class="cart-product-wrapper">
-                <div class="cart-product-container  ps-scroll">
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span
-                                    class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="main-price discounted">$300.00</span> <span
-                                    class="discounted-price">$220.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$100.00</span> <span
-                                    class="discounted-price">$80.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span
-                                    class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="main-price discounted">$200.00</span> <span
-                                    class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                </div>
-
-                <!--=======  cart buttons  =======-->
-
-                <div class="cart-buttons">
-                    <a href="shop-wishlist">view wishlist</a>
-                </div>
-
-                <!--=======  End of cart buttons  =======-->
-            </div>
-        </div>
+        <jsp:include page="include/cart.jsp"/>
 
         <!--=======  End of offcanvas wishlist content container   =======-->
     </div>
@@ -642,135 +515,7 @@
 
         <!--=======  offcanvas cart content container  =======-->
 
-        <div class="offcanvas-cart-content-container">
-            <h3 class="cart-title">Cart</h3>
-
-            <div class="cart-product-wrapper">
-                <div class="cart-product-container  ps-scroll">
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dining Chair</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$220.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/03.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$80.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/01.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Dark Brown Leather Watch</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                    <!--=======  single cart product  =======-->
-
-                    <div class="single-cart-product">
-							<span class="cart-close-icon">
-								<a href="#"><i class="ti-close"></i></a>
-							</span>
-                        <div class="image">
-                            <a href="shop-product-basic">
-                                <img src="assets/images/cart-product-image/02.jpg" class="img-fluid" alt="">
-                            </a>
-                        </div>
-                        <div class="content">
-                            <h5><a href="shop-product-basic">Creative Wooden Stand</a></h5>
-                            <p><span class="cart-count">2 x </span> <span class="discounted-price">$180.00</span></p>
-
-                        </div>
-                    </div>
-
-                    <!--=======  End of single cart product  =======-->
-                </div>
-
-                <!--=======  subtotal calculation  =======-->
-
-                <p class="cart-subtotal">
-                    <span class="subtotal-title">Subtotal:</span>
-                    <span class="subtotal-amount">$200.00</span>
-                </p>
-
-                <!--=======  End of subtotal calculation  =======-->
-
-                <!--=======  cart buttons  =======-->
-
-                <div class="cart-buttons">
-                    <a href="shop-cart">view cart</a>
-                    <a href="shop-checkout">checkout</a>
-                </div>
-
-                <!--=======  End of cart buttons  =======-->
-
-                <!--=======  free shipping text  =======-->
-
-                <p class="free-shipping-text">
-                    Free Shipping on All Orders Over $100!
-                </p>
-
-                <!--=======  End of free shipping text  =======-->
-            </div>
-        </div>
+        <jsp:include page="include/cart.jsp"/>
 
         <!--=======  End of offcanvas cart content container   =======-->
     </div>
@@ -837,5 +582,5 @@
 </body>
 
 
-<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/compare.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:08:25 GMT -->
+<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/shop-checkout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:07:50 GMT -->
 </html>
