@@ -313,7 +313,7 @@
 
 <div class="container main-content list">
 
-    <form href="products/${products.productName}" style="all: unset" class="form-inline float-sm-right">
+    <form href="search-products/${products.productName}" style="all: unset" class="form-inline float-sm-right">
         <input type="text" class="form-control" placeholder="Type product name" name="keyword" required>
         <button type="submit" class="btn btn-outline-info">Search</button>
     </form>
@@ -329,7 +329,7 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Description</th>
-<%--                <th>Image</th>--%>
+                <th>Image</th>
                 <th>Price</th>
                 <th>Remain</th>
                 <th>CateName</th>
@@ -351,10 +351,10 @@
                     <td>${s.productRemain}</td>
                     <td>${s.category.categoryName}</td>
                     <td align="center">
-                        <a href="update/${s.productId}"><em class="fa fa-pencil"></em></a>
+                        <a href="update/${s.productId}" class="btn btn-outline-warning"><em class="fa fa-pencil"></em></a>
                     </td>
                     <td align="center">
-                        <a href="products/${s.productId}"
+                        <a href="dlt-products/${s.productId}"
                            onclick="return confirm('Deleted product cannot be restored. ' +
                             'Are you sure you want to delete the product?')"
                            class="btn btn-outline-danger"><em class="fa fa-trash"></em></a>
@@ -527,7 +527,7 @@
                 </form>
             </div>
             <div class="search-hint">
-                <span># Hit enter to search or ESC to close</span>
+                <span># Enter to search or ESC to close</span>
             </div>
         </div>
 

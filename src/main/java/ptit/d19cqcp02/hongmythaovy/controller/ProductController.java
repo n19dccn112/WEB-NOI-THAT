@@ -70,24 +70,25 @@ public class ProductController {
         productService.save(product);
         return "redirect:products";
     }
-    @GetMapping(value = "products/{productId}")
+    @RequestMapping(value = "dlt-products/{productId}")
     public String delete(@PathVariable Long productId, Model model){
         productService.delete(productId);
         model.addAttribute("product", productService.findAll());
         return "products";
     }
 
-    @RequestMapping("products/{productName}")
+    @RequestMapping("search-products/{productName}")
     public String search(ModelMap model, @RequestParam(name = "productName", required = false) String productName){
+
         List<Product> list = null;
 
         if (StringUtils.hasText(productName)){
-//            model.addAttribute("product", productService.findByProductNameContaining(productName));
+//          model.addAttribute("product", productService.findByProductNameContaining(productName));
             list = productService.findByProductNameContaining(productName);
         }
         else
         {
-//            model.addAttribute("product", productService.findAll());
+//          model.addAttribute("product", productService.findAll());
             list = productService.findAll();
         }
         model.addAttribute("products", list);
