@@ -58,4 +58,12 @@ public class AuthController {
     service.register(username,password);
     return "shop-customer-login";
   }
+  @GetMapping("logout")
+  public String shopCustomerLogout(HttpServletRequest request) {
+    HttpSession session = request.getSession();
+    // log.info("email:"+user.getEmail());
+    session.removeAttribute(HttpHeaders.AUTHORIZATION);
+    session.removeAttribute("currentUserId");
+    return "redirect:/login";
+  }
 }
