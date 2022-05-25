@@ -290,7 +290,7 @@
             <div class="col-lg-6">
                 <div class="nothing-found-content">
                     <h1>Oops!</h1>
-                    <h1 class="mb-50">Page not found!</h1>
+                    <h1 class="mb-50">Error!</h1>
                     <p class="direction-page">PLEASE GO BACK TO <a href="index-2">homepage</a></p>
                 </div>
             </div>

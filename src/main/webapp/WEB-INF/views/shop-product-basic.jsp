@@ -172,7 +172,7 @@
                                         <li><a href="shop-checkout">Checkout</a></li>
                                         <li><a href="shop-order-tracking">Order Tracking</a></li>
                                         <li><a href="shop-wishlist">Wishlist</a></li>
-                                        <li><a href="shop-customer-login">Customer Login</a></li>
+                                        <li><a href="login">Customer Login</a></li>
                                         <li><a href="shop-by-brand">Shop by Brand</a></li>
 
                                     </ul>
@@ -623,7 +623,7 @@
 
                                     <div class="shop-product__block shop-product__block--quantity mb-40">
                                         <a class="lezada-button lezada-button--medium"
-                                           href="cart?action=add&&orderId=${listOrder[0].orderId}&&productId=${product.productId}">add
+                                           href="cart?action=add&&productId=${product.productId}">add
                                             to cart</a>
                                     </div>
 

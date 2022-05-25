@@ -172,7 +172,7 @@
                                         <li><a href="shop-checkout">Checkout</a></li>
                                         <li><a href="shop-order-tracking">Order Tracking</a></li>
                                         <li><a href="shop-wishlist">Wishlist</a></li>
-                                        <li><a href="shop-customer-login">Customer Login</a></li>
+                                        <li><a href="login">Customer Login</a></li>
                                         <li><a href="shop-by-brand">Shop by Brand</a></li>
 
                                     </ul>
@@ -325,7 +325,7 @@
                             <a href="#orders" data-toggle="tab"> Orders</a>
                             <a href="#address-edit" data-toggle="tab"> address</a>
                             <a href="#account-info" data-toggle="tab"> Account Details</a>
-                            <a href="shop-customer-login"> Logout</a>
+                            <a href="logout"> Logout</a>
                         </div>
                     </div>
                     <!-- My Account Tab Menu End -->
@@ -339,7 +339,7 @@
                                     <div class="welcome">
                                         <p>Hello, <strong>${listOrder[0].lastName} ${listOrder[0].firstName}</strong>
                                             (If Not <strong>${listOrder[0].firstName} !</strong><a
-                                                    href="shop-customer-login" class="logout"> Logout</a>)</p>
+                                                    href="login" class="logout"> Logout</a>)</p>
                                     </div>
 
                                     <p class="mb-0">From your account dashboard. you can easily check & view your recent

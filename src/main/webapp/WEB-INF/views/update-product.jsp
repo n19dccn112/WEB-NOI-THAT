@@ -174,7 +174,7 @@
                                         <li><a href="shop-checkout">Checkout</a></li>
                                         <li><a href="shop-order-tracking">Order Tracking</a></li>
                                         <li><a href="shop-wishlist">Wishlist</a></li>
-                                        <li><a href="shop-customer-login">Customer Login</a></li>
+                                        <li><a href="login">Customer Login</a></li>
                                         <li><a href="shop-by-brand">Shop by Brand</a></li>
 
                                     </ul>
@@ -513,7 +513,7 @@
                                 <div class="form-group">
                                     <button class="btn btn-success" type="submit" value="Update">Update
                                     </button>
-                                    <button class="btn btn-warning" type="reset" value="Cancel">Cancel
+                                    <button class="btn btn-warning" href="products" value="Cancel">Reset
                                     </button>
                                 </div>
                             </form:form>

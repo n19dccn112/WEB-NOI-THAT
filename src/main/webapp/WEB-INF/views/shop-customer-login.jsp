@@ -171,7 +171,7 @@
                                         <li><a href="shop-checkout">Checkout</a></li>
                                         <li><a href="shop-order-tracking">Order Tracking</a></li>
                                         <li><a href="shop-wishlist">Wishlist</a></li>
-                                        <li><a href="shop-customer-login">Customer Login</a></li>
+                                        <li><a href="login">Customer Login</a></li>
                                         <li><a href="shop-by-brand">Shop by Brand</a></li>
 
                                     </ul>
