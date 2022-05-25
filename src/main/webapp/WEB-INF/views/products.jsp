@@ -329,7 +329,7 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Description</th>
-<%--                <th>Image</th>--%>
+                <th>Image</th>
                 <th>Price</th>
                 <th>Remain</th>
                 <th>CateName</th>

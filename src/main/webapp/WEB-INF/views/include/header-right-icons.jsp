@@ -24,7 +24,7 @@
     <!--=======  single-icon  =======-->
 
     <div class="single-icon user-login">
-        <a href="login">
+        <a href="my-account">
             <i class="ion-android-person"></i>
         </a>
     </div>

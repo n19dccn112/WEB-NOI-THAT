@@ -513,7 +513,7 @@
                                 <div class="form-group">
                                     <button class="btn btn-success" type="submit" value="Update">Update
                                     </button>
-                                    <button class="btn btn-warning" type="reset" value="Cancel">Cancel
+                                    <button class="btn btn-warning" href="products" value="Cancel">Reset
                                     </button>
                                 </div>
                             </form:form>

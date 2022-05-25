@@ -11,7 +11,7 @@ import ptit.d19cqcp02.hongmythaovy.service.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.math.BigDecimal;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -24,6 +24,15 @@ public class CartController {
 
     @Autowired
     private OrderDetailService orderDetailService;
+
+    @Autowired
+    private UserService userService;
+
+    @Autowired
+    private CategoryService categoryService;
+
+    @Autowired
+    private UserDetailService userDetailService;
 
     @GetMapping("cart")
     public String cart(HttpServletRequest request) {
@@ -45,11 +54,27 @@ public class CartController {
         return "info_ordered";
     }
 
-    @GetMapping(value = "cart", params = {"action", "productId", "orderId"})
+    @GetMapping(value = "cart", params = {"action", "productId"})
     public String deleteCart(HttpServletRequest request,
                            @RequestParam Long productId,
-                           @RequestParam Long orderId,
                            @RequestParam String action ) {
+        HttpSession session = request.getSession();
+        Long userId = (Long) session.getAttribute("currentUserId");
+        List<OrderDetailView> listOrder = orderService.findAllOrderByUserId(userId);
+        Long orderId;
+        if (listOrder.size() == 0){
+            User user = userService.findById(userId);
+            UserDetail userDetail = userDetailService.findByUserId(userId);
+            Order order = new Order();
+            order.setOrderAddress(userDetail.getAddress());
+            order.setOrderStatus(OrderStatus.ON_CART);
+            order.setOrderTime(new Date());
+            order.setUser(user);
+            orderService.save(order);
+            orderId = order.getOrderId();
+        }
+        else
+            orderId = listOrder.get(0).getOrderId();
         if(action.equals("delete")){
             orderDetailService.delete(orderDetailService.findByProductIdAndOrderId(productId, orderId));
             return "redirect:cart";

@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
-  User: n19dc
-  Date: 1/9/2022
-  Time: 3:32 PM
+  User: T440
+  Date: 09/01/2022
+  Time: 17:10
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page language="java" contentType="text/html; charset=utf-8" %>
@@ -11,22 +11,23 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+
 <html class="no-js" lang="zxx">
 
 
-<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:00:23 GMT -->
+<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/404.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:08:25 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <jsp:include page="include/head.jsp"/>
 
-<body id="newsletter-popup-body">
+<body>
 
 
 <!--=============================================
-=            Header without topbar         =
+=            Header offcanvas about         =
 =============================================-->
 
-<header class="header header-without-topbar header-sticky">
+<header class="header header-transparent-background header-transparent-background--black header-sticky">
 
     <!--=======  header bottom  =======-->
 
@@ -42,11 +43,11 @@
 
                 <div class="logo-with-offcanvas d-flex">
 
-
                     <!--=======  logo   =======-->
 
                     <div class="logo">
                         <a href="index-2">
+                            <img src="assets/images/logo-alt.png" class="img-fluid" alt="">
                             <img src="assets/images/logo.png" class="img-fluid" alt="">
                         </a>
                     </div>
@@ -169,7 +170,6 @@
                                     </ul>
                                 </li>
 
-
                             </ul>
                         </li>
                         <li><a href="#">Elements</a>
@@ -195,9 +195,9 @@
                                 <li class=""><a href="#">Theming</a>
                                     <ul class="dl-submenu">
                                         <li><a href="element-blog-posts">Blog Posts</a></li>
-                                        <li><a href="element-mailchimp-form">Mailchimp Form</a></li>
+                                        <li><a href="product/add">Mailchimp Form</a></li>
                                         <li><a href="element-icon-box">Icon Box</a></li>
-                                        <li><a href="element-team-member">Team Member</a></li>
+                                        <li><a href="products">Team Member</a></li>
                                         <li><a href="element-instagram">Instagram</a></li>
 
                                     </ul>
@@ -270,336 +270,40 @@
 
             <!-- Mobile Navigation End Here -->
 
+
         </div>
     </div>
 
     <!--=======  End of header bottom  =======-->
 </header>
 
-<!--===== End of Header without topbar ======-->
+<!--===== End of Header offcanvas about ======-->
+
 
 <!--=============================================
-=            slider area         =
+=            page content         =
 =============================================-->
 
-<div class="slider-area mb-80 mb-md-60 mb-sm-60">
-
-    <!--=======  slider-wrapper  =======-->
-
-    <div class="lezada-slick-slider decor-slider-wrapper" data-slick-setting='{
-				"slidesToShow": 1,
-				"slidesToScroll": 1,
-				"arrows": true,
-				"dots": false,
-				"centerMode": true,
-				"centerPadding": "22%",
-				"autoplay": true,
-				"autoplaySpeed": 5000,
-				"speed": 1000,
-				"prevArrow": {"buttonClass": "slick-prev", "iconClass": "ti-angle-left" },
-				"nextArrow": {"buttonClass": "slick-next", "iconClass": "ti-angle-right" }
-		}' data-slick-responsive='[
-				{"breakpoint":1501, "settings": {"slidesToShow": 1, "arrows": true, "centerPadding": "160px"} },
-				{"breakpoint":1199, "settings": {"slidesToShow": 1, "arrows": true, "centerMode": false} },
-				{"breakpoint":991, "settings": {"slidesToShow": 1,"slidesToScroll": 1, "arrows": true, "centerMode": false} },
-				{"breakpoint":767, "settings": {"slidesToShow": 1, "slidesToScroll": 1, "arrows": true, "centerMode": false} },
-				{"breakpoint":575, "settings": {"slidesToShow": 1, "slidesToScroll": 1,  "arrows": true, "centerMode": false} },
-				{"breakpoint":479, "settings": {"slidesToShow": 1, "slidesToScroll": 1, "arrows": true, "centerMode": false} }
-		]'>
-
-
-        <!--=======  single slider  =======-->
-        <div class="decor-single-slider">
-            <div class="decor-single-slider-content">
-                <!--=======  slider image  =======-->
-
-                <div class="slider-image">
-                    <img src="assets/images/slider/banner-carousel-1.jpg" class="img-fluid" alt="">
-
-                </div>
-
-                <!--=======  End of slider image  =======-->
-
-                <!--=======  slider content  =======-->
-
-                <div class="slider-content">
-                    <div class="color-title color-title--blue">
-                        accessories
-                    </div>
-
-                    <div class="main-title">
-                        Bottle Grinder, <br>
-                        Small, 2-Piecehe
-                    </div>
-
-                    <a href="shop-left-sidebar" class="lezada-button lezada-button--medium">shop now</a>
-                </div>
-
-                <!--=======  End of slider content  =======-->
-            </div>
-        </div>
-
-        <!--=======  End of single slider  =======-->
-
-        <!--=======  single slider  =======-->
-        <div class="decor-single-slider">
-            <div class="decor-single-slider-content">
-                <!--=======  slider image  =======-->
-
-                <div class="slider-image">
-                    <img src="assets/images/slider/banner-carousel-2.jpg" class="img-fluid" alt="">
-
-                </div>
-
-                <!--=======  End of slider image  =======-->
-
-                <!--=======  slider content  =======-->
-
-                <div class="slider-content">
-                    <div class="color-title color-title--brown">
-                        handmade
-                    </div>
-
-                    <div class="main-title">
-                        Large, <br>
-                        Food board
-                    </div>
-
-                    <a href="shop-left-sidebar" class="lezada-button lezada-button--medium">shop now</a>
-                </div>
-
-                <!--=======  End of slider content  =======-->
-            </div>
-        </div>
-
-        <!--=======  End of single slider  =======-->
-
-        <!--=======  single slider  =======-->
-        <div class="decor-single-slider">
-            <div class="decor-single-slider-content">
-                <!--=======  slider image  =======-->
-
-                <div class="slider-image">
-                    <img src="assets/images/slider/banner-carousel-3.jpg" class="img-fluid" alt="">
-
-                </div>
-
-                <!--=======  End of slider image  =======-->
-
-                <!--=======  slider content  =======-->
-
-                <div class="slider-content">
-                    <div class="color-title color-title--green">
-                        decor
-                    </div>
-
-                    <div class="main-title">
-                        Tribeca Hubert <br>
-                        Pendant
-                    </div>
-
-                    <a href="shop-left-sidebar" class="lezada-button lezada-button--medium">shop now</a>
-                </div>
-
-                <!--=======  End of slider content  =======-->
-            </div>
-        </div>
-        <!--=======  End of single slider  =======-->
-
-
-    </div>
-
-    <!--=======  End of slider-wrapper  =======-->
-</div>
-
-
-<!--=====  End of slider area  ======-->
-
-<!--=============================================
-=            tab product list area         =
-=============================================-->
-
-<div class="tab-product-list-area mb-25 mb-md-5 mb-sm-5">
+<div class="nothing-found-area bg-404">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-
-                <!--=======  tab product content  =======-->
-
-                <div class="tab-content" id="nav-tabContent2">
-                    <div class="tab-pane fade show active" id="product-series-1" role="tabpanel"
-                         aria-labelledby="product-tab-1">
-                        <div class="row">
-                            <c:forEach var="i" begin="1" end="12">
-                                <c:set var="numRan" value="${Math.random()*products.size()}"/>
-
-                                <!--======= single product =======-->
-                                <div class="col-12 col-lg-4 col-md-6 col-sm-6 mb-45">
-                                    <div class="single-product">
-                                        <!--=======  single product image  =======-->
-
-                                        <div class="single-product__image">
-                                            <a class="image-wrap" href="product/${products[numRan].productId}">
-                                                <img src="${products[numRan].images[0].imageUrl}"
-                                                     class="img-fluid" alt="">
-                                                <img src="${products[numRan].images[1].imageUrl}"
-                                                     class="img-fluid" alt="">
-                                            </a>
-
-                                        </div>
-
-                                        <!--=======  End of single product image  =======-->
-
-                                        <!--=======  single product content  =======-->
-
-                                        <div class="single-product__content">
-                                            <div class="title">
-                                                <h3><a href="shop-product-basic">${products[numRan].productName}</a>
-                                                </h3>
-                                                <a href="#">Add to cart</a>
-                                            </div>
-                                            <div class="price">
-                                                <span class="discounted-price">$${products[numRan].productPrice}</span>
-                                            </div>
-                                        </div>
-
-                                        <!--=======  End of single product content  =======-->
-                                    </div>
-                                </div>
-                                <!--======= End of single product =======-->
-                            </c:forEach>
-                        </div>
-                    </div>
+            <div class="col-lg-6">
+                <div class="nothing-found-content">
+                    <h1>Oops!</h1>
+                    <h1 class="mb-50">Error!</h1>
+                    <p class="direction-page">PLEASE GO BACK TO <a href="index-2">homepage</a></p>
                 </div>
-
-                <!--=======  End of tab product content  =======-->
             </div>
         </div>
     </div>
 </div>
 
-<!--=====  End of tab product list area  ======-->
-
-
-<!--=============================================
-=            footer banner section area        =
-=============================================-->
-
-<jsp:include page="include/foot.jsp"/>
-
-<!--=====  End of ad section area ======-->
-
-<!--=============================================
-=            footer three         =
-=============================================-->
-
-<div class="footer footer--three pt-90 pb-100">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9 col-md-12 footer-single-widget mb-md-50 mb-sm-50">
-                <!--=======  footer navigation  =======-->
-
-                <div class="footer-nav-container footer-nav-container--horizontal mb-20">
-                    <nav>
-                        <ul>
-                            <li><a href="#">ABOUT US</a></li>
-                            <li><a href="#">STORE LOCATION</a></li>
-                            <li><a href="#">CONTACT</a></li>
-                            <li><a href="#">SUPPORT</a></li>
-                            <li><a href="#">POLICY</a></li>
-                            <li><a href="#">FAQS</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <!--=======  End of footer navigation  =======-->
-
-                <!--=======  copyright text  =======-->
-
-                <div class="footer__copyright-text">
-                    <p>&copy; 2021 lezada. All Rights Reserved | <span>(+00) 123 567990</span> | contact@lezada.com</p>
-                </div>
-
-                <!--=======  End of copyright text  =======-->
-            </div>
-            <div class="col-lg-3 col-md-12 footer-single-widget text-left text-lg-right">
-
-                <!--=======  social icons  =======-->
-
-                <div class="social-icons--footer mb-20">
-                    <ul>
-                        <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
-                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!--=======  End of social icons  =======-->
-
-                <!--=======  payment icon  =======-->
-
-                <div class="payment-icon">
-                    <img src="assets/images/icons/pay.png" class="img-fluid" alt="">
-                </div>
-
-                <!--=======  End of payment icon  =======-->
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--=====  End of footer three  ======-->
+<!--=====  End of shop by page content  ======-->
 
 
 <!--=============================================
 =            overlay items         =
 =============================================-->
-
-<!--=======  newsletter overlay  =======-->
-
-<div class="newsletter-overlay-area">
-    <div class="newsletter-content newsletter-content-bg-1" id="newsletter-content">
-
-			<span class="close-icon" id="newsletter-popup-close-icon">
-				<a href="javascript:void(0)">
-					<i class="ion-android-close"></i>
-				</a>
-			</span>
-
-        <h2 class="mb-60">Hello, <span>Sign up</span> & <br>
-            <span>connect</span> to Lezada.
-        </h2>
-
-        <div class="mc-newsletter-form mc-newsletter-form--popup mb-90">
-            <form id="mc-form" class="mc-form">
-                <input type="email" placeholder="Your email address" required>
-                <button type="submit">SUBSCRIBE</button>
-            </form>
-        </div>
-
-        <!-- mailchimp-alerts Start -->
-
-        <div class="mailchimp-alerts">
-            <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-            <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-            <div class="mailchimp-error"></div><!-- mailchimp-error end -->
-        </div><!-- mailchimp-alerts end -->
-
-        <p>* Be the first to learn about our latest trends and get exclusive offers.</p>
-    </div>
-</div>
-
-<!--=======  End of newsletter overlay  =======-->
 
 <!--=======  about overlay  =======-->
 
@@ -648,20 +352,17 @@
                     <ul>
                         <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
                                data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               target="_blank"><i
-                                class="fa fa-twitter"></i></a></li>
+                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
                                data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               target="_blank"><i
-                                class="fa fa-facebook"></i></a></li>
+                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
                                data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               target="_blank"><i
-                                class="fa fa-instagram"></i></a></li>
+                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
                                data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                               target="_blank"><i
-                                class="fa fa-youtube-play"></i></a></li>
+                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -693,7 +394,6 @@
         <!--=======  offcanvas wishlist content container  =======-->
 
         <jsp:include page="include/cart.jsp"/>
-
         <!--=======  End of offcanvas wishlist content container   =======-->
     </div>
 </div>
@@ -718,7 +418,6 @@
         <!--=======  offcanvas cart content container  =======-->
 
         <jsp:include page="include/cart.jsp"/>
-
         <!--=======  End of offcanvas cart content container   =======-->
     </div>
 </div>
@@ -760,101 +459,12 @@
 
 <!--=====  End of overlay items  ======-->
 
-
-<!--=============================================
-    =            quick view         =
-    =============================================-->
-
-<div id="qv-1" class="cd-quick-view">
-    <div class="cd-slider-wrapper">
-        <ul class="cd-slider">
-            <li class="selected"><img src="assets/images/products/furniture-1-1-600x800.jpg" alt="Product 2"></li>
-            <li><img src="assets/images/products/furniture-1-2-600x800.jpg" alt="Product 1"></li>
-        </ul> <!-- cd-slider -->
-
-        <ul class="cd-slider-pagination">
-            <li class="active"><a href="#0">1</a></li>
-            <li><a href="#1">2</a></li>
-        </ul> <!-- cd-slider-pagination -->
-
-        <ul class="cd-slider-navigation">
-            <li><a class="cd-prev" href="#0">Prev</a></li>
-            <li><a class="cd-next" href="#0">Next</a></li>
-        </ul> <!-- cd-slider-navigation -->
-    </div> <!-- cd-slider-wrapper -->
-
-    <div class="lezada-item-info cd-item-info ps-scroll">
-
-        <h2 class="item-title">Wooden round table</h2>
-        <p class="price">
-            <span class="main-price discounted">$360.00</span>
-            <span class="discounted-price">$300.00</span>
-        </p>
-
-        <p class="description">Hurley Dry-Fit Chino Short. Men's chino short. Outseam Length: 19 Dri-FIT Technology
-            helps
-            keep you dry and comfortable. Made with sweat-wicking fabric. Fitted waist with belt loops. Button waist
-            with
-            zip fly provides a classic look and feel .</p>
-
-        <span class="quickview-title">Quantity:</span>
-        <div class="pro-qty d-inline-block mb-40">
-            <input type="text" value="1">
-        </div>
-
-        <div class="add-to-cart-btn mb-25">
-
-            <button class="lezada-button lezada-button--medium">add to cart</button>
-        </div>
-
-        <div class="quick-view-other-info">
-            <table>
-                <tr class="single-info">
-                    <td class="quickview-title">SKU:</td>
-                    <td class="quickview-value">12345</td>
-                </tr>
-                <tr class="single-info">
-                    <td class="quickview-title">Categories:</td>
-                    <td class="quickview-value">
-                        <a href="#">Fashion</a>,
-                        <a href="#">Men</a>,
-                        <a href="#">Sunglasses</a>
-                    </td>
-                </tr>
-                <tr class="single-info">
-                    <td class="quickview-title">Tags:</td>
-                    <td class="quickview-value">
-                        <a href="#">Fashion</a>,
-                        <a href="#">Men</a>
-                    </td>
-                </tr>
-                <tr class="single-info">
-                    <td class="quickview-title">Share on:</td>
-                    <td class="quickview-value">
-                        <ul class="quickview-social-icons">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-
-    </div> <!-- cd-item-info -->
-    <a href="#0" class="cd-close">Close</a>
-</div>
-
-<!--=====  End of quick view  ======-->
-
 <!-- scroll to top  -->
 <a href="#" class="scroll-top"></a>
 <!-- end of scroll to top -->
 
 <!-- JS
-    ============================================ -->
+============================================ -->
 <!-- jQuery JS -->
 <script src="assets/js/vendor/jquery.min.js"></script>
 
@@ -870,9 +480,8 @@
 <!-- Main JS -->
 <script src="assets/js/main.js"></script>
 
-
 </body>
 
 
-<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:02:46 GMT -->
+<!-- Mirrored from htmldemo.hasthemes.com/lezada/lezada/404.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jul 2021 08:08:25 GMT -->
 </html>

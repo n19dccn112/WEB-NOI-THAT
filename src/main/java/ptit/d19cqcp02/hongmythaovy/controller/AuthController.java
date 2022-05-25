@@ -1,5 +1,6 @@
 package ptit.d19cqcp02.hongmythaovy.controller;
 
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.stereotype.Controller;
@@ -17,14 +18,9 @@ import java.util.Map;
 @Controller
 @Slf4j
 @RequestMapping("")
+@AllArgsConstructor
 public class AuthController {
-
   private final UserService service;
-
-  public AuthController(UserService service) {
-
-    this.service = service;
-  }
 
   @GetMapping("login")
   public String shopCustomerLogin() {

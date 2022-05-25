@@ -788,20 +788,6 @@
                                         <div class="single-product__floating-badges">
                                         </div>
 
-                                        <div class="single-product__floating-icons">
-											<span class="wishlist"><a href="#" data-tippy="Add to wishlist" data-tippy-inertia="true"
-                                                                      data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                      data-tippy-theme="sharpborder" data-tippy-placement="left"><i
-                                                    class="ion-android-favorite-outline"></i></a></span>
-                                            <span class="compare"><a href="#" data-tippy="Compare" data-tippy-inertia="true"
-                                                                     data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                                                     data-tippy-theme="sharpborder" data-tippy-placement="left"><i
-                                                    class="ion-ios-shuffle-strong"></i></a></span>
-                                            <span class="quickview"><a class="cd-trigger" href="#qv-1" data-tippy="Quick View"
-                                                                       data-tippy-inertia="true" data-tippy-animation="shift-away" data-tippy-delay="50"
-                                                                       data-tippy-arrow="true" data-tippy-theme="sharpborder" data-tippy-placement="left"><i
-                                                    class="ion-ios-search-strong"></i></a></span>
-                                        </div>
                                     </div>
 
                                     <!--=======  End of single product image  =======-->
