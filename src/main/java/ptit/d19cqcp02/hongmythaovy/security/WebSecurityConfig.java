@@ -69,7 +69,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         // định dạng mẫu URL k bị phân quyền
         //assets - trang hình ảnh
         web.ignoring().antMatchers("/assets/**", "/login", "/signup", "/",
-                "/cate-**", "/product/**");
+                "/cate-**", "/product/**", "/fillMail", "/confirmEmail",
+                "/lostPassword", "/changePassword", "/finishChangePassword");
     }
 
     @Override

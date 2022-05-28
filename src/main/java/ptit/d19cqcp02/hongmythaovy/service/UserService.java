@@ -112,7 +112,6 @@ public class UserService {
     userDetailRepository.save(getDetail(user.getId()));
     return String.format("User {} registered successfully!", user.getId());
   }
-
   private Set<Role> getRole(Set<String> strRoles) {
     Set<Role> roles = new HashSet<>();
     if (strRoles == null) {

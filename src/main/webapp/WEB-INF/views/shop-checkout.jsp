@@ -356,7 +356,7 @@
 
                             <div class="col-lg-5">
                                 <div class="row">
-
+                                    ${message}
                                     <!-- Cart Total -->
                                     <div class="col-12 mb-60">
 
@@ -373,6 +373,7 @@
                                             <h4>Grand Total <span>$${totalOrder}</span></h4>
 
                                         </div>
+
                                         <div class="lezada-button lezada-button--medium mt-30">
                                             <a class="lezada-button lezada-button--medium"
                                                href="checkout">

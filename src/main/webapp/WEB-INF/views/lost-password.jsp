@@ -296,7 +296,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="breadcrumb-title">Update Product</h1>
+                <h1 class="breadcrumb-title">Lost Password</h1>
 
                 <!--=======  breadcrumb list  =======-->
 
@@ -361,161 +361,13 @@
                     <div class="panel">
                         <div class="panel-heading">
                         </div>
-                        <h3>${message}</h3>
-                        <div class="lezada-form contact-form">
-                            <form:form method="POST" id="formUpdate" modelAttribute="product"
-                                       action="update/${product.productId}">
-                                <div class="form-group">
-                                    <label>Product Name</label>
-                                    <form:input path="productName" type="text" id="productName" name="productName"/>
-                                    <form:errors path="productName" cssClass="alert-danger"/>
-                                </div>
-                                <br>
-
-                                <div class="form-group">
-                                    <label>Product Description</label>
-                                    <form:input path="productDescription" type="text" id="productDescription"
-                                                name="productDescription"/>
-                                    <form:errors path="productDescription" cssClass="alert-danger"/>
-                                </div>
-                                <br>
-
-                                <div class="form-group">
-                                    <label>Product Price</label>
-                                    <br>
-                                    <form:input path="productPrice" type="number" id="productPrice"
-                                                name="productPrice"/>
-                                    <form:errors path="productPrice" cssClass="alert-danger"/>
-                                </div>
-                                <br>
-
-                                <div class="form-group">
-                                    <label>Product Remain</label>
-                                    <br>
-                                    <form:input path="productRemain" type="number" id="productRemain"
-                                                name="productRemain"/>
-                                    <form:errors path="productRemain" cssClass="alert-danger"/>
-                                </div>
-                                <br>
-
-                                <div class="form-group">
-                                    <label>Category</label>
-                                    <br>
-                                    <form:select path="category.cateId">
-                                        <c:forEach var="c" items="${cates}">
-                                            <option value="${c.cateId}" ${product.category.cateId == c.cateId ? 'selected=""' : ''}>${c.categoryName}</option>
-                                        </c:forEach>
-                                    </form:select>
-                                </div>
-                                <br>
-                                <label>Feature</label><br>
-                                <c:forEach var="ft" items="${featuretypes}">
-                                    <div class="form-group  row ">
-                                        <label class="col-2">${ft.featureTypeName}</label><br><br>
-                                        <div class="row col-10">
-                                            <c:forEach var="f" items="${ft.features}">
-                                                <div class="col-md-4 shop-product-Color-list">
-                                                    <ul class="single-filter-widget--list single-filter-widget--list--color row">
-
-                                                        <input onchange="doOnchangeFeature(this, ${f.featureFeatureId});"
-                                                               type="checkbox" class="col-md-4" name="featureSpecific" value="featureSpecific"
-                                                                ${product.features.contains(f) ? 'checked' : ''}>
-                                                        <c:choose>
-                                                            <c:when test="${ft.featureTypeName.equals('Color')}">
-                                                                <li class="mb-0 pt-0 pb-0 mr-10 col-md-8">
-                                                                    <a class="active"><span
-                                                                        class="color-picker ${f.featureSpecific}"></span></a>
-                                                                </li>
-                                                                <br>
-                                                            </c:when>
-                                                            <c:otherwise>
-                                                                <span class="single-size">${f.featureSpecific}</span>
-                                                            </c:otherwise>
-                                                        </c:choose>
-
-                                                    </ul>
-                                                    <br>
-                                                </div>
-                                            </c:forEach>
-                                            <c:forEach var="f" items="${ft.features}">
-
-                                            </c:forEach>
-                                        </div>
-                                            <%--                                    <form:errors path="productRemain" cssClass="alert-danger"/>--%>
-                                    </div>
-                                </c:forEach>
-                                <br>
-
-                                <div class="form-group">
-                                    <div class="row">
-                                        <table class="table">
-                                            <thead>
-                                            <tr>
-                                                <th>Image</th>
-                                                <th>Delete</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <c:forEach var="i" items="${product.images}">
-                                                <tr>
-                                                    <td>
-                                                        <img width="100px"
-                                                             height="100px" src="${i.imageUrl}">
-                                                    </td>
-                                                    <c:choose>
-                                                        <c:when test="${product.images.size()>2}">
-                                                            <td>
-                                                                <a class="btn btn-danger" type="submit"
-                                                                   onclick="return confirm('Are you sure?')"
-                                                                   href="DeleteImage?imageId=${i.imageId}&&productId=${product.productId}">
-                                                                    Delete
-                                                                </a>
-                                                            </td>
-                                                        </c:when>
-                                                        <c:otherwise>
-                                                            <td>The number of photos is at least two</td>
-                                                        </c:otherwise>
-                                                    </c:choose>
-                                                </tr>
-                                            </c:forEach>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <div class="row">
-                                        <table class="table">
-                                            <thead>
-                                            <tr>
-                                                <th>
-                                                    <input type="text" placeholder="Please fill in the photo link"
-                                                           name="url"
-                                                           id="url" oninput="changeImageUrl(this.value);">
-                                                </th>
-                                                <th align="center">
-                                                    <a class="btn btn-info" id="btnAddImage"
-                                                       href="InsertImage?imageUrl=&&productId=${product.productId}">Add</a>
-                                                </th>
-                                            </tr>
-                                            </thead>
-
-                                        </table>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <form:input path="productCreateDate" type="hidden"/>
-                                    <form:input path="productId" id="productId" type="hidden"/>
-                                </div>
-
-                                <div class="form-group">
-                                    <button class="btn btn-success" type="submit" value="Update">Update
-                                    </button>
-                                    <button class="btn btn-warning" href="products" value="Cancel">Reset
-                                    </button>
-                                </div>
-                            </form:form>
+                        <div>
+                            <form action="fillMail" method="post" modelAttribute="email">
+                                <h3>${message}</h3>
+                                <p><label>Email</label></p>
+                                <p><input name="email" placeholder="To"></p>
+                                <button type="submit">Send</button>
+                            </form>
                         </div>
                     </div>
                 </div>

@@ -11,6 +11,7 @@ import ptit.d19cqcp02.hongmythaovy.service.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
@@ -34,6 +35,9 @@ public class CartController {
     @Autowired
     private UserDetailService userDetailService;
 
+    @Autowired
+    private MaillerService maillerService;
+
     @GetMapping("cart")
     public String cart(HttpServletRequest request) {
         return "shop-cart";
@@ -44,25 +48,32 @@ public class CartController {
 
         HttpSession session = request.getSession();
         Long userId = (Long) session.getAttribute("currentUserId");
+        User user = userService.findById(userId);
         List<OrderDetailView> listOrder = orderService.findAllOrderByUserId(userId);
+        String message = "";
         for (OrderDetailView order : listOrder) {
             Order o = orderService.findById(order.getOrderId());
             o.setOrderStatus(OrderStatus.ORDERED);
             orderService.save(o);
+            Product product = productService.findById(order.getProductId());
+            message += "[ " + product.getProductName() + ", " + order.getAmount() + "]\n ";
         }
+        System.out.println(message);
+        maillerService.send("mynth30@gmail.com", user.getEmail(), "Đặt hàng thành công",
+                String.format("Chúc mừng bạn đã đặt hàng thành công đơn hàng số %s \n %s", userId, message));
         request.setAttribute("message", "Your order had been accepted");
         return "info_ordered";
     }
 
     @GetMapping(value = "cart", params = {"action", "productId"})
     public String deleteCart(HttpServletRequest request,
-                           @RequestParam Long productId,
-                           @RequestParam String action ) {
+                             @RequestParam Long productId,
+                             @RequestParam String action) {
         HttpSession session = request.getSession();
         Long userId = (Long) session.getAttribute("currentUserId");
         List<OrderDetailView> listOrder = orderService.findAllOrderByUserId(userId);
         Long orderId;
-        if (listOrder.size() == 0){
+        if (listOrder.size() == 0) {
             User user = userService.findById(userId);
             UserDetail userDetail = userDetailService.findByUserId(userId);
             Order order = new Order();
@@ -72,14 +83,13 @@ public class CartController {
             order.setUser(user);
             orderService.save(order);
             orderId = order.getOrderId();
-        }
-        else
+        } else
             orderId = listOrder.get(0).getOrderId();
-        if(action.equals("delete")){
+        if (action.equals("delete")) {
             orderDetailService.delete(orderDetailService.findByProductIdAndOrderId(productId, orderId));
             return "redirect:cart";
         }
-        if(action.equals("add")){
+        if (action.equals("add")) {
             Product product = productService.findById(productId);
             Order order = orderService.findById(orderId);
             order.setOrderStatus(OrderStatus.ON_CART);
