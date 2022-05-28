@@ -8,7 +8,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import ptit.d19cqcp02.hongmythaovy.model.RoleName;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
+import ptit.d19cqcp02.hongmythaovy.model.entity.Role;
 import ptit.d19cqcp02.hongmythaovy.model.entity.User;
 import ptit.d19cqcp02.hongmythaovy.service.MaillerService;
 import ptit.d19cqcp02.hongmythaovy.service.UserService;
@@ -56,12 +58,17 @@ public class AuthController {
       request.setAttribute("message", "username is not blank");
       return "shop-customer-login";
     }
-
-    HttpSession session = request.getSession();
-    Map<String, String> token = service.checkLogin(username, password);
-    session.setAttribute(HttpHeaders.AUTHORIZATION, "Bearer " + token.get("jwt"));
-    session.setAttribute("currentUserId", Long.parseLong(token.get("userId")));
-    response.setHeader(HttpHeaders.AUTHORIZATION, "Bearer " + token);
+    try {
+      HttpSession session = request.getSession();
+      Map<String, String> token = service.checkLogin(username, password);
+      session.setAttribute(HttpHeaders.AUTHORIZATION, "Bearer " + token.get("jwt"));
+      session.setAttribute("currentUserId", Long.parseLong(token.get("userId")));
+      response.setHeader(HttpHeaders.AUTHORIZATION, "Bearer " + token);
+    }
+    catch(Exception e){
+      request.setAttribute("message", "Wrong login information!");
+      return "shop-customer-login";
+    }
     return "redirect:/my-account";
   }
 
@@ -108,12 +115,21 @@ public class AuthController {
   public String fillMail(ModelMap model, @RequestParam("email")  String email, HttpServletRequest request){
     List<User> users = userService.findAll();
     System.out.println("fillMail   " + email);
+    User shop = new User();
+    for (User user: users){
+      for (Role role: user.getRoles()){
+        if (role.getName().equals(RoleName.ROLE_SHOP)){
+          shop = user;
+          break;
+        }
+      }
+    }
     for (User user: users){
       if (email.toLowerCase(Locale.ROOT).equals(user.getEmail().toLowerCase())){
         model.addAttribute("email", email);
         String random = RandomStringUtils.randomAlphabetic(4);
         System.out.println(email);
-        maillerService.send("mynth30@gmail.com", email, "Xác nhận Email", random);
+        maillerService.send(shop.getEmail(), email, "Xác nhận Email", random);
         model.addAttribute("random", random);
         request.setAttribute("email", email);
         return "confirm-email";
@@ -126,10 +142,20 @@ public class AuthController {
   public String confirmEmail(ModelMap model,
                              HttpServletRequest request,
                              @Validated @ModelAttribute("email")  String email){
+    List<User> users = userService.findAll();
     System.out.println("confirmEmail   " + email);
     String random = RandomStringUtils.randomAlphabetic(4);
     System.out.println(email);
-    maillerService.send("mynth30@gmail.com", email, "Xác nhận Email", random);
+    User shop = new User();
+    for (User user: users){
+      for (Role role: user.getRoles()){
+        if (role.getName().equals(RoleName.ROLE_SHOP)){
+          shop = user;
+          break;
+        }
+      }
+    }
+    maillerService.send(shop.getEmail(), email, "Xác nhận Email", random);
     model.addAttribute("random", random);
     request.setAttribute("email", email);
     return "confirm-email";
