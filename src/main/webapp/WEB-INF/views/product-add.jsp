@@ -20,365 +20,137 @@
     <jsp:include page="include/head.jsp"/>
 
     <header class="header header-offcanvas-about header-sticky">
-
-        <!--=======  header bottom  =======-->
-
         <div class="header-bottom pt-md-40 pb-md-40 pt-sm-40 pb-sm-40">
             <div class="container wide">
-
-                <!--=======  header bottom container  =======-->
-
                 <div class="header-bottom-container">
-
-                    <!--=======  logo with off canvas  =======-->
-
                     <div class="logo-with-offcanvas d-flex">
-
-                        <!--=======  offcanvas about icon  =======-->
-
                         <div class="offcanvas-about-icon mr-20 d-none d-lg-block">
                             <a href="javascript:void(0)" id="offcanvas-about-icon">
                                 <i class="ion-navicon"></i>
                             </a>
                         </div>
-
-                        <!--=======  End of offcanvas about icon  =======-->
-
-                        <!--=======  logo   =======-->
-
                         <div class="logo">
                             <a href="index-2">
                                 <img src="assets/images/logo.png" class="img-fluid" alt="">
                             </a>
                         </div>
-
-                        <!--=======  End of logo   =======-->
                     </div>
-
-                    <!--=======  End of logo with off canvas  =======-->
-
-                    <!--=======  header bottom navigation  =======-->
-
                     <jsp:include page="include/menu.jsp"/>
-
-                    <!--=======  End of header bottom navigation  =======-->
-
-                    <!--=======  headeer right container  =======-->
-
                     <div class="header-right-container">
-
-                        <!--=======  header right icons  =======-->
-
                         <jsp:include page="include/header-right-icons.jsp"/>
-                        <!--=======  End of header right icons  =======-->
-
-                    </div>
-
-                    <!--=======  End of headeer right container  =======-->
-
-
-                </div>
-
-                <!--=======  End of header bottom container  =======-->
-
-                <!-- Mobile Navigation Start Here -->
-
-                <div class="site-mobile-navigation d-block d-lg-none">
-                    <div id="dl-menu" class="dl-menuwrapper site-mobile-nav">
-                        <!--Site Mobile Menu Toggle Start-->
-                        <button class="dl-trigger hamburger hamburger--spin">
-							<span class="hamburger-box">
-								<span class="hamburger-inner"></span>
-							</span>
-                        </button>
-                        <!--Site Mobile Menu Toggle End-->
-                        <ul class="dl-menu dl-menu-toggle">
-                            <li class=""><a href="#">Home</a>
-                                <ul class="dl-submenu">
-                                    <li class=""><a href="#">Home Group One</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="index-trending">Trending</a></li>
-                                            <li><a href="index-collection">My collection</a></li>
-                                            <li><a href="index-special">Special</a></li>
-                                            <li><a href="index-concept">concept</a></li>
-                                            <li><a href="index-smart">smart design</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Home Group Two</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="index-furniture">Furniture </a></li>
-                                            <li><a href="index-essentials">Essentials</a></li>
-                                            <li><a href="index-lookbook">Lookbook</a></li>
-                                            <li><a href="index-wearables">Wearables</a></li>
-                                            <li><a href="index-accessories">Accessories</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Home Group three</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="index-shoppable">Shoppable</a></li>
-
-                                            <li><a href="index-fashion">Fashion</a></li>
-                                            <li><a href="index-perfumes">Perfumes</a></li>
-                                            <li><a href="index-cosmetics">Cosmetics</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Home Group four</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="index-decor">Home Decor</a></li>
-                                            <li><a href="index-creative">Creative</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li><a href="#">Shop</a>
-                                <ul class="dl-submenu">
-                                    <li class=""><a href="#">Shop Pages</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="shop-no-sidebar">Shop No Sidebar</a></li>
-                                            <li><a href="shop-left-sidebar">Shop Left Sidebar</a></li>
-                                            <li><a href="shop-right-sidebar">Shop Right Sidebar</a></li>
-                                            <li><a href="shop-fullwidth-no-space">Shop Fullwidth No Space</a></li>
-                                            <li><a href="shop-fullwidth-no-sidebar">Shop Fullwidth No Sidebar</a></li>
-                                            <li><a href="shop-fullwidth-left-sidebar">Shop Fullwidth Left Sidebar</a>
-                                            </li>
-                                            <li><a href="shop-fullwidth-right-sidebar">Shop Fullwidth Right Sidebar</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class=""><a href="#">Product Details Pages</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="shop-product-basic">Basic </a></li>
-                                            <li><a href="shop-product-fullwidth">Fullwidth</a></li>
-                                            <li><a href="shop-product-sticky-details">Sticky details</a></li>
-                                            <li><a href="shop-product-with-sidebar">With Sidebar</a></li>
-                                            <li><a href="shop-product-extra-content">Extra Content</a></li>
-                                            <li><a href="shop-product-variation-image">Variation Image</a></li>
-                                            <li><a href="shop-product-bought-together">Bought Together</a></li>
-
-
-                                        </ul>
-                                    </li>
-                                    <li class=""><a href="#">Other Shop Pages</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="shop-product-with-background">Product with background</a></li>
-                                            <li><a href="shop-cart">Shopping Cart</a></li>
-                                            <li><a href="shop-checkout">Checkout</a></li>
-                                            <li><a href="shop-order-tracking">Order Tracking</a></li>
-                                            <li><a href="shop-wishlist">Wishlist</a></li>
-                                            <li><a href="login">Customer Login</a></li>
-                                            <li><a href="shop-by-brand">Shop by Brand</a></li>
-
-                                        </ul>
-                                    </li>
-
-
-                                </ul>
-                            </li>
-                            <li><a href="#">Elements</a>
-                                <ul class="dl-submenu">
-                                    <li class=""><a href="#">Shop / Products</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="element-product-categories">Product Categories</a></li>
-                                            <li><a href="element-product-sliders">Product Sliders</a></li>
-                                            <li><a href="update-product">Product Tabs</a></li>
-                                            <li><a href="element-product-widget">Product Widget</a></li>
-                                            <li><a href="element-recent-products">Recent Products</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=""><a href="#">Shop / Products</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="element-sale-products">Sale Products </a></li>
-                                            <li><a href="element-featured-products">Featured products</a></li>
-                                            <li><a href="element-top-rated-products">Top Rated products</a></li>
-                                            <li><a href="element-bestselling-products">Best Selling products</a></li>
-                                            <li><a href="element-product-attributes">Product Attributes</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class=""><a href="#">Theming</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="element-blog-posts">Blog Posts</a></li>
-                                            <li><a href="product/add">Mailchimp Form</a></li>
-                                            <li><a href="element-icon-box">Icon Box</a></li>
-                                            <li><a href="products">Team Member</a></li>
-                                            <li><a href="element-instagram">Instagram</a></li>
-
-                                        </ul>
-                                    </li>
-
-
-                                </ul>
-                            </li>
-                            <li><a href="#">Pages</a>
-                                <ul class="dl-submenu">
-                                    <li><a href="about-us">About Us</a></li>
-                                    <li><a href="about-us-2">About Us 2</a></li>
-                                    <li><a href="contact-us">Contact Us</a></li>
-                                    <li><a href="faq">F.A.Q</a></li>
-                                    <li><a href="coming-soon">Coming Soon</a></li>
-                                    <li><a href="404">404</a></li>
-                                    <li><a href="my-account">My account</a></li>
-                                    <li><a href="compare">Compare</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Blog</a>
-                                <ul class="dl-submenu">
-                                    <li><a href="#">Standard Layout</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="blog-standard-right-sidebar">Right Sidebar</a></li>
-                                            <li><a href="blog-standard-left-sidebar">Left Sidebar</a></li>
-                                            <li><a href="blog-standard-full-width">Full Width</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Grid Layout</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="blog-grid-right-sidebar">Right Sidebar</a></li>
-                                            <li><a href="blog-grid-left-sidebar">Left Sidebar</a></li>
-                                            <li><a href="blog-grid-full-width">Full Width</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">List Layout</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="blog-list-right-sidebar">Right Sidebar</a></li>
-                                            <li><a href="blog-list-left-sidebar">Left Sidebar</a></li>
-                                            <li><a href="blog-list-full-width">Full Width</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Masonry Layout</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="blog-masonry-right-sidebar">Right Sidebar</a></li>
-                                            <li><a href="blog-masonry-left-sidebar">Left Sidebar</a></li>
-                                            <li><a href="blog-masonry-full-width">Full Width</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">1st Full Then Grid</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="blog-full-then-grid-right-sidebar">Right Sidebar</a></li>
-                                            <li><a href="blog-full-then-grid-left-sidebar">Left Sidebar</a></li>
-                                            <li><a href="blog-full-then-grid-full-width">Full Width</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Single Post Layout</a>
-                                        <ul class="dl-submenu">
-                                            <li><a href="blog-single-post-right-sidebar">Right Sidebar</a></li>
-                                            <li><a href="blog-single-post-left-sidebar">Left Sidebar</a></li>
-                                            <li><a href="blog-single-post-full-width">Full Width</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
                     </div>
                 </div>
-
-                <!-- Mobile Navigation End Here -->
-
-
             </div>
         </div>
-
-        <!--=======  End of header bottom  =======-->
     </header>
+</head>
+<div class="breadcrumb-area breadcrumb-bg-1 pt-50 pb-70 mb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="breadcrumb-title">Add Product</h1>
 
-    <div class="breadcrumb-area breadcrumb-bg-1 pt-50 pb-70 mb-100">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="breadcrumb-title">Add Product</h1>
+                <!--=======  breadcrumb list  =======-->
 
-                    <!--=======  breadcrumb list  =======-->
+                <jsp:include page="include/menu2.jsp"/>
 
-                    <jsp:include page="include/menu2.jsp"/>
+                <!--=======  End of breadcrumb list  =======-->
 
-                    <!--=======  End of breadcrumb list  =======-->
-
-                </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!--=== Admin ===-->
+<!--=== Admin ===-->
 
-    <title>Products List</title>
-    <style type="text/css">
-        .panel {
-            width: 60%;
-            margin: 0 auto;
-            border: solid #4267b2 1px;
-        }
+<title>Products List</title>
+<style type="text/css">
+    .panel {
+        width: 60%;
+        margin: 0 auto;
+        border: solid #4267b2 1px;
+    }
 
-        .panel-heading {
-            background-color: #4267b2;
-            padding: 10px;
-            color: white;
-        }
+    .panel-heading {
+        background-color: #4267b2;
+        padding: 10px;
+        color: white;
+    }
 
-        .panel-body {
-            padding: 10px;
-        }
+    .panel-body {
+        padding: 10px;
+    }
 
-        .panel-body label {
-            font-weight: bold;
-        }
+    .panel-body label {
+        font-weight: bold;
+    }
 
-        .form-group {
-            display: block;
-            margin-bottom: 20px;
-        }
+    .form-group {
+        display: block;
+        margin-bottom: 20px;
+    }
 
-        .form-control {
-            display: block;
-            width: 98%;
-            font-size: 16px;
-            margin-top: 10px;
-        }
+    .form-control {
+        display: block;
+        width: 98%;
+        font-size: 16px;
+        margin-top: 10px;
+    }
 
-        .table {
-            width: 100%;
-        }
+    .table {
+        width: 100%;
+    }
 
-        .table tr {
-            border-bottom: solid blue 1px;
-        }
-    </style>
+    .table tr {
+        border-bottom: solid blue 1px;
+    }
+</style>
 </head>
 <body>
+
 <div class="container main-content form">
     <div class="row">
         <div class="mailchimp-newsletter-area mb-100">
             <div class="panel">
+                <h3>${message}</h3>
                 <div class="panel-heading">
                     Add product
                 </div>
                 <div class="panel-body">
-                    <form:form method="POST" modelAttribute="product" class="com-mail"  action="products">
+                    <form:form method="POST" modelAttribute="product" class="com-mail" action="products">
                         <div class="form-group">
                             <label>Category ${product.category.cateId}</label>
                             <form:select path="category.cateId">
-                                <option value="-1">Select a type</option>
                                 <c:forEach var="c" items="${cates}">
                                     <option value="${c.cateId}" ${product.category.cateId == c.cateId ? 'selected=""' : ''}>${c.categoryName}</option>
                                 </c:forEach>
-                            </form:select><br />
+                            </form:select>
+
                         </div>
                         <div class="form-group">
-                            <label>Product Name</label>
-                            <form:input path="productName" placeholder="please enter Product Name" Name="Prouct Name"  />
+                            <label>Product Name </label>
+                            <form:input path="productName" type="text" id="productName" name="productName"/>
+                            <form:errors path="productName" cssClass="alert-danger"/>
                         </div>
+                        <br>
                         <div class="form-group">
                             <label>Price</label>
                             <form:input path="productPrice"  />
+                            <form:errors path="productPrice" cssClass="alert-danger"/>
                         </div>
                         <div class="form-group">
                             <label>Description</label>
                             <form:input path="productDescription"  />
+                            <form:errors path="productDescription" cssClass="alert-danger"/>
                         </div>
                         <div class="form-group">
                             <label>Remain</label>
                             <form:input path="productRemain"  />
+                            <form:errors path="productRemain" cssClass="alert-danger"/>
                         </div>
                         <div class="form-group">
-                            <form:button class="btn btn-primary">Submit</form:button>
+                            <button class="btn btn-success" type="submit" >Add
+                            </button>
                             <button class="btn btn-danger" type="reset">Reset</button>
                         </div>
                     </form:form>
@@ -387,13 +159,6 @@
 
             <jsp:include page="include/foot.jsp"/>
 
-            <!--=====  End of footer area  ======-->
-
-            <!--=============================================
-            =            overlay items         =
-            =============================================-->
-
-            <!--=======  about overlay  =======-->
 
             <div class="header-offcanvas about-overlay" id="about-overlay">
                 <div class="overlay-close inactive"></div>

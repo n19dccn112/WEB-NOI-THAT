@@ -57,19 +57,6 @@ public class ProductController {
         model.addAttribute("product", productService.findAll());
         return "products";
     }
-
-    @GetMapping("product/add")
-    public String elementMailchimpForm(Model model, HttpServletRequest request) {
-        Product product = new Product();
-        model.addAttribute("product", product);
-        return "product-add";
-    }
-
-    @PostMapping(value = "products")
-    public String save(Product product) {
-        productService.save(product);
-        return "redirect:products";
-    }
     @GetMapping(value = "products/{productId}")
     public String delete(@PathVariable Long productId, Model model){
         productService.delete(productId);
@@ -184,5 +171,23 @@ public class ProductController {
             imageService.save(image);
         }
         return "redirect:update/"+productId;
+    }
+    @GetMapping("product/add")
+    public String insert(Model model, HttpServletRequest request) {
+        Product product = new Product();
+        model.addAttribute("product", product);
+        return "product-add";
+    }
+
+    @PostMapping(value = "products")
+    public String save(HttpServletRequest request,
+                       @Validated @ModelAttribute("product") Product product,
+                       BindingResult errors) throws IllegalStateException, SystemException, IOException {
+        if (!errors.hasErrors()) {
+            productService.save(product);
+            request.setAttribute("message", "Product has been add!");
+        } else
+            request.setAttribute("message", "Insert fail!");
+        return "product-add";
     }
 }
