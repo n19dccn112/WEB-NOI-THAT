@@ -5,6 +5,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -28,6 +31,10 @@ public class User {
   private String username;
 
   private String password;
+
+  @NotNull(message = "Email name must not be null")
+  @NotBlank(message = "Email name must not be blank")
+  @Email(message = "Please input correct Email format")
   private String email;
   // private RoleName roleName;
   @ManyToMany(fetch = FetchType.LAZY)

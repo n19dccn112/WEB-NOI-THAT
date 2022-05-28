@@ -324,7 +324,7 @@
 
                                 <div class="section-title section-title--login text-center mb-50">
                                     <h2 class="mb-20">Login</h2>
-                                    <p>Great to have you back!</p>
+                                    <p>${message}</p>
                                 </div>
 
                                 <!--=======  End of login title  =======-->
@@ -342,7 +342,7 @@
 
                             <div class="col-lg-12">
                                 <input type="checkbox"> <span class="remember-text">Remember me</span>
-                                <a href="#" class="reset-pass-link">Lost your password?</a>
+                                <a href="lostPassword" class="reset-pass-link">Lost your password?</a>
                             </div>
                         </div>
                     </form>
@@ -357,7 +357,7 @@
 
                                 <div class="section-title section-title--login text-center mb-50">
                                     <h2 class="mb-20">Register</h2>
-                                    <p>If you don’t have an account, register now!</p>
+                                    <p>${message2}</p>
                                 </div>
 
                                 <!--=======  End of login title  =======-->
