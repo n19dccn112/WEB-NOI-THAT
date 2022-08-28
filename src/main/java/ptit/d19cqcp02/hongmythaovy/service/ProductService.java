@@ -25,7 +25,8 @@ public class ProductService {
     product.setImages(imageRepository.findAllByProductProductId(product.getProductId()));
     return product;
   }
-  public List<Product> findByProductNameContaining (String productName){
+
+  public List<Product> findByProductNameContaining(String productName) {
     return productRepository.findByProductNameContaining(productName);
   }
 
@@ -48,5 +49,4 @@ public class ProductService {
       product.setImages(imageRepository.findAllByProductProductId(product.getProductId()));
     }
   }
-
 }

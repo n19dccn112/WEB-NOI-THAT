@@ -17,5 +17,4 @@ import java.io.Serializable;
 public class RateId implements Serializable {
   @ManyToOne private Product product;
   @ManyToOne private User user;
-
 }

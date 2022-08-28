@@ -6,5 +6,5 @@ import ptit.d19cqcp02.hongmythaovy.model.entity.UserDetail;
 
 @Repository
 public interface UserDetailRepository extends JpaRepository<UserDetail, Long> {
-    UserDetail findAllByUser_Id(Long userId);
+  UserDetail findAllByUser_Id(Long userId);
 }

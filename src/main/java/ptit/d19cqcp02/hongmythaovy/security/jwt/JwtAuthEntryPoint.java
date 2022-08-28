@@ -20,6 +20,6 @@ public class JwtAuthEntryPoint implements AuthenticationEntryPoint {
   public void commence(
       HttpServletRequest request, HttpServletResponse response, AuthenticationException e)
       throws IOException, ServletException {
-    response.sendRedirect(request.getContextPath()+"/login");
+    response.sendRedirect(request.getContextPath() + "/login");
   }
 }

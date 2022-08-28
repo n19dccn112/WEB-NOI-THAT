@@ -19,8 +19,8 @@ import java.util.List;
 @Component
 public class GlobalInterceptor implements HandlerInterceptor {
   @Autowired private CategoryService categoryService;
-  @Autowired
-  private OrderService orderService;
+  @Autowired private OrderService orderService;
+
   @Override
   public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
       throws Exception {

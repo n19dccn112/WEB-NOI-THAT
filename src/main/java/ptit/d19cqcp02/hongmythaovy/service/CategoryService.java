@@ -32,7 +32,7 @@ public class CategoryService {
     categoryRepository.delete(entity);
   }
 
-  private void setProducts(final Category category){
+  private void setProducts(final Category category) {
     category.setProducts(productService.findAllByCategoryCateId(category.getCateId()));
   }
 }

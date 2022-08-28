@@ -16,7 +16,7 @@ public class OrderDetailService {
     return orderDetailRepository.findAll();
   }
 
-  public OrderDetail findByProductIdAndOrderId(Long productId, Long orderId){
+  public OrderDetail findByProductIdAndOrderId(Long productId, Long orderId) {
     return orderDetailRepository.findByProductIdAndOrderId(productId, orderId);
   }
 

@@ -6,5 +6,5 @@ import ptit.d19cqcp02.hongmythaovy.model.entity.FeatureType;
 
 @Repository
 public interface FeatureTypeRepository extends JpaRepository<FeatureType, Long> {
-//    List<FeatureType> findAllByFeaturesFeatureId(Long featureId);
+  //    List<FeatureType> findAllByFeaturesFeatureId(Long featureId);
 }

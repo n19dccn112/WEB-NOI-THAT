@@ -8,11 +8,8 @@ import java.util.List;
 
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
-    List<Product> findAllByCategoryCateId(Long cateId);
+  List<Product> findAllByCategoryCateId(Long cateId);
 
-    List<Product> findByProductNameContaining (String productName);
-    //where x.firstname like ?1
+  List<Product> findByProductNameContaining(String productName);
+  // where x.firstname like ?1
 }
-
-
-

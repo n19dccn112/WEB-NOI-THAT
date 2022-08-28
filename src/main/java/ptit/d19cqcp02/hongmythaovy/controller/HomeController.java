@@ -32,7 +32,6 @@ public class HomeController {
     return "404";
   }
 
-
   @RequestMapping("my-account")
   public String myAccount() {
     return "my-account";

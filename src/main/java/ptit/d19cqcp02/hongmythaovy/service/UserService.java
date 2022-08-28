@@ -76,7 +76,7 @@ public class UserService {
     UserDetail entity = this.getDetail(userDetails.getId());
     Map<String, String> login = new HashMap<>();
     login.put("jwt", jwt);
-    login.put("userId",String.valueOf(userDetails.getId()));
+    login.put("userId", String.valueOf(userDetails.getId()));
     return login;
   }
 
@@ -112,6 +112,7 @@ public class UserService {
     userDetailRepository.save(getDetail(user.getId()));
     return String.format("User {} registered successfully!", user.getId());
   }
+
   private Set<Role> getRole(Set<String> strRoles) {
     Set<Role> roles = new HashSet<>();
     if (strRoles == null) {

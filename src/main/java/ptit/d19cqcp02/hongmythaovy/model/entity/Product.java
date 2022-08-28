@@ -28,7 +28,7 @@ public class Product {
       name = "feature_detail",
       joinColumns = @JoinColumn(name = "product_id"),
       inverseJoinColumns = @JoinColumn(name = "feature_id"))
-      List<Feature> features;
+  List<Feature> features;
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -53,10 +53,8 @@ public class Product {
   @NotBlank(message = "Product name must not be blank")
   private String productName;
 
-
   @Column(name = "update_date")
   @Temporal(TemporalType.TIMESTAMP)
-
   @DateTimeFormat(pattern = "dd-MM-yyyy hh:mm:ss")
   private Date productUpDate;
 

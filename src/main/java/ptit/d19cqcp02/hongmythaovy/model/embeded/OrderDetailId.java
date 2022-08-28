@@ -23,5 +23,4 @@ public class OrderDetailId implements Serializable {
   @ManyToOne
   @JoinColumn(name = "product_id")
   private Product product;
-
 }

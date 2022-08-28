@@ -21,7 +21,7 @@ public class ImageService {
     return imageRepository.findById(imageId).get();
   }
 
-  public List<Image> findAllByProduct(Product product){
+  public List<Image> findAllByProduct(Product product) {
     return imageRepository.findAllByProductProductId(product.getProductId());
   }
 

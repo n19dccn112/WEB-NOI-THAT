@@ -14,16 +14,14 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 @RequestMapping("")
 public class CategoryController {
-    @Autowired
-    CategoryService categoryService;
+  @Autowired CategoryService categoryService;
 
-    @Autowired
-    ProductService productService;
+  @Autowired ProductService productService;
 
-    @GetMapping("cate-{cateId}")
-    public String shopNoSidebar(HttpServletRequest request, @PathVariable Long cateId) {
-        Category cate = categoryService.findById(cateId);
-        request.setAttribute("category",cate);
-        return "cate-1";
-    }
+  @GetMapping("cate-{cateId}")
+  public String shopNoSidebar(HttpServletRequest request, @PathVariable Long cateId) {
+    Category cate = categoryService.findById(cateId);
+    request.setAttribute("category", cate);
+    return "cate-1";
+  }
 }

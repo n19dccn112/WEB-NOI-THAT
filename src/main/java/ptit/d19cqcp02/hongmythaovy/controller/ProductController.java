@@ -26,154 +26,161 @@ import java.util.List;
 
 @Controller
 public class ProductController {
-    @Autowired
-    CategoryService categoryService;
+  @Autowired CategoryService categoryService;
 
-    @Autowired
-    ProductService productService;
+  @Autowired ProductService productService;
 
-    @Autowired
-    ImageService imageService;
+  @Autowired ImageService imageService;
 
-    @Autowired
-    FeatureService featureService;
+  @Autowired FeatureService featureService;
 
-    @Autowired
-    FeatureTypeService featureTypeService;
+  @Autowired FeatureTypeService featureTypeService;
 
+  @GetMapping("products")
+  public String index(Model model) {
+    model.addAttribute("product", productService.findAll());
+    return "products";
+  }
 
-    @GetMapping("products")
-    public String index(Model model) {
-        model.addAttribute("product", productService.findAll());
-        return "products";
+  @GetMapping("product/add")
+  public String elementMailchimpForm(Model model, HttpServletRequest request) {
+    Product product = new Product();
+    model.addAttribute("product", product);
+    return "product-add";
+  }
+
+  @PostMapping(value = "products")
+  public String save(Product product) {
+    productService.save(product);
+    return "redirect:products";
+  }
+
+  @RequestMapping(value = "dlt-products/{productId}")
+  public String delete(@PathVariable Long productId, Model model) {
+    productService.delete(productId);
+    model.addAttribute("product", productService.findAll());
+    return "products";
+  }
+
+  @RequestMapping("search-products/{productName}")
+  public String search(
+      ModelMap model, @RequestParam(name = "productName", required = false) String productName) {
+
+    List<Product> list = null;
+
+    if (StringUtils.hasText(productName)) {
+      //          model.addAttribute("product",
+      // productService.findByProductNameContaining(productName));
+      list = productService.findByProductNameContaining(productName);
+    } else {
+      //          model.addAttribute("product", productService.findAll());
+      list = productService.findAll();
     }
+    model.addAttribute("products", list);
+    return "products";
+  }
 
-    @GetMapping("product/add")
-    public String elementMailchimpForm(Model model, HttpServletRequest request) {
-        Product product = new Product();
-        model.addAttribute("product", product);
-        return "product-add";
+  @GetMapping(value = "update/{productId}")
+  public String productUpdate(ModelMap model, @PathVariable Long productId) {
+    Product product = productService.findById(productId);
+    model.addAttribute("product", product);
+    model.addAttribute("featuretypes", featureTypeService.findAll());
+    return "update-product";
+  }
+
+  @PostMapping(value = "update/{productId}")
+  public String productUpdate(
+      HttpServletRequest request,
+      ModelMap model,
+      @Validated @ModelAttribute("product") Product product,
+      BindingResult errors)
+      throws IllegalStateException, IOException {
+    if (!errors.hasErrors()) {
+      product.setProductUpDate(new Date());
+      productService.save(product);
+      request.setAttribute("message", "Product has been updated!");
+    } else request.setAttribute("message", "Updated fail!");
+    model.addAttribute("product", product);
+    model.addAttribute("featuretypes", featureTypeService.findAll());
+    return "update-product";
+  }
+
+  @PostMapping(
+      value = "update/{productId}",
+      params = {"featureIds"})
+  public String featureTypeUpdate(
+      HttpServletRequest request,
+      ModelMap model,
+      @Validated @ModelAttribute("product") Product product,
+      @RequestParam("featureIds") List<Long> featureIds,
+      @RequestParam Long productId,
+      BindingResult errors)
+      throws IllegalStateException, IOException {
+    if (!errors.hasErrors()) {
+      List<Feature> features = new LinkedList<>();
+
+      for (Long featureId : featureIds) {
+        features.add(featureService.findById(featureId));
+      }
+
+      product.setProductUpDate(new Date());
+      product.setFeatures(features);
+      productService.save(product);
+      request.setAttribute("message", "Product has been updated!");
+    } else request.setAttribute("message", "Updated fail!");
+    model.addAttribute("product", product);
+    model.addAttribute("featuretypes", featureTypeService.findAll());
+    System.out.println(request.getRequestURI());
+    return "redirect:" + request.getRequestURI();
+  }
+
+  @GetMapping(
+      value = "DeleteImage",
+      params = {"imageId", "productId"})
+  public String deleteImageInProduct(
+      HttpServletRequest request, @RequestParam Long imageId, @RequestParam Long productId) {
+    imageService.delete(imageId);
+    return "redirect:update/" + productId;
+  }
+
+  public Boolean testImage(String url) {
+    try {
+      BufferedImage image = ImageIO.read(new URL(url));
+      // BufferedImage image = ImageIO.read(new URL("http://someimage.jpg"));
+      if (image != null) {
+        return true;
+      } else {
+        return false;
+      }
+
+    } catch (MalformedURLException e) {
+      // TODO Auto-generated catch block
+      System.err.println("URL error with image");
+      e.printStackTrace();
+      return false;
+    } catch (IOException e) {
+      System.err.println("IO error with image");
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+      return false;
     }
+  }
 
-    @PostMapping(value = "products")
-    public String save(Product product) {
-        productService.save(product);
-        return "redirect:products";
+  @GetMapping(
+      value = "InsertImage",
+      params = {"imageUrl", "productId"})
+  public String insertImageInProduct(
+      @RequestParam String imageUrl,
+      // @ModelAttribute("product") Product product,
+      @RequestParam Long productId) {
+    if (testImage(imageUrl)) {
+      // System.out.println(product.getProductId());
+      Product product = productService.findById(productId);
+      Image image = new Image();
+      image.setImageUrl(imageUrl);
+      image.setProduct(product);
+      imageService.save(image);
     }
-    @RequestMapping(value = "dlt-products/{productId}")
-    public String delete(@PathVariable Long productId, Model model){
-        productService.delete(productId);
-        model.addAttribute("product", productService.findAll());
-        return "products";
-    }
-
-    @RequestMapping("search-products/{productName}")
-    public String search(ModelMap model, @RequestParam(name = "productName", required = false) String productName){
-
-        List<Product> list = null;
-
-        if (StringUtils.hasText(productName)){
-//          model.addAttribute("product", productService.findByProductNameContaining(productName));
-            list = productService.findByProductNameContaining(productName);
-        }
-        else
-        {
-//          model.addAttribute("product", productService.findAll());
-            list = productService.findAll();
-        }
-        model.addAttribute("products", list);
-        return "products";
-    }
-    @GetMapping(value = "update/{productId}")
-    public String productUpdate(ModelMap model, @PathVariable Long productId) {
-        Product product = productService.findById(productId);
-        model.addAttribute("product", product);
-        model.addAttribute("featuretypes", featureTypeService.findAll());
-        return "update-product";
-    }
-    @PostMapping(value = "update/{productId}")
-    public String productUpdate(HttpServletRequest request, ModelMap model,
-                                     @Validated @ModelAttribute("product") Product product,
-                                     BindingResult errors) throws IllegalStateException, IOException {
-        if (!errors.hasErrors()) {
-            product.setProductUpDate(new Date());
-            productService.save(product);
-            request.setAttribute("message", "Product has been updated!");
-        }
-        else
-            request.setAttribute("message", "Updated fail!");
-        model.addAttribute("product", product);
-        model.addAttribute("featuretypes", featureTypeService.findAll());
-        return "update-product";
-    }
-
-    @PostMapping(value = "update/{productId}",params = {"featureIds"})
-    public String featureTypeUpdate(HttpServletRequest request, ModelMap model,
-                                     @Validated @ModelAttribute("product") Product product,
-                                     @RequestParam("featureIds") List<Long> featureIds,
-                                     @RequestParam Long productId ,
-                                     BindingResult errors) throws IllegalStateException, IOException {
-        if (!errors.hasErrors()) {
-            List<Feature> features = new LinkedList<>();
-
-            for (Long featureId : featureIds){
-                features.add(featureService.findById(featureId));
-            }
-
-            product.setProductUpDate(new Date());
-            product.setFeatures(features);
-            productService.save(product);
-            request.setAttribute("message", "Product has been updated!");
-        } else
-            request.setAttribute("message", "Updated fail!");
-        model.addAttribute("product", product);
-        model.addAttribute("featuretypes", featureTypeService.findAll());
-        System.out.println(request.getRequestURI());
-        return "redirect:" + request.getRequestURI();
-    }
-    @GetMapping(value = "DeleteImage", params = {"imageId","productId"})
-    public String deleteImageInProduct(HttpServletRequest request,
-                              @RequestParam Long imageId,
-                              @RequestParam Long productId  ) {
-        imageService.delete(imageId);
-        return "redirect:update/"+productId;
-    }
-
-    public Boolean testImage(String url) {
-        try {
-            BufferedImage image = ImageIO.read(new URL(url));
-            //BufferedImage image = ImageIO.read(new URL("http://someimage.jpg"));
-            if (image != null) {
-                return true;
-            } else {
-                return false;
-            }
-
-        } catch (MalformedURLException e) {
-            // TODO Auto-generated catch block
-            System.err.println("URL error with image");
-            e.printStackTrace();
-            return false;
-        } catch (IOException e) {
-            System.err.println("IO error with image");
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-            return false;
-        }
-    }
-
-    @GetMapping(value = "InsertImage", params = {"imageUrl","productId"})
-    public String insertImageInProduct(@RequestParam String imageUrl,
-                              //@ModelAttribute("product") Product product,
-                              @RequestParam Long productId) {
-        if (testImage(imageUrl)) {
-            //System.out.println(product.getProductId());
-            Product product = productService.findById(productId);
-            Image image = new Image();
-            image.setImageUrl(imageUrl);
-            image.setProduct(product);
-            imageService.save(image);
-        }
-        return "redirect:update/"+productId;
-    }
+    return "redirect:update/" + productId;
+  }
 }

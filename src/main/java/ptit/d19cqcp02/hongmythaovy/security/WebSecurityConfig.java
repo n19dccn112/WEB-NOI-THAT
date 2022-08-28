@@ -23,88 +23,97 @@ import ptit.d19cqcp02.hongmythaovy.security.services.UserDetailsServiceImpl;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    private final UserDetailsServiceImpl userDetailsService;
+  private final UserDetailsServiceImpl userDetailsService;
 
-    private final JwtAuthEntryPoint unauthorizedHandler;
+  private final JwtAuthEntryPoint unauthorizedHandler;
 
-    private final JwtUtils jwtUtils;
+  private final JwtUtils jwtUtils;
 
-    public WebSecurityConfig(
-            UserDetailsServiceImpl userDetailsService,
-            JwtAuthEntryPoint unauthorizedHandler,
-            JwtUtils jwtUtils) {
-        this.userDetailsService = userDetailsService;
-        this.unauthorizedHandler = unauthorizedHandler;
-        this.jwtUtils = jwtUtils;
-    }
+  public WebSecurityConfig(
+      UserDetailsServiceImpl userDetailsService,
+      JwtAuthEntryPoint unauthorizedHandler,
+      JwtUtils jwtUtils) {
+    this.userDetailsService = userDetailsService;
+    this.unauthorizedHandler = unauthorizedHandler;
+    this.jwtUtils = jwtUtils;
+  }
 
-    @Bean
-    public JwtAuthTokenFilter authenticationJwtTokenFilter() {
-        return new JwtAuthTokenFilter(jwtUtils, userDetailsService);
-    }
+  @Bean
+  public JwtAuthTokenFilter authenticationJwtTokenFilter() {
+    return new JwtAuthTokenFilter(jwtUtils, userDetailsService);
+  }
 
-    @Override
-    public void configure(AuthenticationManagerBuilder authenticationManagerBuilder)
-            throws Exception {
-        // TODO
-        authenticationManagerBuilder
-                .userDetailsService(userDetailsService)
-                .passwordEncoder(passwordEncoder());
-    }
+  @Override
+  public void configure(AuthenticationManagerBuilder authenticationManagerBuilder)
+      throws Exception {
+    // TODO
+    authenticationManagerBuilder
+        .userDetailsService(userDetailsService)
+        .passwordEncoder(passwordEncoder());
+  }
 
-    @Bean
-    @Override
-    public AuthenticationManager authenticationManagerBean() throws Exception {
-        return super.authenticationManagerBean();
-    }
+  @Bean
+  @Override
+  public AuthenticationManager authenticationManagerBean() throws Exception {
+    return super.authenticationManagerBean();
+  }
 
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
+  @Bean
+  public PasswordEncoder passwordEncoder() {
+    return new BCryptPasswordEncoder();
+  }
 
-    @Override
-    public void configure(WebSecurity web) throws Exception {
-        // định dạng mẫu URL k bị phân quyền
-        //assets - trang hình ảnh
-        web.ignoring().antMatchers("/assets/**", "/login", "/signup", "/",
-                "/cate-**", "/product/**", "/fillMail", "/confirmEmail",
-                "/lostPassword", "/changePassword", "/finishChangePassword");
-    }
+  @Override
+  public void configure(WebSecurity web) throws Exception {
+    // định dạng mẫu URL k bị phân quyền
+    // assets - trang hình ảnh
+    web.ignoring()
+        .antMatchers(
+            "/assets/**",
+            "/login",
+            "/signup",
+            "/",
+            "/cate-**",
+            "/product/**",
+            "/fillMail",
+            "/confirmEmail",
+            "/lostPassword",
+            "/changePassword",
+            "/finishChangePassword");
+  }
 
-    @Override
-    // cấu hình phân quyền
-    protected void configure(HttpSecurity http) throws Exception {
-        http.cors()
-                .and()
-                .csrf()
-                .disable()
-                .exceptionHandling()
-                .authenticationEntryPoint(unauthorizedHandler)
-                .and()
-                .sessionManagement()
-                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                .and()
-                .authorizeRequests()
+  @Override
+  // cấu hình phân quyền
+  protected void configure(HttpSecurity http) throws Exception {
+    http.cors()
+        .and()
+        .csrf()
+        .disable()
+        .exceptionHandling()
+        .authenticationEntryPoint(unauthorizedHandler)
+        .and()
+        .sessionManagement()
+        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+        .and()
+        .authorizeRequests()
 
-                //HttpMethod - đặc tả method nếu cần thiết, nếu áp dụng cho tất cả thì k gọi gì
-                //permitAll giống dòng 71, nhưng nó đi qua 1 cổng => k nên dùng thằng này, bỏ lên dòng 71
-                //hasAnyRole cho phép nhìu quyền, nhìu nhóm user cùng lúc
-                //hasRole: dùng với 1 quyền duy nhất
+        // HttpMethod - đặc tả method nếu cần thiết, nếu áp dụng cho tất cả thì k gọi gì
+        // permitAll giống dòng 71, nhưng nó đi qua 1 cổng => k nên dùng thằng này, bỏ lên dòng 71
+        // hasAnyRole cho phép nhìu quyền, nhìu nhóm user cùng lúc
+        // hasRole: dùng với 1 quyền duy nhất
 
-                // mỗi cái antMatchers là một cấu hình, đi với role, là quyền tương ứng với cấu hình đó
-                .antMatchers("/update/**", "/products", "/product/add", "/products/**")
-                .hasRole("SHOP")
+        // mỗi cái antMatchers là một cấu hình, đi với role, là quyền tương ứng với cấu hình đó
+        .antMatchers("/update/**", "/products", "/product/add", "/products/**")
+        .hasRole("SHOP")
+        .antMatchers("/cart", "/checkout")
+        .hasRole("USER")
 
-                .antMatchers("/cart", "/checkout")
-                .hasRole("USER")
+        // những yêu cầu còn lại
+        .anyRequest()
+        .authenticated(); // yêu cầu quyền : ngoài dòng 71 và hàm này thì nó bắt đăng nhập mà k yêu
+                          // cầu quyền cụ thể
 
-                // những yêu cầu còn lại
-                .anyRequest()
-                .authenticated();//yêu cầu quyền : ngoài dòng 71 và hàm này thì nó bắt đăng nhập mà k yêu cầu quyền cụ thể
-
-
-        http.addFilterBefore(
-                authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
-    }
+    http.addFilterBefore(
+        authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
+  }
 }

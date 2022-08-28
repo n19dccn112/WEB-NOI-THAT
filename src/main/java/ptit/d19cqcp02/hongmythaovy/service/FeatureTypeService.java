@@ -21,10 +21,10 @@ public class FeatureTypeService {
     return featureTypeRepository.findAll();
   }
 
-//  public FeatureType findById(Long featureTypeId) {
-//    FeatureType featureType = featureTypeRepository.findById(featureTypeId).get();
-//    return featureType;
-//  }
+  //  public FeatureType findById(Long featureTypeId) {
+  //    FeatureType featureType = featureTypeRepository.findById(featureTypeId).get();
+  //    return featureType;
+  //  }
 
   public void save(FeatureType entity) {
     featureTypeRepository.save(entity);
@@ -34,7 +34,5 @@ public class FeatureTypeService {
     featureTypeRepository.delete(entity);
   }
 
-  public void findAllByFeaturesFeatureId(Long featureId){
-
-  }
+  public void findAllByFeaturesFeatureId(Long featureId) {}
 }
