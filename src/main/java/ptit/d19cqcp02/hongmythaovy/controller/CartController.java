@@ -2,16 +2,13 @@ package ptit.d19cqcp02.hongmythaovy.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.HandlerInterceptor;
 import ptit.d19cqcp02.hongmythaovy.model.embeded.OrderDetailId;
 import ptit.d19cqcp02.hongmythaovy.model.entity.*;
 import ptit.d19cqcp02.hongmythaovy.service.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 

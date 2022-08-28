@@ -6,8 +6,6 @@ import org.springframework.stereotype.Repository;
 import ptit.d19cqcp02.hongmythaovy.model.embeded.OrderDetailId;
 import ptit.d19cqcp02.hongmythaovy.model.entity.OrderDetail;
 
-import java.util.Optional;
-
 @Repository
 public interface OrderDetailRepository extends JpaRepository<OrderDetail, OrderDetailId> {
     @Query(value = "select * " +

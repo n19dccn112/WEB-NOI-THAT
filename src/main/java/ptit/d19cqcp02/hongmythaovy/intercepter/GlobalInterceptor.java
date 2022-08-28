@@ -4,11 +4,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
-import ptit.d19cqcp02.hongmythaovy.model.entity.*;
+import ptit.d19cqcp02.hongmythaovy.model.entity.Category;
+import ptit.d19cqcp02.hongmythaovy.model.entity.OrderDetailView;
 import ptit.d19cqcp02.hongmythaovy.service.CategoryService;
-import ptit.d19cqcp02.hongmythaovy.service.OrderDetailService;
 import ptit.d19cqcp02.hongmythaovy.service.OrderService;
-import ptit.d19cqcp02.hongmythaovy.service.ProductService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

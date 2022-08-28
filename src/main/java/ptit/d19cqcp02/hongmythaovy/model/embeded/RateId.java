@@ -7,7 +7,6 @@ import ptit.d19cqcp02.hongmythaovy.model.entity.User;
 import javax.persistence.Embeddable;
 import javax.persistence.ManyToOne;
 import java.io.Serializable;
-import java.util.Objects;
 
 @Embeddable
 @Getter

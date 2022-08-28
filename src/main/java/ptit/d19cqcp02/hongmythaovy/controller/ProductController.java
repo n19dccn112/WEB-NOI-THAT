@@ -1,38 +1,28 @@
 package ptit.d19cqcp02.hongmythaovy.controller;
 
-import org.apache.jasper.tagplugins.jstl.core.ForEach;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.omg.CORBA.SystemException;
-import org.springframework.util.StringUtils;
-import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import org.w3c.dom.stylesheets.LinkStyle;
+import org.springframework.web.bind.annotation.PathVariable;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Feature;
-import ptit.d19cqcp02.hongmythaovy.model.entity.FeatureType;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Image;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
 import ptit.d19cqcp02.hongmythaovy.service.*;
 
 import javax.imageio.ImageIO;
-import javax.persistence.Query;
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-import javax.validation.Valid;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.*;
+import java.util.Date;
+import java.util.LinkedList;
+import java.util.List;
 
 @Controller
 public class ProductController {
@@ -104,7 +94,7 @@ public class ProductController {
     @PostMapping(value = "update/{productId}")
     public String productUpdate(HttpServletRequest request, ModelMap model,
                                      @Validated @ModelAttribute("product") Product product,
-                                     BindingResult errors) throws IllegalStateException, SystemException, IOException {
+                                     BindingResult errors) throws IllegalStateException, IOException {
         if (!errors.hasErrors()) {
             product.setProductUpDate(new Date());
             productService.save(product);
@@ -122,7 +112,7 @@ public class ProductController {
                                      @Validated @ModelAttribute("product") Product product,
                                      @RequestParam("featureIds") List<Long> featureIds,
                                      @RequestParam Long productId ,
-                                     BindingResult errors) throws IllegalStateException, SystemException, IOException {
+                                     BindingResult errors) throws IllegalStateException, IOException {
         if (!errors.hasErrors()) {
             List<Feature> features = new LinkedList<>();
 

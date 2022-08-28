@@ -5,8 +5,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Order;
 import ptit.d19cqcp02.hongmythaovy.model.entity.OrderDetailView;
-import ptit.d19cqcp02.hongmythaovy.model.entity.OrderStatus;
-import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
 
 import java.util.List;
 
