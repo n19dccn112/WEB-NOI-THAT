@@ -8,9 +8,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import ptit.d19cqcp02.hongmythaovy.model.RoleName;
-import ptit.d19cqcp02.hongmythaovy.model.entity.Role;
-import ptit.d19cqcp02.hongmythaovy.model.entity.User;
-import ptit.d19cqcp02.hongmythaovy.model.entity.UserDetail;
+import ptit.d19cqcp02.hongmythaovy.model.entity.*;
 import ptit.d19cqcp02.hongmythaovy.repository.IUserDetailRepository;
 import ptit.d19cqcp02.hongmythaovy.repository.IUserRepository;
 import ptit.d19cqcp02.hongmythaovy.repository.RoleRepository;
@@ -26,6 +24,7 @@ import java.util.stream.Collectors;
 public class UserService {
 
   private final UserRepository userRepository;
+  private final RateService rateService;
 
   private final AuthenticationManager authenticationManager;
   private final RoleRepository roleRepository;
@@ -38,6 +37,8 @@ public class UserService {
   public List<User> findAll() {
     return userRepository.findAll();
   }
+
+  public List<User> findAllByProductId(Product product) {return userRepository.findAllByProductId(product.getProductId()); }
 
   public User findById(Long userId) {
     return userRepository.findById(userId).get();

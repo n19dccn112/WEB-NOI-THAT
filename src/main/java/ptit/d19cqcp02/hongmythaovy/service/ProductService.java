@@ -13,6 +13,11 @@ import java.util.List;
 public class ProductService {
   private final ProductRepository productRepository;
   private final ImageRepository imageRepository;
+  private final RateService rateService;
+
+//  public void setRates (final Product product){
+//    product.setRates(rateService.findAllByProductproductId(product));
+//  }
 
   public List<Product> findAll() {
     List<Product> products = productRepository.findAll();

@@ -2,6 +2,8 @@ package ptit.d19cqcp02.hongmythaovy.service;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import ptit.d19cqcp02.hongmythaovy.model.embeded.RateId;
+import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Rate;
 import ptit.d19cqcp02.hongmythaovy.repository.RateRepository;
 
@@ -26,5 +28,10 @@ public class RateService {
 
   public void delete(Rate entity) {
     rateRepository.delete(entity);
+  }
+
+  public List<Rate> findAllByProductproductId(Product product){
+    List<Rate> rates = rateRepository.findAllById_ProductProductId(product.getProductId());
+    return rates;
   }
 }

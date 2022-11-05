@@ -4,15 +4,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
-import ptit.d19cqcp02.hongmythaovy.model.entity.Feature;
-import ptit.d19cqcp02.hongmythaovy.model.entity.FeatureType;
-import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
-import ptit.d19cqcp02.hongmythaovy.service.FeatureService;
-import ptit.d19cqcp02.hongmythaovy.service.MaillerService;
-import ptit.d19cqcp02.hongmythaovy.service.OrderService;
-import ptit.d19cqcp02.hongmythaovy.service.ProductService;
+import ptit.d19cqcp02.hongmythaovy.model.embeded.RateId;
+import ptit.d19cqcp02.hongmythaovy.model.entity.*;
+import ptit.d19cqcp02.hongmythaovy.service.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -28,6 +27,10 @@ public class ShopController {
 
   @Autowired private MaillerService maillerService;
 
+  @Autowired RateService rateService;
+
+  @Autowired UserService userService;
+
   @GetMapping("product/{productId}")
   public String shopProductBasic(
       HttpServletRequest request, @PathVariable Long productId, ModelMap model) {
@@ -37,13 +40,44 @@ public class ShopController {
     List<Feature> featuresByProduct = featureService.findByProductId(productId);
     request.setAttribute("featuresbyproduct", featuresByProduct);
 
+    List<Rate> ratesByProduct = rateService.findAllByProductproductId(product);
+    request.setAttribute("ratesbyproduct", ratesByProduct);
+
+    List<User> usersByProduct = userService.findAllByProductId(product);
+    request.setAttribute("usersbyprodcut", usersByProduct);
+
     Set<FeatureType> featuresType = new HashSet<>();
     for (Feature f : featuresByProduct) {
       featuresType.add(f.getFeatureType());
     }
     request.setAttribute("featurestype", featuresType);
 
+    Date date = new Date();
+
     return "shop-product-basic";
+  }
+  @PostMapping("product/{productId}")
+  public String shopProductBasic(HttpServletRequest request,
+                                 HttpServletResponse response,
+                                 @PathVariable Long productId,
+                                 @RequestParam String rateComment,
+                                 @RequestParam Long ratePoint){
+    Product product = productService.findById(productId);
+    HttpSession session = request.getSession();
+    Long userId = (Long) session.getAttribute("currentUserId");
+    System.out.println(userId);
+    User user = userService.findById(userId);
+    //List<Rate> rates = rateService.findAllByProductproductId(product);
+    System.out.println(rateComment);
+    Rate rate = new Rate();
+    RateId rateId = new RateId();
+    rateId.setProduct(product);
+    rateId.setUser(user);
+    rate.setId(rateId);
+    rate.setRatePoint(ratePoint);
+    rate.setRateComment(rateComment);
+    rateService.save(rate);
+    return "redirect:/product/{productId}";
   }
 
   @GetMapping("shop-checkout")

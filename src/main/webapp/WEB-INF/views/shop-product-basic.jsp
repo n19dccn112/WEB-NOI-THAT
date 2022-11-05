@@ -705,7 +705,7 @@
                                                role="tab" aria-selected="false">Additional information</a>
                                             <a class="nav-item nav-link" id="product-tab-3" data-toggle="tab"
                                                href="#product-series-3"
-                                               role="tab" aria-selected="false">Reviews (3)</a>
+                                               role="tab" aria-selected="false">Reviews (${ratesbyproduct.size()})</a>
                                         </div>
                                     </div>
 
@@ -770,130 +770,49 @@
                                             <!--=======  shop product reviews  =======-->
 
                                             <div class="shop-product__review">
-                                                <h2 class="review-title mb-20">3 reviews for High-waist Trousers</h2>
+                                                <h2 class="review-title mb-20">${ratesbyproduct.size()} reviews for the product</h2>
 
                                                 <!--=======  single review  =======-->
 
-                                                <div class="single-review">
-                                                    <div class="single-review__image">
-                                                        <img src="assets/images/user/user1.jpg" class="img-fluid" alt="">
-                                                    </div>
-                                                    <div class="single-review__content">
-                                                        <!--=======  rating  =======-->
-
-                                                        <div class="shop-product__rating">
-															<span class="product-rating">
-																<i class="active ion-android-star"></i>
-																<i class="active ion-android-star"></i>
-																<i class="active ion-android-star"></i>
-																<i class="active ion-android-star"></i>
-																<i class="ion-android-star-outline"></i>
-															</span>
+                                                <c:forEach begin="0" end="${ratesbyproduct.size()-1}" var="i">
+                                                    <div class="single-review">
+                                                        <div class="single-review__image">
+                                                            <img src="assets/images/user/user1.jpg" class="img-fluid" alt="">
                                                         </div>
+                                                        <div class="single-review__content">
+                                                            <!--=======  rating  =======-->
 
-                                                        <!--=======  End of rating  =======-->
-
-                                                        <!--=======  username and date  =======-->
-
-                                                        <p class="username">Scott James <span
-                                                                class="date">/ April 5, 2018</span></p>
-
-                                                        <!--=======  End of username and date  =======-->
-
-                                                        <!--=======  message  =======-->
-
-                                                        <p class="message">
-                                                            Thanks for always keeping your HTML themes up to date. Your
-                                                            level of support and
-                                                            dedication is second to none.
-                                                        </p>
-
-                                                        <!--=======  End of message  =======-->
-                                                    </div>
-                                                </div>
-
-                                                <!--=======  End of single review  =======-->
-
-                                                <!--=======  single review  =======-->
-
-                                                <div class="single-review">
-                                                    <div class="single-review__image">
-                                                        <img src="assets/images/user/user2.jpg" class="img-fluid" alt="">
-                                                    </div>
-                                                    <div class="single-review__content">
-                                                        <!--=======  rating  =======-->
-
-                                                        <div class="shop-product__rating">
+                                                            <div class="shop-product__rating">
 															<span class="product-rating">
-																<i class="active ion-android-star"></i>
-																<i class="active ion-android-star"></i>
-																<i class="active ion-android-star"></i>
-																<i class="active ion-android-star"></i>
-																<i class="ion-android-star-outline"></i>
+                                                                <c:forEach begin="1" end="${ratesbyproduct[i].ratePoint}">
+                                                                    <i class="active ion-android-star"></i>
+                                                                </c:forEach>
+																<c:forEach begin="${ratesbyproduct[i].ratePoint}" end="4">
+                                                                    <i class="ion-android-star-outline"></i>
+                                                                </c:forEach>
+
 															</span>
+                                                            </div>
+
+                                                            <!--=======  End of rating  =======-->
+
+                                                            <!--=======  username and date  =======-->
+
+                                                            <p class="username"> ${usersbyprodcut[i].username} </p>
+
+                                                                <%--                                                        <!--=======  End of username and date  =======-->--%>
+
+                                                                <%--                                                        <!--=======  message  =======-->--%>
+
+                                                            <p class="message">
+                                                                    ${ratesbyproduct[i].rateComment}
+                                                            </p>
+
+                                                            <!--=======  End of message  =======-->
                                                         </div>
-
-                                                        <!--=======  End of rating  =======-->
-
-                                                        <!--=======  username and date  =======-->
-
-                                                        <p class="username">Owen Christ <span
-                                                                class="date">/ April 7, 2018</span></p>
-
-                                                        <!--=======  End of username and date  =======-->
-
-                                                        <!--=======  message  =======-->
-
-                                                        <p class="message">
-                                                            I didn’t expect this poster to arrive folded. Now there are
-                                                            lines on the poster and one
-                                                            sad Ninja.
-                                                        </p>
-
-                                                        <!--=======  End of message  =======-->
                                                     </div>
-                                                </div>
+                                                </c:forEach>
 
-                                                <!--=======  End of single review  =======-->
-
-                                                <!--=======  single review  =======-->
-
-                                                <div class="single-review">
-                                                    <div class="single-review__image">
-                                                        <img src="assets/images/user/user3.jpg" class="img-fluid" alt="">
-                                                    </div>
-                                                    <div class="single-review__content">
-                                                        <!--=======  rating  =======-->
-
-                                                        <div class="shop-product__rating">
-															<span class="product-rating">
-																<i class="active ion-android-star"></i>
-																<i class="active ion-android-star"></i>
-																<i class="active ion-android-star"></i>
-																<i class="active ion-android-star"></i>
-																<i class="ion-android-star-outline"></i>
-															</span>
-                                                        </div>
-
-                                                        <!--=======  End of rating  =======-->
-
-                                                        <!--=======  username and date  =======-->
-
-                                                        <p class="username">Edna Watson <span
-                                                                class="date">/ April 5, 2018</span></p>
-
-                                                        <!--=======  End of username and date  =======-->
-
-                                                        <!--=======  message  =======-->
-
-                                                        <p class="message">
-                                                            Can’t wait to start mixin’ with this one!
-                                                            Irba-irr-Up-up-up-up-date your theme!
-                                                        </p>
-
-                                                        <!--=======  End of message  =======-->
-                                                    </div>
-                                                </div>
 
                                                 <!--=======  End of single review  =======-->
 
@@ -905,28 +824,16 @@
                                                 <!--=======  review form  =======-->
 
                                                 <div class="lezada-form lezada-form--review">
-                                                    <form action="#">
+                                                    <form action="/product/${product.productId}" method="post">
                                                         <div class="row">
-                                                            <div class="col-lg-6 mb-20">
-                                                                <input type="text" placeholder="Name *" required>
-                                                            </div>
-                                                            <div class="col-lg-6 mb-20">
-                                                                <input type="email" placeholder="Email *" required>
-                                                            </div>
                                                             <div class="col-lg-12 mb-20">
                                                                 <span class="rating-title mr-30">YOUR RATING</span>
-                                                                <span class="product-rating">
+                                                                <input type="number" placeholder="0-5" min="0" max="5" name="ratePoint">
 
-																	<i class="active ion-android-star-outline"></i>
-																	<i class="active ion-android-star-outline"></i>
-																	<i class="active ion-android-star-outline"></i>
-																	<i class="active ion-android-star-outline"></i>
-																	<i class="active ion-android-star-outline"></i>
-																</span>
                                                             </div>
                                                             <div class="col-lg-12 mb-20">
                                                             <textarea cols="30" rows="10"
-                                                                      placeholder="Your review *"></textarea>
+                                                                      placeholder="Your review *" name="rateComment"></textarea>
                                                             </div>
                                                             <div class="col-lg-12 text-center">
                                                                 <button type="submit"
