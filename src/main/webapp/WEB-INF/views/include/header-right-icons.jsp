@@ -50,3 +50,38 @@
     </div>
     <!--=======  End of single-icon  =======-->
 </div>
+<div id="chatbot" style="display: none">
+    <iframe
+            allow="microphone;"
+            width="350"
+            height="430"
+            src="https://console.dialogflow.com/api-client/demo/embedded/387d6604-7cc2-4421-bfb4-ebcd3b3bd675">
+    </iframe>
+</div>
+<button type="button"
+        onclick="show()" id="show_chatbot" style="display: block">
+    Show chatbot
+</button>
+<button type="button"
+        onclick="hiden()" id="hiden_chatbot" style="display:none">
+    Hiden chatbot
+</button>
+<script>
+    function show() {
+        document.getElementById('chatbot')
+            .style.display = "block";
+        document.getElementById('show_chatbot')
+            .style.display = "none";
+        document.getElementById('hiden_chatbot')
+            .style.display = "block";
+    }
+
+    function hiden() {
+        document.getElementById('chatbot')
+            .style.display = "none";
+        document.getElementById('show_chatbot')
+            .style.display = "block";
+        document.getElementById('hiden_chatbot')
+            .style.display = "none";
+    }
+</script>

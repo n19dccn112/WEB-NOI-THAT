@@ -1,6 +1,7 @@
 package ptit.d19cqcp02.hongmythaovy.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -9,6 +10,9 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.client.RestTemplate;
+import ptit.d19cqcp02.hongmythaovy.model.ProductRecommander;
+import ptit.d19cqcp02.hongmythaovy.model.entity.Category;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Feature;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Image;
 import ptit.d19cqcp02.hongmythaovy.model.entity.Product;
@@ -20,9 +24,8 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Date;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @Controller
 public class ProductController {
@@ -36,6 +39,8 @@ public class ProductController {
 
   @Autowired FeatureTypeService featureTypeService;
 
+  @Autowired RestTemplate restTemplate;
+
   @GetMapping("products")
   public String index(Model model) {
     model.addAttribute("product", productService.findAll());
@@ -43,16 +48,54 @@ public class ProductController {
   }
 
   @GetMapping("product/add")
-  public String elementMailchimpForm(Model model, HttpServletRequest request) {
+  public String productAdd(Model model, HttpServletRequest request) {
     Product product = new Product();
     model.addAttribute("product", product);
+    model.addAttribute("featuretypes", featureTypeService.findAll());
     return "product-add";
   }
 
-  @PostMapping(value = "products")
-  public String save(Product product) {
-    productService.save(product);
-    return "redirect:products";
+  @PostMapping(value = "product/add", params = {"featureIds"})
+  public String productAdd(
+          HttpServletRequest request,
+          ModelMap model,
+          @Validated @ModelAttribute("product") Product product,
+          @RequestParam("featureIds") List<Long> featureIds,
+          BindingResult errors)
+          throws IllegalStateException, IOException {
+    if (!errors.hasErrors()) {
+      product.setProductUpDate(new Date());
+      List<Feature> list = new ArrayList<>();
+      for (Long id : featureIds) {
+        Feature feature = featureService.findById(id);
+        list.add(feature);
+      }
+      product.setFeatures(list);
+      productService.save(product);
+
+      ResponseEntity<String> response =
+              restTemplate.getForEntity(
+                      "http://127.0.0.1:5000/addProduct?featureBrand=" + product.getFeatures().get(0).getFeaturePoint() +
+                              "&featureCamera=" + product.getFeatures().get(1).getFeaturePoint() +
+                              "&featureRAM=" + product.getFeatures().get(2).getFeaturePoint() +
+                              "&featureROM=" + product.getFeatures().get(3).getFeaturePoint(), String.class);
+      String label = response.getBody();
+      System.out.println(label);
+      List<Category> categories = categoryService.findAll();
+      if (label.equals('A')){
+        product.setCategory(categories.get(1));
+      }
+      else if (label.equals('B')){
+        product.setCategory(categories.get(2));
+      }
+      else
+        product.setCategory(categories.get(3));
+
+      return "redirect:products";
+    } else request.setAttribute("message", "Updated fail!");
+    model.addAttribute("product", product);
+    model.addAttribute("featuretypes", featureTypeService.findAll());
+    return "product-add";
   }
 
   @RequestMapping(value = "dlt-products/{productId}")
@@ -130,7 +173,6 @@ public class ProductController {
     } else request.setAttribute("message", "Updated fail!");
     model.addAttribute("product", product);
     model.addAttribute("featuretypes", featureTypeService.findAll());
-    System.out.println(request.getRequestURI());
     return "redirect:" + request.getRequestURI();
   }
 

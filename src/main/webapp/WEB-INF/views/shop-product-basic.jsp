@@ -357,58 +357,13 @@
                                 <div class="shop-product__big-image-gallery-slider">
 
                                     <!--=======  single image  =======-->
+                                    <c:forEach var="i" items="${product.images}">
+                                        <div class="single-image">
+                                            <img src="${i.imageUrl}"
+                                                 class="img-fluid" alt="" style="width:250px;height:300px;">
+                                        </div>
+                                    </c:forEach>
 
-                                    <div class="single-image">
-                                        <img src="${product.images[0].imageUrl}" class="img-fluid" alt="">
-                                    </div>
-
-                                    <!--=======  End of single image  =======-->
-
-                                    <!--=======  single image  =======-->
-
-                                    <div class="single-image">
-                                        <img src="${product.images[1].imageUrl}" class="img-fluid" alt="">
-                                    </div>
-
-                                    <!--=======  End of single image  =======-->
-
-                                    <!--=======  single image  =======-->
-
-                                    <!--<div class="single-image">
-                                        <img src="assets/images/shop-product/soccer-3.png" class="img-fluid" alt="">
-                                    </div> -->
-
-                                    <!--=======  End of single image  =======-->
-
-                                    <!--=======  single image  =======-->
-
-                                    <%--                                    <div class="single-image">--%>
-                                    <%--                                        <img src="assets/images/shop-product/soccer-4.jpg" class="img-fluid" alt="">--%>
-                                    <%--                                    </div>--%>
-
-                                    <!--=======  End of single image  =======-->
-
-                                    <!--=======  single image  =======-->
-
-                                    <%--                                    <div class="single-image">--%>
-                                    <%--                                        <img src="assets/images/shop-product/soccer-5.png" class="img-fluid" alt="">--%>
-                                    <%--                                    </div>--%>
-
-                                    <!--=======  End of single image  =======-->
-
-                                    <!--=======  single image  =======-->
-
-                                    <%--                                    <div class="single-image">--%>
-                                    <%--                                        <img src="assets/images/shop-product/trendcoat-1.jpg" class="img-fluid" alt="">--%>
-                                    <%--                                    </div>--%>
-
-                                    <!--=======  End of single image  =======-->
-
-                                    <!--=======  single image  =======-->
-
-                                    <%--                                    <div class="single-image">--%>
-                                    <%--                                        <img src="assets/images/shop-product/trendcoat-2.jpg" class="img-fluid" alt="">--%>
-                                    <%--                                    </div>--%>
 
                                     <!--=======  End of single image  =======-->
                                 </div>
@@ -424,66 +379,18 @@
                                 <div class="shop-product__small-image-gallery-slider">
 
                                     <!--=======  single image  =======-->
-
+                                    <c:forEach var="i" items="${product.images}">
                                     <div class="single-image">
-                                        <img src="${product.images[0].imageUrl}" class="img-fluid"
+                                        <img src="${i.imageUrl}" class="img-fluid"
                                              alt="">
                                     </div>
-
-                                    <!--=======  End of single image  =======-->
-
-                                    <!--=======  single image  =======-->
-
-                                    <div class="single-image">
-                                        <img src="${product.images[1].imageUrl}" class="img-fluid"
-                                             alt="">
-                                    </div>
-
-                                    <!--=======  End of single image  =======-->
-
-                                    <!--=======  single image  =======-->
-
-                                    <div class="single-image">
-                                        <img src="${product.images[0].imageUrl}" class="img-fluid"
-                                             alt="">
-                                    </div>
-
-                                    <!--=======  End of single image  =======-->
-
-                                    <!--=======  single image  =======-->
-
-                                    <div class="single-image">
-                                        <img src="${product.images[1].imageUrl}" class="img-fluid"
-                                             alt="">
-                                    </div>
-
-                                    <!--=======  End of single image  =======-->
-
-                                    <!--=======  single image  =======-->
-
-                                    <div class="single-image">
-                                        <img src="${product.images[0].imageUrl}" class="img-fluid"
-                                             alt="">
-                                    </div>
-
-                                    <!--=======  End of single image  =======-->
-
-                                    <!--=======  single image  =======-->
-
-                                    <div class="single-image">
-                                        <img src="${product.images[1].imageUrl}" class="img-fluid"
-                                             alt="">
-                                    </div>
-
-                                    <!--=======  End of single image  =======-->
-
-                                    <!--=======  single image  =======-->
-
-                                    <div class="single-image">
-                                        <img src="${product.images[0].imageUrl}" class="img-fluid"
-                                             alt="">
-                                    </div>
-
+                                    </c:forEach>
+                                    <c:forEach var="i" items="${product.images}">
+                                        <div class="single-image">
+                                            <img src="${i.imageUrl}" class="img-fluid"
+                                                 alt="">
+                                        </div>
+                                    </c:forEach>
                                     <!--=======  End of single image  =======-->
                                 </div>
 
@@ -554,33 +461,6 @@
                                         <div class="shop-product__block__title">${ft.featureTypeName}</div>
                                         <div class="shop-product__block__value">
                                             <div class="shop-product-${ft.featureTypeName}-list">
-                                                <c:choose>
-                                                    <c:when test="${ft.featureTypeName.equals('Color')}">
-
-                                                        <ul class="single-filter-widget--list single-filter-widget--list--color">
-
-                                                            <c:forEach var="f" items="${featuresbyproduct}">
-                                                                <c:if test="${ft.featureTypeId.equals(f.featureType.featureTypeId)}">
-                                                                    <li class="mb-0 pt-0 pb-0 mr-10"><a
-                                                                            class="active"><span
-                                                                            class="color-picker ${f.featureSpecific}"></span></a>
-                                                                    </li>
-                                                                </c:if>
-                                                            </c:forEach>
-
-                                                            <select name="color" id="color">
-                                                                <option value="-1">Select a color</option>
-                                                                <c:forEach var="f" items="${featuresbyproduct}">
-                                                                    <c:if test="${ft.featureTypeId.equals(f.featureType.featureTypeId)}">
-                                                                        <option value="${f.featureSpecific}">${f.featureSpecific}</option>
-                                                                    </c:if>
-                                                                </c:forEach>
-                                                            </select>
-
-                                                        </ul>
-                                                    </c:when>
-                                                    <c:otherwise>
-                                                        <div class="shop-product-size-list">
 
                                                             <c:forEach var="f" items="${featuresbyproduct}">
                                                                 <c:if test="${ft.featureTypeId.equals(f.featureType.featureTypeId)}">
@@ -588,18 +468,6 @@
                                                                 </c:if>
                                                             </c:forEach>
 
-                                                            <select name="size" id="size">
-                                                                <option value="-1">Select a size</option>
-                                                                <c:forEach var="f" items="${featuresbyproduct}">
-                                                                    <c:if test="${ft.featureTypeId.equals(f.featureType.featureTypeId)}">
-                                                                        <option value="${f.featureSpecific}">${f.featureSpecific}</option>
-                                                                    </c:if>
-                                                                </c:forEach>
-                                                            </select>
-                                                        </div>
-                                                    </c:otherwise>
-
-                                                </c:choose>
                                             </div>
                                         </div>
                                     </div>
@@ -614,180 +482,334 @@
                                         <div class="pro-qty d-inline-block mx-0 pt-0"><a href="#"
                                                                                          class="dec qty-btn"></a>
                                             <input type="text" name="amount" value="1">
-                                                                                            <a href="#" class="inc qty-btn"></a></div>
-                                        </div>
+                                            <a href="#" class="inc qty-btn"></a></div>
                                     </div>
-                                    <%-- ================================================--%>
+                                </div>
+                                <%-- ================================================--%>
 
-                                    <!--=======  shop product buttons  =======-->
+                                <!--=======  shop product buttons  =======-->
 
-                                    <div class="shop-product__block shop-product__block--quantity mb-40">
-                                        <a class="lezada-button lezada-button--medium"
-                                           href="cart?action=add&&productId=${product.productId}">add
-                                            to cart</a>
-                                    </div>
-
-                                    <!--=======  End of shop product buttons  =======-->
-
-                                    <!--=======  shop product brands  =======-->
-
-                                    <div class="shop-product__brands mb-20">
-
-                                        <a href="#">
-                                            <img src="assets/images/brands/brand-1.png" class="img-fluid" alt="">
-                                        </a>
-
-                                        <a href="#">
-                                            <img src="assets/images/brands/brand-2.png" class="img-fluid" alt="">
-                                        </a>
-
-                                    </div>
-
-                                    <!--=======  End of shop product brands  =======-->
-
-                                    <!--=======  other info table  =======-->
-
-                                    <div class="quick-view-other-info pb-0">
-                                        <table>
-                                            <tr class="single-info">
-                                                <td class="quickview-title">SKU:</td>
-                                                <td class="quickview-value">12345</td>
-                                            </tr>
-                                            <tr class="single-info">
-                                                <td class="quickview-title">Categories:</td>
-                                                <td class="quickview-value">
-                                                    <a href="#">
-                                                        ${product.category.categoryName}
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                            <tr class="single-info">
-                                                <td class="quickview-title">Tags:</td>
-                                                <td class="quickview-value">
-                                                    <a href="#">Furniture</a>
-                                                </td>
-                                            </tr>
-                                            <tr class="single-info">
-                                                <td class="quickview-title">Share on:</td>
-                                                <td class="quickview-value">
-                                                    <ul class="quickview-social-icons">
-                                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                    </ul>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-
-                                    <!--=======  End of other info table  =======-->
+                                <div class="shop-product__block shop-product__block--quantity mb-40">
+                                    <a class="lezada-button lezada-button--medium"
+                                       href="cart?action=add&&productId=${product.productId}">add
+                                        to cart</a>
                                 </div>
 
-                                <!--=======  End of shop product description  =======-->
+                                <!--=======  End of shop product buttons  =======-->
+
+                                <!--=======  shop product brands  =======-->
+
+                                <div class="shop-product__brands mb-20">
+
+                                    <a href="#">
+                                        <img src="assets/images/brands/brand-1.png" class="img-fluid" alt="">
+                                    </a>
+
+                                    <a href="#">
+                                        <img src="assets/images/brands/brand-2.png" class="img-fluid" alt="">
+                                    </a>
+
+                                </div>
+
+                                <!--=======  End of shop product brands  =======-->
+
+                                <!--=======  other info table  =======-->
+
+                                <div class="quick-view-other-info pb-0">
+                                    <table>
+                                        <tr class="single-info">
+                                            <td class="quickview-title">SKU:</td>
+                                            <td class="quickview-value">12345</td>
+                                        </tr>
+                                        <tr class="single-info">
+                                            <td class="quickview-title">Categories:</td>
+                                            <td class="quickview-value">
+                                                <a href="#">
+                                                    ${product.category.categoryName}
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="single-info">
+                                            <td class="quickview-title">Tags:</td>
+                                            <td class="quickview-value">
+                                                <a href="#">Furniture</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="single-info">
+                                            <td class="quickview-title">Share on:</td>
+                                            <td class="quickview-value">
+                                                <ul class="quickview-social-icons">
+                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+                                <!--=======  End of other info table  =======-->
                             </div>
+
+                            <!--=======  End of shop product description  =======-->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 order-1 order-lg-2 mb-md-80 mb-sm-80">
+
+                        <div class="row product-isotope shop-product-wrap four-column">
+                            <c:forEach var="pr" items="${productRecommanders}">
+                                <!--======= single product =======-->
+                                <div class="col-12 col-lg-2 col-md-6 col-sm-6 mb-45 new">
+                                    <div class="single-product">
+                                        <!--=======  single product image  =======-->
+
+                                        <div class="single-product__image">
+                                            <a class="image-wrap" href="product/${pr.id}">
+                                                <img src="${pr.image}" class="productRecommanders" alt=""
+                                                     style="width:150px;height:200px;">
+                                                    <%--                                                <img src="assets/images/products/watch-3-2-600x800.jpg" class="img-fluid" alt="">--%>
+                                            </a>
+
+                                            <div class="single-product__floating-badges">
+                                            </div>
+
+                                            <div class="single-product__floating-icons">
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="left"><i
+                                                    class="ion-android-favorite-outline"></i></a></span>
+                                                <span class="compare"><a href="#" data-tippy="Compare"
+                                                                         data-tippy-inertia="true"
+                                                                         data-tippy-animation="shift-away"
+                                                                         data-tippy-delay="50" data-tippy-arrow="true"
+                                                                         data-tippy-theme="sharpborder"
+                                                                         data-tippy-placement="left"><i
+                                                        class="ion-ios-shuffle-strong"></i></a></span>
+                                                <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                           data-tippy="Quick View"
+                                                                           data-tippy-inertia="true"
+                                                                           data-tippy-animation="shift-away"
+                                                                           data-tippy-delay="50"
+                                                                           data-tippy-arrow="true"
+                                                                           data-tippy-theme="sharpborder"
+                                                                           data-tippy-placement="left"><i
+                                                        class="ion-ios-search-strong"></i></a></span>
+                                            </div>
+                                        </div>
+
+                                        <!--=======  End of single product image  =======-->
+
+                                        <!--=======  single product content  =======-->
+
+                                        <div class="single-product__content">
+                                            <div class="title">
+                                                <h3><a href="shop-product-basic.html"> ${pr.name}</a></h3>
+                                                <a href="#">Add to cart</a>
+                                            </div>
+                                            <div class="price">
+                                                    <%--                                                <span class="main-price discounted">$120.00</span>--%>
+                                                <span class="discounted-price">${pr.price}</span>
+                                            </div>
+                                        </div>
+
+                                        <!--=======  End of single product content  =======-->
+                                    </div>
+                                    <div class="single-product--list">
+                                        <!--=======  single product image  =======-->
+
+                                        <div class="single-product__image">
+                                            <a class="image-wrap" href="shop-product-basic.html">
+                                                <img src="assets/images/products/watch-3-1-600x800.jpg"
+                                                     class="img-fluid" alt="">
+                                                <img src="assets/images/products/watch-3-2-600x800.jpg"
+                                                     class="img-fluid" alt="">
+                                            </a>
+
+
+                                            <div class="single-product__floating-icons">
+											<span class="wishlist"><a href="#" data-tippy="Add to wishlist"
+                                                                      data-tippy-inertia="true"
+                                                                      data-tippy-animation="shift-away"
+                                                                      data-tippy-delay="50" data-tippy-arrow="true"
+                                                                      data-tippy-theme="sharpborder"
+                                                                      data-tippy-placement="bottom"><i
+                                                    class="ion-android-favorite-outline"></i></a></span>
+
+                                                <span class="compare"><a href="#" data-tippy="Compare"
+                                                                         data-tippy-inertia="true"
+                                                                         data-tippy-animation="shift-away"
+                                                                         data-tippy-delay="50" data-tippy-arrow="true"
+                                                                         data-tippy-theme="sharpborder"
+                                                                         data-tippy-placement="bottom"><i
+                                                        class="ion-ios-shuffle-strong"></i></a></span>
+
+                                                <span class="quickview"><a class="cd-trigger" href="#qv-1"
+                                                                           data-tippy="Quick View"
+                                                                           data-tippy-inertia="true"
+                                                                           data-tippy-animation="shift-away"
+                                                                           data-tippy-delay="50"
+                                                                           data-tippy-arrow="true"
+                                                                           data-tippy-theme="sharpborder"
+                                                                           data-tippy-placement="bottom"><i
+                                                        class="ion-ios-search-strong"></i></a></span>
+                                            </div>
+
+
+                                        </div>
+
+                                        <!--=======  End of single product image  =======-->
+
+                                        <!--=======  single product content  =======-->
+
+                                        <div class="single-product__content">
+
+                                            <div class="title">
+                                                <h3><a href="shop-product-basic.html">Dark Brown Watch</a></h3>
+                                            </div>
+                                            <div class="price">
+                                                <span class="main-price discounted">$120.00</span>
+                                                <span class="discounted-price">$100.00</span>
+                                            </div>
+                                            <p class="short-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                elit. Laudantium
+                                                consequuntur voluptatem ad molestiae. Expedita nesciunt quam totam,
+                                                sapiente eveniet consectetur
+                                                voluptas quas harum impedit quia quibusdam tempora ab facilis. Non
+                                                assumenda veritatis,
+                                            </p>
+
+                                            <a href="#" class="lezada-button lezada-button--medium">ADD TO CART</a>
+
+                                        </div>
+
+                                        <!--=======  End of single product content  =======-->
+                                    </div>
+                                </div>
+                                <!--======= End of single product =======-->
+                            </c:forEach>
+
+
                         </div>
 
                         <div class="row">
-                            <div class="col-lg-12">
-                                <!--=======  shop product description tab  =======-->
+                            <div class="col-lg-12 text-center mt-30">
+                                <a class="lezada-button lezada-button--medium lezada-button--icon--left" href="#"><i
+                                        class="ion-android-add"></i> MORE</a>
+                            </div>
+                        </div>
 
-                                <div class="shop-product__description-tab pt-100">
-                                    <!--=======  tab navigation  =======-->
+                    </div>
 
-                                    <div class="tab-product-navigation tab-product-navigation--product-desc mb-50">
-                                        <div class="nav nav-tabs justify-content-center" id="nav-tab2" role="tablist">
-                                            <a class="nav-item nav-link active" id="product-tab-1" data-toggle="tab"
-                                               href="#product-series-1"
-                                               role="tab" aria-selected="true">Description</a>
-                                            <a class="nav-item nav-link" id="product-tab-2" data-toggle="tab"
-                                               href="#product-series-2"
-                                               role="tab" aria-selected="false">Additional information</a>
-                                            <a class="nav-item nav-link" id="product-tab-3" data-toggle="tab"
-                                               href="#product-series-3"
-                                               role="tab" aria-selected="false">Reviews (${ratesbyproduct.size()})</a>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!--=======  shop product description tab  =======-->
+
+                            <div class="shop-product__description-tab pt-100">
+                                <!--=======  tab navigation  =======-->
+
+                                <div class="tab-product-navigation tab-product-navigation--product-desc mb-50">
+                                    <div class="nav nav-tabs justify-content-center" id="nav-tab2" role="tablist">
+                                        <a class="nav-item nav-link active" id="product-tab-1" data-toggle="tab"
+                                           href="#product-series-1"
+                                           role="tab" aria-selected="true">Description</a>
+                                        <a class="nav-item nav-link" id="product-tab-2" data-toggle="tab"
+                                           href="#product-series-2"
+                                           role="tab" aria-selected="false">Additional information</a>
+                                        <a class="nav-item nav-link" id="product-tab-3" data-toggle="tab"
+                                           href="#product-series-3"
+                                           role="tab" aria-selected="false">Reviews (${ratesbyproduct.size()})</a>
+                                    </div>
+                                </div>
+
+                                <!--=======  End of tab navigation  =======-->
+
+                                <!--=======  tab content  =======-->
+
+                                <div class="tab-content" id="nav-tabContent2">
+
+                                    <div class="tab-pane fade show active" id="product-series-1" role="tabpanel"
+                                         aria-labelledby="product-tab-1">
+                                        <!--=======  shop product long description  =======-->
+
+                                        <div class="shop-product__long-desc mb-30">
+                                            <p>${product.productDescription}</p>
                                         </div>
+
+                                        <!--=======  End of shop product long description  =======-->
                                     </div>
 
-                                    <!--=======  End of tab navigation  =======-->
+                                    <div class="tab-pane fade" id="product-series-2" role="tabpanel"
+                                         aria-labelledby="product-tab-2">
+                                        <!--=======  shop product additional information  =======-->
 
-                                    <!--=======  tab content  =======-->
-
-                                    <div class="tab-content" id="nav-tabContent2">
-
-                                        <div class="tab-pane fade show active" id="product-series-1" role="tabpanel"
-                                             aria-labelledby="product-tab-1">
-                                            <!--=======  shop product long description  =======-->
-
-                                            <div class="shop-product__long-desc mb-30">
-                                                <p>${product.productDescription}</p>
-                                            </div>
-
-                                            <!--=======  End of shop product long description  =======-->
-                                        </div>
-
-                                        <div class="tab-pane fade" id="product-series-2" role="tabpanel"
-                                             aria-labelledby="product-tab-2">
-                                            <!--=======  shop product additional information  =======-->
-
-                                            <div class="shop-product__additional-info">
-                                                <table class="shop-attributes">
-                                                    <tbody>
-                                                    <tr>
-                                                        <th>Size</th>
-                                                        <td>
-                                                            <p>
-                                                                <c:forEach var="f" items="${featuresbyproduct}">
-                                                                    <c:if test="${ft.featureTypeId.equals(f.featureType.featureTypeId)}">
-                                                                        <span class="single-size">${f.featureSpecific}</span>
-                                                                    </c:if>
-                                                                </c:forEach>
-                                                            </p>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Color</th>
-                                                        <td>
+                                        <div class="shop-product__additional-info">
+                                            <table class="shop-attributes">
+                                                <tbody>
+                                                <tr>
+                                                    <th>Size</th>
+                                                    <td>
+                                                        <p>
                                                             <c:forEach var="f" items="${featuresbyproduct}">
                                                                 <c:if test="${ft.featureTypeId.equals(f.featureType.featureTypeId)}">
-                                                                    <li class="mb-0 pt-0 pb-0 mr-10"><a
-                                                                            class="active"><span
-                                                                            class="color-picker ${f.featureSpecific}"></span></a>
-                                                                    </li>
+                                                                    <span class="single-size">${f.featureSpecific}</span>
                                                                 </c:if>
                                                             </c:forEach>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-
-                                            <!--=======  End of shop product additional information  =======-->
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Color</th>
+                                                    <td>
+                                                        <c:forEach var="f" items="${featuresbyproduct}">
+                                                            <c:if test="${ft.featureTypeId.equals(f.featureType.featureTypeId)}">
+                                                                <li class="mb-0 pt-0 pb-0 mr-10"><a
+                                                                        class="active"><span
+                                                                        class="color-picker ${f.featureSpecific}"></span></a>
+                                                                </li>
+                                                            </c:if>
+                                                        </c:forEach>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
 
-                                        <div class="tab-pane fade" id="product-series-3" role="tabpanel"
-                                             aria-labelledby="product-tab-3">
-                                            <!--=======  shop product reviews  =======-->
+                                        <!--=======  End of shop product additional information  =======-->
+                                    </div>
 
-                                            <div class="shop-product__review">
-                                                <h2 class="review-title mb-20">${ratesbyproduct.size()} reviews for the product</h2>
+                                    <div class="tab-pane fade" id="product-series-3" role="tabpanel"
+                                         aria-labelledby="product-tab-3">
+                                        <!--=======  shop product reviews  =======-->
 
-                                                <!--=======  single review  =======-->
+                                        <div class="shop-product__review">
+                                            <h2 class="review-title mb-20">${ratesbyproduct.size()} reviews for the
+                                                product</h2>
 
+                                            <!--=======  single review  =======-->
+                                            <c:if test="ratesbyproduct.size()>0">
                                                 <c:forEach begin="0" end="${ratesbyproduct.size()-1}" var="i">
                                                     <div class="single-review">
                                                         <div class="single-review__image">
-                                                            <img src="assets/images/user/user1.jpg" class="img-fluid" alt="">
+                                                            <img src="assets/images/user/user1.jpg" class="img-fluid"
+                                                                 alt="">
                                                         </div>
                                                         <div class="single-review__content">
                                                             <!--=======  rating  =======-->
 
                                                             <div class="shop-product__rating">
 															<span class="product-rating">
-                                                                <c:forEach begin="1" end="${ratesbyproduct[i].ratePoint}">
+                                                                <c:forEach begin="1"
+                                                                           end="${ratesbyproduct[i].ratePoint}">
                                                                     <i class="active ion-android-star"></i>
                                                                 </c:forEach>
-																<c:forEach begin="${ratesbyproduct[i].ratePoint}" end="4">
+																<c:forEach begin="${ratesbyproduct[i].ratePoint}"
+                                                                           end="4">
                                                                     <i class="ion-android-star-outline"></i>
                                                                 </c:forEach>
 
@@ -813,253 +835,255 @@
                                                     </div>
                                                 </c:forEach>
 
+                                            </c:if>
+                                            <!--=======  End of single review  =======-->
 
-                                                <!--=======  End of single review  =======-->
+                                            <h2 class="review-title mb-20">Add a review</h2>
+                                            <p class="text-center">Your email address will not be published. Required
+                                                fields are marked *
+                                            </p>
 
-                                                <h2 class="review-title mb-20">Add a review</h2>
-                                                <p class="text-center">Your email address will not be published. Required
-                                                    fields are marked *
-                                                </p>
+                                            <!--=======  review form  =======-->
 
-                                                <!--=======  review form  =======-->
+                                            <div class="lezada-form lezada-form--review">
+                                                <form action="/product/${product.productId}" method="post">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 mb-20">
+                                                            <span class="rating-title mr-30">YOUR RATING</span>
+                                                            <input type="number" placeholder="0-5" min="0" max="5"
+                                                                   name="ratePoint">
 
-                                                <div class="lezada-form lezada-form--review">
-                                                    <form action="/product/${product.productId}" method="post">
-                                                        <div class="row">
-                                                            <div class="col-lg-12 mb-20">
-                                                                <span class="rating-title mr-30">YOUR RATING</span>
-                                                                <input type="number" placeholder="0-5" min="0" max="5" name="ratePoint">
-
-                                                            </div>
-                                                            <div class="col-lg-12 mb-20">
-                                                            <textarea cols="30" rows="10"
-                                                                      placeholder="Your review *" name="rateComment"></textarea>
-                                                            </div>
-                                                            <div class="col-lg-12 text-center">
-                                                                <button type="submit"
-                                                                        class="lezada-button lezada-button--medium">submit
-                                                                </button>
-                                                            </div>
                                                         </div>
-                                                    </form>
-                                                </div>
-
-                                                <!--=======  End of review form  =======-->
-
-
+                                                        <div class="col-lg-12 mb-20">
+                                                            <textarea cols="30" rows="10"
+                                                                      placeholder="Your review *"
+                                                                      name="rateComment"></textarea>
+                                                        </div>
+                                                        <div class="col-lg-12 text-center">
+                                                            <button type="submit"
+                                                                    class="lezada-button lezada-button--medium">submit
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
                                             </div>
 
-                                            <!--=======  End of shop product reviews  =======-->
+                                            <!--=======  End of review form  =======-->
+
+
                                         </div>
 
+                                        <!--=======  End of shop product reviews  =======-->
                                     </div>
 
-                                    <!--=======  End of tab content  =======-->
                                 </div>
 
-                                <!--=======  End of shop product description tab  =======-->
+                                <!--=======  End of tab content  =======-->
                             </div>
+
+                            <!--=======  End of shop product description tab  =======-->
                         </div>
                     </div>
-
-                    <!--=======  End of shop product content  =======-->
                 </div>
+
+                <!--=======  End of shop product content  =======-->
             </div>
         </div>
     </div>
+</div>
 
-    <!--=====  End of shop page content  ======-->
+<!--=====  End of shop page content  ======-->
 
 
-    <!--=============================================
-    =            footer area         =
-    =============================================-->
+<!--=============================================
+=            footer area         =
+=============================================-->
 
-    <jsp:include page="include/foot.jsp"/>
+<jsp:include page="include/foot.jsp"/>
 
-    <!--=====  End of footer area  ======-->
+<!--=====  End of footer area  ======-->
 
-    <!--=============================================
-    =            overlay items         =
-    =============================================-->
+<!--=============================================
+=            overlay items         =
+=============================================-->
 
-    <!--=======  about overlay  =======-->
+<!--=======  about overlay  =======-->
 
-    <div class="header-offcanvas about-overlay" id="about-overlay">
-        <div class="overlay-close inactive"></div>
-        <div class="overlay-content">
+<div class="header-offcanvas about-overlay" id="about-overlay">
+    <div class="overlay-close inactive"></div>
+    <div class="overlay-content">
 
-            <!--=======  close icon  =======-->
+        <!--=======  close icon  =======-->
 
-            <span class="close-icon" id="about-close-icon">
+        <span class="close-icon" id="about-close-icon">
 				<a href="javascript:void(0)">
 					<i class="ti-close"></i>
 				</a>
 			</span>
 
-            <!--=======  End of close icon  =======-->
+        <!--=======  End of close icon  =======-->
 
-            <!--=======  overlay content container  =======-->
+        <!--=======  overlay content container  =======-->
 
-            <div class="overlay-content-container d-flex flex-column justify-content-between h-100">
-                <!--=======  widget wrapper  =======-->
+        <div class="overlay-content-container d-flex flex-column justify-content-between h-100">
+            <!--=======  widget wrapper  =======-->
 
-                <div class="widget-wrapper">
-                    <!--=======  single widget  =======-->
+            <div class="widget-wrapper">
+                <!--=======  single widget  =======-->
 
-                    <div class="single-widget">
-                        <h2 class="widget-title">About Us</h2>
-                        <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
-                            over other
-                            factors. Our fashion items never get outdated. They are not short-lived as normal fashion
-                            clothes.</p>
-                    </div>
-
-                    <!--=======  End of single widget  =======-->
+                <div class="single-widget">
+                    <h2 class="widget-title">About Us</h2>
+                    <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
+                        over other
+                        factors. Our fashion items never get outdated. They are not short-lived as normal fashion
+                        clothes.</p>
                 </div>
 
-                <!--=======  End of widget wrapper  =======-->
-
-                <!--=======  contact widget  =======-->
-
-                <div class="contact-widget">
-                    <p class="email"><a href="mailto:contact@lezada.com">contact@lezada.com</a></p>
-                    <p class="phone">(+00) 123 567990</p>
-
-                    <div class="social-icons">
-                        <ul>
-                            <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
-                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
-                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
-                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
-                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!--=======  End of contact widget  =======-->
+                <!--=======  End of single widget  =======-->
             </div>
 
-            <!--=======  End of overlay content container  =======-->
+            <!--=======  End of widget wrapper  =======-->
+
+            <!--=======  contact widget  =======-->
+
+            <div class="contact-widget">
+                <p class="email"><a href="mailto:contact@lezada.com">contact@lezada.com</a></p>
+                <p class="phone">(+00) 123 567990</p>
+
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
+                               data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                               data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--=======  End of contact widget  =======-->
         </div>
+
+        <!--=======  End of overlay content container  =======-->
     </div>
+</div>
 
-    <!--=======  End of about overlay  =======-->
+<!--=======  End of about overlay  =======-->
 
-    <!--=======  wishlist overlay  =======-->
+<!--=======  wishlist overlay  =======-->
 
-    <div class="wishlist-overlay" id="wishlist-overlay">
-        <div class="wishlist-overlay-close inactive"></div>
-        <div class="wishlist-overlay-content">
-            <!--=======  close icon  =======-->
-
-            <span class="close-icon" id="wishlist-close-icon">
-				<a href="javascript:void(0)">
-					<i class="ion-android-close"></i>
-				</a>
-			</span>
-
-            <!--=======  End of close icon  =======-->
-
-            <!--=======  offcanvas wishlist content container  =======-->
-
-            <jsp:include page="include/cart.jsp"/>
-
-            <!--=======  End of offcanvas wishlist content container   =======-->
-        </div>
-    </div>
-
-    <!--=======  End of wishlist overlay  =======-->
-
-    <!--=======  cart overlay  =======-->
-
-    <div class="cart-overlay" id="cart-overlay">
-        <div class="cart-overlay-close inactive"></div>
-        <div class="cart-overlay-content">
-            <!--=======  close icon  =======-->
-
-            <span class="close-icon" id="cart-close-icon">
-				<a href="javascript:void(0)">
-					<i class="ion-android-close"></i>
-				</a>
-			</span>
-
-            <!--=======  End of close icon  =======-->
-
-            <!--=======  offcanvas cart content container  =======-->
-
-            <jsp:include page="include/cart.jsp"/>
-
-            <!--=======  End of offcanvas cart content container   =======-->
-        </div>
-    </div>
-
-    <!--=======  End of cart overlay  =======-->
-
-
-    <!--=======  search overlay  =======-->
-
-    <div class="search-overlay" id="search-overlay">
-
+<div class="wishlist-overlay" id="wishlist-overlay">
+    <div class="wishlist-overlay-close inactive"></div>
+    <div class="wishlist-overlay-content">
         <!--=======  close icon  =======-->
 
-        <span class="close-icon search-close-icon">
+        <span class="close-icon" id="wishlist-close-icon">
+				<a href="javascript:void(0)">
+					<i class="ion-android-close"></i>
+				</a>
+			</span>
+
+        <!--=======  End of close icon  =======-->
+
+        <!--=======  offcanvas wishlist content container  =======-->
+
+        <jsp:include page="include/cart.jsp"/>
+
+        <!--=======  End of offcanvas wishlist content container   =======-->
+    </div>
+</div>
+
+<!--=======  End of wishlist overlay  =======-->
+
+<!--=======  cart overlay  =======-->
+
+<div class="cart-overlay" id="cart-overlay">
+    <div class="cart-overlay-close inactive"></div>
+    <div class="cart-overlay-content">
+        <!--=======  close icon  =======-->
+
+        <span class="close-icon" id="cart-close-icon">
+				<a href="javascript:void(0)">
+					<i class="ion-android-close"></i>
+				</a>
+			</span>
+
+        <!--=======  End of close icon  =======-->
+
+        <!--=======  offcanvas cart content container  =======-->
+
+        <jsp:include page="include/cart.jsp"/>
+
+        <!--=======  End of offcanvas cart content container   =======-->
+    </div>
+</div>
+
+<!--=======  End of cart overlay  =======-->
+
+
+<!--=======  search overlay  =======-->
+
+<div class="search-overlay" id="search-overlay">
+
+    <!--=======  close icon  =======-->
+
+    <span class="close-icon search-close-icon">
 			<a href="javascript:void(0)" id="search-close-icon">
 				<i class="ti-close"></i>
 			</a>
 		</span>
 
-        <!--=======  End of close icon  =======-->
+    <!--=======  End of close icon  =======-->
 
-        <!--=======  search overlay content  =======-->
+    <!--=======  search overlay content  =======-->
 
-        <div class="search-overlay-content">
-            <div class="input-box">
-                <form action="https://htmldemo.hasthemes.com/lezada/lezada/index">
-                    <input type="search" placeholder="Search Products...">
-                </form>
-            </div>
-            <div class="search-hint">
-                <span># Hit enter to search or ESC to close</span>
-            </div>
+    <div class="search-overlay-content">
+        <div class="input-box">
+            <form action="https://htmldemo.hasthemes.com/lezada/lezada/index">
+                <input type="search" placeholder="Search Products...">
+            </form>
         </div>
-
-        <!--=======  End of search overlay content  =======-->
+        <div class="search-hint">
+            <span># Hit enter to search or ESC to close</span>
+        </div>
     </div>
 
-    <!--=======  End of search overlay  =======-->
+    <!--=======  End of search overlay content  =======-->
+</div>
 
-    <!--=====  End of overlay items  ======-->
+<!--=======  End of search overlay  =======-->
+
+<!--=====  End of overlay items  ======-->
 
 
-    <!-- scroll to top  -->
-    <a href="#" class="scroll-top"></a>
-    <!-- end of scroll to top -->
+<!-- scroll to top  -->
+<a href="#" class="scroll-top"></a>
+<!-- end of scroll to top -->
 
-    <!-- JS
-    ============================================ -->
-    <!-- jQuery JS -->
-    <script src="assets/js/vendor/jquery.min.js"></script>
+<!-- JS
+============================================ -->
+<!-- jQuery JS -->
+<script src="assets/js/vendor/jquery.min.js"></script>
 
-    <!-- Popper JS -->
-    <script src="assets/js/popper.min.js"></script>
+<!-- Popper JS -->
+<script src="assets/js/popper.min.js"></script>
 
-    <!-- Bootstrap JS -->
-    <script src="assets/js/bootstrap.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.min.js"></script>
 
-    <!-- Plugins JS -->
-    <script src="assets/js/plugins.js"></script>
+<!-- Plugins JS -->
+<script src="assets/js/plugins.js"></script>
 
-    <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
 
 </body>
 

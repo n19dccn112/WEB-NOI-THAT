@@ -1,4 +1,3 @@
-
 <%--
   Created by IntelliJ IDEA.
   User: n19dc
@@ -300,275 +299,379 @@
     <!--=== Admin ===-->
 
     <title>Products List</title>
-    <style type="text/css">
-        .panel {
-            width: 60%;
-            margin: 0 auto;
-            border: solid #4267b2 1px;
+    <style>
+        .container {
+            rwidth: 30%;
+            margin: auto;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
         }
 
-        .panel-heading {
-            background-color: #4267b2;
-            padding: 10px;
-            color: white;
-        }
-
-        .panel-body {
-            padding: 10px;
-        }
-
-        .panel-body label {
-            font-weight: bold;
-        }
-
-        .form-group {
-            display: block;
-            margin-bottom: 20px;
-        }
-
-        .form-control {
-            display: block;
-            width: 98%;
-            font-size: 16px;
-            margin-top: 10px;
-        }
-
-        .table {
+        input[type=text] {
             width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
         }
 
-        .table tr {
-            border-bottom: solid blue 1px;
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-<div class="container main-content form">
-    <div class="row">
-        <div class="mailchimp-newsletter-area mb-100">
-            <div class="panel">
-                <div class="panel-heading">
-                    Add product
-                </div>
-                <div class="panel-body">
-                    <form:form method="POST" modelAttribute="product" class="com-mail"  action="products">
-                        <div class="form-group">
-                            <label>Category ${product.category.cateId}</label>
-                            <form:select path="category.cateId">
-                                <option value="-1">Select a type</option>
-                                <c:forEach var="c" items="${cates}">
-                                    <option value="${c.cateId}" ${product.category.cateId == c.cateId ? 'selected=""' : ''}>${c.categoryName}</option>
+<div class="contact-form-area mb-60 mb-100 mb-sm-70">
+    <div class="form-group">
+        <div class="container">
+            <div class="row">
+                <div class="row-cols-md-12 mb-sm-30 offset-md-3 col-md-6">
+                    <div class="panel">
+                        <div class="panel-heading">
+                        </div>
+                        <h3>${message}</h3>
+                        <div class="lezada-form contact-form">
+                            <form:form method="POST" modelAttribute="product" class="com-mail" action="product/add"
+                                       id="formUpdate">
+                                <div class="form-group">
+                                    <label>Product Name</label>
+                                    <form:input path="productName" type="text" id="productName" name="productName"
+                                                placeholder="please enter Product Name"/>
+                                    <form:errors path="productName" cssClass="alert-danger"/>
+                                </div>
+                                <br>
+
+                                <div class="form-group">
+                                    <label>Product Description</label>
+                                    <form:input path="productDescription" type="text" id="productDescription"
+                                                name="productDescription"
+                                                placeholder="please enter Product Description"/>
+                                    <form:errors path="productDescription" cssClass="alert-danger"/>
+                                </div>
+                                <br>
+
+                                <div class="form-group">
+                                    <label>Product Price</label>
+                                    <br>
+                                    <form:input path="productPrice" type="number" id="productPrice"
+                                                name="productPrice" placeholder="please enter Product Price"/>
+                                    <form:errors path="productPrice" cssClass="alert-danger"/>
+                                </div>
+                                <br>
+
+                                <div class="form-group">
+                                    <label>Product Remain</label>
+                                    <br>
+                                    <form:input path="productRemain" type="number" id="productRemain"
+                                                name="productRemain" placeholder="please enter Product Remain"/>
+                                    <form:errors path="productRemain" cssClass="alert-danger"/>
+                                </div>
+                                <br>
+<%--                                <div class="form-group">--%>
+<%--                                        &lt;%&ndash;                                    <label>Category</label>&ndash;%&gt;--%>
+<%--                                        &lt;%&ndash;                                    <br>&ndash;%&gt;--%>
+<%--                                        &lt;%&ndash;                                    <form:select path="category.cateId">&ndash;%&gt;--%>
+<%--                                        &lt;%&ndash;                                        <c:forEach var="c" items="${cates}">&ndash;%&gt;--%>
+<%--                                        &lt;%&ndash;                                            <option value="${c.cateId}" ${product.category.cateId == c.cateId ? 'selected=""' : ''}>${c.categoryName}</option>&ndash;%&gt;--%>
+<%--                                        &lt;%&ndash;                                        </c:forEach>&ndash;%&gt;--%>
+<%--                                        &lt;%&ndash;                                    </form:select>&ndash;%&gt;--%>
+<%--&lt;%&ndash;                                    <form:input path="productCategory" type="hidden"/>&ndash;%&gt;--%>
+<%--                                </div>--%>
+<%--                                <br>--%>
+<%--                                <label>Feature</label><br>--%>
+                                <c:forEach var="ft" items="${featuretypes}">
+                                    <div class="form-group  row ">
+                                        <label class="col-2">${ft.featureTypeName}</label><br><br>
+                                        <div class="row col-10">
+                                            <c:forEach var="f" items="${ft.features}">
+                                                <div class="col-md-4 shop-product-Color-list">
+                                                    <ul class="single-filter-widget--list single-filter-widget--list--color row">
+
+                                                        <input onchange="doOnchangeFeature(this, ${f.featureFeatureId});"
+                                                               type="radio" class="col-md-4"
+                                                               name="featureSpecific${ft.featureTypeId}"
+                                                            ${product.features.contains(f) ? 'checked' : ''}>
+
+                                                        <span class="single-size">${f.featureSpecific}</span>
+
+                                                    </ul>
+                                                    <br>
+                                                </div>
+                                            </c:forEach>
+                                            <c:forEach var="f" items="${ft.features}">
+
+                                            </c:forEach>
+                                        </div>
+                                            <%--                                    <form:errors path="productRemain" cssClass="alert-danger"/>--%>
+                                    </div>
                                 </c:forEach>
-                            </form:select><br />
+                                <br>
+
+                                <%--                                <div class="form-group">--%>
+                                <%--                                    <label>Product Image</label>--%>
+                                <%--                                    <br>--%>
+                                <%--                                    <form:input path="images" type="text" placeholder="Please fill in the photo link"--%>
+                                <%--                                           name="images" id="images" oninput="changeImageUrl(this.value);"/>--%>
+                                <%--                                    <form:errors path="images" cssClass="alert-danger"/>--%>
+
+                                <%--&lt;%&ndash;                                    <form:input path="productImage2" type="number" id="productImage2"&ndash;%&gt;--%>
+                                <%--&lt;%&ndash;                                                name="productImage2" placeholder="please enter link Image 2"/>&ndash;%&gt;--%>
+                                <%--&lt;%&ndash;                                    <form:errors path="productImage2" cssClass="alert-danger"/>&ndash;%&gt;--%>
+                                <%--                                </div>--%>
+
+                                <div class="form-group">
+                                    <form:input path="productCreateDate" type="hidden"/>
+                                    <form:input path="productId" id="productId" type="hidden"/>
+                                </div>
+
+                                <div class="form-group">
+                                    <form:button class="btn btn-primary">Submit</form:button>
+                                        <%--                                    <button class="btn btn-danger" type="reset">Reset</button>--%>
+                                </div>
+                            </form:form>
                         </div>
-                        <div class="form-group">
-                            <label>Product Name</label>
-                            <form:input path="productName" placeholder="please enter Product Name" Name="Prouct Name"  />
-                        </div>
-                        <div class="form-group">
-                            <label>Price</label>
-                            <form:input path="productPrice"  />
-                        </div>
-                        <div class="form-group">
-                            <label>Description</label>
-                            <form:input path="productDescription"  />
-                        </div>
-                        <div class="form-group">
-                            <label>Remain</label>
-                            <form:input path="productRemain"  />
-                        </div>
-                        <div class="form-group">
-                            <form:button class="btn btn-primary">Submit</form:button>
-                            <button class="btn btn-danger" type="reset">Reset</button>
-                        </div>
-                    </form:form>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <!--=====  End of icon box one  ======-->
 
-            <jsp:include page="include/foot.jsp"/>
+    <!--=============================================
+    =            footer area         =
+    =============================================-->
+    <br><br>
 
-            <!--=====  End of footer area  ======-->
+    <div class="form-group">
+        <jsp:include page="include/foot.jsp"/>
+    </div>
 
-            <!--=============================================
-            =            overlay items         =
-            =============================================-->
+    <!--=====  End of footer area  ======-->
 
-            <!--=======  about overlay  =======-->
+    <!--=============================================
+    =            overlay items         =
+    =============================================-->
 
-            <div class="header-offcanvas about-overlay" id="about-overlay">
-                <div class="overlay-close inactive"></div>
-                <div class="overlay-content">
+    <!--=======  about overlay  =======-->
 
-                    <!--=======  close icon  =======-->
+    <div class="header-offcanvas about-overlay" id="about-overlay">
+        <div class="overlay-close inactive"></div>
+        <div class="overlay-content">
 
-                    <span class="close-icon" id="about-close-icon">
+            <!--=======  close icon  =======-->
+
+            <span class="close-icon" id="about-close-icon">
 				<a href="javascript:void(0)">
 					<i class="ti-close"></i>
 				</a>
 			</span>
 
-                    <!--=======  End of close icon  =======-->
+            <!--=======  End of close icon  =======-->
 
-                    <!--=======  overlay content container  =======-->
+            <!--=======  overlay content container  =======-->
 
-                    <div class="overlay-content-container d-flex flex-column justify-content-between h-100">
-                        <!--=======  widget wrapper  =======-->
+            <div class="overlay-content-container d-flex flex-column justify-content-between h-100">
+                <!--=======  widget wrapper  =======-->
 
-                        <div class="widget-wrapper">
-                            <!--=======  single widget  =======-->
+                <div class="widget-wrapper">
+                    <!--=======  single widget  =======-->
 
-                            <div class="single-widget">
-                                <h2 class="widget-title">About Us</h2>
-                                <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
-                                    over other
-                                    factors. Our fashion items never get outdated. They are not short-lived as normal fashion
-                                    clothes.</p>
-                            </div>
-
-                            <!--=======  End of single widget  =======-->
-                        </div>
-
-                        <!--=======  End of widget wrapper  =======-->
-
-                        <!--=======  contact widget  =======-->
-
-                        <div class="contact-widget">
-                            <p class="email"><a href="mailto:contact@lezada.com">contact@lezada.com</a></p>
-                            <p class="phone">(+00) 123 567990</p>
-
-                            <div class="social-icons">
-                                <ul>
-                                    <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
-                                           data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                           data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
-                                           data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                           data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
-                                           data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                           data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
-                                           data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
-                                           data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!--=======  End of contact widget  =======-->
+                    <div class="single-widget">
+                        <h2 class="widget-title">About Us</h2>
+                        <p>At Lezada, we put a strong emphasis on simplicity, quality and usefulness of fashion products
+                            over other
+                            factors. Our fashion items never get outdated. They are not short-lived as normal fashion
+                            clothes.</p>
                     </div>
 
-                    <!--=======  End of overlay content container  =======-->
+                    <!--=======  End of single widget  =======-->
                 </div>
+
+                <!--=======  End of widget wrapper  =======-->
+
+                <!--=======  contact widget  =======-->
+
+                <div class="contact-widget">
+                    <p class="email"><a href="mailto:contact@lezada.com">contact@lezada.com</a></p>
+                    <p class="phone">(+00) 123 567990</p>
+
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="http://www.twitter.com/" data-tippy="Twitter" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="http://www.facebook.com/" data-tippy="Facebook" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="http://www.instagram.com/" data-tippy="Instagram" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li><a href="http://www.youtube.com/" data-tippy="Youtube" data-tippy-inertia="true"
+                                   data-tippy-animation="shift-away" data-tippy-delay="50" data-tippy-arrow="true"
+                                   data-tippy-theme="sharpborder" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--=======  End of contact widget  =======-->
             </div>
 
-            <!--=======  End of about overlay  =======-->
+            <!--=======  End of overlay content container  =======-->
+        </div>
+    </div>
 
-            <!--=======  wishlist overlay  =======-->
+    <!--=======  End of about overlay  =======-->
 
-            <div class="wishlist-overlay" id="wishlist-overlay">
-                <div class="wishlist-overlay-close inactive"></div>
-                <div class="wishlist-overlay-content">
-                    <!--=======  close icon  =======-->
+    <!--=======  wishlist overlay  =======-->
 
-                    <span class="close-icon" id="wishlist-close-icon">
+    <div class="wishlist-overlay" id="wishlist-overlay">
+        <div class="wishlist-overlay-close inactive"></div>
+        <div class="wishlist-overlay-content">
+            <!--=======  close icon  =======-->
+
+            <span class="close-icon" id="wishlist-close-icon">
 				<a href="javascript:void(0)">
 					<i class="ion-android-close"></i>
 				</a>
 			</span>
 
-                    <!--=======  End of close icon  =======-->
+            <!--=======  End of close icon  =======-->
 
-                    <!--=======  offcanvas wishlist content container  =======-->
+            <!--=======  offcanvas wishlist content container  =======-->
 
-                    <jsp:include page="include/cart.jsp"/>
+            <jsp:include page="include/cart.jsp"/>
 
-                    <!--=======  End of offcanvas wishlist content container   =======-->
-                </div>
-            </div>
+            <!--=======  End of offcanvas wishlist content container   =======-->
+        </div>
+    </div>
 
-            <!--=======  End of wishlist overlay  =======-->
+    <!--=======  End of wishlist overlay  =======-->
 
-            <!--=======  cart overlay  =======-->
+    <!--=======  cart overlay  =======-->
 
-            <div class="cart-overlay" id="cart-overlay">
-                <div class="cart-overlay-close inactive"></div>
-                <div class="cart-overlay-content">
-                    <!--=======  close icon  =======-->
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-overlay-close inactive"></div>
+        <div class="cart-overlay-content">
+            <!--=======  close icon  =======-->
 
-                    <span class="close-icon" id="cart-close-icon">
+            <span class="close-icon" id="cart-close-icon">
 				<a href="javascript:void(0)">
 					<i class="ion-android-close"></i>
 				</a>
 			</span>
 
-                    <!--=======  End of close icon  =======-->
+            <!--=======  End of close icon  =======-->
 
-                    <!--=======  offcanvas cart content container  =======-->
+            <!--=======  offcanvas cart content container  =======-->
 
-                    <jsp:include page="include/cart.jsp"/>
+            <jsp:include page="include/cart.jsp"/>
+            <!--=======  End of offcanvas cart content container   =======-->
+        </div>
+    </div>
 
-                    <!--=======  End of offcanvas cart content container   =======-->
-                </div>
-            </div>
-
-            <!--=======  End of cart overlay  =======-->
+    <!--=======  End of cart overlay  =======-->
 
 
-            <!--=======  search overlay  =======-->
+    <!--=======  search overlay  =======-->
 
-            <div class="search-overlay" id="search-overlay">
+    <div class="search-overlay" id="search-overlay">
 
-                <!--=======  close icon  =======-->
+        <!--=======  close icon  =======-->
 
-                <span class="close-icon search-close-icon">
+        <span class="close-icon search-close-icon">
 			<a href="javascript:void(0)" id="search-close-icon">
 				<i class="ti-close"></i>
 			</a>
 		</span>
 
-                <!--=======  End of close icon  =======-->
+        <!--=======  End of close icon  =======-->
 
-                <!--=======  search overlay content  =======-->
+        <!--=======  search overlay content  =======-->
 
-                <div class="search-overlay-content">
-                    <div class="input-box">
-                        <form action="https://htmldemo.hasthemes.com/lezada/lezada/index">
-                            <input type="search" placeholder="Search Products...">
-                        </form>
-                    </div>
-                    <div class="search-hint">
-                        <span># Hit enter to search or ESC to close</span>
-                    </div>
-                </div>
-
-                <!--=======  End of search overlay content  =======-->
+        <div class="search-overlay-content">
+            <div class="input-box">
+                <form action="https://htmldemo.hasthemes.com/lezada/lezada/index">
+                    <input type="search" placeholder="Search Products...">
+                </form>
             </div>
+            <div class="search-hint">
+                <span># Hit enter to search or ESC to close</span>
+            </div>
+        </div>
 
-            <!--=======  End of search overlay  =======-->
+        <!--=======  End of search overlay content  =======-->
+    </div>
 
-            <!--=====  End of overlay items  ======-->
+    <!--=======  End of search overlay  =======-->
 
-            <!-- scroll to top  -->
-            <a href="#" class="scroll-top"></a>
-            <!-- end of scroll to top -->
+    <!--=====  End of overlay items  ======-->
 
-            <!-- JS
-            ============================================ -->
-            <!-- jQuery JS -->
-            <script src="assets/js/vendor/jquery.min.js"></script>
+    <!-- scroll to top  -->
+    <a href="#" class="scroll-top"></a>
+    <!-- end of scroll to top -->
+    <script>
+        function changeImageUrl(e) {
+            //console.log(e)
+            //tìm thẻ a dựa vào id
+            var a = document.getElementById('btnAddImage');
+            //tìm product id dựa vào cái input hidden
+            var productId = document.getElementById('productId').value
+            //console.log(productId)
+            a.setAttribute('href', `InsertImage?imageUrl=` + e + `&&productId=` + productId)
+        };
+        let listFeatures = []
 
-            <!-- Popper JS -->
-            <script src="assets/js/popper.min.js"></script>
+        function doOnchangeFeature(e, featureId) {
+            if (e.checked) {
+                console.log(e, featureId);
+                listFeatures.push(featureId);
+            } else {
+                let newList = listFeatures.filter(item => item !== featureId)
+                listFeatures = newList;
+            }
+            let urlAction = "?";
+            listFeatures.forEach(feature => {
+                urlAction += "featureIds=" + feature + "&&"
+            })
+            var form = document.getElementById('formUpdate');
+            form.setAttribute('action', 'product/add' + urlAction.substr(0, urlAction.length - 2))
+            console.log(urlAction)
+        }
 
-            <!-- Bootstrap JS -->
-            <script src="assets/js/bootstrap.min.js"></script>
+    </script>
+    <!-- JS
+    ============================================ -->
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery.min.js"></script>
 
-            <!-- Plugins JS -->
-            <script src="assets/js/plugins.js"></script>
+    <!-- Popper JS -->
+    <script src="assets/js/popper.min.js"></script>
 
-            <!-- Main JS -->
-            <script src="assets/js/main.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
 
 </body>
 

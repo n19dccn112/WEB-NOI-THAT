@@ -418,20 +418,10 @@
                                                     <ul class="single-filter-widget--list single-filter-widget--list--color row">
 
                                                         <input onchange="doOnchangeFeature(this, ${f.featureFeatureId});"
-                                                               type="checkbox" class="col-md-4" name="featureSpecific" value="featureSpecific"
+                                                               type="radio" class="col-md-4" name="featureSpecific${ft.featureTypeId}" value="featureSpecific"
                                                                 ${product.features.contains(f) ? 'checked' : ''}>
-                                                        <c:choose>
-                                                            <c:when test="${ft.featureTypeName.equals('Color')}">
-                                                                <li class="mb-0 pt-0 pb-0 mr-10 col-md-8">
-                                                                    <a class="active"><span
-                                                                        class="color-picker ${f.featureSpecific}"></span></a>
-                                                                </li>
-                                                                <br>
-                                                            </c:when>
-                                                            <c:otherwise>
+
                                                                 <span class="single-size">${f.featureSpecific}</span>
-                                                            </c:otherwise>
-                                                        </c:choose>
 
                                                     </ul>
                                                     <br>

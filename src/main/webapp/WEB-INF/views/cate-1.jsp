@@ -780,9 +780,9 @@
                                     <div class="single-product__image">
                                         <a class="image-wrap" href="product/${category.products[i].productId}">
                                             <img src="${category.products[i].images[0].imageUrl}"
-                                                 class="img-fluid" alt="">
+                                                 class="img-fluid" alt="" style="width:150px;height:300px;">
                                             <img src="${category.products[i].images[1].imageUrl}"
-                                                 class="img-fluid" alt="">
+                                                 class="img-fluid" alt="" style="width:150px;height:300px;">
                                         </a>
 
                                         <div class="single-product__floating-badges">
