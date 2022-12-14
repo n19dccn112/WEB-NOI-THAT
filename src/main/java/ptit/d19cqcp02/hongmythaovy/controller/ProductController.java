@@ -43,12 +43,14 @@ public class ProductController {
 
   @GetMapping("products")
   public String index(Model model) {
+    System.out.println(7);
     model.addAttribute("product", productService.findAll());
     return "products";
   }
 
   @GetMapping("product/add")
   public String productAdd(Model model, HttpServletRequest request) {
+
     Product product = new Product();
     model.addAttribute("product", product);
     model.addAttribute("featuretypes", featureTypeService.findAll());
@@ -82,18 +84,28 @@ public class ProductController {
       String label = response.getBody();
       System.out.println(label);
       List<Category> categories = categoryService.findAll();
-      if (label.equals('A')){
+      System.out.println(categories.get(0).getCategoryName());
+      System.out.println(categories.get(1).getCategoryName());
+      System.out.println(categories.get(2).getCategoryName());
+      if (label.equals("A")){
+        product.setCategory(categories.get(0));
+      }
+      else if (label.equals("B")){
         product.setCategory(categories.get(1));
       }
-      else if (label.equals('B')){
+      else {
         product.setCategory(categories.get(2));
       }
-      else
-        product.setCategory(categories.get(3));
-
-      return "redirect:products";
-    } else request.setAttribute("message", "Updated fail!");
-    model.addAttribute("product", product);
+      System.out.println(4);
+      productService.save(product);
+      System.out.println(5);
+      request.setAttribute("message", "Updated success!");
+      Product product1 = new Product();
+      model.addAttribute("product", product1);
+    } else {
+      request.setAttribute("message", "Updated fail!");
+      model.addAttribute("product", product);
+    }
     model.addAttribute("featuretypes", featureTypeService.findAll());
     return "product-add";
   }
