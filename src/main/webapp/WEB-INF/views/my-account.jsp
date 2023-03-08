@@ -337,8 +337,8 @@
                                 <div class="myaccount-content">
                                     <h3>Dashboard</h3>
                                     <div class="welcome">
-                                        <p>Hello, <strong>${listOrder[0].lastName} ${listOrder[0].firstName}</strong>
-                                            (If Not <strong>${listOrder[0].firstName} !</strong><a
+                                        <p>Hello, <strong>${listOrder[0].username}</strong>
+                                            (If Not <strong> <${listOrder[0].username}/strong><a
                                                     href="login" class="logout"> Logout</a>)</p>
                                     </div>
 
@@ -383,7 +383,7 @@
                                 <div class="myaccount-content">
                                     <h3>Billing Address</h3>
                                     <address>
-                                            <p><strong>${listOrder[0].lastName} ${listOrder[0].firstName}</strong></p>
+                                            <p><strong>${listOrder[0].username}</strong></p>
                                             <p>${listOrder[0].address}<br></p>
                                         <p>Mobile: ${listOrder[0].phone}</p>
                                     </address>

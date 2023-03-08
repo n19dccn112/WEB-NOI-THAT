@@ -12,6 +12,60 @@
 <%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <div class="header-right-icons d-flex justify-content-end align-items-center h-100">
+
+    <div>
+        <div class="single-icon">
+            <button type="button" style="border: none"
+                    onclick="show()" id="show_chatbot" style="display: block">
+                <i class="ti-thought"></i>
+            </button>
+            <button type="button" class="sroll-top"
+                    onclick="hiden()" id="hiden_chatbot" style="display:none">
+                <i class="ti-thought"></i>
+            </button>
+
+        </div>
+        <div id="chatbot" class="chat-area" style="display: none; position: absolute; top: 81px">
+            <iframe
+                    allow="microphone;"
+                    width="350"
+                    height="430"
+                    src="https://console.dialogflow.com/api-client/demo/embedded/387d6604-7cc2-4421-bfb4-ebcd3b3bd675">
+            </iframe>
+        </div>
+        <%--        <button type="button" class="sroll-top"--%>
+        <%--                onclick="show()" id="show_chatbot" style="display: block">--%>
+        <%--            Show chatbot--%>
+        <%--        </button>--%>
+
+    </div>
+    <script>
+        function show() {
+            document.getElementById('chatbot')
+                .style.display = "block";
+            document.getElementById('show_chatbot')
+                .style.display = "none";
+            document.getElementById('hiden_chatbot')
+                .style.display = "block";
+        }
+
+        function hiden() {
+            document.getElementById('chatbot')
+                .style.display = "none";
+            document.getElementById('show_chatbot')
+                .style.display = "block";
+            document.getElementById('hiden_chatbot')
+                .style.display = "none";
+        }
+    </script>
+    <!--=======  single-icon  =======-->
+
+    <div class="single-icon">
+        <a href="https://forms.gle/fM1MFQYC3ga4fepDA" target="_blank">
+            <i class="ti-receipt"></i>
+        </a>
+    </div>
+
     <!--=======  single-icon  =======-->
 
     <div class="single-icon search">
@@ -50,38 +104,3 @@
     </div>
     <!--=======  End of single-icon  =======-->
 </div>
-<div id="chatbot" style="display: none">
-    <iframe
-            allow="microphone;"
-            width="350"
-            height="430"
-            src="https://console.dialogflow.com/api-client/demo/embedded/387d6604-7cc2-4421-bfb4-ebcd3b3bd675">
-    </iframe>
-</div>
-<button type="button"
-        onclick="show()" id="show_chatbot" style="display: block">
-    Show chatbot
-</button>
-<button type="button"
-        onclick="hiden()" id="hiden_chatbot" style="display:none">
-    Hiden chatbot
-</button>
-<script>
-    function show() {
-        document.getElementById('chatbot')
-            .style.display = "block";
-        document.getElementById('show_chatbot')
-            .style.display = "none";
-        document.getElementById('hiden_chatbot')
-            .style.display = "block";
-    }
-
-    function hiden() {
-        document.getElementById('chatbot')
-            .style.display = "none";
-        document.getElementById('show_chatbot')
-            .style.display = "block";
-        document.getElementById('hiden_chatbot')
-            .style.display = "none";
-    }
-</script>
