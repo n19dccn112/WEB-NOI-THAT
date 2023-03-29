@@ -380,18 +380,6 @@
                                     <form:errors path="productRemain" cssClass="alert-danger"/>
                                 </div>
                                 <br>
-<%--                                <div class="form-group">--%>
-<%--                                        &lt;%&ndash;                                    <label>Category</label>&ndash;%&gt;--%>
-<%--                                        &lt;%&ndash;                                    <br>&ndash;%&gt;--%>
-<%--                                        &lt;%&ndash;                                    <form:select path="category.cateId">&ndash;%&gt;--%>
-<%--                                        &lt;%&ndash;                                        <c:forEach var="c" items="${cates}">&ndash;%&gt;--%>
-<%--                                        &lt;%&ndash;                                            <option value="${c.cateId}" ${product.category.cateId == c.cateId ? 'selected=""' : ''}>${c.categoryName}</option>&ndash;%&gt;--%>
-<%--                                        &lt;%&ndash;                                        </c:forEach>&ndash;%&gt;--%>
-<%--                                        &lt;%&ndash;                                    </form:select>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                                    <form:input path="productCategory" type="hidden"/>&ndash;%&gt;--%>
-<%--                                </div>--%>
-<%--                                <br>--%>
-<%--                                <label>Feature</label><br>--%>
                                 <c:forEach var="ft" items="${featuretypes}">
                                     <div class="form-group  row ">
                                         <label class="col-2">${ft.featureTypeName}</label><br><br>

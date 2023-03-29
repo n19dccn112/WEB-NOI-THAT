@@ -374,7 +374,7 @@
                     <table class="cart-calculation-table mb-30">
                         <tr>
                             <th>TOTAL</th>
-                            <td class="total">$${totalOrder}</td>
+                            <td class="total">${totalOrder}</td>
                         </tr>
                     </table>
 

@@ -337,8 +337,8 @@
                                 <div class="myaccount-content">
                                     <h3>Dashboard</h3>
                                     <div class="welcome">
-                                        <p>Hello, <strong>${listOrder[0].username}</strong>
-                                            (If Not <strong> <${listOrder[0].username}/strong><a
+                                        <p>Hello, <strong>${user.username}</strong>
+                                            (If Not <strong> <${user.username}/strong><a
                                                     href="login" class="logout"> Logout</a>)</p>
                                     </div>
 
@@ -383,9 +383,11 @@
                                 <div class="myaccount-content">
                                     <h3>Billing Address</h3>
                                     <address>
-                                            <p><strong>${listOrder[0].username}</strong></p>
-                                            <p>${listOrder[0].address}<br></p>
-                                        <p>Mobile: ${listOrder[0].phone}</p>
+                                        <p><strong>${user.username}</strong></p>
+                                        <c:if test="${listOrder.size()>0}">
+                                            <p>${listOrder.get(0).address}<br></p>
+                                            <p>Mobile: ${listOrder.get(0).phone}</p>
+                                        </c:if>
                                     </address>
                                     <a class="check-btn sqr-btn "><i class="fa fa-edit"></i> Edit Address</a>
                                 </div>
@@ -401,23 +403,30 @@
                                                 <div class="col-lg-6">
                                                     <div class="single-input-item">
                                                         <label for="first-name" class="required">First Name</label>
-                                                        <input type="text" id="first-name"/>
+                                                        <c:if test="${listOrder.size()>0}">
+                                                            <input type="text" id="first-name"
+                                                                   value="${listOrder.get(0).firstName}"/>
+                                                        </c:if>
+
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-6">
                                                     <div class="single-input-item">
                                                         <label for="last-name" class="required">Last Name</label>
-                                                        <input type="text" id="last-name"/>
+                                                        <c:if test="${listOrder.size()>0}">
+                                                            <input type="text" id="last-name"
+                                                                   value="${listOrder.get(0).lastName}"/>
+                                                        </c:if>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="single-input-item">
-                                                <label for="display-name" class="required">Display Name</label>
-                                                <input type="text" id="display-name"/>
+                                                <label for="display-name" class="required">Username Name</label>
+                                                <input type="text" id="display-name" value="${user.username}"/>
                                             </div>
                                             <div class="single-input-item">
                                                 <label for="email" class="required">Email Addres</label>
-                                                <input type="email" id="email"/>
+                                                <input type="email" id="email" value="${user.email}"/>
                                             </div>
                                             <fieldset>
                                                 <legend>Password change</legend>

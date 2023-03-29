@@ -18,47 +18,26 @@
                 <li class="menu-item"><a href="/">Home</a>
                 </li>
                 <li class="menu-item-has-children"><a href="shop-left-sidebar">Category</a>
-                    <c:choose>
-                        <c:when test="${cates.size()%3==0}">
-                            <c:set var="numberItem" value="${cates.size()/3}"/>
-                        </c:when>
-                        <c:otherwise>
-                            <c:set var="numberItem" value="${cates.size()/3+1}"/>
-                        </c:otherwise>
-                    </c:choose>
-                    <c:if test="${numberItem>'0'}">
-                        <ul class="sub-menu mega-menu mega-menu-column-4">
-                            <c:forEach var="i" begin="0" end="2">
-                                <li><a href="javascript:void(0)" class="mega-column-title">Category</a>
-                                    <ul class="mega-sub-menu">
-                                        <c:choose>
-                                            <c:when test="${i!=2}">
-                                                <c:forEach items="${cates}" var="category" begin="${2*i+i}" end="${2*(i+1)+i}">
-                                                    <li><a href="cate-${category.cateId}">${category.categoryName}</a></li>
-                                                </c:forEach>
-                                            </c:when>
-                                            <c:otherwise>
-                                                <c:forEach items="${cates}" var="category" begin="${2*i+i}" end="${2*(i+1)+i-cates.size()%3+1}">
-                                                    <li><a href="cate-${category.cateId}">${category.categoryName}</a></li>
-                                                </c:forEach>
-                                            </c:otherwise>
-                                        </c:choose>
-
-                                    </ul>
-                                </li>
-                            </c:forEach>
+                    <ul class="sub-menu mega-menu mega-menu-column-4">
+                        <c:forEach items="${cates}" var="category">
+                            <li><a href="javascript:void(0)" class="mega-column-title">Category</a>
+                                <ul class="mega-sub-menu">
+                                    <li><a href="cate-${category.cateId}">${category.categoryName}</a></li>
+                                </ul>
+                            </li>
+                        </c:forEach>
                             <li>
                                 <div class="menu-image">
                                     <img src="assets/images/menu-image/megamenu-shop.png" class="img-fluid" alt="">
                                 </div>
                             </li>
-                        </ul>
-                    </c:if>
+                    </ul>
+                </li>
+                <%--                <li class="menu-item-has-children"><a href="javascript:void(0)">Elements</a>--%>
+                </li>
 
-                </li>
-<%--                <li class="menu-item-has-children"><a href="javascript:void(0)">Elements</a>--%>
-                </li>
             </ul>
+
         </nav>
     </div>
 </div>

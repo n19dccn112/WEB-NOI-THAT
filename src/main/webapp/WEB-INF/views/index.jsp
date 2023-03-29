@@ -431,20 +431,20 @@
                          aria-labelledby="product-tab-1">
                         <div class="row">
                             <c:forEach var="i" begin="1" end="12">
-<%--                                <c:set var="numRan" value="${Math.random()*products.size()}"/>--%>
+<%--                                <c:set var="numRan" value="${Math.random()*fn:length(products)}"/>--%>
 
                                 <!--======= single product =======-->
-                                <div class="col-12 col-lg-4 col-md-6 col-sm-6 mb-45">
+                                <div class="col-12 col-lg-3 col-md-6 col-sm-6 mb-45">
                                     <div class="single-product">
                                         <!--=======  single product image  =======-->
 
                                         <div class="single-product__image">
-<%--                                            <a class="image-wrap" href="product/${products[numRan].productId}">--%>
-<%--                                                <img src="${products[numRan].images[0].imageUrl}"--%>
-<%--                                                     class="img-fluid" alt="" style="width:150px;height:300px;">--%>
-<%--                                                <img src="${products[numRan].images[1].imageUrl}"--%>
-<%--                                                     class="img-fluid" alt="" style="width:150px;height:300px;">--%>
-<%--                                            </a>--%>
+                                            <a class="image-wrap" href="product/${products[i].productId}">
+                                                <img src="${products[i].images[0].imageUrl}"
+                                                     class="img-fluid" alt="" style="width:200px;height:300px;">
+                                                <img src="${products[i].images[1].imageUrl}"
+                                                     class="img-fluid" alt="" style="width:200px;height:300px;">
+                                            </a>
 
                                         </div>
 
@@ -454,12 +454,12 @@
 
                                         <div class="single-product__content">
                                             <div class="title">
-<%--                                                <h3><a href="shop-product-basic">${products[numRan].productName}</a>--%>
-<%--                                                </h3>--%>
+                                                <h3><a href="shop-product-basic">${products[i].productName}</a>
+                                                </h3>
                                                 <a href="#">Add to cart</a>
                                             </div>
                                             <div class="price">
-<%--                                                <span class="discounted-price">$${products[numRan].productPrice}</span>--%>
+                                                <span class="discounted-price">$${products[i].productPrice}</span>
                                             </div>
                                         </div>
 
