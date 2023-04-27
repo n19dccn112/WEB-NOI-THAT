@@ -473,21 +473,19 @@
                                 <div class="shop-product__block shop-product__block--quantity mb-40">
                                     <div class="shop-product__block__title">Quantity:</div>
                                     <div class="shop-product__block__value">
-                                        <div class="pro-qty d-inline-block mx-0 pt-0"><a href="#"
-                                                                                         class="dec qty-btn"></a>
-                                            <input type="text" name="amount" value="1">
-                                            <a href="#" class="inc qty-btn"></a></div>
+                                        <div class="pro-qty d-inline-block mx-0 pt-0"><a
+                                                class="dec qty-btn"></a>
+                                            <input type="text" id="amount" name="amount" value="1">
+                                            <a class="inc qty-btn"></a></div>
                                     </div>
                                 </div>
                                 <%-- ================================================--%>
 
                                 <!--=======  shop product buttons  =======-->
-
-                                <div class="shop-product__block shop-product__block--quantity mb-40">
-                                    <a class="lezada-button lezada-button--medium"
-                                       href="cart?action=add&&productId=${product.productId}">add
-                                        to cart</a>
-                                </div>
+                                    <div class="shop-product__block shop-product__block--quantity mb-40">
+                                        <a class="lezada-button lezada-button--medium"
+                                           href="cart?action=add&&productId=${product.productId}">add to cart</a>
+                                    </div>
 
                                 <!--=======  End of shop product buttons  =======-->
 
@@ -514,14 +512,6 @@
                                         <tr class="single-info">
                                             <td class="quickview-title">SKU:</td>
                                             <td class="quickview-value">12345</td>
-                                        </tr>
-                                        <tr class="single-info">
-                                            <td class="quickview-title">Categories:</td>
-                                            <td class="quickview-value">
-                                                <a href="#">
-                                                    ${catename}
-                                                </a>
-                                            </td>
                                         </tr>
                                         <tr class="single-info">
                                             <td class="quickview-title">Tags:</td>
@@ -928,6 +918,7 @@
 <!-- end of scroll to top -->
 
 <!-- JS
+
 ============================================ -->
 <!-- jQuery JS -->
 <script src="assets/js/vendor/jquery.min.js"></script>

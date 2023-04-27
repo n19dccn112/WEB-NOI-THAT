@@ -19,7 +19,7 @@ public interface DeleteAPI {
                 HttpMethod.DELETE,null, ProductDTO.class);
     }
 
-    default void DeleteOrderDetail(Long productId, Long orderId){
+    default void DeleteOrderDetail(Long productId, Integer orderId){
         String url = baseUrl() + "/orderDetails/" + productId + "-" + orderId;
         ResponseEntity<OrderDetailDTO> response = restTemplate.exchange(url,
                 HttpMethod.DELETE,null, OrderDetailDTO.class);

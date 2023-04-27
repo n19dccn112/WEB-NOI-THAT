@@ -23,8 +23,6 @@ import ptit.d19cqcp02.webMVC.model.entity.Category;
 import ptit.d19cqcp02.webMVC.model.entity.Image;
 import ptit.d19cqcp02.webMVC.model.entity.OrderDetailView;
 import ptit.d19cqcp02.webMVC.model.entity.Product;
-import ptit.d19cqcp02.webMVC.service.CategoryService;
-import ptit.d19cqcp02.webMVC.service.ProductService;
 import ptit.d19cqcp02.webMVC.model.dto.Auth.JwtResponse;
 
 import javax.servlet.http.HttpServletRequest;
@@ -37,8 +35,6 @@ import java.util.stream.Collectors;
 @Controller
 @RequestMapping("")
 public class HomeController implements GetAllAPI, DAndE{
-  @Autowired CategoryService categoryService;
-  @Autowired ProductService productService;
   @Autowired ModelMapper modelMapper;
   @Autowired PasswordEncoder encoder;
 

@@ -368,10 +368,9 @@
                                             <ul>
                                                 <c:forEach var="order" items="${listOrder}">
                                                     <li>${order.name} X ${order.amount}
-                                                        <span>$${order.price*order.amount}</span></li>
+                                                        <span>${order.price*order.amount}$</span></li>
                                                 </c:forEach>
                                             </ul>
-                                            <h4>Grand Total <span>$${totalOrder}</span></h4>
 
                                         </div>
                                     </div>

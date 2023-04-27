@@ -10,6 +10,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 import ptit.d19cqcp02.webMVC.model.dto.*;
+import ptit.d19cqcp02.webMVC.model.dto.Auth.ChangePassByEmailRequest;
 import ptit.d19cqcp02.webMVC.model.dto.Auth.MessageResponse;
 import ptit.d19cqcp02.webMVC.model.dto.Auth.SignupRequest;
 
@@ -31,7 +32,7 @@ public interface PostAPI extends Token{
         HttpEntity httpEntity = Token(request, userDetailDTO);
         String response =  restTemplate.postForObject(url, httpEntity, String.class, userDetailDTO);
     }
-    default void PostOrder(OrderDTO orderDTO, HttpServletRequest request) throws JsonProcessingException {
+    default void PostOrder(OrderDTO orderDTO, HttpServletRequest request) {
         String url = baseUrl() + "/orders";
         HttpEntity httpEntity = Token(request, orderDTO);
         String response =  restTemplate.postForObject(url, httpEntity, String.class, orderDTO);
@@ -47,10 +48,15 @@ public interface PostAPI extends Token{
         String response =  restTemplate.postForObject(url, httpEntity, String.class, rateDTO);
     }
 
-    default void PostSignUp(SignupRequest bodySignUp, HttpServletRequest request) throws JsonProcessingException {
+    default void PostSignUp(SignupRequest bodySignUp, HttpServletRequest request){
         String url = baseUrl() + "/auth/signup";
         HttpEntity httpEntity = Token(request, bodySignUp);
         String response =  restTemplate.postForObject(url, httpEntity, String.class, bodySignUp);
     }
 
+    default void PostChangePassByEmail(ChangePassByEmailRequest body, HttpServletRequest request){
+        String url = baseUrl() + "/auth/changePassByEmail";
+        HttpEntity httpEntity = Token(request, body);
+        String response =  restTemplate.postForObject(url, httpEntity, String.class, body);
+    }
 }

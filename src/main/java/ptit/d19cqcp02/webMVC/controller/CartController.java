@@ -9,22 +9,20 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import ptit.d19cqcp02.webMVC.controller.Interface.*;
+import ptit.d19cqcp02.webMVC.model.dto.Auth.ChangePassByEmailRequest;
 import ptit.d19cqcp02.webMVC.model.dto.Auth.JwtResponse;
 import ptit.d19cqcp02.webMVC.model.dto.OrderDTO;
 import ptit.d19cqcp02.webMVC.model.dto.OrderDetailDTO;
-import ptit.d19cqcp02.webMVC.model.dto.ProductDTO;
-import ptit.d19cqcp02.webMVC.model.dto.UserDetailDTO;
-import ptit.d19cqcp02.webMVC.model.embeded.OrderDetailId;
 import ptit.d19cqcp02.webMVC.model.entity.*;
-import ptit.d19cqcp02.webMVC.service.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.math.BigDecimal;
 import java.util.*;
 import java.util.stream.Collectors;
 
 @Controller
-public class CartController implements GetAllAPI, GetIdAPI, DAndE, PostAPI, Mailer, DeleteAPI {
+public class CartController implements GetAllAPI, GetIdAPI, DAndE, PostAPI, Mailer, DeleteAPI , PutAPI{
 
   @Autowired ModelMapper modelMapper;
   @Autowired PasswordEncoder encoder;
@@ -61,17 +59,23 @@ public class CartController implements GetAllAPI, GetIdAPI, DAndE, PostAPI, Mail
       String message = "";
       for (OrderDetailView order : listOrder) {
         message += "[ " + order.getName() + ", " + order.getAmount() + "]\n ";
+          OrderDTO orderDTO = Get1Order(order.getOrderId(), request);
+          orderDTO.setOrderStatus(OrderStatus.SUCCESS);
+          PutOrder(orderDTO, request);
       }
-      send("mynth30@gmail.com", listOrder.get(0).getEmail(),
+      send("N19dccn112@student.ptithcm.edu.vn", listOrder.get(0).getEmail(),
               "Đặt hàng thành công",
               String.format("Chúc mừng bạn đã đặt hàng thành công đơn hàng số %s \n %s",
                       listOrder.get(0).getUsername(), message));
       request.setAttribute("message", "Your order had been accepted");
+//      ChangePassByEmailRequest changePassByEmailRequest = new ChangePassByEmailRequest();
+//      changePassByEmailRequest.setEmail(listOrder.get(0).getEmail());
+//      changePassByEmailRequest.setPassword();
+//      PostChangePassByEmail()
       return "info_ordered";
     }
     return "redirect:login";
   }
-
   @GetMapping(
           value = "cart",
           params = {"action", "productId"})
@@ -82,11 +86,11 @@ public class CartController implements GetAllAPI, GetIdAPI, DAndE, PostAPI, Mail
     if (jwtResponse!=null) {
       request.setAttribute("user", jwtResponse);
       List<OrderDetailView> listOrder = Arrays.stream(GetAllOrderDetailView(jwtResponse.getId(), request)).collect(Collectors.toList());
-      Long orderId;
+      Integer orderId;
       OrderDTO orderDTO = new OrderDTO();
       if (listOrder.size() == 0) {
 
-        orderDTO.setOrderStatus(OrderStatus.ON_CART.name());
+        orderDTO.setOrderStatus(OrderStatus.PREPARE);
         orderDTO.setUserId(jwtResponse.getId());
         Map<Long, Integer> orderDetail = new HashMap<>();
         orderDetail.put(productId,2);

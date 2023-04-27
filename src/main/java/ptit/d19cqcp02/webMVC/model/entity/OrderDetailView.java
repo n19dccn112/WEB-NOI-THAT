@@ -12,7 +12,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 public class OrderDetailView {
-    Long orderId;
+    Integer orderId;
 
     String firstName;
 

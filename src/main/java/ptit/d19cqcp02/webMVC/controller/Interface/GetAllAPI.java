@@ -7,9 +7,11 @@ import org.springframework.web.client.RestTemplate;
 import ptit.d19cqcp02.webMVC.model.ProductRecommander;
 import ptit.d19cqcp02.webMVC.model.dto.*;
 import ptit.d19cqcp02.webMVC.model.entity.OrderDetailView;
+import ptit.d19cqcp02.webMVC.model.entity.OrderStatus;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -120,7 +122,7 @@ public interface GetAllAPI extends Token{
                 httpEntity, OrderDetailDTO[].class);
         return response.getBody();
     }
-    default OrderDetailDTO[] GetAllOrderDetail(Long orderId, HttpServletRequest request){
+    default OrderDetailDTO[] GetAllOrderDetail(Integer orderId, HttpServletRequest request){
         String url = baseUrl() + "/orderDetails?orderId=" + orderId;
         RestTemplate restTemplate = new RestTemplate();
         HttpEntity httpEntity = Token(request);
@@ -153,7 +155,13 @@ public interface GetAllAPI extends Token{
         HttpEntity httpEntity = Token(request);
         ResponseEntity<OrderDetailView[]> response = restTemplate.exchange(url, HttpMethod.GET,
                                                         httpEntity, OrderDetailView[].class);
-        return response.getBody();
+        List<OrderDetailView> orderDetailViews = new ArrayList<>();
+        for (OrderDetailView orderDetailView: response.getBody()){
+            if (orderDetailView.getStatus().equals(OrderStatus.PREPARE.name())){
+                orderDetailViews.add(orderDetailView);
+            }
+        }
+        return orderDetailViews.toArray(new OrderDetailView[0]);
     }
 
 }

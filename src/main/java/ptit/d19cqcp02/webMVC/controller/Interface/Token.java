@@ -16,7 +16,6 @@ public interface Token {
     default HttpEntity Token(HttpServletRequest request){
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
-        //headers.setContentType(MediaType.APPLICATION_JSON);
         HttpSession session=request.getSession(false);
         String token=(String)session.getAttribute(HttpHeaders.AUTHORIZATION);
         headers.add(HttpHeaders.AUTHORIZATION,token);
@@ -36,4 +35,5 @@ public interface Token {
         HttpEntity httpEntity = new HttpEntity(mJSONObject.toString(), headers);
         return httpEntity;
     }
+
 }

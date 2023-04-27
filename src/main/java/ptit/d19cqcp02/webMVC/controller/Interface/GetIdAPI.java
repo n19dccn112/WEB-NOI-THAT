@@ -53,8 +53,8 @@ public interface GetIdAPI extends Token{
         return response.getBody();
     }
 
-    default OrderDTO Get1Order(Long orderId, HttpServletRequest request){
-        String url = baseUrl() + "/users/" + orderId;
+    default OrderDTO Get1Order(Integer orderId, HttpServletRequest request){
+        String url = baseUrl() + "/orders/" + orderId;
         RestTemplate restTemplate = new RestTemplate();
         HttpEntity httpEntity = Token(request);
         ResponseEntity<OrderDTO> response = restTemplate.exchange(url, HttpMethod.GET,

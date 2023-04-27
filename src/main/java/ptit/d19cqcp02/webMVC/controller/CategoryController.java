@@ -13,8 +13,6 @@ import ptit.d19cqcp02.webMVC.controller.Interface.GetAllAPI;
 import ptit.d19cqcp02.webMVC.controller.Interface.GetIdAPI;
 import ptit.d19cqcp02.webMVC.model.dto.CateDTO;
 import ptit.d19cqcp02.webMVC.model.entity.Category;
-import ptit.d19cqcp02.webMVC.service.CategoryService;
-import ptit.d19cqcp02.webMVC.service.ProductService;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Arrays;

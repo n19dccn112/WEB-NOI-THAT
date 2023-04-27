@@ -17,7 +17,7 @@
             <ul>
                 <li class="menu-item"><a href="/">Home</a>
                 </li>
-                <li class="menu-item-has-children"><a href="shop-left-sidebar">Category</a>
+                <li class="menu-item-has-children">Category</a>
                     <ul class="sub-menu mega-menu mega-menu-column-4">
                         <c:forEach items="${cates}" var="category">
                             <li><a href="javascript:void(0)" class="mega-column-title">Category</a>

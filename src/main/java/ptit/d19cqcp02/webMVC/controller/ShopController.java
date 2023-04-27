@@ -18,7 +18,6 @@ import ptit.d19cqcp02.webMVC.model.dto.RateDTO;
 import ptit.d19cqcp02.webMVC.model.dto.UserDetailDTO;
 import ptit.d19cqcp02.webMVC.model.embeded.RateId;
 import ptit.d19cqcp02.webMVC.model.entity.*;
-import ptit.d19cqcp02.webMVC.service.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -59,9 +58,6 @@ public class ShopController implements GetAllAPI, GetIdAPI, DAndE, PostAPI, Mail
         ProductDTO productDTO = Get1Product(productId, request);
         Product product = createFromProductDTO(productDTO, request);
         request.setAttribute("product", product);
-
-        request.setAttribute("catename", productDTO.getCategoryName());
-
         HttpSession session=request.getSession(false);
         JwtResponse jwtResponse = (JwtResponse) session.getAttribute("currentUser");
         request.setAttribute("user", jwtResponse);

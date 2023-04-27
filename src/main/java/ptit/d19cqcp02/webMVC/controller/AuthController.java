@@ -2,7 +2,6 @@ package ptit.d19cqcp02.webMVC.controller;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.AllArgsConstructor;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,9 +28,6 @@ import ptit.d19cqcp02.webMVC.model.dto.HttpErrorResponse;
 import ptit.d19cqcp02.webMVC.model.dto.UserDetailDTO;
 import ptit.d19cqcp02.webMVC.model.entity.Category;
 import ptit.d19cqcp02.webMVC.model.entity.OrderDetailView;
-import ptit.d19cqcp02.webMVC.model.entity.User;
-import ptit.d19cqcp02.webMVC.model.entity.UserDetail;
-import ptit.d19cqcp02.webMVC.security.services.UserDetailsImpl;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -55,13 +51,6 @@ public class AuthController implements Mailer, PostAPI, GetAllAPI, GetIdAPI, DAn
   @Override public PasswordEncoder getPasswordEncoder() { return encoder; }
   @Override public JavaMailSender getMailer() { return javaMailSender; }
   @Override public String baseUrl() { return baseUrl; }
-
-  public JwtResponse PostSignIn(LoginRequest loginRequest){
-    String url = baseUrl + "/auth/signin";
-    ResponseEntity<JwtResponse> response = restTemplate.postForEntity(
-            url, loginRequest, JwtResponse.class);
-    return response.getBody();
-  }
 
   public MessageResponse PostSignUp(SignupRequest signupRequest) throws JsonProcessingException {
     try{
@@ -92,7 +81,7 @@ public class AuthController implements Mailer, PostAPI, GetAllAPI, GetIdAPI, DAn
           HttpServletRequest request,
           HttpServletResponse response,
           @RequestParam String username,
-          @RequestParam String password) {
+          @RequestParam String password) throws JsonProcessingException {
     if (username.trim().equals("") && password.trim().equals("")) {
       request.setAttribute("message", "password and username are not blank");
       return "shop-customer-login";
@@ -109,17 +98,35 @@ public class AuthController implements Mailer, PostAPI, GetAllAPI, GetIdAPI, DAn
     LoginRequest loginRequest = new LoginRequest();
     loginRequest.setPassword(password);
     loginRequest.setUsername(username);
-    JwtResponse jwtResponse = PostSignIn(loginRequest);
 
-    Map<String, String> token = new HashMap<>();
-    token.put("jwt", jwtResponse.getToken());
-    token.put("userId", String.valueOf(jwtResponse.getId()));
+    String url = baseUrl + "/auth/signin";
+    try{
+      ResponseEntity<JwtResponse> responseLogin = restTemplate.postForEntity(
+              url, loginRequest, JwtResponse.class);
+      JwtResponse jwtResponse = responseLogin.getBody();
 
-    HttpSession session = request.getSession();
-    session.setAttribute(HttpHeaders.AUTHORIZATION, "Bearer " + token.get("jwt"));
-    session.setAttribute("currentUser", jwtResponse);
-    response.setHeader(HttpHeaders.AUTHORIZATION, "Bearer " + token);
-    return "redirect:/my-account";
+      Map<String, String> token = new HashMap<>();
+      token.put("jwt", jwtResponse.getToken());
+      token.put("userId", String.valueOf(jwtResponse.getId()));
+
+      HttpSession session = request.getSession();
+      session.setAttribute(HttpHeaders.AUTHORIZATION, "Bearer " + token.get("jwt"));
+      session.setAttribute("currentUser", jwtResponse);
+      response.setHeader(HttpHeaders.AUTHORIZATION, "Bearer " + token);
+
+      request.setAttribute("user", jwtResponse);
+      List<OrderDetailView> listOrder = Arrays.stream(GetAllOrderDetailView(jwtResponse.getId(), request)).collect(Collectors.toList());
+      request.setAttribute("listOrder", listOrder);
+      CateDTO[] cateDTOS = GetAllCate(request);
+      List<Category> categories = Arrays.stream(createFromCateDTOS(cateDTOS, request)).collect(Collectors.toList());
+      request.setAttribute("cates", categories);
+      return "my-account";
+    } catch(HttpClientErrorException e){
+      MessageResponse mesage = new MessageResponse();
+      mesage.setMessage("Thông tin đăng nhập sai");
+      request.setAttribute("message", mesage);
+      return "shop-customer-login";
+    }
   }
 
   @PostMapping(value = "signup")

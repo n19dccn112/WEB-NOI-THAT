@@ -177,12 +177,11 @@ public interface DAndE extends GetIdAPI, GetAllAPI {
         return orderDTO;
     }
     default Order createFromOrderDTO(OrderDTO orderDTO, HttpServletRequest request) {
-        Optional<Order> order = Optional.ofNullable(getModelMapper().map(orderDTO, Order.class));
-        order.orElseThrow(() -> new NotFoundException(Order.class, orderDTO.getOrderId()));
+        Order order = getModelMapper().map(orderDTO, Order.class);
         UserDetailDTO userDetailDTO = Get1User(orderDTO.getUserId(), request);
         User user = createFromUserDetailDTO(userDetailDTO, request);
-        order.get().setUser(user);
-        return order.get();
+        order.setUser(user);
+        return order;
     }
     default OrderDTO[] createFromOrders(Order[] orders, HttpServletRequest request) {
         OrderDTO[] orderDTOS = getModelMapper().map(orders, OrderDTO[].class);
