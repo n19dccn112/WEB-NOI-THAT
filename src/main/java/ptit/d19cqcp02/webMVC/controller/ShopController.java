@@ -13,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
 import ptit.d19cqcp02.webMVC.controller.Interface.*;
 import ptit.d19cqcp02.webMVC.model.ProductRecommander;
 import ptit.d19cqcp02.webMVC.model.dto.Auth.JwtResponse;
+import ptit.d19cqcp02.webMVC.model.dto.CateDTO;
 import ptit.d19cqcp02.webMVC.model.dto.ProductDTO;
 import ptit.d19cqcp02.webMVC.model.dto.RateDTO;
 import ptit.d19cqcp02.webMVC.model.dto.UserDetailDTO;
@@ -22,6 +23,7 @@ import ptit.d19cqcp02.webMVC.model.entity.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.math.BigDecimal;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -64,6 +66,20 @@ public class ShopController implements GetAllAPI, GetIdAPI, DAndE, PostAPI, Mail
         List<RateDTO> rateDTOS = Arrays.stream(GetAllRate(productId, request)).collect(Collectors.toList());
         request.setAttribute("rates", rateDTOS);
 
+        if (jwtResponse!=null){
+            request.setAttribute("user", jwtResponse);
+            List<OrderDetailView> listOrder = Arrays.stream(GetAllOrderDetailView(jwtResponse.getId(), request)).collect(Collectors.toList());
+            request.setAttribute("listOrder", listOrder);
+            BigDecimal total = BigDecimal.ZERO;
+            for (OrderDetailView order : listOrder) {
+                total = total.add(new BigDecimal(order.getAmount()).multiply(order.getPrice()));
+            }
+            request.setAttribute("totalOrder", total);
+            CateDTO[] cateDTOS = GetAllCate(request);
+            List<Category> categories = Arrays.stream(createFromCateDTOS(cateDTOS, request)).collect(Collectors.toList());
+            request.setAttribute("cates", categories);
+        }
+
         return "shop-product-basic";
     }
 
@@ -102,21 +118,7 @@ public class ShopController implements GetAllAPI, GetIdAPI, DAndE, PostAPI, Mail
     }
 
     @PostMapping(value = "shop-checkout")
-    public String shopCheckout(
-            ModelMap model,
-            @RequestParam("from") String from,
-            @RequestParam("to") String to,
-            @RequestParam("subject") String subject,
-            @RequestParam("body") String body) {
-        try {
-            // Gửi mail
-            send(from, to, subject, body);
-            model.addAttribute("message", "Gửi email thành công!");
-            System.out.println(1);
-        } catch (Exception ex) {
-            model.addAttribute("message", "Gửi email thất bại!");
-            System.out.println(2);
-        }
+    public String shopCheckout(){
         return "redirect:shop-checkout";
     }
 
